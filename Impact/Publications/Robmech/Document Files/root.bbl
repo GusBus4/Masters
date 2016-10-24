@@ -1,0 +1,126 @@
+\begin{thebibliography}{10}
+
+\bibitem{RotorCraftHand}
+F.A. Association.
+\newblock {\em Rotorcraft Flying Handbook}.
+\newblock FAA Handbooks Series. Aviation Supplies \& Academics, Incorporated,
+  2001.
+
+\bibitem{Bohorquez}
+Felipe Bohorquez, Paul Samuel, Jayant Sirohi, Darryll Pines, Lael Rudd, and Ron
+  Perel.
+\newblock {Design, Analysis and Hover Performance of a Rotary Wing Micro Air
+  Vehicle}.
+\newblock {\em Journal of the American Helicopter Society}, 48(2):80, 2003.
+
+\bibitem{Collision}
+Adrien Briod, Dario Floreano, Przemyslaw Kornatowski, and Jean-Chirstophe
+  Zuffery.
+\newblock {A Collision-resilient Flying Robot}.
+\newblock {\em Journal of Field Robotics}, 31(4):496--509, 2014.
+
+\bibitem{Briod2012}
+Adrien Briod, Adam Klaptocz, Jean-christophe Zufferey, and Dario Floreano.
+\newblock {The AirBurr : A Flying Robot That Can Exploit Collisions}.
+\newblock pages 569--574, 2012.
+
+\bibitem{RotorConfig}
+Yihua Cao, Dong Li, Qiang Zhang, and Hang Bian.
+\newblock {Recent Development of Rotorcraft Configuration}.
+\newblock {\em Recent Patents on Engineering}, 1(1):49--70, 2007.
+
+\bibitem{MiniFlying}
+Lozano R Dzul~AE Castillo, P.
+\newblock {\em Modelling and control of mini-flying machines}.
+
+\bibitem{RealTime}
+Pedro Castillo, Alejandro Dzul, and Rogelio Lozano.
+\newblock {Real-time stabilization and tracking of a four-rotor mini
+  rotorcraft}.
+\newblock {\em IEEE Transactions on Control Systems Technology},
+  12(4):510--516, 2004.
+
+\bibitem{NasaCoaxial}
+Colin~P. Coleman.
+\newblock {A Survey of Theoretical and Experimental Coaxial Rotor Aerodynamic
+  Research - NASA Technical Paper 3675}.
+\newblock Technical report, NASA, 1997.
+
+\bibitem{Octocopter}
+C~Eschmann, C~Kuo, and C~Boller.
+\newblock {Unmanned Aircraft Systems for Remote Building Inspection and
+  Monitoring}.
+\newblock {\em Proceedings of the 6th European Workshop on Structural Health
+  Monitoring, July 3-6, 2012, Dresden, Germany}, pages 1--8, 2012.
+
+\bibitem{Heli}
+{Federal Aviation Administration}.
+\newblock {Helicopter Components , Sections , and Systems}.
+\newblock In {\em Helicopter Instructor's Handbook}, chapter Chapter 5, page
+  183. US Department of Transportation, Oklahoma, 2012.
+
+\bibitem{US7147182}
+Kenneth~Warren Flanigan.
+\newblock {Gas Powered Tip-Jet-Driven Tilt-Rotor Compound VTOL Aircraft}, 2006.
+
+\bibitem{US6030177}
+Lee~N Hager.
+\newblock {Drive System for a Variable Diameter Tilt Rotor}, 2000.
+
+\bibitem{Camrad}
+W.~Johnson.
+\newblock {Camrad - a Comprehensive Analytical Model of Rotorcraft Aerodynamics
+  and Dynamics}.
+\newblock Technical report, NASA, California, 1980.
+
+\bibitem{Klaptocz2010}
+Adam Klaptocz, Adrien Briod, Jean-christophe Zufferey, and Dario Floreano.
+\newblock {An Indoor Flying Platform with Collision Robustness and
+  Self-Recovery}.
+\newblock pages 3349--3354, 2010.
+
+\bibitem{Leishman}
+J.~Gordon Leishman.
+\newblock {\em Principles of Helicopter Aerodynamics}.
+\newblock Cambridge Aerospace Series. Cambridge University Press, 2nd edition
+  edition, 2006.
+
+\bibitem{US4200252}
+Andrew~H Logan and Richard~E Moore.
+\newblock {Helicopter Antitorque System Using Circulation Control}, 1980.
+
+\bibitem{Luukkonen}
+Teppo Luukkonen.
+\newblock {Modelling and Control of Quadcopter}.
+\newblock {\em Journal of the American Society for Mass Spectrometry},
+  22(7):1134--45, 2011.
+
+\bibitem{RotorLoss}
+M.W. Mueller and R.~D'Andrea.
+\newblock Stability and control of a quadrocopter despite the complete loss of
+  one, two, or three propellers.
+\newblock In {\em Robotics and Automation (ICRA), 2014 IEEE International
+  Conference on}, pages 45--52, May 2014.
+
+\bibitem{ThrustCritical}
+Yogianandh Naidoo, R~Stopforth, and Glen Bright.
+\newblock {Rotor Aerodynamic Analysis of a Quadrotor for Thrust Critical
+  Applications}.
+\newblock Technical Report November, University of KwaZulu Natal, Durban, 2011.
+
+\bibitem{Oh2005}
+Paul~Y Oh, Michael Joyce, and Justin Gallagher.
+\newblock {Designing an Aerial Robot for Hover-and-Stare Surveillance}.
+\newblock {\em IEEE Advanced Robotics}, (12):303--308, 2005.
+
+\bibitem{TheoryofFlight}
+Kevin Sablan.
+\newblock Theory of flight.
+
+\bibitem{NewMAV}
+La~Young, Ew~Aiken, Jl~Johnson, J~Andrews, J~Klem, and R~Demblewski.
+\newblock {New concepts and perspectives on micro-rotorcraft and small
+  autonomous rotary-wing vehicles}.
+\newblock Technical report, US Army Aviation, 2002.
+
+\end{thebibliography}

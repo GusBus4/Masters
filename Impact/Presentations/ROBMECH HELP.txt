@@ -1,0 +1,49 @@
+DRONE:
+DON'T DO THESE THINGS
+My prof helped me
+Not a lot of literature
+Don't tell them that I don't know stuff
+Don't under sell myself
+
+DO THESE THINGS
+Add references to images!-DONE
+Look at text and full stops take them out! - DONE
+Contents page - make text bigger - DONE
+
+
+Style:
+
+Look at hands and don't touch the screen!
+#4 Drone rotation overlapping other images - DONE
+
+#5 fix slide, add text. -DONE
+
+#7 Finish thought on what the difference in pressure -DONE
+
+#10 add table/make simpler. - LEAVE
+
+Make it more clear that given a size constraint, about power - DONE
+
+pronounce euler "oiler" correctly - DONE
+
+#15 clear up slide - DONE
+
+Add in the potential concepts. - DONE
+
+
+MATHS MAT:
+Add in No function as well as incorrect
+
+Put video after function, give more context into video. - DONE
+
+Take out "Maths Mat" - say that was an internal name
+
+Add in mandate earlier. - DONE
+"Quality" of education - DONE
+
+Same contents and semantic issues as the first one. - DONE
+
+Take out animation on where to now - DONE
+Add all 11 official language later. - DONE
+
+MVP talk about fast iteration and lots of interaction between client and developer.

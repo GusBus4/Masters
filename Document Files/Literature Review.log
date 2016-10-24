@@ -1,0 +1,447 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.9)  26 JUN 2015 13:52
+entering extended mode
+**Literature*Review.tex
+
+("C:\Users\Angus Steele\Google Drive\Masters\Document Files\Literature Review.t
+ex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
+("C:\Users\Angus Steele\Google Drive\Masters\Document Files\Literature Review.a
+ux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 13.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count102
+\scratchdimen=\dimen114
+\scratchbox=\box30
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count105
+\MPscratchDim=\dimen115
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks23
+)
+Chapter 1.
+<Images/Litreature/Bird.jpg, id=1, 614.295pt x 443.6575pt>
+File: Images/Litreature/Bird.jpg Graphic file (type jpg)
+
+<use Images/Litreature/Bird.jpg>
+Package pdftex.def Info: Images/Litreature/Bird.jpg used on input line 29.
+(pdftex.def)             Requested size: 236.36838pt x 170.71652pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Users/Angus Steele
+/Google Drive/Masters/Document Files/Images/Litreature/Bird.jpg>] [3]
+<Images/Litreature/AntiTorque.jpg, id=20, 631.35875pt x 508.90125pt>
+File: Images/Litreature/AntiTorque.jpg Graphic file (type jpg)
+
+<use Images/Litreature/AntiTorque.jpg>
+Package pdftex.def Info: Images/Litreature/AntiTorque.jpg used on input line 91
+.
+(pdftex.def)             Requested size: 211.79791pt x 170.71652pt.
+
+<Images/Litreature/TipSpeed.jpg, id=21, 443.7378pt x 219.7008pt>
+File: Images/Litreature/TipSpeed.jpg Graphic file (type jpg)
+
+<use Images/Litreature/TipSpeed.jpg>
+Package pdftex.def Info: Images/Litreature/TipSpeed.jpg used on input line 107.
+
+(pdftex.def)             Requested size: 344.82085pt x 170.71652pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreature
+/AntiTorque.jpg>]
+<Images/Litreature/MomentumTheoryAirFlow.jpg, id=27, 307.50885pt x 260.172pt>
+File: Images/Litreature/MomentumTheoryAirFlow.jpg Graphic file (type jpg)
+
+<use Images/Litreature/MomentumTheoryAirFlow.jpg>
+Package pdftex.def Info: Images/Litreature/MomentumTheoryAirFlow.jpg used on in
+put line 122.
+(pdftex.def)             Requested size: 269.0508pt x 227.62204pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreature
+/TipSpeed.jpg>]
+<Images/Litreature/MomentumTheoryHover.jpg, id=31, 269.5671pt x 270.2898pt>
+File: Images/Litreature/MomentumTheoryHover.jpg Graphic file (type jpg)
+
+<use Images/Litreature/MomentumTheoryHover.jpg>
+Package pdftex.def Info: Images/Litreature/MomentumTheoryHover.jpg used on inpu
+t line 133.
+(pdftex.def)             Requested size: 227.01889pt x 227.62204pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreature
+/MomentumTheoryAirFlow.jpg>] [7 <C:/Users/Angus Steele/Google Drive/Masters/Doc
+ument Files/Images/Litreature/MomentumTheoryHover.jpg>]
+<Images/Litreature/DL.jpg, id=41, 429.605pt x 287.0725pt>
+File: Images/Litreature/DL.jpg Graphic file (type jpg)
+
+<use Images/Litreature/DL.jpg>
+Package pdftex.def Info: Images/Litreature/DL.jpg used on input line 174.
+(pdftex.def)             Requested size: 255.48376pt x 170.71652pt.
+ [8 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreatur
+e/DL.jpg>] [9]
+<Images/Litreature/RollPitchYaw.jpg, id=48, 401.5pt x 366.36874pt>
+File: Images/Litreature/RollPitchYaw.jpg Graphic file (type jpg)
+
+<use Images/Litreature/RollPitchYaw.jpg>
+Package pdftex.def Info: Images/Litreature/RollPitchYaw.jpg used on input line 
+236.
+(pdftex.def)             Requested size: 187.08765pt x 170.71652pt.
+ [10]
+
+LaTeX Warning: Reference `TAB_PlatformDesign' on page 11 undefined on input lin
+e 243.
+
+<Images/Litreature/MainHeliComponents.jpg, id=52, 1313.90875pt x 848.16875pt>
+File: Images/Litreature/MainHeliComponents.jpg Graphic file (type jpg)
+
+<use Images/Litreature/MainHeliComponents.jpg>
+Package pdftex.def Info: Images/Litreature/MainHeliComponents.jpg used on input
+ line 251.
+(pdftex.def)             Requested size: 264.46118pt x 170.71652pt.
+ [11 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreatu
+re/RollPitchYaw.jpg>]
+<Images/Litreature/NOTAR.jpg, id=56, 1075.01625pt x 868.24374pt>
+File: Images/Litreature/NOTAR.jpg Graphic file (type jpg)
+
+<use Images/Litreature/NOTAR.jpg>
+Package pdftex.def Info: Images/Litreature/NOTAR.jpg used on input line 262.
+(pdftex.def)             Requested size: 211.37428pt x 170.71652pt.
+ [12 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreatu
+re/MainHeliComponents.jpg>]
+<Images/Litreature/Coaxial.jpg, id=60, 451.6875pt x 295.85532pt>
+File: Images/Litreature/Coaxial.jpg Graphic file (type jpg)
+
+<use Images/Litreature/Coaxial.jpg>
+Package pdftex.def Info: Images/Litreature/Coaxial.jpg used on input line 275.
+(pdftex.def)             Requested size: 260.64185pt x 170.71652pt.
+ [13 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreatu
+re/NOTAR.jpg>]
+<Images/Litreature/Coaxial_Configs.jpg, id=65, 999.735pt x 248.93pt>
+File: Images/Litreature/Coaxial_Configs.jpg Graphic file (type jpg)
+
+<use Images/Litreature/Coaxial_Configs.jpg>
+Package pdftex.def Info: Images/Litreature/Coaxial_Configs.jpg used on input li
+ne 284.
+(pdftex.def)             Requested size: 342.81905pt x 85.35826pt.
+ [14 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreatu
+re/Coaxial.jpg> <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Imag
+es/Litreature/Coaxial_Configs.jpg>]
+<Images/Litreature/TandemBEE.jpg, id=69, 677.53125pt x 450.18187pt>
+File: Images/Litreature/TandemBEE.jpg Graphic file (type jpg)
+
+<use Images/Litreature/TandemBEE.jpg>
+Package pdftex.def Info: Images/Litreature/TandemBEE.jpg used on input line 298
+.
+(pdftex.def)             Requested size: 256.92696pt x 170.71652pt.
+ [15 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreatu
+re/TandemBEE.jpg>]
+<Images/Litreature/QuadBlades.jpg, id=73, 593.21625pt x 576.1525pt>
+File: Images/Litreature/QuadBlades.jpg Graphic file (type jpg)
+
+<use Images/Litreature/QuadBlades.jpg>
+Package pdftex.def Info: Images/Litreature/QuadBlades.jpg used on input line 31
+5.
+(pdftex.def)             Requested size: 175.77573pt x 170.71652pt.
+ [16]
+<Images/Litreature/TiltRotor.jpg, id=77, 421.575pt x 447.17062pt>
+File: Images/Litreature/TiltRotor.jpg Graphic file (type jpg)
+
+<use Images/Litreature/TiltRotor.jpg>
+Package pdftex.def Info: Images/Litreature/TiltRotor.jpg used on input line 329
+.
+(pdftex.def)             Requested size: 160.94635pt x 170.71652pt.
+ [17 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litreatu
+re/QuadBlades.jpg>]
+("C:\Users\Angus Steele\Google Drive\Masters\Document Files\Literature Review.b
+bl" [18 <C:/Users/Angus Steele/Google Drive/Masters/Document Files/Images/Litre
+ature/TiltRotor.jpg>] [19
+
+] [20]) [21]
+("C:\Users\Angus Steele\Google Drive\Masters\Document Files\Literature Review.a
+ux")
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2698 strings out of 493921
+ 36249 string characters out of 3147262
+ 83452 words of memory out of 3000000
+ 5963 multiletter control sequences out of 15000+200000
+ 11850 words of font info for 45 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 27i,8n,24p,1490b,244s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "Literature Review.pdf" (21 pages, 1198318 bytes).
+PDF statistics:
+ 137 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+

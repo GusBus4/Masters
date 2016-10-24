@@ -1,0 +1,23 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: root.aux
+The style file: plain.bst
+Database file #1: Masters.bib
+Warning--entry type for "TheoryofFlight" isn't style-file defined
+--line 71 of file Masters.bib
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1049 of file plain.bst
+Warning--empty journal in Briod2012
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1090 of file plain.bst
+Warning--empty publisher in MiniFlying
+Warning--empty year in MiniFlying
+Warning--empty journal in Klaptocz2010
+Warning--there's a number but no volume in Oh2005
+(There were 6 error messages)

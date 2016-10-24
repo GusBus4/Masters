@@ -1,0 +1,80 @@
+\BOOKMARK [0][-]{chapter.1}{Literature Study}{}% 1
+\BOOKMARK [1][-]{section.1.1}{History}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Micro Aerial Vehicles}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Flight Theory}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{Fundamental Principles of Flow}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{Basic Rotor Theory}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.3}{Momentum Theory and Thrust Basics}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.4}{Disk and Power Loading}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.5}{Electrical Power to Thrust}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{Analysis of Conventional Rotor Wing Configurations}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.3.1}{Helicopter}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.2}{Coaxial Rotors}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.3}{Tandem Rotors}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.4}{Multirotor Designs}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.5}{Tilt Rotors}{section.1.3}% 15
+\BOOKMARK [1][-]{section.1.4}{Rotorcraft Flight Dynamics}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.4.1}{Mass Model and the Inertia Tensor}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.2}{Coordinate System}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.3}{Dynamic Flight Model}{section.1.4}% 19
+\BOOKMARK [2][-]{subsection.1.4.4}{Disturbances}{section.1.4}% 20
+\BOOKMARK [2][-]{subsection.1.4.5}{Instrumentation}{section.1.4}% 21
+\BOOKMARK [1][-]{section.1.5}{Methods for Control}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.5.1}{Stable Hover}{section.1.5}% 23
+\BOOKMARK [2][-]{subsection.1.5.2}{Altitude Control}{section.1.5}% 24
+\BOOKMARK [2][-]{subsection.1.5.3}{Attitude Control}{section.1.5}% 25
+\BOOKMARK [1][-]{section.1.6}{Collision Protection Techniques}{chapter.1}% 26
+\BOOKMARK [2][-]{subsection.1.6.1}{Collision Avoidance}{section.1.6}% 27
+\BOOKMARK [2][-]{subsection.1.6.2}{Impact Resistance}{section.1.6}% 28
+\BOOKMARK [2][-]{subsection.1.6.3}{Rolling Cage}{section.1.6}% 29
+\BOOKMARK [0][-]{chapter.2}{System Requirements}{}% 30
+\BOOKMARK [1][-]{section.2.1}{Background}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.2}{Problem Statement}{chapter.2}% 32
+\BOOKMARK [1][-]{section.2.3}{Application Requirements}{chapter.2}% 33
+\BOOKMARK [2][-]{subsection.2.3.1}{Controlled Indoor Flight}{section.2.3}% 34
+\BOOKMARK [2][-]{subsection.2.3.2}{Method of Expansion for Industrial Applications}{section.2.3}% 35
+\BOOKMARK [0][-]{chapter.3}{System Design Description}{}% 36
+\BOOKMARK [1][-]{section.3.1}{System Hardware Architecture}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.1.1}{Platform Construction}{section.3.1}% 38
+\BOOKMARK [2][-]{subsection.3.1.2}{Electronics Interface}{section.3.1}% 39
+\BOOKMARK [1][-]{section.3.2}{System Software Framework}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.2.1}{Flight Controller Firmware}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.2}{Communication Protocols}{section.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.2.3}{Ground Control Software}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.4}{Logging and Simulation}{section.3.2}% 44
+\BOOKMARK [0][-]{chapter.4}{Platform Design}{}% 45
+\BOOKMARK [1][-]{section.4.1}{Factors Affecting Design Decisions}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.1.1}{Physical Restrictions and Requirements}{section.4.1}% 47
+\BOOKMARK [2][-]{subsection.4.1.2}{Manoeuvring Decisions}{section.4.1}% 48
+\BOOKMARK [2][-]{subsection.4.1.3}{Disturbances}{section.4.1}% 49
+\BOOKMARK [2][-]{subsection.4.1.4}{Thrust Overhead}{section.4.1}% 50
+\BOOKMARK [2][-]{subsection.4.1.5}{Flight Time}{section.4.1}% 51
+\BOOKMARK [1][-]{section.4.2}{Final Concept Choice}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.2.1}{Rejected Designs}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.2}{Chosen Concepts}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.3}{Concept Comparison}{section.4.2}% 55
+\BOOKMARK [1][-]{section.4.3}{Platform Conclusions}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.4}{Drone 3}{chapter.4}% 57
+\BOOKMARK [2][-]{subsection.4.4.1}{Assembly}{section.4.4}% 58
+\BOOKMARK [0][-]{chapter.5}{Electronic Design}{}% 59
+\BOOKMARK [1][-]{section.5.1}{Flight Controller}{chapter.5}% 60
+\BOOKMARK [2][-]{subsection.5.1.1}{Custom Design}{section.5.1}% 61
+\BOOKMARK [2][-]{subsection.5.1.2}{Pixhawk}{section.5.1}% 62
+\BOOKMARK [1][-]{section.5.2}{Electronic Speed Controller}{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.2.1}{Drone 3's ESC}{section.5.2}% 64
+\BOOKMARK [1][-]{section.5.3}{On Board Computer}{chapter.5}% 65
+\BOOKMARK [2][-]{subsection.5.3.1}{Raspberry Pi 3 Model B}{section.5.3}% 66
+\BOOKMARK [2][-]{subsection.5.3.2}{Odroid XU4}{section.5.3}% 67
+\BOOKMARK [1][-]{section.5.4}{Networking}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.5}{Location}{chapter.5}% 69
+\BOOKMARK [1][-]{section.5.6}{Object Avoidance}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.6.1}{Time of Flight}{section.5.6}% 71
+\BOOKMARK [2][-]{subsection.5.6.2}{Image Processing}{section.5.6}% 72
+\BOOKMARK [1][-]{section.5.7}{Lighting}{chapter.5}% 73
+\BOOKMARK [1][-]{section.5.8}{Sensor Pack}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.9}{Power Supply}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.9.1}{Electrical Requirements Analysis}{section.5.9}% 76
+\BOOKMARK [2][-]{subsection.5.9.2}{Power Source}{section.5.9}% 77
+\BOOKMARK [2][-]{subsection.5.9.3}{Power Management}{section.5.9}% 78
+\BOOKMARK [0][-]{chapter.6}{Software Design}{}% 79
+\BOOKMARK [1][-]{section.6.1}{Flight Strategy}{chapter.6}% 80

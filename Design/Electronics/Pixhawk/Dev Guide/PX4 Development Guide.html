@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://dev.px4.io/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <style>.gitter-hidden{box-sizing:border-box;display:none}.gitter-icon{box-sizing:border-box;width:22px;height:22px;fill:currentColor}.gitter-chat-embed{box-sizing:border-box;z-index:100;position:fixed;top:0;left:60%;bottom:0;right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;background-color:#fff;border-left:1px solid #333;box-shadow:-12px 0 18px 0 rgba(50,50,50,.3);-webkit-transition:-webkit-transform .3s cubic-bezier(.16,.22,.22,1.7);transition:-webkit-transform .3s cubic-bezier(.16,.22,.22,1.7);transition:transform .3s cubic-bezier(.16,.22,.22,1.7);transition:transform .3s cubic-bezier(.16,.22,.22,1.7),-webkit-transform .3s cubic-bezier(.16,.22,.22,1.7)}@context border-box{.gitter-chat-embed{box-sizing:border-box;background-color:#fff}}.gitter-chat-embed.is-collapsed:not(.is-loading){box-sizing:border-box;-webkit-transform:translateX(110%);transform:translateX(110%)}.gitter-chat-embed:after{box-sizing:border-box;content:'';z-index:-1;position:absolute;top:0;left:100%;bottom:0;right:-100%;background-color:#fff}@context border-box{.gitter-chat-embed:after{box-sizing:border-box;background-color:#fff}}@media(max-width:1150px){.gitter-chat-embed{box-sizing:border-box;left:45%}}@media(max-width:944px){.gitter-chat-embed{box-sizing:border-box;left:30%}}@media(max-width:600px){.gitter-chat-embed{box-sizing:border-box;left:15%}}@media(max-width:500px){.gitter-chat-embed{box-sizing:border-box;left:0;border-left:none}}.gitter-chat-embed>iframe{box-sizing:border-box;-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;width:100%;height:100%;border:0}.gitter-chat-embed-loading-wrapper{box-sizing:border-box;position:absolute;top:0;left:0;bottom:0;right:0;display:none;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}.is-loading .gitter-chat-embed-loading-wrapper{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.gitter-chat-embed-loading-indicator{box-sizing:border-box;opacity:.75;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIGZpbGw9IiMzYTMxMzMiPjxwYXRoIGQ9Ik01MjYgMTM5NHEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41cS01MiAwLTkwLTM4dC0zOC05MHEwLTUzIDM3LjUtOTAuNXQ5MC41LTM3LjUgOTAuNSAzNy41IDM3LjUgOTAuNXptNDk4IDIwNnEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41LTkwLjUtMzcuNS0zNy41LTkwLjUgMzcuNS05MC41IDkwLjUtMzcuNSA5MC41IDM3LjUgMzcuNSA5MC41em0tNzA0LTcwNHEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41LTkwLjUtMzcuNS0zNy41LTkwLjUgMzcuNS05MC41IDkwLjUtMzcuNSA5MC41IDM3LjUgMzcuNSA5MC41em0xMjAyIDQ5OHEwIDUyLTM4IDkwdC05MCAzOHEtNTMgMC05MC41LTM3LjV0LTM3LjUtOTAuNSAzNy41LTkwLjUgOTAuNS0zNy41IDkwLjUgMzcuNSAzNy41IDkwLjV6bS05NjQtOTk2cTAgNjYtNDcgMTEzdC0xMTMgNDctMTEzLTQ3LTQ3LTExMyA0Ny0xMTMgMTEzLTQ3IDExMyA0NyA0NyAxMTN6bTExNzAgNDk4cTAgNTMtMzcuNSA5MC41dC05MC41IDM3LjUtOTAuNS0zNy41LTM3LjUtOTAuNSAzNy41LTkwLjUgOTAuNS0zNy41IDkwLjUgMzcuNSAzNy41IDkwLjV6bS02NDAtNzA0cTAgODAtNTYgMTM2dC0xMzYgNTYtMTM2LTU2LTU2LTEzNiA1Ni0xMzYgMTM2LTU2IDEzNiA1NiA1NiAxMzZ6bTUzMCAyMDZxMCA5My02NiAxNTguNXQtMTU4IDY1LjVxLTkzIDAtMTU4LjUtNjUuNXQtNjUuNS0xNTguNXEwLTkyIDY1LjUtMTU4dDE1OC41LTY2cTkyIDAgMTU4IDY2dDY2IDE1OHoiLz48L3N2Zz4=);-webkit-animation:spin 2s infinite linear;animation:spin 2s infinite linear}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}0%,to{box-sizing:border-box}to{-webkit-transform:rotate(359.9deg);transform:rotate(359.9deg)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}0%,to{box-sizing:border-box}to{-webkit-transform:rotate(359.9deg);transform:rotate(359.9deg)}}.gitter-chat-embed-action-bar{position:absolute;top:0;left:0;right:0;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-bottom:.7em;background:-webkit-linear-gradient(top,#fff,#fff 50%,hsla(0,0%,100%,0));background:linear-gradient(180deg,#fff 0,#fff 50%,hsla(0,0%,100%,0))}.gitter-chat-embed-action-bar,.gitter-chat-embed-action-bar-item{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.gitter-chat-embed-action-bar-item{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:40px;height:40px;padding-left:0;padding-right:0;opacity:.65;background:none;background-position:center center;background-repeat:no-repeat;background-size:22px 22px;border:0;outline:none;cursor:pointer;cursor:hand;-webkit-transition:all .2s ease;transition:all .2s ease}.gitter-chat-embed-action-bar-item:focus,.gitter-chat-embed-action-bar-item:hover{box-sizing:border-box;opacity:1}.gitter-chat-embed-action-bar-item:active{box-sizing:border-box;-webkit-filter:hue-rotate(80deg) saturate(150);filter:hue-rotate(80deg) saturate(150)}.gitter-chat-embed-action-bar-item-pop-out{box-sizing:border-box;margin-right:-4px;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMTcxLjQyOSIgZmlsbD0iIzNhMzEzMyI+PHBhdGggZD0iTTE1Ny4xNDMsMTAzLjU3MXYzNS43MTRjMCw4Ljg1NC0zLjE0NCwxNi40MjYtOS40MzEsMjIuNzEzcy0xMy44NTgsOS40MzEtMjIuNzEyLDkuNDMxSDMyLjE0MyBjLTguODU0LDAtMTYuNDI1LTMuMTQ0LTIyLjcxMi05LjQzMVMwLDE0OC4xNCwwLDEzOS4yODVWNDYuNDI5YzAtOC44NTQsMy4xNDQtMTYuNDI1LDkuNDMxLTIyLjcxMiBjNi4yODctNi4yODcsMTMuODU4LTkuNDMxLDIyLjcxMi05LjQzMWg3OC41NzJjMS4wNDEsMCwxLjg5NiwwLjMzNSwyLjU2NiwxLjAwNGMwLjY3LDAuNjcsMS4wMDQsMS41MjUsMS4wMDQsMi41NjdWMjUgYzAsMS4wNDItMC4zMzQsMS44OTctMS4wMDQsMi41NjdjLTAuNjcsMC42Ny0xLjUyNSwxLjAwNC0yLjU2NiwxLjAwNEgzMi4xNDNjLTQuOTExLDAtOS4xMTUsMS43NDktMTIuNjEyLDUuMjQ2IHMtNS4yNDYsNy43MDEtNS4yNDYsMTIuNjEydjkyLjg1NmMwLDQuOTExLDEuNzQ5LDkuMTE1LDUuMjQ2LDEyLjYxMnM3LjcwMSw1LjI0NSwxMi42MTIsNS4yNDVIMTI1YzQuOTEsMCw5LjExNS0xLjc0OCwxMi42MTEtNS4yNDUgYzMuNDk3LTMuNDk3LDUuMjQ2LTcuNzAxLDUuMjQ2LTEyLjYxMnYtMzUuNzE0YzAtMS4wNDIsMC4zMzQtMS44OTcsMS4wMDQtMi41NjdjMC42Ny0wLjY2OSwxLjUyNS0xLjAwNCwyLjU2Ny0xLjAwNGg3LjE0MyBjMS4wNDIsMCwxLjg5NywwLjMzNSwyLjU2NywxLjAwNEMxNTYuODA5LDEwMS42NzQsMTU3LjE0MywxMDIuNTI5LDE1Ny4xNDMsMTAzLjU3MXogTTIwMCw3LjE0M3Y1Ny4xNDMgYzAsMS45MzUtMC43MDcsMy42MDktMi4xMjEsNS4wMjJjLTEuNDEzLDEuNDE0LTMuMDg4LDIuMTIxLTUuMDIxLDIuMTIxYy0xLjkzNSwwLTMuNjA5LTAuNzA3LTUuMDIyLTIuMTIxbC0xOS42NDQtMTkuNjQzIGwtNzIuNzY3LDcyLjc2OWMtMC43NDQsMC43NDQtMS42LDEuMTE1LTIuNTY3LDEuMTE1cy0xLjgyMy0wLjM3MS0yLjU2Ny0xLjExNUw3Ny41NjcsMTA5LjcxYy0wLjc0NC0wLjc0NC0xLjExNi0xLjYtMS4xMTYtMi41NjcgYzAtMC45NjcsMC4zNzItMS44MjIsMS4xMTYtMi41NjZsNzIuNzY4LTcyLjc2OGwtMTkuNjQ0LTE5LjY0M2MtMS40MTMtMS40MTQtMi4xMi0zLjA4OC0yLjEyLTUuMDIyYzAtMS45MzUsMC43MDctMy42MDksMi4xMi01LjAyMiBDMTMyLjEwNSwwLjcwNywxMzMuNzc5LDAsMTM1LjcxNSwwaDU3LjE0M2MxLjkzNCwwLDMuNjA4LDAuNzA3LDUuMDIxLDIuMTIxQzE5OS4yOTMsMy41MzQsMjAwLDUuMjA4LDIwMCw3LjE0M3oiLz48L3N2Zz4=)}.gitter-chat-embed-action-bar-item-collapse-chat{box-sizing:border-box;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzEuNDI5IDE3MS40MjkiIGZpbGw9IiMzYTMxMzMiPjxwYXRoIGQ9Ik0xMjIuNDMzLDEwNi4xMzhsLTE2LjI5NSwxNi4yOTVjLTAuNzQ0LDAuNzQ0LTEuNiwxLjExNi0yLjU2NiwxLjExNmMtMC45NjgsMC0xLjgyMy0wLjM3Mi0yLjU2Ny0xLjExNmwtMTUuMjktMTUuMjkgbC0xNS4yOSwxNS4yOWMtMC43NDQsMC43NDQtMS42LDEuMTE2LTIuNTY3LDEuMTE2cy0xLjgyMy0wLjM3Mi0yLjU2Ny0xLjExNmwtMTYuMjk0LTE2LjI5NWMtMC43NDQtMC43NDQtMS4xMTYtMS42LTEuMTE2LTIuNTY2IGMwLTAuOTY4LDAuMzcyLTEuODIzLDEuMTE2LTIuNTY3bDE1LjI5LTE1LjI5bC0xNS4yOS0xNS4yOWMtMC43NDQtMC43NDQtMS4xMTYtMS42LTEuMTE2LTIuNTY3czAuMzcyLTEuODIzLDEuMTE2LTIuNTY3IEw2NS4yOSw0OC45OTZjMC43NDQtMC43NDQsMS42LTEuMTE2LDIuNTY3LTEuMTE2czEuODIzLDAuMzcyLDIuNTY3LDEuMTE2bDE1LjI5LDE1LjI5bDE1LjI5LTE1LjI5IGMwLjc0NC0wLjc0NCwxLjYtMS4xMTYsMi41NjctMS4xMTZjMC45NjcsMCwxLjgyMiwwLjM3MiwyLjU2NiwxLjExNmwxNi4yOTUsMTYuMjk0YzAuNzQ0LDAuNzQ0LDEuMTE2LDEuNiwxLjExNiwyLjU2NyBzLTAuMzcyLDEuODIzLTEuMTE2LDIuNTY3bC0xNS4yOSwxNS4yOWwxNS4yOSwxNS4yOWMwLjc0NCwwLjc0NCwxLjExNiwxLjYsMS4xMTYsMi41NjcgQzEyMy41NDksMTA0LjUzOSwxMjMuMTc3LDEwNS4zOTQsMTIyLjQzMywxMDYuMTM4eiBNMTQ2LjQyOSw4NS43MTRjMC0xMS4wMTItMi43MTctMjEuMTY4LTguMTQ4LTMwLjQ2OSBzLTEyLjc5Ny0xNi42NjctMjIuMDk4LTIyLjA5OFM5Ni43MjYsMjUsODUuNzE0LDI1cy0yMS4xNjgsMi43MTYtMzAuNDY5LDguMTQ3UzM4LjU3OSw0NS45NDUsMzMuMTQ3LDU1LjI0NlMyNSw3NC43MDMsMjUsODUuNzE0IHMyLjcxNiwyMS4xNjgsOC4xNDcsMzAuNDY5czEyLjc5NywxNi42NjYsMjIuMDk4LDIyLjA5OHMxOS40NTcsOC4xNDgsMzAuNDY5LDguMTQ4czIxLjE2OC0yLjcxNywzMC40NjktOC4xNDggczE2LjY2Ni0xMi43OTcsMjIuMDk4LTIyLjA5OFMxNDYuNDI5LDk2LjcyNiwxNDYuNDI5LDg1LjcxNHogTTE3MS40MjksODUuNzE0YzAsMTUuNTUxLTMuODMyLDI5Ljg5My0xMS40OTYsNDMuMDI0IGMtNy42NjQsMTMuMTMzLTE4LjA2MiwyMy41My0zMS4xOTQsMzEuMTk0Yy0xMy4xMzIsNy42NjQtMjcuNDc0LDExLjQ5Ni00My4wMjQsMTEuNDk2cy0yOS44OTItMy44MzItNDMuMDI0LTExLjQ5NiBjLTEzLjEzMy03LjY2NC0yMy41MzEtMTguMDYyLTMxLjE5NC0zMS4xOTRDMy44MzIsMTE1LjYwNywwLDEwMS4yNjUsMCw4NS43MTRTMy44MzIsNTUuODIyLDExLjQ5Niw0Mi42OSBjNy42NjQtMTMuMTMzLDE4LjA2Mi0yMy41MzEsMzEuMTk0LTMxLjE5NEM1NS44MjIsMy44MzIsNzAuMTY0LDAsODUuNzE0LDBzMjkuODkzLDMuODMyLDQzLjAyNCwxMS40OTYgYzEzLjEzMyw3LjY2NCwyMy41MywxOC4wNjIsMzEuMTk0LDMxLjE5NEMxNjcuNTk3LDU1LjgyMiwxNzEuNDI5LDcwLjE2NCwxNzEuNDI5LDg1LjcxNHoiLz48L3N2Zz4=)}.gitter-open-chat-button{z-index:100;position:fixed;bottom:0;right:10px;padding:1em 3em;background-color:#36bc98;border:0;border-top-left-radius:.5em;border-top-right-radius:.5em;font-family:sans-serif;font-size:12px;letter-spacing:1px;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer;cursor:hand;-webkit-transition:all .3s ease;transition:all .3s ease}.gitter-open-chat-button,.gitter-open-chat-button:visited{box-sizing:border-box;color:#fff}.gitter-open-chat-button:focus,.gitter-open-chat-button:hover{box-sizing:border-box;background-color:#3ea07f;color:#fff}.gitter-open-chat-button:focus{box-sizing:border-box;box-shadow:0 0 8px rgba(62,160,127,.6);outline:none}.gitter-open-chat-button:active{box-sizing:border-box;color:#eee}.gitter-open-chat-button.is-collapsed{box-sizing:border-box;-webkit-transform:translateY(120%);transform:translateY(120%)}</style>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Introduction | PX4 Development Guide</title>
+        
+        <meta name="description" content="Guide for development of hardware and software for PX4.">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://dev.px4.io/gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="http://dev.px4.io/images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./PX4 Development Guide_files/font-awesome.min.css">
+
+        <!-- Custom JS -->
+        <script async="" src="./PX4 Development Guide_files/analytics.js"></script><script src="./PX4 Development Guide_files/jquery.min.js"></script><style type="text/css"></style>
+        <script src="./PX4 Development Guide_files/kramed.min.js"></script>
+        <script src="./PX4 Development Guide_files/website.js"></script>
+
+        
+    <link rel="stylesheet" href="./PX4 Development Guide_files/style.css">
+    
+        
+        <link rel="stylesheet" href="./PX4 Development Guide_files/scrollablecode.css">
+        
+    
+        
+        <link rel="stylesheet" href="./PX4 Development Guide_files/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="./PX4 Development Guide_files/image-captions.css">
+        
+    
+        
+        <link rel="stylesheet" href="./PX4 Development Guide_files/mermaid.css">
+        
+    
+        
+        <link rel="stylesheet" href="./PX4 Development Guide_files/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="./PX4 Development Guide_files/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="./PX4 Development Guide_files/website(1).css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="http://dev.px4.io/starting-initial-config.html">
+    
+    
+    <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'PX4/Firmware'
+  };
+</script>
+<script src="./PX4 Development Guide_files/sidecar.v1.js" async="" defer=""></script>
+
+        <script src="./PX4 Development Guide_files/mermaid.min.js"></script><link rel="stylesheet" href="./PX4 Development Guide_files/mermaid.forest.css">
+    </head>
+    <body>
+        
+        
+    <h1 id="px4-header">
+        <a href="http://dev.px4.io/"><img src="./PX4 Development Guide_files/px4-text.png" height="28"> <span>Development Guide</span></a>
+    </h1>
+
+    <div id="px4-header-links">
+        <a href="http://groups.google.com/group/px4users">Forums</a>
+        <a href="https://github.com/PX4/Devguide">Github</a>
+        <a href="https://www.hackster.io/px4/projects">Projects</a>
+    </div>
+
+    <div class="book font-size-2 font-family-1 with-summary" data-level="0" data-basepath="." data-revision="Wed Apr 27 2016 14:30:34 GMT+0000 (UTC)">
+    
+
+<div class="book-summary"><div class="book-search" role="search"><input type="text" class="form-control" placeholder="Type to search"></div>
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control">
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter active" data-level="0" data-path="index.html">
+            
+                
+                    <a href="http://dev.px4.io/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Getting Started</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="starting-initial-config.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-initial-config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Initial Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="starting-installing.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-installing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Toolchain Installation
+                    </a>
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="starting-installing-mac.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-installing-mac.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.1.</b>
+                        
+                        Mac OS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="starting-installing-linux.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-installing-linux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.2.</b>
+                        
+                        Linux
+                    </a>
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="starting-installing-linux-boutique.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-installing-linux-boutique.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.2.1.</b>
+                        
+                        Advanced Linux
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="starting-installing-windows.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-installing-windows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.3.</b>
+                        
+                        Windows
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="starting-building.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-building.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Building the Code
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="starting-contributing.html">
+            
+                
+                    <a href="http://dev.px4.io/starting-contributing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Contributing &amp; Dev Call
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Concepts</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="concept-flight-modes.html">
+            
+                
+                    <a href="http://dev.px4.io/concept-flight-modes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Flight Modes / Operation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="concept-architecture.html">
+            
+                
+                    <a href="http://dev.px4.io/concept-architecture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Architectural Overview
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="concept-flight-stack.html">
+            
+                
+                    <a href="http://dev.px4.io/concept-flight-stack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Flight Stack
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="concept-middleware.html">
+            
+                
+                    <a href="http://dev.px4.io/concept-middleware.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Middleware
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="concept-mixing.html">
+            
+                
+                    <a href="http://dev.px4.io/concept-mixing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Mixing and Actuators
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="concept-pwm_limit.html">
+            
+                
+                    <a href="http://dev.px4.io/concept-pwm_limit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        PWM limit state machine
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Tutorials</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="qgroundcontrol-intro.html">
+            
+                
+                    <a href="http://dev.px4.io/qgroundcontrol-intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Ground Control Station
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="tutorial-hello-sky.html">
+            
+                
+                    <a href="http://dev.px4.io/tutorial-hello-sky.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Writing an Application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="advanced-videostreaming-qgc.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-videostreaming-qgc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Video streaming in QGC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="flow_lidar_inav_setup.html">
+            
+                
+                    <a href="http://dev.px4.io/flow_lidar_inav_setup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Optical flow and LIDAR-Lite
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="tutorial-integration-testing.html">
+            
+                
+                    <a href="http://dev.px4.io/tutorial-integration-testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Integration Testing
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Simulation</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="simulation-sitl.html">
+            
+                
+                    <a href="http://dev.px4.io/simulation-sitl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Basic Simulation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="simulation-gazebo.html">
+            
+                
+                    <a href="http://dev.px4.io/simulation-gazebo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Gazebo Simulation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="simulation-hitl.html">
+            
+                
+                    <a href="http://dev.px4.io/simulation-hitl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        HITL Simulation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="simulation-ros-interface.html">
+            
+                
+                    <a href="http://dev.px4.io/simulation-ros-interface.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Interfacing to ROS
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Autopilot Hardware</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="hardware-snapdragon.html">
+            
+                
+                    <a href="http://dev.px4.io/hardware-snapdragon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Snapdragon Flight
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="hardware-pi2.html">
+            
+                
+                    <a href="http://dev.px4.io/hardware-pi2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Raspberry Pi 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="hardware-pixhawk.html">
+            
+                
+                    <a href="http://dev.px4.io/hardware-pixhawk.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Pixhawk
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="hardware-pixfalcon.html">
+            
+                
+                    <a href="http://dev.px4.io/hardware-pixfalcon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Pixfalcon
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="hardware-pixracer.html">
+            
+                
+                    <a href="http://dev.px4.io/hardware-pixracer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Pixracer
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Middleware and Architecture</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="advanced-uorb.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-uorb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        uORB Messaging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="architecture-daemon.html">
+            
+                
+                    <a href="http://dev.px4.io/architecture-daemon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Daemons
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="advanced-drivers.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-drivers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Driver Framework
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Airframes</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="airframes-architecture.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-architecture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Unified Codebase
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="airframes-adding-a-new-frame.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-adding-a-new-frame.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Adding a new Airframe
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="airframes-multicopter.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-multicopter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Multicopters
+                    </a>
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="7.3.1" data-path="airframes-motor-map.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-motor-map.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.1.</b>
+                        
+                        Motor Map
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3.2" data-path="airframes-multicopter-qav250.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-multicopter-qav250.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.2.</b>
+                        
+                        QAV 250 Racer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3.3" data-path="airframes-multicopter-matrice100.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-multicopter-matrice100.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.3.</b>
+                        
+                        Matrice 100
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="airframes-plane.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-plane.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Planes
+                    </a>
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="7.4.1" data-path="airframes-plane-wing-z-84.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-plane-wing-z-84.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.1.</b>
+                        
+                        Wing Wing Z-84
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="airframes-vtol.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-vtol.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        VTOL
+                    </a>
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="7.5.1" data-path="airframes-vtol-testing.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-vtol-testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.1.</b>
+                        
+                        VTOL Testing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5.2" data-path="airframes-vtol-caipiroshka.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-vtol-caipiroshka.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.2.</b>
+                        
+                        TBS Caipiroshka
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="airframes-experimental.html">
+            
+                
+                    <a href="http://dev.px4.io/airframes-experimental.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        Boats, Submarines, Blimps, Rovers
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Companion Computers</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="pixhawk-companion-computer.html">
+            
+                
+                    <a href="http://dev.px4.io/pixhawk-companion-computer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Pixhawk family companion
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Robotics using DroneKit</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="dronekit-example.html">
+            
+                
+                    <a href="http://dev.px4.io/dronekit-example.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        DroneKit usage
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Robotics using ROS</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="offboard-control.html">
+            
+                
+                    <a href="http://dev.px4.io/offboard-control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Offboard Control from Linux
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="ros-raspberrypi-installation.html">
+            
+                
+                    <a href="http://dev.px4.io/ros-raspberrypi-installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        ROS Installation on RPi 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="ros-mavros-installation.html">
+            
+                
+                    <a href="http://dev.px4.io/ros-mavros-installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        MAVROS (MAVLink on ROS)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="ros-mavros-offboard.html">
+            
+                
+                    <a href="http://dev.px4.io/ros-mavros-offboard.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        MAVROS offboard example
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="external-position.html">
+            
+                
+                    <a href="http://dev.px4.io/external-position.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        External Position Estimation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="simulation-gazebo-octomap.html">
+            
+                
+                    <a href="http://dev.px4.io/simulation-gazebo-octomap.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        Gazebo Octomap
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Sensor and Actuator Buses</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="i2c-intro.html">
+            
+                
+                    <span><b>11.1.</b> I2C Bus</span>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="uavcan-intro.html">
+            
+                
+                    <a href="http://dev.px4.io/uavcan-intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        UAVCAN Bus
+                    </a>
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="11.2.1" data-path="uavcan-bootloader-installation.html">
+            
+                
+                    <a href="http://dev.px4.io/uavcan-bootloader-installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.1.</b>
+                        
+                        UAVCAN Bootloader
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2.2" data-path="uavcan-node-firmware.html">
+            
+                
+                    <a href="http://dev.px4.io/uavcan-node-firmware.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.2.</b>
+                        
+                        UAVCAN Firmware Upgrades
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2.3" data-path="uavcan-node-enumeration.html">
+            
+                
+                    <a href="http://dev.px4.io/uavcan-node-enumeration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.3.</b>
+                        
+                        UAVCAN Configuration
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="pwm-gpio-intro.html">
+            
+                
+                    <span><b>11.3.</b> PWM / GPIO</span>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="uart-intro.html">
+            
+                
+                    <span><b>11.4.</b> UART</span>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12">
+            
+                
+                    <span style="opacity: 1; border-bottom: 1px solid #ddd; font-weight: bold; margin-top: 0.5em;">Debugging and Advanced Topics</span>
+                
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="advanced-faq.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-faq.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        FAQ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="advanced-system-console.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-system-console.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        System Console
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="advanced-system-startup.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-system-startup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                        System Boot
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="advanced-configurations.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-configurations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                        Parameters &amp; Configs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="simulation-debugging.html">
+            
+                
+                    <a href="http://dev.px4.io/simulation-debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                        Simulation Debugging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="advanced-debug-values.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-debug-values.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.6.</b>
+                        
+                        Sending Debug Values
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="advanced-fake-gps.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-fake-gps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.7.</b>
+                        
+                        Indoor / Fake GPS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.8" data-path="advanced-camera-trigger.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-camera-trigger.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.8.</b>
+                        
+                        Camera Trigger
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.9" data-path="ekf2_log_replay.html">
+            
+                
+                    <a href="http://dev.px4.io/ekf2_log_replay.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.9.</b>
+                        
+                        EKF2 Log Replay
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.10" data-path="advanced-snapdragon.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-snapdragon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.10.</b>
+                        
+                        Snapdragon Advanced
+                    </a>
+            
+            
+            <ul class="articles" style="padding-left: 0">
+                
+    
+        <li class="chapter " data-level="12.10.1" data-path="advanced-accessing-io-data.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-accessing-io-data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.10.1.</b>
+                        
+                        Accessing I/O Data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.10.2" data-path="advanced-snapdragon_camera.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-snapdragon_camera.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.10.2.</b>
+                        
+                        Camera and optical flow
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12.11" data-path="advanced-realsense_intel.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-realsense_intel.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.11.</b>
+                        
+                        Installing driver for Intel RealSense R200
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.12" data-path="advanced-gimbal-control.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-gimbal-control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.12.</b>
+                        
+                        Gimbal Control Setup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.13" data-path="advanced-switching_state_estimators.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-switching_state_estimators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.13.</b>
+                        
+                        Switching State Estimators
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="advanced-docker.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-docker.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.14.</b>
+                        
+                        Docker Containers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.15" data-path="advanced-jenkins-ci.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-jenkins-ci.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.15.</b>
+                        
+                        Jenkins Continuous Integration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.16" data-path="advanced-licenses.html">
+            
+                
+                    <a href="http://dev.px4.io/advanced-licenses.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.16.</b>
+                        
+                        Licenses
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a class="btn pull-left" aria-label="" href="http://dev.px4.io/#"><i class="fa fa-align-justify"></i></a><a href="http://dev.px4.io/#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="http://dev.px4.io/#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="http://dev.px4.io/#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+    <a href="https://github.com/PX4/Devguide/edit/master/book/README.md" class="btn pull-left" aria-label="EDIT_TOGGLE" target="_blank"><i class="fa fa-pencil-square-o"></i></a>
+
+    <!-- Actions Right -->
+    
+
+    
+    
+    
+    
+    
+
+
+    <!-- Title -->
+    <!--
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >PX4 Development Guide</a>
+    </h1>
+    -->
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <div style="text-align: center">
+<!-- <img src=""> -->
+<h1 style="border: none; font-size: 2.8em; margin-top: 0;" id="px4-development-guide"><a name="px4-development-guide" class="plugin-anchor" href="http://dev.px4.io/#px4-development-guide"><span class="fa fa-link"></span></a>PX4 Development Guide</h1>
+</div>
+
+<aside class="caution"><p>Developers only! This guide is under active development and not intended for consumers.</p>
+</aside>
+
+<p>This guide describes how to work inside the PX4 system architecture. It enables developers to:</p>
+<ul>
+<li>Get an <a href="http://dev.px4.io/starting-initial-config.html">overview of the system</a></li>
+<li>Access and modify the <a href="http://dev.px4.io/concept-flight-stack.html">PX4 Flight Stack</a> and <a href="http://dev.px4.io/concept-middleware.html">PX4 Middleware</a></li>
+<li>Deploy PX4 on <a href="http://dev.px4.io/hardware-snapdragon.html">Snapdragon Flight</a>, <a href="http://dev.px4.io/hardware-pixhawk.html">Pixhawk</a> and <a href="http://dev.px4.io/hardware-pixfalcon.html">Pixfalcon</a></li>
+</ul>
+<h2 id="changelog"><a name="changelog" class="plugin-anchor" href="http://dev.px4.io/#changelog"><span class="fa fa-link"></span></a>Changelog</h2>
+<h3 id="20151006"><a name="20151006" class="plugin-anchor" href="http://dev.px4.io/#20151006"><span class="fa fa-link"></span></a>2015-10-06</h3>
+<ul>
+<li>Initial Release</li>
+</ul>
+<h2 id="license"><a name="license" class="plugin-anchor" href="http://dev.px4.io/#license"><span class="fa fa-link"></span></a>License</h2>
+<p>The PX4 Development Guide is released as <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. See our <a href="https://github.com/PX4/Devguide" target="_blank">Github Repository</a> for more details.</p>
+
+                    
+                    </section>
+                
+                
+
+                    <div class="page-inner-footer">
+                      PX4 Developer Guide copyright © 2015 PX4 Development Team, the source for this guide is available on <a href="https://github.com/PX4/DevGuide" target="_blank">Github</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <a href="http://dev.px4.io/starting-initial-config.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Initial Configuration" style="margin-right: 0px;"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="./PX4 Development Guide_files/app.js"></script>
+
+    
+    <script src="./PX4 Development Guide_files/plugin.js"></script>
+    
+
+    
+    <script src="./PX4 Development Guide_files/lunr.min.js"></script>
+    
+
+    
+    <script src="./PX4 Development Guide_files/search.js"></script>
+    
+
+    
+    <script src="./PX4 Development Guide_files/buttons.js"></script>
+    
+
+    
+    <script src="./PX4 Development Guide_files/buttons(1).js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"mermaid-2":{"theme":"forest"},"scrollablecode":{},"anchors":{},"image-captions":{"variable_name":"_pictures"},"youtube":{},"redirect":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    
+    
+
+    <!-- Google Analytics -->
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+    </script>
+
+<aside class="gitter-chat-embed is-collapsed"><div class="gitter-chat-embed-action-bar"><a class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-pop-out" aria-label="Open Chat in Gitter.im" href="https://gitter.im/PX4/Firmware" target="_blank"></a><button class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-collapse-chat" aria-label="Collapse Gitter Chat"></button></div><div class="gitter-chat-embed-loading-wrapper">
+        <div class="gitter-chat-embed-loading-indicator gitter-icon"></div>
+      </div></aside><a href="https://gitter.im/PX4/Firmware" class="gitter-open-chat-button">Open Chat</a></body></html>

@@ -1,0 +1,151 @@
+\begin{thebibliography}{10}
+
+\bibitem{SANS}
+The classification of hazardous locations and the selection of apparatus for
+  use in such locations.
+\newblock {\em South African National Standards, SANS 10108:2005 Edition 5},
+  2005.
+
+\bibitem{RockwellAutomation}
+{Allen Bradley}.
+\newblock {Classes and Divisions of Hazardous Locations}.
+\newblock Technical report, Rockwell Automation, Milwauke, 2001.
+
+\bibitem{RotorCraftHand}
+F.A. Association.
+\newblock {\em Rotorcraft Flying Handbook}.
+\newblock FAA Handbooks Series. Aviation Supplies \& Academics, Incorporated,
+  2001.
+
+\bibitem{Bohorquez}
+Felipe Bohorquez, Paul Samuel, Jayant Sirohi, Darryll Pines, Lael Rudd, and Ron
+  Perel.
+\newblock {Design, Analysis and Hover Performance of a Rotary Wing Micro Air
+  Vehicle}.
+\newblock {\em Journal of the American Helicopter Society}, 48(2):80, 2003.
+
+\bibitem{Briod2012}
+Adrien Briod, Adam Klaptocz, Jean-christophe Zufferey, and Dario Floreano.
+\newblock {The AirBurr : A Flying Robot That Can Exploit Collisions}.
+\newblock pages 569--574, 2012.
+
+\bibitem{RotorConfig}
+Yihua Cao, Dong Li, Qiang Zhang, and Hang Bian.
+\newblock {Recent Development of Rotorcraft Configuration}.
+\newblock {\em Recent Patents on Engineering}, 1(1):49--70, 2007.
+
+\bibitem{ATEX}
+{European Union}.
+\newblock {ATEX Guidelines}.
+\newblock {\em European Commission}, Edition 4:1--76, 2012.
+
+\bibitem{Bee}
+Fabien Expert and Franck Ruffier.
+\newblock {Controlling docking, altitude and speed in a circular high-roofed
+  tunnel thanks to the optic flow}.
+\newblock {\em IEEE International Conference on Intelligent Robots and
+  Systems}, 7:1125--1132, 2012.
+
+\bibitem{Heli}
+{Federal Aviation Administration}.
+\newblock {Helicopter Components , Sections , and Systems}.
+\newblock In {\em Helicopter Instructor's Handbook}, chapter Chapter 5, page
+  183. US Department of Transportation, Oklahoma, 2012.
+
+\bibitem{US7147182}
+Kenneth~Warren Flanigan.
+\newblock {Gas Powered Tip-Jet-Driven Tilt-Rotor Compound VTOL Aircraft}, 2006.
+
+\bibitem{US6030177}
+Lee~N Hager.
+\newblock {Drive System for a Variable Diameter Tilt Rotor}, 2000.
+
+\bibitem{IECEx}
+{International Electrotechnical Commission}.
+\newblock {IEC System for Certification to Standards relating to Equipment for
+  use in Explosive Atmospheres}.
+\newblock {\em IECEx}, Edition 2:1--15, 2014.
+
+\bibitem{FProof}
+{International Electrotechnical Commission} and {South African National
+  Standards}.
+\newblock {SANS 60079-1 : Electrical apparatus for explosive gas atmospheres
+  Part 1 : Flameproof enclosures " d "}.
+\newblock Technical report, SABS, 2004.
+
+\bibitem{Encaps}
+{International Electrotechnical Commission} and {South African National
+  Standards}.
+\newblock {SANS 60079-18 : Explosive atmospheres Part 18 : Equipment protection
+  by encapsulation " m "}.
+\newblock Technical report, SABS, 2009.
+
+\bibitem{Insafe}
+{International Electrotechnical Commission} and {South African National
+  Standards}.
+\newblock {SANS 60079-11 : Explosive atmospheres Part 11 : Equipment protection
+  by intrinsic safety " i "}.
+\newblock Technical report, SABS, 2012.
+
+\bibitem{Camrad1}
+W.~Johnson.
+\newblock {Camrad - a Comprehensive Analytical Model of Rotorcraft Aerodynamics
+  and Dynamics}.
+\newblock Technical report, NASA, California, 1980.
+
+\bibitem{HC}
+W~B Kay.
+\newblock {Density of Hydrocarbon}.
+\newblock {\em Industrial \& Engineering Chemistry}, 28:1014--1019, 1936.
+
+\bibitem{Leishman}
+J.~Gordon Leishman.
+\newblock {\em Principles of Helicopter Aerodynamics}.
+\newblock Cambridge Aerospace Series. Cambridge University Press, 2nd edition
+  edition, 2006.
+
+\bibitem{US4200252}
+Andrew~H Logan and Richard~E Moore.
+\newblock {Helicopter Antitorque System Using Circulation Control}, 1980.
+
+\bibitem{ThrustCritical}
+Yogianandh Naidoo, R~Stopforth, and Glen Bright.
+\newblock {Rotor Aerodynamic Analysis of a Quadrotor for Thrust Critical
+  Applications}.
+\newblock Technical Report November, University of KwaZulu Natal, Durban, 2011.
+
+\bibitem{Reynold}
+NASA.
+\newblock Reynold's number.
+
+\bibitem{CQAR}
+Paul~Y Oh and William~E Green.
+\newblock {CQAR : Closed Quarter Aerial Robot Design for Reconnaissance ,
+  Surveillance and Target Acquisition Tasks in Urban Areas}.
+\newblock {\em International Journal of Mechanical, Aerospace, Industrial and
+  Mechatronics Engineering}, 1(8):263--270, 2005.
+
+\bibitem{Oh2005}
+Paul~Y Oh, Michael Joyce, and Justin Gallagher.
+\newblock {Designing an Aerial Robot for Hover-and-Stare Surveillance}.
+\newblock {\em IEEE Advanced Robotics}, (12):303--308, 2005.
+
+\bibitem{STAHL}
+{R. STAHL}.
+\newblock {Basics of Explosion Protection}, 2010.
+
+\bibitem{TheoryofFlight}
+Kevin Sablan.
+\newblock Theory of flight.
+
+\bibitem{Dayle}
+Wicks C Wilson R Rorrer~G Welty, J.
+\newblock {\em Fundamentals of Momentum, Heat and Mass Transfer}.
+
+\bibitem{NewMAV}
+La~Young, Ew~Aiken, Jl~Johnson, J~Andrews, J~Klem, and R~Demblewski.
+\newblock {New concepts and perspectives on micro-rotorcraft and small
+  autonomous rotary-wing vehicles}.
+\newblock Technical report, US Army Aviation, 2002.
+
+\end{thebibliography}

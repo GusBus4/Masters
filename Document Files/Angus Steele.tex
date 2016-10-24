@@ -1,0 +1,93 @@
+\documentclass[]{report}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[a4paper, margin = 1in]{geometry}
+
+\usepackage[draft]{todonotes}
+
+
+%Commands used in text, edit here and the document will populate with correct value.
+\newcommand{\projectName}{CEPAD }
+\newcommand{\payLoadMass}{2.5Kgs }
+
+%*******************************TITLE PAGE*******************************%
+
+\title{Development of a Close Quarter Collision Protected Aerial Drone}
+\author{Angus Steele} 
+
+%*******************************START OF DOCUMENT*******************************%
+
+\begin{document}
+
+\maketitle
+
+%*******************************BEGIN THE ABSTRACT*******************************%
+
+\chapter*{Abstract}
+\todo[inline]{Incomplete}
+The need for robots is evident. High costs of maintenance. High costs of shut-downs for personnel Inspections
+
+%*******************************DOCUMENT LISTS*******************************%
+
+\tableofcontents
+%\listoffigures giving issues
+\listoftables
+
+%*******************************SELF GENERATED GLOSSARY*******************************%
+
+\chapter*{Glossary}
+\begin{enumerate}
+%\item Close-Quarter Explosion Protected Aerial Drone (CEPAD)
+\item Micro Aerial Vehicles (MAV)
+\item Unmanned Aerial System (UAS)
+\item Unmanned Aerial Vehicle (UAV)
+%\item IECEx (International Electrotechnical Commission for Explosive Atmospheres)
+%\item ATEX (Atmosph\`{e}res Explosives)
+\item Disk Loading (DL)
+\item Power Loading (PL)
+%\item South African Bureau of Standards (SABS)
+%\item South African National Standards (SANS)
+%\item International Organisation of Standards (ISO)
+\item Degree of Freedom (DOF)
+
+\item On Board Computer (OBC)
+\item Ground Control Station (GCS)
+\end{enumerate}
+
+%*******************************CONSISTENCY RULES*******************************%
+\newpage
+
+\todo[inline]{RULES FOR CONSISTENCY:}
+\todo[inline]{}
+\todo[inline]{Figure always with a capital F}
+\todo[inline]{Equation, use eqref (or put in brackets) and don't say equation unless it's the beginning of a sentence}
+\todo[inline]{Image citation done inline as well as "Taken from (X) in caption"}
+\todo[inline]{Equation citation done inline only}
+\todo[inline]{Section always with a capital S}
+
+\todo[inline]{}
+%*******************************INCLUDE DIFFERENT CHAPTERS*******************************%
+
+
+\include{LiteratureReview}
+\include{SystemRequirements}
+\include{SystemDesign}					
+\include{PlatformDesign}
+\include{ElectronicDesign}
+\include{SoftwareDesign}
+
+%\include{Removed}
+%\include{Templates}
+
+%*******************************BIBLIOGRAPHY COMMANDS*******************************%
+
+\bibliographystyle{plain}
+\bibliography{Angus_Steele,Masters}
+
+\end{document}   
+

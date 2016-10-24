@@ -1,0 +1,266 @@
+\begin{thebibliography}{10}
+
+\bibitem{SANS}
+The classification of hazardous locations and the selection of apparatus for
+  use in such locations.
+\newblock {\em South African National Standards, SANS 10108:2005 Edition 5},
+  2005.
+
+\bibitem{RockwellAutomation}
+{Allen Bradley}.
+\newblock {Classes and Divisions of Hazardous Locations}.
+\newblock Technical report, Rockwell Automation, Milwauke, 2001.
+
+\bibitem{RotorCraftHand}
+F.A. Association.
+\newblock {\em Rotorcraft Flying Handbook}.
+\newblock FAA Handbooks Series. Aviation Supplies \& Academics, Incorporated,
+  2001.
+
+\bibitem{Barry2016}
+Andrew~J Barry.
+\newblock {High-Speed Autonomous Obstacle Avoidance with Pushbroom Stereo by}.
+\newblock pages 1--37, 2016.
+
+\bibitem{Bohorquez}
+Felipe Bohorquez, Paul Samuel, Jayant Sirohi, Darryll Pines, Lael Rudd, and Ron
+  Perel.
+\newblock {Design, Analysis and Hover Performance of a Rotary Wing Micro Air
+  Vehicle}.
+\newblock {\em Journal of the American Helicopter Society}, 48(2):80, 2003.
+
+\bibitem{Collision}
+Adrien Briod, Dario Floreano, Przemyslaw Kornatowski, and Jean-Chirstophe
+  Zuffery.
+\newblock {A Collision-resilient Flying Robot}.
+\newblock {\em Journal of Field Robotics}, 31(4):496--509, 2014.
+
+\bibitem{Briod2012}
+Adrien Briod, Adam Klaptocz, Jean-christophe Zufferey, and Dario Floreano.
+\newblock {The AirBurr : A Flying Robot That Can Exploit Collisions}.
+\newblock pages 569--574, 2012.
+
+\bibitem{RotorConfig}
+Yihua Cao, Dong Li, Qiang Zhang, and Hang Bian.
+\newblock {Recent Development of Rotorcraft Configuration}.
+\newblock {\em Recent Patents on Engineering}, 1(1):49--70, 2007.
+
+\bibitem{MiniFlying}
+Lozano R Dzul~AE Castillo, P.
+\newblock {\em Modelling and control of mini-flying machines}.
+
+\bibitem{RealTime}
+Pedro Castillo, Alejandro Dzul, and Rogelio Lozano.
+\newblock {Real-time stabilization and tracking of a four-rotor mini
+  rotorcraft}.
+\newblock {\em IEEE Transactions on Control Systems Technology},
+  12(4):510--516, 2004.
+
+\bibitem{Daler2013}
+Ludovic Daler, Adam Klaptocz, Adrien Briod, Metin Sitti, and Dario Floreano.
+\newblock {A Perching Mechanism for Flying Robots Using a Fibre-Based
+  Adhesive}.
+\newblock pages 4433--4438, 2013.
+
+\bibitem{ATEX}
+{European Union}.
+\newblock {ATEX Guidelines}.
+\newblock {\em European Commission}, Edition 4:1--76, 2012.
+
+\bibitem{Bee}
+Fabien Expert and Franck Ruffier.
+\newblock {Controlling docking, altitude and speed in a circular high-roofed
+  tunnel thanks to the optic flow}.
+\newblock {\em IEEE International Conference on Intelligent Robots and
+  Systems}, 7:1125--1132, 2012.
+
+\bibitem{Heli}
+{Federal Aviation Administration}.
+\newblock {Helicopter Components , Sections , and Systems}.
+\newblock In {\em Helicopter Instructor's Handbook}, chapter Chapter 5, page
+  183. US Department of Transportation, Oklahoma, 2012.
+
+\bibitem{US7147182}
+Kenneth~Warren Flanigan.
+\newblock {Gas Powered Tip-Jet-Driven Tilt-Rotor Compound VTOL Aircraft}, 2006.
+
+\bibitem{US6030177}
+Lee~N Hager.
+\newblock {Drive System for a Variable Diameter Tilt Rotor}, 2000.
+
+\bibitem{Hoffmann}
+Gabriel~M Hoffmann, Claire~J Tomlin, Haomiao Huang, and Steven~L Waslander.
+\newblock {Quadrotor Helicopter Flight Dynamics and Control : Theory and
+  Experiment ∗}.
+\newblock {\em The American Institue of Aeronautics and Astronautics},
+  (August):1--20, 2007.
+
+\bibitem{How2012}
+Jonathan~P How, Thesis Supervisor, and Eytan~H Modiano.
+\newblock {Design and Control of an Autonomous Variable-Pitch Quadrotor
+  Helicopter}.
+\newblock 2012.
+
+\bibitem{IECEx}
+{International Electrotechnical Commission}.
+\newblock {IEC System for Certification to Standards relating to Equipment for
+  use in Explosive Atmospheres}.
+\newblock {\em IECEx}, Edition 2:1--15, 2014.
+
+\bibitem{FProof}
+{International Electrotechnical Commission} and {South African National
+  Standards}.
+\newblock {SANS 60079-1 : Electrical apparatus for explosive gas atmospheres
+  Part 1 : Flameproof enclosures " d "}.
+\newblock Technical report, SABS, 2004.
+
+\bibitem{Encaps}
+{International Electrotechnical Commission} and {South African National
+  Standards}.
+\newblock {SANS 60079-18 : Explosive atmospheres Part 18 : Equipment protection
+  by encapsulation " m "}.
+\newblock Technical report, SABS, 2009.
+
+\bibitem{Insafe}
+{International Electrotechnical Commission} and {South African National
+  Standards}.
+\newblock {SANS 60079-11 : Explosive atmospheres Part 11 : Equipment protection
+  by intrinsic safety " i "}.
+\newblock Technical report, SABS, 2012.
+
+\bibitem{Camrad1}
+W.~Johnson.
+\newblock {Camrad - a Comprehensive Analytical Model of Rotorcraft Aerodynamics
+  and Dynamics}.
+\newblock Technical report, NASA, California, 1980.
+
+\bibitem{HeliTheory}
+Wayne Johnson.
+\newblock {\em {Helicopter Theory}}.
+\newblock Courier Corporation, Stanford, 1994.
+
+\bibitem{TripleTiltRotor}
+Alp Kacar and Dr~Kutluk Arikan.
+\newblock {ATTITUDE AND ALTITUDE CONTROL OF A TRIPLE TILT-ROTOR UNMANNED AERIAL
+  VEHICLE}, 2013.
+
+\bibitem{HC}
+W~B Kay.
+\newblock {Density of Hydrocarbon}.
+\newblock {\em Industrial {\&} Engineering Chemistry}, 28:1014--1019, 1936.
+
+\bibitem{TandemTiltRotor}
+Farid Kendoul, Isabelle Fantoni, and Rogelio Lozano.
+\newblock {Modeling and control of a small autonomous aircraft having two
+  tilting rotors}.
+\newblock {\em Proceedings of the 44th IEEE Conference on Decision and Control,
+  and the European Control Conference, CDC-ECC '05}, 2005(6):8144--8149, 2005.
+
+\bibitem{Klaptocz2013}
+Adam Klaptocz, Adrien Briod, Ludovic Daler, Jean-christophe Zufferey, and Dario
+  Floreano.
+\newblock {Euler Spring Collision Protection for Flying Robots}.
+\newblock pages 1886--1892, 2013.
+
+\bibitem{Klaptocz2010}
+Adam Klaptocz, Adrien Briod, Jean-christophe Zufferey, and Dario Floreano.
+\newblock {An Indoor Flying Platform with Collision Robustness and
+  Self-Recovery}.
+\newblock pages 3349--3354, 2010.
+
+\bibitem{Klaptocz2012}
+Adam Klaptocz, Ludovic Daler, Adrien Briod, Jean-christophe Zufferey, and Dario
+  Floreano.
+\newblock {An Active Uprighting Mechanism for Flying Robots}.
+\newblock 28(5):1152--1157, 2012.
+
+\bibitem{Leishman}
+J.~Gordon Leishman.
+\newblock {\em Principles of Helicopter Aerodynamics}.
+\newblock Cambridge Aerospace Series. Cambridge University Press, 2nd edition
+  edition, 2006.
+
+\bibitem{US4200252}
+Andrew~H Logan and Richard~E Moore.
+\newblock {Helicopter Antitorque System Using Circulation Control}, 1980.
+
+\bibitem{Modelling}
+Rogelio Lozano Claude~Pégard Luis Rodolfo García~Carrillo, Alejandro Enrique
+  Dzul~López.
+\newblock {\em Modeling the Quad-Rotor Mini-Rotorcraft}.
+\newblock 2013.
+
+\bibitem{Luukkonen}
+Teppo Luukkonen.
+\newblock {Modelling and Control of Quadcopter}.
+\newblock {\em Journal of the American Society for Mass Spectrometry},
+  22(7):1134--45, 2011.
+
+\bibitem{MAHover}
+{Malloy Aeronautics}.
+\newblock {Drone 3 – MA Hoverbike}.
+
+\bibitem{ThrustCritical}
+Yogianandh Naidoo, R~Stopforth, and Glen Bright.
+\newblock {Rotor Aerodynamic Analysis of a Quadrotor for Thrust Critical
+  Applications}.
+\newblock Technical Report November, University of KwaZulu Natal, Durban, 2011.
+
+\bibitem{Reynold}
+NASA.
+\newblock Reynold's number.
+
+\bibitem{CQAR}
+Paul~Y Oh and William~E Green.
+\newblock {CQAR : Closed Quarter Aerial Robot Design for Reconnaissance ,
+  Surveillance and Target Acquisition Tasks in Urban Areas}.
+\newblock {\em International Journal of Mechanical, Aerospace, Industrial and
+  Mechatronics Engineering}, 1(8):263--270, 2005.
+
+\bibitem{Oh2005}
+Paul~Y Oh, Michael Joyce, and Justin Gallagher.
+\newblock {Designing an Aerial Robot for Hover-and-Stare Surveillance}.
+\newblock {\em IEEE Advanced Robotics}, (12):303--308, 2005.
+
+\bibitem{Pounds2006}
+Paul Pounds, Robert Mahony, and Peter Corke.
+\newblock {Modelling and Control of a Quad-Rotor Robot}.
+\newblock {\em East}, 4:44, 2006.
+
+\bibitem{STAHL}
+{R. STAHL}.
+\newblock {Basics of Explosion Protection}, 2010.
+
+\bibitem{BigDog}
+Marc Raibert, Kevin Blankespoor, Gabriel Nelson, and Rob Playter.
+\newblock {BigDog , the Rough-Terrain Quadruped Robot}.
+\newblock {\em The international federation of automatic control}, 17:6--9,
+  2008.
+
+\bibitem{NearWall}
+D.C. Robinson, Hoam Chung, and K.~Ryan.
+\newblock Computational investigation of micro rotorcraft near-wall hovering
+  aerodynamics.
+\newblock In {\em Unmanned Aircraft Systems (ICUAS), 2014 International
+  Conference on}, pages 1055--1063, May 2014.
+
+\bibitem{TheoryofFlight}
+Kevin Sablan.
+\newblock Theory of flight.
+
+\bibitem{MIT}
+Edward~Greitzer Sheila~Widnall, John~Deyst.
+\newblock 16.07 dynamics, fall 2009. (massachusetts institute of technology:
+  Mit opencourseware), 2009.
+
+\bibitem{Dayle}
+Wicks C Wilson R Rorrer~G Welty, J.
+\newblock {\em Fundamentals of Momentum, Heat and Mass Transfer}.
+
+\bibitem{NewMAV}
+La~Young, Ew~Aiken, Jl~Johnson, J~Andrews, J~Klem, and R~Demblewski.
+\newblock {New concepts and perspectives on micro-rotorcraft and small
+  autonomous rotary-wing vehicles}.
+\newblock Technical report, US Army Aviation, 2002.
+
+\end{thebibliography}

@@ -1,0 +1,44 @@
+\chapter{System Requirements}
+This chapter sets to lay out as an introduction to the research. By discussing the end use case of the design, a few critical research questions can be raised. A problem statement will be drawn out by these questions. The chapter will then be concluded with a list of extracted requirements that the system needs to address and ultimately accomplish. \todo{Needs editing}
+
+	\section{Background}
+	Tracked and wheeled robots are beginning to reach their limitations, and society is in need of more complex and versatile vehicles. For a land robot to successfully navigate an extremely complex or cluttered environment, the designer must look at creating a legged robot. Legged designs introduce complexity into any system due to the intensive control theory required. There has been some great progress in legged designs, such as Big Dog created by Boston Dynamics \cite{BigDog}. Nevertheless, deploying currently available legged platforms could cost valuable time with lengthy navigation routines. An alternative approach would be to use an aerial platform that could do overhead surveillance. A drone could complete the required task by flying over the complexities in the operating environment. However, with conventional flight techniques and platforms, almost any sort of collision would cause a failure and the system would not be able to complete its mission. This limits this approach to only work in a situation where the drone would be able to fly over the obstacles. 
+
+	Unfortunately, many of the desired use cases are not open aired and the platform will be required to fly below and even through obstacles to complete its task. A good example of this is in search and rescue missions. An aerial vehicle will be required to navigate through damaged or even collapsed buildings. The same platform could be used in a mining environment. Used to assist miners in assessing unexplored and potentially dangerous areas. 
+	From the late 1800s South Africa has had a massive mining community, with coal, gold and diamond mining being used as a major source of income and job creation for the country. In response to this, two South African research institutes have agreed to a joint collaboration in solving some of these aspects for an underground mine environment. This project involves both The University of Stellenbosch (US) and the Council of Scientific and Industrial research (CSIR). A mining environment has many applications for a collision resistant drone. Such as the mapping of unknown and potentially hazardous environments. The drone would be able to fly in, conduct a survey of the environment and feed that information back to the miners, ensuring a safer work environment while minimising costly delays. However, an underground mine introduces more variables than just potential collisions.
+
+	\section{Problem Statement}
+	There are many potential applications for a drone capable of close quarter flight. After discussions with the CSIR, \projectName was seen as a potential safety platform for use in mines. Unsafe underground territories create a need for unmanned vehicles to do inspections. These areas are currently been mapped by trained professionals who risk their lives going into these unsecured regions. Using land vehicles proves difficult and slow in the complex terrains, creating a need for an alternative solution.
+	
+	Designing any aerial drone introduces many complexities by itself, including obtaining the required aerodynamics to achieve stable flight. There are modules that one can buy to stabilise the craft, but in a confined indoor space, this specification gets enhanced with the need to stabilise itself after a collision or due to flight near surfaces as shown in \cite{}. 
+	Several strategies will need to be investigated to assist the device in navigating these confined environments. The platform should attempt to maintain a set distance from the walls, floors and other obstructions.
+	Instead of implementing complex and unreliable collision avoidance systems this platform will be designed for impact resistance. This project will also make the assumption that the robot will fly into obstacles during operations. This requirement affects the mechanical construction of the vehicle, but as stated above, intensifies the control laws required.
+	For an indoor application it is important that the device can fly in a GPS constrained environment. Although this factor will not be solved in the scope of this project, the design of \projectName should consider some of the factors involved to ensure expansion into that research can be done with relatively small changes to the work accomplished here.
+	
+	To ensure the platform can be extended to industrial applications, certain external factors and peripherals need to be included. The device will need to be able to complete some of this missions autonomously, especially when line of sight and potentially communications are lost.
+	The platform must be able to handle and interface to an array of sensors for each specific mission. The drone will need to be small to increase its accessibility in confined spaces, this will limit payload and flight time. To complete a useful mission the platform must be able to run for at least 20 minutes \todo{Check this time and if stating it is appropriate} or more.
+
+	\section{Application Requirements}
+	The problem statement above briefly introduces certain needs \projectName must solve, the section that follows attempts to address each of these points and define them more specifically as key requirements for the system as a whole. To begin, this statement of requirements can be started by creating two high level objectives, achieving flight in a confined indoor space and providing the ability to complete industrial applications. 
+		
+		\subsection{Controlled Indoor Flight}
+		The identified requirements of the system begin by providing an aerial platform with the ability to fly in an enclosed, confined space. To do this, the platform must be able to position itself from any obstructions above, below or beside itself. This will require that the platform can measure its proximity to the surroundings in all directions. The flight controller must therefore be able to include additional sensor inputs into it's control laws and other real time processes. When a new obstruction is detected it must have the ability to steadily move away and reposition itself, while not straying too far off the mission plan.
+		
+		In order for the platform to complete missions in this environment, the drone needs to withstand the disturbances introduced by flight close to obstructions as well as collisions with these obstructions. This creates a requirement to mechanically protect the platform from irreversible damage caused by a collision. The flight controllers on board must be able to stabilise the platform post collision. Additional requirements are introduced due to disturbances by being in close proximity and not necessarily colliding with, walls, floors and other obstructions. The flight control must be equipped to handle the near wall/ground effect.
+		
+		\subsection{Method of Expansion for Industrial Applications}
+		If the above requirements are met, the platform could be expanded into an array of industrial and research applications. Most of these use cases will require additional modes, sensors and other peripherals. Although not all these factors will be proven for in this project, they must be considered so that expansion into these realms can be done with minimal rework being needed on the platform.
+		
+		Since most of these missions will require some level of autonomy, the chosen flight controls must include an autopilot flight mode that allows the user to switch between manual and automatic mode. There must be a method to send flight data back to a ground control station for real time analysis of the mission. The ground control station should be able to update or halt the mission plan during deployment. Since additional sensors will be required, the platform must include some interface to handle the sensor data and relay the live sensor data back to a ground control station. The platform must provide a mechanism of mounting an array of different sensing equipment on board. This includes accounting for the extra thrust and electrical power requirements added by the sensors. Finally the drone must be able to stay in the air long enough to complete a mission. With indeterminable mission lengths at this point, the device must be able to expand it's battery capacity to account for longer missions.
+	
+
+
+
+
+
+
+
+
+
+
+
