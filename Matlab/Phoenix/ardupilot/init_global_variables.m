@@ -4,7 +4,9 @@
 %   Also handy to initialise the global workspace
 %
 
-load('C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\ardupilot\global.mat')
+clear all;
+
+%load('C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\global.mat')
 
 %% #Defines
 
@@ -64,4 +66,4 @@ pwm_max = 0;
 loop_rate = 0;
 dt = 0;
 
-save('C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\ardupilot\global.mat')
+save('C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\global.mat')

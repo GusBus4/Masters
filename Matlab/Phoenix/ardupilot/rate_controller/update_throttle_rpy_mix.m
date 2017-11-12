@@ -1,11 +1,11 @@
-function throttle_rpy_mix = update_throttle_rpy_mix(throttle_rpy_mix, throttle_rpy_mix_desired, dt)
+function [] = update_throttle_rpy_mix()
 %
 %   update_throttle_rpy_mix - slew set_throttle_rpy_mix to requested value
 %
 
 %AC_ATTITUDE_CONTROL_MAX =  5.0;
 
-load('global.mat');
+load('C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\global.mat')
 
 if (throttle_rpy_mix < throttle_rpy_mix_desired) 
 
