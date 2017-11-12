@@ -1,0 +1,1 @@
+-S -I0 --home -35.363261,149.165230,584,353 --model quad --speedup=1 --defaults /home/gus/Documents/ardupilot/Tools/autotest/default_params/copter_params.parm
