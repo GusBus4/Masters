@@ -3,9 +3,7 @@ function [] = update_throttle_rpy_mix()
 %   update_throttle_rpy_mix - slew set_throttle_rpy_mix to requested value
 %
 
-%AC_ATTITUDE_CONTROL_MAX =  5.0;
-
-load('C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\global.mat')
+global throttle_rpy_mix throttle_rpy_mix_desired dt 
 
 if (throttle_rpy_mix < throttle_rpy_mix_desired) 
 
@@ -19,8 +17,4 @@ elseif (throttle_rpy_mix > throttle_rpy_mix_desired)
     throttle_rpy_mix = throttle_rpy_mix - min(0.5*dt, throttle_rpy_mix-throttle_rpy_mix_desired);
 end
 
-throttle_rpy_mix = math_constrain_value(throttle_rpy_mix, 0.1, AC_ATTITUDE_CONTROL_MAX);
-
-% AC_ATTITUDE_CONTROL_MAX = 100;
-% 
-% save('global.mat');
+throttle_rpy_mix = math_constrain_value(throttle_rpy_mix, 0.1, 1);

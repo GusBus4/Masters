@@ -5,8 +5,8 @@ false = 0;
 %file = 'C:\Users\GusBus\Google Drive\Masters\Design\Software\Flight Logs\PID Tune\2017-04-28 12-02-32.log-2000000.mat';
 %file = 'C:\Users\GusBus\Google Drive\Masters\Flight Logs\Maiden FLight\2017-04-28 08-50-45 (Maiden Test Flight HRF).log-574744.mat';
 %file = 'C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\flight logs\2017-11-01 10-59-52.log-1995833.mat';
-%file = 'C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\flight logs\crash.log-274015.mat';
-file = 'C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\flight logs\rate80stab80proc.log-333727.mat';
+file = 'C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\flight logs\crash.log-274015.mat';
+%file = 'C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\flight logs\rate80stab80proc.log-333727.mat';
 %file = 'C:\Users\GusBus\Documents\Masters\Matlab\Phoenix\flight logs\2017-11-09 12-54-59.log-477460.mat';
 
 load(file);
@@ -22,8 +22,8 @@ analyseBARO         = true;
 analyseSampleTimes  = true;
 
 %Give start and end percentages of the data meant for analysis
-startPercentage = 0;        
-endPercentage = 100;        
+startPercentage = 11;        
+endPercentage = 75;        
 
 %% Extract uSeconds values from RCIN, and calculate the start and end times,
 uSeconds = RCIN(:,2);
