@@ -3,7 +3,7 @@ function [ yaw_thrust_target ] = rate_target_to_motor_yaw( gyro_latest_z, rate_t
 %   Detailed explanation goes here
     
     global yaw_rate_error_rads 
-    global yaw_rate_derivative yaw_rate_derivative_last yaw_rate_kD
+    global yaw_rate_derivative yaw_rate_last_input yaw_rate_kD
     global yaw_rate_integrator yaw_rate_imax yaw_rate_kI 
     global yaw_rate_proportional yaw_rate_kP
     global limit_yaw yaw_rate_filt_hz dt
@@ -11,15 +11,15 @@ function [ yaw_thrust_target ] = rate_target_to_motor_yaw( gyro_latest_z, rate_t
     %% Calculate Error
     yaw_rate_error_rads = rate_target_ang_vel_z - gyro_latest_z;
 
-    %% Pass error to PID contyawer - get_rate_yaw_pid().set_input_filter_d(yaw_rate_error_rads);
-
+    %% Pass error to PID controller - get_rate_yaw_pid().set_input_filter_all(yaw_rate_error_rads);
     % Update filter and calculate derivative
-    derivative = (yaw_rate_error_rads - yaw_rate_derivative_last) / dt;
     rc = 1/(2*pi*yaw_rate_filt_hz);
-    yaw_rate_derivative = yaw_rate_derivative + (dt / (dt + rc)) * (derivative - yaw_rate_derivative);
-    yaw_rate_derivative_last = yaw_rate_error_rads;
+    input_filt_change = (dt / (dt + rc)) * (yaw_rate_error_rads - yaw_rate_last_input);
     
-    %get_rate_yaw_pid().set_desired_rate(rate_target_ang_vel_x) 
+    yaw_rate_last_input = yaw_rate_last_input + input_filt_change;
+    yaw_rate_derivative = input_filt_change / dt;
+    
+    %% get_rate_yaw_pid().set_desired_rate(rate_target_ang_vel_x) 
     %I think this is only for logging purposes
     
     %% Ensure that integrator can only be reduced if the output is saturated
@@ -32,7 +32,7 @@ function [ yaw_thrust_target ] = rate_target_to_motor_yaw( gyro_latest_z, rate_t
         
         if (yaw_rate_kI > 0 && dt > 0)
         
-            yaw_rate_integrator = yaw_rate_integrator + ((yaw_rate_derivative_last * yaw_rate_kI) * dt);
+            yaw_rate_integrator = yaw_rate_integrator + ((yaw_rate_last_input * yaw_rate_kI) * dt);
             
             if (yaw_rate_integrator < -yaw_rate_imax) 
                 
@@ -53,7 +53,7 @@ function [ yaw_thrust_target ] = rate_target_to_motor_yaw( gyro_latest_z, rate_t
     end
     
     %% Get Proportional Component
-    yaw_rate_proportional = yaw_rate_kP * yaw_rate_derivative_last;
+    yaw_rate_proportional = yaw_rate_kP * yaw_rate_last_input;
     
     %% Compute output in range -1 ~ +1
     yaw_thrust_target = yaw_rate_proportional + integrator + yaw_rate_derivative*yaw_rate_kD;

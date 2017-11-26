@@ -107,7 +107,7 @@ if analyseRATE == true
     %Plot RATE Data
     if plotEnable == 1
     figure('Name','RATE Values');
-    plot_data(RATE, RATE_label, firstPoint_RATE, lastPoint_RATE, 1, 12, 's');
+    plot_data(RATE, RATE_label, firstPoint_RATE, lastPoint_RATE, 1, 9, 's');
     end
 end
 

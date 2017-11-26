@@ -3,17 +3,12 @@
 %   Script that resets all global variables to zero.
 %   Also handy to initialise the global workspace
 %
-
-%clear all;
-
 %% #Defines
 
 global AC_ATTITUDE_CONTROL_MAX
 AC_ATTITUDE_CONTROL_MAX = 0.5;
 
 %% System Check Flags
-global armed
-armed = 1;                              %Flag to see if the Copter Armed
 
 %% Throttle & Thrust Commands and Outputs
 global throttle_in 
@@ -40,20 +35,16 @@ throttle_rpy_mix = 0;
 throttle_rpy_mix_desired = 0;
 
 %% Roll Commands and Outputs
-global roll_in
-roll_in = 0;                            %Desired roll control from attitude controllers, -1 ~ +1
-%roll_thrust = 0;                       %Roll thrust input value, +/- 1.0
-
 global roll_factor
-roll_factor(1) = sin(deg2rad(30));                     %Motor 1 roll contribution                    
-roll_factor(2) = sin(deg2rad(30));                     %Motor 2 roll contribution
-roll_factor(3) = sin(deg2rad(30));                     %Motor 3 roll contribution
-roll_factor(4) = sin(deg2rad(30));                     %Motor 4 roll contribution
+roll_factor(1) = -sin(deg2rad(15));                     %Motor 1 roll contribution                    
+roll_factor(2) = sin(deg2rad(15));                     %Motor 2 roll contribution
+roll_factor(3) = sin(deg2rad(15));                     %Motor 3 roll contribution
+roll_factor(4) = -sin(deg2rad(15));                     %Motor 4 roll contribution
 
-global roll_rate_error_rads roll_rate_derivative roll_rate_derivative_last roll_rate_integrator roll_rate_proportional
+global roll_rate_error_rads roll_rate_derivative roll_rate_last_input roll_rate_integrator roll_rate_proportional
 roll_rate_error_rads = 0;
 roll_rate_derivative = 0;
-roll_rate_derivative_last = 0;
+roll_rate_last_input = 0;
 roll_rate_integrator = 0;
 roll_rate_proportional = 0;
 
@@ -64,20 +55,18 @@ roll_rate_kD = 5;
 roll_rate_imax = 200;
 roll_rate_filt_hz = 1/(2*pi);
 
+
 %% Pitch Commands and Outputs
-global pitch_in
-pitch_in = 0;                           %Desired pitch control from attitude controller, -1 ~ +1
-%pitch_thrust = 0;
-
 global pitch_factor
-pitch_factor(1) = cos(deg2rad(30));                    %Motor 1 pitch contribution
-pitch_factor(2) = cos(deg2rad(30));                    %Motor 2 pitch contribution
-pitch_factor(3) = cos(deg2rad(30));                    %Motor 3 pitch contribution
-pitch_factor(4) = cos(deg2rad(30));                    %Motor 4 pitch contribution
+pitch_factor(1) = cos(deg2rad(15));                    %Motor 1 pitch contribution
+pitch_factor(2) = -cos(deg2rad(15));                    %Motor 2 pitch contribution
+pitch_factor(3) = cos(deg2rad(15));                    %Motor 3 pitch contribution
+pitch_factor(4) = -cos(deg2rad(15));                    %Motor 4 pitch contribution
 
-global pitch_rate_error_rads pitch_rate_derivative pitch_rate_integrator pitch_rate_proportional
+global pitch_rate_error_rads pitch_rate_derivative pitch_rate_last_input pitch_rate_integrator pitch_rate_proportional
 pitch_rate_error_rads = 0;
 pitch_rate_derivative = 0;
+pitch_rate_last_input = 0;
 pitch_rate_integrator = 0;
 pitch_rate_proportional = 0;
 
@@ -89,23 +78,20 @@ pitch_rate_imax = 200;
 pitch_rate_filt_hz = 1/(2*pi);
 
 %% Yaw Commands and Outputs
-global yaw_in
-yaw_in = 0;
-%yaw_thrust = 0;
-
 global yaw_factor
 yaw_factor(1) = 0.1;                      %Motor 1 yaw contribution
 yaw_factor(2) = 0.1;                      %Motor 2 yaw contribution
-yaw_factor(3) = 0.1;                      %Motor 3 yaw contribution
-yaw_factor(4) = 0.1;                      %Motor 4 yaw contribution
+yaw_factor(3) = -0.1;                     %Motor 3 yaw contribution
+yaw_factor(4) = -0.1;                     %Motor 4 yaw contribution
 
 global yaw_headroom yaw_allowed
 yaw_headroom = 200;                     %Yaw control is given at least this pwm range
 yaw_allowed = 1;
 
-global yaw_rate_error_rads yaw_rate_derivative yaw_rate_integrator yaw_rate_proportional
+global yaw_rate_error_rads yaw_rate_derivative yaw_rate_last_input yaw_rate_integrator yaw_rate_proportional
 yaw_rate_error_rads = 0;
 yaw_rate_derivative = 0;
+yaw_rate_last_input = 0;
 yaw_rate_integrator = 0;
 yaw_rate_proportional = 0;
 
@@ -125,7 +111,7 @@ limit_yaw = 0;
 %% PWM Limits
 global pwm_min pwm_max spin_min spin_max
 pwm_min = 1039;
-pwm_max = 1865;
+pwm_max = 2000;
 spin_min = 0.15;
 spin_max = 0.95;
 
