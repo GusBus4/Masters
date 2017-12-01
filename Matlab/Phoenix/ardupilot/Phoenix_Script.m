@@ -1,7 +1,7 @@
 clear all
 init_global_variables
 
-plotEnable = 0;
+plotEnable = 1;
 plotLength = 15;                            %Seconds
 global dt
 dt = 0.01;
@@ -12,16 +12,16 @@ pilot_roll_in           = 1500;
 pilot_pitch_in          = 1500;
 pilot_yaw_in            = 1500;
 
-throttle_in             = 0.75;                 %Most Recent Throttle Command
+throttle_in             = 0.75;                 %Most Recent Throttle Command,      0 -> 1.
 
-gyro_latest_x           = 0.2;                  %Current Roll Rotational Speed
-rate_target_ang_vel_x   = 0.1;                  %Desired Roll Rotational Speed        
+gyro_latest_x           = 0.2;                  %Current Roll Rotational Speed,     -1 -> 1
+rate_target_ang_vel_x   = 1.0;                  %Desired Roll Rotational Speed      -1 -> 1  
 
 gyro_latest_y           = 0.2;                  %Current Pitch Rotational Speed
-rate_target_ang_vel_y   = 0.1;                  %Desired Pitch Rotational Speed
+rate_target_ang_vel_y   = 0.2;                  %Desired Pitch Rotational Speed
 
 gyro_latest_z           = 0.2;                  %Current Yaw Rotational Speed
-rate_target_ang_vel_z   = 0.1;                  %Desired Yaw Rotational Speed
+rate_target_ang_vel_z   = 0.2;                  %Desired Yaw Rotational Speed
 
 roll_thrust_target_in   = 0.0;                  %Rate Controller Output Targets
 pitch_thrust_target_in  = 0.0;
@@ -143,6 +143,7 @@ if plotEnable == 1
         xlabel('Seconds');
         ylabel('Delta Servo Values')
         ylim([minDelta, maxDelta])
+        xlim([-1, ((length(rcout_2))*dt) + 1]);
         plot((1:length(rcout_4))*dt, (rcout_2 + rcout_3 - rcout_1 - rcout_4) );
         hold off;    
     end
@@ -155,6 +156,7 @@ if plotEnable == 1
         xlabel('Seconds');
         ylabel('Delta Servo Values')
         ylim([minDelta, maxDelta])
+        xlim([-1, ((length(rcout_2))*dt) + 1]);
         plot((1:length(rcout_4))*dt, (rcout_1 + rcout_3 - rcout_2 - rcout_4) );
         hold off;    
     end
@@ -167,6 +169,7 @@ if plotEnable == 1
         xlabel('Seconds');
         ylabel('Delta Servo Values')
         ylim([minDelta, maxDelta])
+        xlim([-1, ((length(rcout_2))*dt) + 1])
         plot((1:length(rcout_4))*dt, (rcout_1 + rcout_2 - rcout_3 - rcout_4) );
         hold off;    
     end    

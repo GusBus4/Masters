@@ -16,6 +16,7 @@ function [ roll_thrust_target ] = rate_target_to_motor_roll( gyro_latest_x, rate
     % Update filter and calculate derivative
     derivative = (roll_rate_error_rads - roll_rate_last_input) / dt;
     rc = 1/(2*pi*roll_rate_filt_hz);
+    
     roll_rate_derivative = roll_rate_derivative + (dt / (dt + rc)) * (derivative - roll_rate_derivative);
     roll_rate_last_input = roll_rate_error_rads;
     

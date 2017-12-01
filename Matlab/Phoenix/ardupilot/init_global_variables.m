@@ -49,9 +49,9 @@ roll_rate_integrator = 0;
 roll_rate_proportional = 0;
 
 global roll_rate_imax roll_rate_kP roll_rate_kI roll_rate_kD roll_rate_filt_hz
-roll_rate_kP = 0.2;
+roll_rate_kP = 0.15;
 roll_rate_kI = 0.1;
-roll_rate_kD = 5;
+roll_rate_kD = 0.004;
 roll_rate_imax = 200;
 roll_rate_filt_hz = 1/(2*pi);
 
@@ -71,9 +71,9 @@ pitch_rate_integrator = 0;
 pitch_rate_proportional = 0;
 
 global pitch_rate_imax pitch_rate_kP pitch_rate_kI pitch_rate_kD pitch_rate_filt_hz
-pitch_rate_kP = 0.2;
+pitch_rate_kP = 0.15;
 pitch_rate_kI = 0.1;
-pitch_rate_kD = 5;
+pitch_rate_kD = 0.004;
 pitch_rate_imax = 200;
 pitch_rate_filt_hz = 1/(2*pi);
 
@@ -97,9 +97,9 @@ yaw_rate_proportional = 0;
 
 global yaw_rate_imax yaw_rate_kP yaw_rate_kI yaw_rate_kD yaw_rate_filt_hz
 yaw_rate_kP = 0.2;
-yaw_rate_kI = 0.1;
-yaw_rate_kD = 5;
-yaw_rate_imax = 200;
+yaw_rate_kI = 0.02;
+yaw_rate_kD = 0.00;
+yaw_rate_imax = 100;
 yaw_rate_filt_hz = 1/(2*pi);
 
 %% Limits
