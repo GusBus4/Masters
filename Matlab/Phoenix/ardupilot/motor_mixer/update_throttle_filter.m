@@ -1,4 +1,4 @@
-function [] = update_throttle_filter(throttle_in)
+function [output] = update_throttle_filter(throttle_in)
 %%   UPDATE_THROTTLE_FILTER Summary of this function goes here
 %   Detailed explanation goes here
     
@@ -26,6 +26,6 @@ function [] = update_throttle_filter(throttle_in)
         throttle_filter_output = 1.0;
     end
     
-    
+    output = throttle_filter_output;
 end
 
