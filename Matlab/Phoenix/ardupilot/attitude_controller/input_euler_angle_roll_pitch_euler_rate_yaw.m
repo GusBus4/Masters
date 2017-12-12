@@ -51,13 +51,20 @@ function [ roll_rate_target, pitch_rate_target, yaw_rate_target ] = input_euler_
 %     attitude_controller_run_quat();
     
     global attitude_target_quat attitude_target_euler_rate attitude_target_euler_angle_x attitude_target_euler_angle_y attitude_target_euler_angle_z rate_bf_ff_enabled use_ff_and_input_shaping dt
-    
+
     %% Convert from centidegrees on public interface to radians
-	euler_roll_angle    = deg2rad(roll_attitude_target * 0.01);
-    euler_pitch_angle   = deg2rad(pitch_attitude_target * 0.01);
-	euler_yaw_rate      = deg2rad(yaw_rate_target * 0.01);
+% 	euler_roll_angle    = deg2rad(roll_attitude_target * 0.01);
+%     euler_pitch_angle   = deg2rad(pitch_attitude_target * 0.01);
+%     euler_yaw_rate      = deg2rad(yaw_rate_target * 0.01);
+	  euler_roll_angle    = roll_attitude_target;
+      euler_pitch_angle   = pitch_attitude_target;
+      euler_yaw_rate      = yaw_rate_target;   
+
     
-    [attitude_target_euler_angle_x, attitude_target_euler_angle_y, attitude_target_euler_angle_z] = quat2angle(attitude_target_quat);
+    coder.extrinsic('-sync:on', 'quat2angle')
+    coder.extrinsic('-sync:on', 'angle2quat')   
+    
+    [attitude_target_euler_angle_x, attitude_target_euler_angle_y, attitude_target_euler_angle_z] = quat2angle(attitude_target_quat','XYZ');
     
     if (rate_bf_ff_enabled == 1) & (use_ff_and_input_shaping == 1)
     else 
@@ -67,10 +74,10 @@ function [ roll_rate_target, pitch_rate_target, yaw_rate_target ] = input_euler_
         attitude_target_euler_angle_z = attitude_target_euler_angle_z + euler_yaw_rate * dt;
 
         %% Compute quaternion target attitude
-        attitude_target_quat = angle2quat(attitude_target_euler_angle_x, attitude_target_euler_angle_y, attitude_target_euler_angle_z);
+        attitude_target_quat = angle2quat(attitude_target_euler_angle_x, attitude_target_euler_angle_y, attitude_target_euler_angle_z,'XYZ');
 
         %Set rate feedforward requests to zero
-        attitude_target_euler_rate     = [0.0, 0.0, 0.0];
+        attitude_target_euler_rate     = [0.0, 0.0, 0.0]';
         attitude_target_ang_vel        = [0.0, 0.0, 0.0];
     end
     

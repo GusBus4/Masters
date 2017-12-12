@@ -1,20 +1,19 @@
-function [thrust_rpyt_out] = output_armed_stabilizing(roll_target, pitch_target, yaw_target )
+function [thrust_rpyt_out] = output_armed_stabilizing(roll_thrust_target, pitch_thrust_target, yaw_thrust_target )
 %%  OUTPUT_ARMED_STABILIZING Summary of this function goes here
 %   Detailed explanation goes here
     
     %Define Global Variables
-    global throttle_thrust throttle_thrust_best_rpy throttle_avg_max throttle_thrust_max throttle_filter_output
-    global roll_thrust roll_factor
-    global pitch_thrust pitch_factor
-    global yaw_thrust yaw_factor yaw_headroom
-    global limit_throttle_upper limit_roll_pitch limit_yaw
-    
+    global throttle_thrust_best_rpy throttle_avg_max throttle_thrust_max throttle_filter_output %throttle_thrust 
+    global roll_factor %roll_thrust
+    global pitch_factor %pitch_thrust 
+    global yaw_factor yaw_headroom %yaw_thrust 
+
     global yaw_allowed                                              %amount of yaw we can fit in
     yaw_allowed = 1.0;
     
-    roll_thrust     = roll_target;
-    pitch_thrust    = pitch_target;
-    yaw_thrust      = yaw_target;
+    roll_thrust     = roll_thrust_target;
+    pitch_thrust    = pitch_thrust_target;
+    yaw_thrust      = yaw_thrust_target;
     throttle_thrust = throttle_filter_output;
     
     throttle_avg_max = math_constrain_value(throttle_avg_max, throttle_thrust, throttle_thrust_max);
@@ -34,6 +33,7 @@ function [thrust_rpyt_out] = output_armed_stabilizing(roll_target, pitch_target,
     
     throttle_thrust_best_rpy = min(0.5, throttle_avg_max);
     
+    thrust_rpyt_out = [0 0 0 0];
     %% Calculate Roll and Pitch for each motor & Calculate the amount of yaw input that each motor can accept
     for i = 1:4
         

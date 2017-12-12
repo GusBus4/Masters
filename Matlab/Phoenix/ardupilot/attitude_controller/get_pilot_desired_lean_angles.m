@@ -52,5 +52,6 @@ function [ target_roll, target_pitch ] = get_pilot_desired_lean_angles( pilot_ro
     %% Set Output Values
     target_roll = pilot_roll_in;
     target_pitch = pilot_pitch_in;
+
 end
 
