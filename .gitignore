@@ -8,3 +8,5 @@ flight_graphs
 Media
 *.gz
 *.tar
+KalmanFilter*
+ardupilot*
