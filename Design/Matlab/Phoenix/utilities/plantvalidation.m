@@ -3,7 +3,8 @@ close all;
 
 %% variables
 fs=4096;                            %sample frequency
-Ts=0.01;                            %sample time
+Ts=0.0025;                          %sample time - 400Hz
+Outer_Ts = Ts;
 
 %% FRF settings
 nfft = 2*fs;                        %number of windows
@@ -21,11 +22,11 @@ plotEnableyaw = 0;
 plotEnablePosition = 0;
 plotEnableall = 1;
 
-plotEnableForces = 1;
-plotEnableRotationalVelocity = 1;
-plotEnableLeanAngles = 1;
-plotEnableGlobalAcceleration = 1;
-plotEnableBodyAcceleration = 1;
+plotEnableForces = 0;
+plotEnableRotationalVelocity = 0;
+plotEnableLeanAngles = 0;
+plotEnableGlobalAcceleration = 0;
+plotEnableBodyAcceleration = 0;
 plotEnableLinearVelocity = 1;
 plotEnableGlobalPosition = 1;
 
@@ -169,21 +170,21 @@ if plotEnableGlobalPosition == 1
     figure;
     hold on;
     subplot(3,1,1);
-    plot(t,earth_linear_position(:,1),t, refxpos);
-    legend('x', 'xref');
+    plot(t,earth_linear_position(:,1),t, refxpos, 'Linewidth', 1.5);
+    legend('N', 'Nref');
     xlabel('tout in seconds');
-    ylabel('Earth linear position X');
+    ylabel('Earth linear position North');
     title('Global Position');
     subplot(3,1,2);
-    plot(t,earth_linear_position(:,2), t, refypos);
-    legend('y', 'yref')
+    plot(t,earth_linear_position(:,2), t, refypos, 'Linewidth', 1.5);
+    legend('E', 'Eref')
     xlabel('tout in seconds');
-    ylabel('Earth linear position Y');
+    ylabel('Earth linear position East');
     subplot(3,1,3);
-    plot(t,earth_linear_position(:,3), t, refzpos);
-    legend('z', 'zref')
+    plot(t,earth_linear_position(:,3), t, refzpos, 'Linewidth', 1.5);
+    legend('D', 'Dref')
     xlabel('tout in seconds');
-    ylabel('Earth linear position Z');
+    ylabel('Earth linear position Down');
     hold off;
 end
 
