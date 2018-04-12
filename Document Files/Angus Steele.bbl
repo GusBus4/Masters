@@ -1,26 +1,10 @@
 \begin{thebibliography}{10}
 
-\bibitem{SANS}
-The classification of hazardous locations and the selection of apparatus for
-  use in such locations.
-\newblock {\em South African National Standards, SANS 10108:2005 Edition 5},
-  2005.
-
-\bibitem{RockwellAutomation}
-{Allen Bradley}.
-\newblock {Classes and Divisions of Hazardous Locations}.
-\newblock Technical report, Rockwell Automation, Milwauke, 2001.
-
 \bibitem{RotorCraftHand}
 F.A. Association.
 \newblock {\em Rotorcraft Flying Handbook}.
 \newblock FAA Handbooks Series. Aviation Supplies \& Academics, Incorporated,
   2001.
-
-\bibitem{Barry2016}
-Andrew~J Barry.
-\newblock {High-Speed Autonomous Obstacle Avoidance with Pushbroom Stereo by}.
-\newblock pages 1--37, 2016.
 
 \bibitem{Bohorquez}
 Felipe Bohorquez, Paul Samuel, Jayant Sirohi, Darryll Pines, Lael Rudd, and Ron
@@ -62,11 +46,6 @@ Ludovic Daler, Adam Klaptocz, Adrien Briod, Metin Sitti, and Dario Floreano.
   Adhesive}.
 \newblock pages 4433--4438, 2013.
 
-\bibitem{ATEX}
-{European Union}.
-\newblock {ATEX Guidelines}.
-\newblock {\em European Commission}, Edition 4:1--76, 2012.
-
 \bibitem{Bee}
 Fabien Expert and Franck Ruffier.
 \newblock {Controlling docking, altitude and speed in a circular high-roofed
@@ -101,33 +80,6 @@ Jonathan~P How, Thesis Supervisor, and Eytan~H Modiano.
   Helicopter}.
 \newblock 2012.
 
-\bibitem{IECEx}
-{International Electrotechnical Commission}.
-\newblock {IEC System for Certification to Standards relating to Equipment for
-  use in Explosive Atmospheres}.
-\newblock {\em IECEx}, Edition 2:1--15, 2014.
-
-\bibitem{FProof}
-{International Electrotechnical Commission} and {South African National
-  Standards}.
-\newblock {SANS 60079-1 : Electrical apparatus for explosive gas atmospheres
-  Part 1 : Flameproof enclosures " d "}.
-\newblock Technical report, SABS, 2004.
-
-\bibitem{Encaps}
-{International Electrotechnical Commission} and {South African National
-  Standards}.
-\newblock {SANS 60079-18 : Explosive atmospheres Part 18 : Equipment protection
-  by encapsulation " m "}.
-\newblock Technical report, SABS, 2009.
-
-\bibitem{Insafe}
-{International Electrotechnical Commission} and {South African National
-  Standards}.
-\newblock {SANS 60079-11 : Explosive atmospheres Part 11 : Equipment protection
-  by intrinsic safety " i "}.
-\newblock Technical report, SABS, 2012.
-
 \bibitem{Camrad1}
 W.~Johnson.
 \newblock {Camrad - a Comprehensive Analytical Model of Rotorcraft Aerodynamics
@@ -143,11 +95,6 @@ Wayne Johnson.
 Alp Kacar and Dr~Kutluk Arikan.
 \newblock {ATTITUDE AND ALTITUDE CONTROL OF A TRIPLE TILT-ROTOR UNMANNED AERIAL
   VEHICLE}, 2013.
-
-\bibitem{HC}
-W~B Kay.
-\newblock {Density of Hydrocarbon}.
-\newblock {\em Industrial {\&} Engineering Chemistry}, 28:1014--1019, 1936.
 
 \bibitem{TandemTiltRotor}
 Farid Kendoul, Isabelle Fantoni, and Rogelio Lozano.
@@ -226,10 +173,6 @@ Paul~Y Oh, Michael Joyce, and Justin Gallagher.
 Paul Pounds, Robert Mahony, and Peter Corke.
 \newblock {Modelling and Control of a Quad-Rotor Robot}.
 \newblock {\em East}, 4:44, 2006.
-
-\bibitem{STAHL}
-{R. STAHL}.
-\newblock {Basics of Explosion Protection}, 2010.
 
 \bibitem{BigDog}
 Marc Raibert, Kevin Blankespoor, Gabriel Nelson, and Rob Playter.

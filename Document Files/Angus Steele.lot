@@ -1,5 +1,5 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces MAV Weight Data (Adapted from \cite {NewMAV})}}{19}{table.1.1}
+\contentsline {table}{\numberline {1.1}{\ignorespaces MAV Weight Data (Adapted from \cite {NewMAV})}}{16}{table.1.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -7,3 +7,5 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Table representing the end comparison of the two concepts}}{43}{table.4.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Controlled Parameters Units and Limits}}{51}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Measured Moments of Inertia}}{52}{table.6.2}

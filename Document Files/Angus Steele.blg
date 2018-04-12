@@ -1,10 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Angus Steele.aux
 A level-1 auxiliary file: LiteratureReview.aux
-A level-1 auxiliary file: Application.aux
-A level-1 auxiliary file: PlatformDesign.aux
+A level-1 auxiliary file: SystemRequirements.aux
 A level-1 auxiliary file: SystemDesign.aux
-A level-1 auxiliary file: ModellingFlightDynamics.aux
-A level-1 auxiliary file: Removed.aux
+A level-1 auxiliary file: PlatformDesign.aux
+A level-1 auxiliary file: ElectronicDesign.aux
+A level-1 auxiliary file: ControllerDesign.aux
 The style file: plain.bst
 Database file #1: Angus_Steele.bib
 Warning--entry type for "TheoryofFlight" isn't style-file defined
@@ -14,11 +14,12 @@ Warning--entry type for "Reynold" isn't style-file defined
 Warning--entry type for "MIT" isn't style-file defined
 --line 87 of file Angus_Steele.bib
 Database file #2: Masters.bib
-Repeated entry---line 432 of file Masters.bib
+Repeated entry---line 57 of file Masters.bib
  : @article{NearWall
  :                  ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "StreetLight"
+Warning--I didn't find a database entry for "Barry2016"
 Too many commas in name 1 of "Welty, J, Wicks, C, Wilson, R, Rorrer, G" for entry Dayle
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Welty, J, Wicks, C, Wilson, R, Rorrer, G" for entry Dayle
@@ -37,9 +38,6 @@ Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFl
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Luis Rodolfo García Carrillo, Alejandro Enrique Dzul López, Rogelio Lozano, Claude Pégard" for entry Modelling
 while executing---line 1049 of file plain.bst
-Warning--to sort, need author or key in SANS
-Warning--empty author in SANS
-Warning--empty journal in Barry2016
 Warning--empty journal in Briod2012
 Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
 while executing---line 1090 of file plain.bst
