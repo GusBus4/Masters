@@ -1,9 +1,10 @@
-waypoint_ned_data(1, :)     = [0         -2        0];
-waypoint_ned_data(2, :)     = [0         -2       -6];
-waypoint_ned_data(3, :)     = [2         -2       -6];
-waypoint_ned_data(4, :)     = [4         -2       -6];
-waypoint_ned_data(5, :)     = [8         -2       -6];
-waypoint_ned_data(6, :)     = [12        -2       -6];
+waypoint_ned_data = zeros(3, 3)
+
+waypoint_ned_data(1, :)     = [2         2        -6];
+waypoint_ned_data(2, :)     = [5         -5        -6];
+waypoint_ned_data(3, :)     = [2        2        -6];
+% waypoint_ned_data(4, :)     = [12        2        -6];
+% waypoint_ned_data(5, :)     = [4         2        -6];
 % waypoint_ned_data(2, :)     = [5        5       -40];
 % waypoint_ned_data(3, :)     = [-5       5       -40];
 % waypoint_ned_data(4, :)     = [-5       -5      -40];

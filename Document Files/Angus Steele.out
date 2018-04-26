@@ -100,3 +100,26 @@
 \BOOKMARK [1][-]{section.6.7}{Thrust Controller}{chapter.6}% 100
 \BOOKMARK [1][-]{section.6.8}{Global Position Tracking Control}{chapter.6}% 101
 \BOOKMARK [1][-]{section.6.9}{Disturbance Based Observer}{chapter.6}% 102
+\BOOKMARK [0][-]{chapter.7}{Flight Planning}{}% 103
+\BOOKMARK [1][-]{section.7.1}{Flight Control Strategy}{chapter.7}% 104
+\BOOKMARK [2][-]{subsection.7.1.1}{Tracking Control}{section.7.1}% 105
+\BOOKMARK [2][-]{subsection.7.1.2}{Near Wall Effect Control}{section.7.1}% 106
+\BOOKMARK [2][-]{subsection.7.1.3}{Assumptions and Limitations}{section.7.1}% 107
+\BOOKMARK [1][-]{section.7.2}{System Identification}{chapter.7}% 108
+\BOOKMARK [2][-]{subsection.7.2.1}{Mass and Inertia}{section.7.2}% 109
+\BOOKMARK [2][-]{subsection.7.2.2}{Thrust and Moment Profiles}{section.7.2}% 110
+\BOOKMARK [2][-]{subsection.7.2.3}{Instrumentation}{section.7.2}% 111
+\BOOKMARK [2][-]{subsection.7.2.4}{Disturbances}{section.7.2}% 112
+\BOOKMARK [1][-]{section.7.3}{Angular Rate Controller}{chapter.7}% 113
+\BOOKMARK [2][-]{subsection.7.3.1}{Roll}{section.7.3}% 114
+\BOOKMARK [2][-]{subsection.7.3.2}{Pitch}{section.7.3}% 115
+\BOOKMARK [2][-]{subsection.7.3.3}{Yaw}{section.7.3}% 116
+\BOOKMARK [1][-]{section.7.4}{Lean Angle Controller}{chapter.7}% 117
+\BOOKMARK [2][-]{subsection.7.4.1}{Roll}{section.7.4}% 118
+\BOOKMARK [2][-]{subsection.7.4.2}{Pitch}{section.7.4}% 119
+\BOOKMARK [2][-]{subsection.7.4.3}{Yaw}{section.7.4}% 120
+\BOOKMARK [1][-]{section.7.5}{Linear Velocity Control}{chapter.7}% 121
+\BOOKMARK [1][-]{section.7.6}{Tilt Angle Conversions}{chapter.7}% 122
+\BOOKMARK [1][-]{section.7.7}{Thrust Controller}{chapter.7}% 123
+\BOOKMARK [1][-]{section.7.8}{Global Position Tracking Control}{chapter.7}% 124
+\BOOKMARK [1][-]{section.7.9}{Disturbance Based Observer}{chapter.7}% 125
