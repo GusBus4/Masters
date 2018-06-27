@@ -6,6 +6,11 @@ F.A. Association.
 \newblock FAA Handbooks Series. Aviation Supplies \& Academics, Incorporated,
   2001.
 
+\bibitem{Blakelock}
+John~H Blakelock.
+\newblock {\em Automatic Control of Aircraft and Missles}.
+\newblock 1991.
+
 \bibitem{Bohorquez}
 Felipe Bohorquez, Paul Samuel, Jayant Sirohi, Darryll Pines, Lael Rudd, and Ron
   Perel.
@@ -46,13 +51,6 @@ Ludovic Daler, Adam Klaptocz, Adrien Briod, Metin Sitti, and Dario Floreano.
   Adhesive}.
 \newblock pages 4433--4438, 2013.
 
-\bibitem{Bee}
-Fabien Expert and Franck Ruffier.
-\newblock {Controlling docking, altitude and speed in a circular high-roofed
-  tunnel thanks to the optic flow}.
-\newblock {\em IEEE International Conference on Intelligent Robots and
-  Systems}, 7:1125--1132, 2012.
-
 \bibitem{Heli}
 {Federal Aviation Administration}.
 \newblock {Helicopter Components , Sections , and Systems}.
@@ -62,6 +60,12 @@ Fabien Expert and Franck Ruffier.
 \bibitem{US7147182}
 Kenneth~Warren Flanigan.
 \newblock {Gas Powered Tip-Jet-Driven Tilt-Rotor Compound VTOL Aircraft}, 2006.
+
+\bibitem{quaternion}
+K~Gro{\ss}ekatth{\"{o}}fer and Z~Yoon.
+\newblock {Introduction into quaternions for spacecraft attitude
+  representation}.
+\newblock {\em TU Berlin}, pages 1--16, 2012.
 
 \bibitem{US6030177}
 Lee~N Hager.
@@ -79,12 +83,6 @@ Jonathan~P How, Thesis Supervisor, and Eytan~H Modiano.
 \newblock {Design and Control of an Autonomous Variable-Pitch Quadrotor
   Helicopter}.
 \newblock 2012.
-
-\bibitem{Camrad1}
-W.~Johnson.
-\newblock {Camrad - a Comprehensive Analytical Model of Rotorcraft Aerodynamics
-  and Dynamics}.
-\newblock Technical report, NASA, California, 1980.
 
 \bibitem{HeliTheory}
 Wayne Johnson.
@@ -121,6 +119,10 @@ Adam Klaptocz, Ludovic Daler, Adrien Briod, Jean-christophe Zufferey, and Dario
 \newblock {An Active Uprighting Mechanism for Flying Robots}.
 \newblock 28(5):1152--1157, 2012.
 
+\bibitem{Lee2012}
+Daewon Lee, Asad Awan, Suseong Kim, and H.~Jin Kim.
+\newblock {Adaptive Control for a VTOL UAV Operating Near a Wall}, 2012.
+
 \bibitem{Leishman}
 J.~Gordon Leishman.
 \newblock {\em Principles of Helicopter Aerodynamics}.
@@ -147,6 +149,12 @@ Teppo Luukkonen.
 {Malloy Aeronautics}.
 \newblock {Drone 3 – MA Hoverbike}.
 
+\bibitem{Moller2015}
+Paul M{\"{o}}ller.
+\newblock {\em {Automated Landing of a Quadrotor Unmanned Aerial Vehicle on a
+  Translating Platform}}.
+\newblock PhD thesis, Stellenbosch, 2015.
+
 \bibitem{ThrustCritical}
 Yogianandh Naidoo, R~Stopforth, and Glen Bright.
 \newblock {Rotor Aerodynamic Analysis of a Quadrotor for Thrust Critical
@@ -156,13 +164,6 @@ Yogianandh Naidoo, R~Stopforth, and Glen Bright.
 \bibitem{Reynold}
 NASA.
 \newblock Reynold's number.
-
-\bibitem{CQAR}
-Paul~Y Oh and William~E Green.
-\newblock {CQAR : Closed Quarter Aerial Robot Design for Reconnaissance ,
-  Surveillance and Target Acquisition Tasks in Urban Areas}.
-\newblock {\em International Journal of Mechanical, Aerospace, Industrial and
-  Mechatronics Engineering}, 1(8):263--270, 2005.
 
 \bibitem{Oh2005}
 Paul~Y Oh, Michael Joyce, and Justin Gallagher.
@@ -186,15 +187,6 @@ D.C. Robinson, Hoam Chung, and K.~Ryan.
   aerodynamics.
 \newblock In {\em Unmanned Aircraft Systems (ICUAS), 2014 International
   Conference on}, pages 1055--1063, May 2014.
-
-\bibitem{TheoryofFlight}
-Kevin Sablan.
-\newblock Theory of flight.
-
-\bibitem{MIT}
-Edward~Greitzer Sheila~Widnall, John~Deyst.
-\newblock 16.07 dynamics, fall 2009. (massachusetts institute of technology:
-  Mit opencourseware), 2009.
 
 \bibitem{Dayle}
 Wicks C Wilson R Rorrer~G Welty, J.

@@ -1,11 +1,12 @@
-waypoint_ned_data = zeros(3, 3)
+waypoint_ned_data = zeros(6, 3)
 
-waypoint_ned_data(1, :)     = [2         2        -6];
-waypoint_ned_data(2, :)     = [5         -5        -6];
-waypoint_ned_data(3, :)     = [2        2        -6];
-% waypoint_ned_data(4, :)     = [12        2        -6];
-% waypoint_ned_data(5, :)     = [4         2        -6];
-% waypoint_ned_data(2, :)     = [5        5       -40];
+waypoint_ned_data(1, :)     = [0          0         -6];
+waypoint_ned_data(2, :)     = [10         1.5         -6];
+waypoint_ned_data(3, :)     = [15.5       -15         -6];
+waypoint_ned_data(4, :)     = [10       -18         -6];
+waypoint_ned_data(5, :)     = [0          0         -6];
+waypoint_ned_data(6, :)     = [7         -7         -6];
+
 % waypoint_ned_data(3, :)     = [-5       5       -40];
 % waypoint_ned_data(4, :)     = [-5       -5      -40];
 % waypoint_ned_data(5, :)     = [5        -5      -40];

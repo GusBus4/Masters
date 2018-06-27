@@ -1,4 +1,4 @@
-\documentclass[]{report}
+\documentclass[12pt]{report}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -13,7 +13,7 @@
 
 %Commands used in text, edit here and the document will populate with correct value.
 \newcommand{\projectName}{CEPAD }
-\newcommand{\payLoadMass}{2.5Kgs }
+\newcommand{\payLoadMass}{3.352Kgs }
 
 %*******************************TITLE PAGE*******************************%
 
@@ -73,14 +73,15 @@ The need for robots is evident. High costs of maintenance. High costs of shut-do
 \todo[inline]{}
 %*******************************INCLUDE DIFFERENT CHAPTERS*******************************%
 
-
+\include{Introduction}
 \include{LiteratureReview}
-\include{SystemRequirements}
-\include{SystemDesign}					
+%\include{SystemDesign}					
 \include{PlatformDesign}
-\include{ElectronicDesign}
+\include{SystemIdentification}
 \include{ControllerDesign}
-\include{FlightPlanning}
+\include{ObstacleAvoidance}
+\include{FlightTests}
+\include{Conclusions}
 
 %\include{Removed}
 %\include{Templates}

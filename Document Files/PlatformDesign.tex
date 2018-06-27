@@ -1,214 +1,340 @@
 \chapter{Platform Design}
-Obtaining successful flight results with an aerial vehicle will need both precise control algorithms and a robust platform. This chapter contains the technical details of how the final platform decisions was made. The final design will be compared and validated against the proposed outcomes stated above. 
+This chapter contains the technical details of how the final hardware decisions were made and begins by giving an overview of the total system design. After the high level design has been done, this chapter looks into different platform designs and based on empirical data, chooses the best suited rotor configuration. Once the platform construction has been decided, a look into the required electronics is done. The chapter is concluded with a summary of the platform decisions made and used in the simulation.
 
-\section{Factors Affecting Design Decisions}
-\todo[inline]{not sure about the name of this section}
-Before a proper analysis can be done, certain criteria need to be outlined. These include aspects of the project such as the required flight time and manoeuvring decisions. These factors have been drawn up from the proposed research questions and end use case.
+The final design will be modelled and used to validate the proposed outcomes for this work. Although this chapter will discuss the various aspects of a quadrotor, it will focus on the components required for creating an accurate simulation of the system.
 
-\subsection{Physical Restrictions and Requirements}
-One of the major components \projectName will have to overcome is to navigate these unknown areas and not only survive collisions, but also reject the disturbances introduced by being close to the walls. Since mine shafts are predominantly long and narrow, the same approach will be looked at for the design of the drone. Hence the platform will be made to be long and narrow. The unique disturbances found in a mine also help define the end configuration as it needs to be able to withstand these disturbances.
-Since the drone will be required to navigate very confined spaces, the smaller the drone the better. The minimum size of the drone is limited by the need for adequate flight time as well as payload capacities.
+	\section{System Hardware Architecture}
+	The following chapter gives an overview behind the system design of \projectName. The chapter begins by working through the hardware system architecture diagram shown in Figure \ref{IM_SystemArchitecture}. The first consideration is the size and mounting needs of the system, provided by the mechanical platform. This gives a good start to elaborate on the needed capabilities of the proposed method of propulsion. The next considerations are the electronic modules required to run all the necessary peripherals. Finally, to interface all these blocks together will require both software and control architectures. This chapter will discuss the requirements for each section and expand on how the interfacing for the entire system will function.
+	
+	The system architecture for \projectName is laid out below in Figure \ref{IM_SystemArchitecture}. The hardware system comprises of 3 main subsystems, namely Mechanical Construction, Propulsion and Electronics. The role each subsystem plays in meeting the system requirements is discussed in more detail below.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height = 10cm]{../Design/System/SystemArchitecture/SystemArchitecture.jpg}
+		\caption{System Architecture}
+		\label{IM_SystemArchitecture}
+	\end{figure}
 
-\subsection{Manoeuvring Decisions}
-The manoeuvring decisions are dependant on the type of environment and type of missions required by the platform. These decisions influence the final design of the craft.
-The end use case for \projectName will include mapping of unknown areas. To complete this, it will simplify the procedure if the drone keeps it's orientation during flight. Due to the nature of the environment, fast speeds will not be used regularly. Therefore \projectName will be designed to have slow, steady and controlled movements. More is discuss in the flight strategy section.
+		\subsection{Platform Construction}
+		The platform is the physical embodiment of the craft. In this context this includes the mechanical construction of the craft, as well as the flight generating components.
+		
+			\subsubsection{Mechanical Construction}
+			The mechanical construction of the system introduces size restrictions for the rest of the system. It should provide adequate mounting for the necessary peripherals described in the sections following. The structure needs to protect the rotors from collisions be means of a shroud and include lightweight landing gear. The chassis must also be such that the weight is distributed as symmetrically as possible. The propulsion system must be housed and provided with rigidity for steady flight control.
+			
+			\subsubsection{Propulsion and Flight Characteristics}
+			The propulsion system comprises of the motors and propellers. This subsystem needs to supply enough thrust and overhead for steady control, as well as enough lifting capacity to carry any additional, mission sensors. The craft should be able to handle a \payLoadMass payload. To ensure capable disturbance rejection, the total maximum thrust should be no less than $150\%$ of hover.
+			
+			The craft must efficiently hover and fly at low speeds. The craft should have multiple control surfaces to accurately counter disturbances. Due to the intended use case, the craft will fly with a set orientation and thus does not require the abilities for sharp turns of manoeuvres.
+		
+		
+		\subsection{Electronics Interface}
+		At the core of any reliable robotic platform is a thoroughly planned electronics system, for \projectName this is the most complex subsystem containing the most modules. It is responsible for all intelligence and power generation. This subsection breaks this subsystem into more discrete parts. It begins by separating the two computing modules into real time and non-real time components. The real time components include some of the on board sensors which are required for stable and fast control theories, which all feed into the flight controller. For the drone to successfully navigate an environment it will need to better understand it's surroundings. The flight controller will analyse this data and based on flight software will control the electronic speed controllers. The on board computer will process and handle all non flight critical sensor information and can be considered as the mission computer. The OBC must also have provision to connect to a sensor pack via a predetermined interface. Another useful and necessary function, will be the ability to illuminate a dark area. 
+		
+		The network design will also consist of 2 discrete wireless links. Each link is dedicated to one of the computing modules. The real time node will be interfaced through a low bandwidth, high range and high reliability interface. With the non-real time node linking to the high bandwidth interface which will have lower range and reliability requirements. Both of these interfaces will link to a ground station of some sort.
+		
+		No system can operate without a sufficient power source. In the case of any robotic system it is important that every aspect of the design is optimised. To assist with that an electrical analysis is done to help pinpoint some of the major power consuming components. This analysis will also help to evaluate the required power source. The capacity of the power supply is limited by weight and should be optimised to the lifting capacity of the platform. Once the battery chemistry has been decided upon, work can be done to design a robust power management system. Limiting the leakage of every subsystem as well as choosing efficient modules are both part of an effective power management system. To complete the subsystem will require some form of power monitoring as well as an efficient charging scheme.
+		
+			\subsubsection{Flight Controller}
+			The flight controller is responsible for handling all the flight critical sensor data. Using a mixing algorithm it will then output signals to the electronic speed controllers. There are multiple options for flight controllers, all tailored to different applications, platforms and flying styles. Each option has there own level of reconfigurability. For this application it is important that the chosen flight controller allows access to both the inner control loops as well as allows additional sensor data to be added into the architecture. The flight controller is also responsible for handling the pilot commands sent via the radio link, as well as transmitting in flight diagnostic information back to the ground control station.
+			
+			\subsubsection{Electronic Speed Controller}
+			The flight controller will take in information from some of the on board sensors. It then sends a motor control command based on that information to the electronic speed controller (ESC), which directly controls the speed of each motor. This part needs to be chosen based on the maximum amount of current it can handle. At 100\% throttle the current draw of the motor should not exceed 75\% of the ESC's limit. Another important consideration is the ESC's refresh rate and computing speed. The flight controller will be rapidly sending data to the ESC. The quicker the module can respond, the more accurately the platform will fly. 
+			
+			Each ESC has built in intelligence and will have their own dedicated firmware. Most ESCs will come with built in firmware, which must be tailored for a quadcopter configuration.
+			
+			\subsubsection{On Board Computer}
+			Where the flight controller ensures the craft maintains steady flight, the On Board Computer (OBC) handles all higher level processing. This will include interfacing to the rest of the on board sensors, the sensor pack as well as handling the high bandwidth networking. The OBC should not be required for flight purposes, and can thus be considered as a dedicated mission computer. 
+			The OBC should be as light weight as and low power as possible. The OBC must be sufficiently powerful to do real time analysis of camera data. The OBC must have multiple communication ports to easily interface to other sensors.
+			
+			\subsubsection{Networking}
+			This subsystem will handle control commands, flight and diagnostic data or real time sensing information. As described above these have been separated into two distinct categories, low and high bandwidth or alternatively named as high and low range. 
+		
+				\paragraph{Low Bandwidth, High Range}
+				A reliable connection is an important factor to ensure a successful mission the hardware will be validated against it's range, speed, packet loss and ultimately reliability.
+				
+				The design will incorporate multiple communication peripherals as a fail-safe in case communications are lost to the base station. The pilot needs full control through it and any relevant data that needs to be transmitted will be sent here as well.
+				
+				\paragraph{High Bandwidth, Low Range}
+				The higher bandwidth connection will be used for higher level mission control and data. The high bandwidth link should be able to transmit large streams of data between the craft and the ground control station. 
+		
+			\subsubsection{On Board Sensors}
+		
+			\subsubsection{Sensor Pack}
+			The actual sensor pack in question will remain generic. So that the platform can cater for an array of sensing devices and applications. To ensure compatibility, the sensor pack needs to be able to powered as well as communicated to. It will have access to interface directly to the OBC.
+			
+			\subsubsection{Power Supply}
+		
+	\section{Platform Construction}			
+		\subsection{Factors Affecting Design Decisions}
+		\todo[inline]{not sure about the name of this section}
+		Before a proper analysis can be done, certain criteria need to be outlined. These include aspects of the project such as the required flight time and manoeuvring decisions. These factors have been drawn up from the proposed research questions and end use case.
+			\subsubsection{Physical Restrictions and Requirements}
+			One of the major components \projectName will have to overcome is to navigate these unknown areas and not only survive collisions, but also reject the disturbances introduced by being close to the walls. Since mine shafts are predominantly long and narrow, the same approach will be looked at for the design of the drone. Hence the platform will be made to be long and narrow. The unique disturbances found in a mine also help define the end configuration as it needs to be able to withstand these disturbances.
+			Since the drone will be required to navigate very confined spaces, the smaller the drone the better. The minimum size of the drone is limited by the need for adequate flight time as well as payload capacities.
+			
+			\subsubsection{Manoeuvring Decisions}
+			The manoeuvring decisions are dependant on the type of environment and type of missions required by the platform. These decisions influence the final design of the craft.
+			The end use case for \projectName will include mapping of unknown areas. To complete this, it will simplify the procedure if the drone keeps it's orientation during flight. Due to the nature of the environment, fast speeds will not be used regularly. Therefore \projectName will be designed to have slow, steady and controlled movements. More is discuss in the flight strategy section.
+			
+			\subsubsection{Disturbances}
+			As described above the discussions with CSIR lead to the decision to attempt to use this drone in a mine. Apart from the difficulty of navigating and manoeuvring through an unmapped area there are other disturbances introduced into the system. 
+			Due to the nature of the tunnels, wind gusts are created that funnel through these passageways. They can reach speeds of up to \todo{Insert Gusts Speed and reference}. Due to the direct relationship between thrust and initial velocity as shown in \eqref{EQ_ThrustMass} any change in wind speed through the rotors will unbalance them.
+			The effect of coming close to a wall of floor has been discussed in the literature study. The near wall effect will also create an imbalance that creates a moment towards the wall. 
+			Since the areas will be unknown, collisions and bumps are extremely likely, if not inevitable. The drone must be able to withstand a collision and maintain it's orientation as best as possible.
+			
+			\subsubsection{Thrust Overhead}
+			The total overhead of a rotorcraft is a percentage above the thrust required for hover. This value determines a craft's ability to manoeuvre, with a higher value giving it more freedom and a greater ability to resist disturbances. With these benefits the system does become very sensitive and more difficult to control and stabilise. Since the craft will be in confined narrow passages, the craft does not need to be fast moving. Rather a "slow and steady" pace will be approached. The craft does however need enough power to counteract the disturbances described above. These considerations lead to a value of $150\%$, with $100\%$ being enough thrust to hover. \todo[inline]{Back this up with references from other designs, spoken about later consider removing from here. Maybe reference botom section?}
+			
+			\subsubsection{Flight Time}
+			Flight time is dependant on efficiency/power requirements of the system as well as the capacity of the on-board power source. This is where the designer runs into a catch 22. By adding a larger power source the weight is increased and therefore the platform requires more power to keep itself aloft. Weight is a determining factor for any aerial system and influences flight time, for this reason the weight of every subsystem must be optimised. To ensure the craft can complete a mission it will need a decent flight time. Initial conversations have set 30 minutes as the bottom limit. The original platform might not be able to reach this goal, but once the platform is performing adequately adjustments can be made to the system to optimise weight and power consumption. 
+		\subsection{Chosen Concepts}
+		The traditional configurations of drones are incapable of handling disturbances introduced by being in a confined space and will continue to struggled to overcome this problem\todo{Maybe a bit harsh, but need to validate why we're not using a standard design}. For this reason a few unique designs were considered and a lot subsequently rejected. Although some rejected ideas did help define the final configuration.
+		\todo[inline]{For the comparison, figures were obtained while the following was assumed: Thrust to RPM linear. RPM to current linear. Make sure they are correct}
+		
+		After much thought two concepts were selected as final candidates. This next section walks through some of the important factors considered and ultimately, why certain decisions were made. 
+		On the left of Figure \ref{IM_UnlikeSizes} represents the \textit{"Unlike Size Quad"} and the right of Figure \ref{IM_UnlikeSizes} is the \textit{"Overlapping Quad"}. 
+		\begin{figure}[H]
+		\centering
+		\includegraphics[height = 6cm]{Images/Design/UnlikeSizes}
+		\includegraphics[height = 6cm]{Images/Design/Overlapping}
+		\caption{a)Rendering of initial concept of the unlike rotor size quadcopter and b) Malloy Aeronautics Hoverbike Concept (Picture taken \cite{MAHover}).}
+		\label{IM_UnlikeSizes}
+		\end{figure}
+			\subsubsection{Concept 1 - The Overlapping Quad}
+			The overlapping quad is a concept pursued by Malloy Aeronautics \cite{MAHover}. They used the design in an initial concept of their hover bike. The design uses an X-formation for it's rotors, except the rotors are brought in to limit the width of the craft to the point that they overlap, as shown in Figure \ref{IM_UnlikeSizes}. Each overlapping pair will have both spin directions, this feature is shown in Figure \ref{IM_OverlappingPair}.
+		
+			\begin{figure}[H]
+			\centering
+			\includegraphics[height = 6cm]{Images/Design/OverlappingVD}
+			\caption{Overlapping concept, visual representation of rotor pairs. Image modified from \cite{MAHover}}
+			\label{IM_OverlappingPair}
+			\end{figure}
+			If this configuration is selected, there are still other design questions that need to be answered. Overlapping rotors introduce an inefficiency into the system. Figure \ref{IM_SeperationGraph}, illustrates how the separation affects both the overlap function as well as the total power as a percentage.
+			\begin{figure}[]
+			\centering
+			\includegraphics[height = 6cm]{Images/Design/SeperationGraph}
+			\caption{Graph representing the effects of separation distance in an overlapping quad}
+			\label{IM_SeperationGraph}
+			\end{figure}
+			The length of the craft needs to also be decided, this aspect only becomes critical once payload requirements are factored in. As stated above, this design was an initial concept for a hoverbike with the intended payload capacity of a human. So a big positive to this design is the power to size ratio. This benefit can be utilised through handling larger payloads, or a larger battery pack increasing total flight time.
 
-\subsection{Disturbances}
-As described above the discussions with CSIR lead to the decision to attempt to use this drone in a mine. Apart from the difficulty of navigating and manoeuvring through an unmapped area there are other disturbances introduced into the system. 
-Due to the nature of the tunnels, wind gusts are created that funnel through these passageways. They can reach speeds of up to \todo{Insert Gusts Speed and reference}. Due to the direct relationship between thrust and initial velocity as shown in \eqref{EQ_ThrustMass} any change in wind speed through the rotors will unbalance them.
-The effect of coming close to a wall of floor has been discussed in the literature study. The near wall effect will also create an imbalance that creates a moment towards the wall. 
-Since the areas will be unknown, collisions and bumps are extremely likely, if not inevitable. The drone must be able to withstand a collision and maintain it's orientation as best as possible.
+			\subsubsection{Concept 2 - The Unlike Size Quad}
+			The unlike size quad is an original design that uses the standard cross formation, except it has two pairs of different size rotors. This means that the counter rotating pairs will be set up as shown in Figure \ref{IM_UnlikeSizePair}, with each rotation direction having one big and one small rotor. 
+			
+			To maintain a common DL in the system the thrust requirement will be lower on the smaller blades and larger on the bigger blade. The smaller the side rotors get, the higher the thrust requirements of the larger rotors become, this limits the rotor size ratio. Initial calculations, factoring in thrust overhead, overall size of the craft and minimum thrust allowed to rotors, set the ratio between $65\% - 80\%$.  When approaching the lower bound, the thrust requirement for hover alone leaves very little room for manoeuvring or disturbance rejection. The upper bound reaches a point where the size difference is so negligible the design's narrow intent is lost.
+			
+			\begin{figure}[H]
+			\centering
+			\includegraphics[height = 6cm]{Images/Design/UnlikeSizeRotorPair}
+			\caption{Unlike Size Quad visual representation of rotor pairs}
+			\label{IM_UnlikeSizePair}
+			\end{figure}
+			
+			The second important choice is how far to put the rotors away from the centre. As the craft gains translational speed, the air doesn't come in directly from the top any more as shown in \ref{IM_MomentumTheoryAirFlow}. Instead it now starts to come in at an angle. As the craft then manoeuvres and changes it's orientation, the air starts coming in at more extreme angles. If the electronics housing has a lot of height it can interfere with the wake boundary and create an inefficiency. This inefficiency is also based on how far the rotors are from the housing. A similar concept is described in Section \ref{SSSECT_NearGroundEffect} Therefore, before this decision can be made the limits of how small the centre electronics housing needs to be decided. 
+			
+			Through discussions and observations of current systems a minimum limit of $75mm \times 75mm$ was set. To avoid overlap, the distance from the centre of the big rotor and the centre of the craft will be at the very least $R$. Including space for the housing increases this.
+			
+			The left and right placement is where the originality comes in. Since the craft needs to remain narrow, the side rotors can be brought in as well as shrunk. This would require pushing the two larger rotors slightly more out. Bringing the side rotors in closer to the middle housing will reduce efficiency, so a compromise must be chosen between width and efficiency. Since the side rotors don't contribute as much to the system as their bigger counterparts they have the option of a lower separation distance. The lower separation distance can also be justified by the lower need and use of roll moments and side translations.
+			
+			Lastly the rotor pitch angle needs to be selected. The major contributing factor of any rotor (besides it's size) is it's pitching angle. As the pitch angle changes, so does the lift to drag ratio. Generally a craft would always want a higher lift to drag ratio, in this case however the side rotors might have a lower lift to drag ratio so they can help counter the torque applied by the larger blades more effectively.
+	
+		\subsection{Concept Comparison}
+		After being introduced to the two concepts, they will now be compared based on certain factors. This comparison includes hover efficiency, thrust and electrical power. Lastly size and manoeuvrability are grouped together since they inherently affect each other. The final decision will need to be made with certain assumptions in mind, that must be validated through testing further down the line. These assumptions as well as the method of comparison are described below. 
+	
+			\subsubsection{Assumptions and Method}
+			Since both designs use 4 rotors they can be compared relative to a well known design, the standard quadrotor. For each configuration certain parameters need to be decided before a comparison can be done. Using formulas and plots in Microsoft Excel\texttrademark, both designs could be visualised rudimentary as shown in Figure \ref{IM_Excel}.
+			
+			\begin{figure}[H]
+			\centering
+			\includegraphics[width = 15cm]{Images/Design/Excel}
+			\caption{Rudimentary Visualisation of the two concepts using Microsoft Excel\texttrademark}
+			\label{IM_Excel}
+			\end{figure}
+			
+			If hover is a thrust of $100\%$, the overhead was set at $50\%$ \todo{Try and find papers stating other values I want to validate this decision} of that, to a total of $150\%$. Minimum thrust per rotor was set at $20\%$. The mass in question includes provision for a sensor pack of undecided mass. 
+			
+			The two designs had different decisions that needed to be made. After a bit of trial and error the unlike size quad had it's small rotors set at $75\%$ of the larger ones, this decision is explained further in the text. Just to give a quantifiable reference, R was set at $254mm$. With that assumption the unlike size quad moves it's side rotors in to a distance of $300mm$ and the larger rotors were moved to $508mm = 2R$ away. The overlapping quad set a separation distance of $350mm$ which created an overlap factor of $m = 19.82\%$. 
+			
+			These values were used to do the following analysis.
+	
+	
+			\subsubsection{Rotor Area and Disk Loading}
+			If a rotor size of $R$ is assumed for the rotors\footnote{The big rotors in the case of the unlike size quad} then the total area for a standard quad will be $A_{std} = 4 \pi R^2$. Based on simple geometry, the reduction in radius of the two smaller rotors leads of the unlike size quad leads to a decrease in area. Using $75\%$ this is calculated to $78.13\% of A$. 
+			
+			As described in \eqref{EQ_Overlap}, the overlapping quad introduces a reduction in total disk area, with an overlap factor of $19.82\%$ leaves a total area of $80.18\%$. Since the thrust requirements are assumed the same, the disk loading ratios will be exactly the same as the area ratios.
+			
+			\subsubsection{Thrust and Power Considerations}
+			The $75\%$ decision was based on observation of thrust ratios and comparing them to the minimum and maximum values stipulated earlier. This decision must also be influenced by available rotor sizes and pairings. The final value graphs are shown in Figure \ref{IM_ExcelGraphs}. The thrust percentage per rotor is shown, the points marked are at minimum, hover and maximum. Equation \eqref{EQ_ThrustMass} states that thrust is proportional to area. Therefore the reduction in rotor area will cause a directly related reduction in thrust. The total thrust available to the unlike size quad is $\approx 78\%$ of the thrust available to the standard design. This reduced value also comes at a weight reduction. The overlapping quad has an equal total rotor area but an inefficiency is introduced by the overlap as according to \eqref{EQ_OverlapEfficiency}. Therefore the overlapping quad has $94.64\%$ of the total thrust, without the weight reduction.
+			
+			\begin{figure}[H]
+			\centering
+			\includegraphics[height = 10cm]{Images/Design/ExcelGraphs}
+			\caption{Graphical representations of the thrust ratios for the unlike size quad}
+			\label{IM_ExcelGraphs}
+			\end{figure}
+			
+			As for the electrical power, the values were calculated according to how much energy would be needed to obtain the same thrust as the standard design. The inefficiency introduced by the overlap relates to a reduction in thrust of $\Delta T_{overlap} = 5.36\%$, therefore $\Delta P_{overlap} = 14.21\%$ is needed to overcome this loss, based on \eqref{EQ_ElectricalPowerThrust}. 
+			
+			For the unlike size quad, the reduction in rotor size leads to a substantial loss in aerodynamic power, even with a small reduction in inertia. To regain that power, the rotors need to be pushed harder, this leads to an increase in electrical power. A value of $\Delta P_{unlike size} = 18.5\%$ can be calculated under certain assumptions.
+	
+			\subsubsection{Size and Manoeuvrability}
+			The size was calculated as though the drone made a rectangular box and with the rough values above, Table \ref{TAB_SizeComparison} puts those values in a tabular format.
+			
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l | c | c }
+					Concept & Length ($mm$) & Breadth ($mm$) \\
+					\hline\hline
+					Unlike Size	   	& 1524 & 981 \\
+					Overlapping    & \boldmath$1308$ & \boldmath$858$ \\
+					Standard		& 1524 & 1524\\
+				\end{tabular}
+				\label{TAB_SizeComparison}
+				\caption{Table representing the size comparison of the two concepts}
+			\end{table}
+			
+			As shown Both crafts are similar in size, with the overlapping design being slightly shorter as well as more narrow. 
+			
+			This narrowness comes at a cost. Moments ($M$) are created by a difference in forces($\Delta$) and is multiplied by the distance between the forces ($l$) $M = \Delta Fl $. In the case of the overlapping rotors, the distance between the two different thrust vectors is not as tangible as the unlike size design. This gives the unlike size quad the advantage as bigger moments can be created\todo{Need to make this quantifiable}, allowing for more advanced manoeuvrability and disturbance rejection. However in the case of the near wall effect, the disturbance is created by effecting only one rotor . In the case of the overlapping rotors, the disturbance might be slightly diminished as both rotors will feel the effect. This can be verified later by comparing gathered data to literature. \todo{Would be cool to come back and do this later and reference it here}
+	
+			The quantifiable values are culminated below in Table \ref{TAB_ConceptComparison}. The winner of each parameter is written in bold.
+			
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{l | c | c | c | c | c }
+					Concept & Disk Loading & Total Thrust & Electrical Power & Length ($mm$)& Width ($mm$) \\
+					\hline\hline
+					Unlike Size	  & \boldmath$78.13\%$  & $78.13\%$ 	& $118.57\%$	& $1524$ & $981$ \\
+					Overlapping    & $80.18\%$ & \boldmath$94.64\%$  & \boldmath$114.21\%$	& \boldmath$1308$ & \boldmath$858$ \\
+					\hline\hline
+					Standard		& $100\%$ 	& $100\%$  	  & $100\%$			& $1524$ & $1524$\\
+				\end{tabular}
+				\label{TAB_ConceptComparison}
+				\caption{Table representing the end comparison of the two concepts}
+			\end{table}
+			
+			Now to make the final decision all the factors need to be included. What is known now is that the overlapping quadrotor is superior in almost every quantifiable way. The manoeuvrability aspect is not critical to this application as the use case will involve extremely steady flight. The disturbance rejection of both crafts will be good with 4 rotors. 
+			
+			Malloy Aeronautics sell what is called a \textit{Drone-3 Kit}, it includes various accessories to help developers use the platform. The novelty of the unlike size rotor quad can now be seen as a negative since it requires a custom frame and shroud.
+			
+			Based on the above analysis and conclusions the overlapping quadrotor design will be used as the design going forward.
 
-\subsection{Thrust Overhead}
-The total overhead of a rotorcraft is a percentage above the thrust required for hover. This value determines a craft's ability to manoeuvre, with a higher value giving it more freedom and a greater ability to resist disturbances. With these benefits the system does become very sensitive and more difficult to control and stabilise. Since the craft will be in confined narrow passages, the craft does not need to be fast moving. Rather a "slow and steady" pace will be approached. The craft does however need enough power to counteract the disturbances described above. These considerations lead to a value of $150\%$, with $100\%$ being enough thrust to hover. \todo[inline]{Back this up with references from other designs, spoken about later consider removing from here. Maybe reference botom section?}
-
-\subsection{Flight Time}
-Flight time is dependant on efficiency/power requirements of the system as well as the capacity of the on-board power source. This is where the designer runs into a catch 22. By adding a larger power source the weight is increased and therefore the platform requires more power to keep itself aloft. Weight is a determining factor for any aerial system and influences flight time, for this reason the weight of every subsystem must be optimised. To ensure the craft can complete a mission it will need a decent flight time. Initial conversations have set 30 minutes as the bottom limit. The original platform might not be able to reach this goal, but once the platform is performing adequately adjustments can be made to the system to optimise weight and power consumption. 
-
-\section{Final Concept Choice}
-The traditional configurations of drones are incapable of handling disturbances introduced by being in a confined space and will continue to struggled to overcome this problem\todo{Maybe a bit harsh, but need to validate why we're not using a standard design}. For this reason a few unique designs were considered and a lot subsequently rejected. Although some rejected ideas did help define the final configuration.
-
-\subsection{Rejected Designs}
-\subsubsection{Gimball}
-The Gimball design as shown in Figure \ref{IM_Gimball} has been discussed thoroughly in the literature. It is definitely the most sophisticated close quarter drone in the world today. It's rolling cage and gimbal design reduces collisions to hardly effect the drone's flight paths at all. Unfortunately it's Co-axial rotors limit the payload capabilities and reduce efficiency of the craft which inhibits the total flight time. The rolling cage also prohibits successful mapping as the orientation of the craft is constantly changing and any sensors inside the cage will be obscured by the rolling protection.
-
-\begin{figure}[H]
-\centering
-\includegraphics[height = 6cm]{Images/Design/Gimball}
-\caption{Flyability's Gimball (Picture taken from http://www.flyability.com/product/)}
-\label{IM_Gimball}
-\end{figure}
-
-The Gimball is a great tool and will aid a lot of industries, but it was not seen as a viable method to conduct mapping or carry any sort of payload for an extended period of time.
-
-\subsubsection{Tandem Tilt Rotors}
-After much thought into the problem a unique design was considered. Figure \ref{IM_TiltTandem} is the initial realisation of that concept. The idea was to capitalize on a tandem's narrow design while giving it more freedom by allowing the rotors to tilt. After the concept had been drawn up it was noted that adding tilt abilities to standard configuration has been looked at and used successfully before \cite{TandemTiltRotor, TripleTiltRotor}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[height = 6cm]{Images/Design/Tandem}
-\caption{Rendering of initial concept of the Tandem Tilt rotor Rotorcraft}
-\label{IM_TiltTandem}
-\end{figure}
-
-The big issue with this design would be controlling the platform. Designing a tilt rotor without variable tilt rotors would not produce enough roll control. The tilt mechanism will help with this, but affect too many other efficiencies while doing it. The tandem will also be more susceptible to disturbances than a four rotor approach.
-
-\subsection{Chosen Concepts}
-\todo[inline]{For the comparison, figures were obtained while the following was assumed: Thrust to RPM linear. RPM to current linear. Make sure they are correct}
-
-After much thought two concepts were selected as final candidates. This next section walks through some of the important factors considered and ultimately, why certain decisions were made. 
-On the left of Figure \ref{IM_UnlikeSizes} represents the \textit{"Unlike Size Quad"} and the right of Figure \ref{IM_UnlikeSizes} is the \textit{"Overlapping Quad"}. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[height = 6cm]{Images/Design/UnlikeSizes}
-\includegraphics[height = 6cm]{Images/Design/Overlapping}
-\caption{a)Rendering of initial concept of the unlike rotor size quadcopter and b) Malloy Aeronautics Hoverbike Concept (Picture taken \cite{MAHover}).}
-\label{IM_UnlikeSizes}
-\end{figure}
-
-
-\subsubsection{Concept 1 - The Overlapping Quad}
-The overlapping quad is a concept pursued by Malloy Aeronautics \cite{MAHover}. They used the design in an initial concept of their hover bike. The design uses an X-formation for it's rotors, except the rotors are brought in to limit the width of the craft to the point that they overlap, as shown in Figure \ref{IM_UnlikeSizes}. Each overlapping pair will have both spin directions, this feature is shown in Figure \ref{IM_OverlappingPair}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[height = 6cm]{Images/Design/OverlappingVD}
-\caption{Overlapping concept, visual representation of rotor pairs. Image modified from \cite{MAHover}}
-\label{IM_OverlappingPair}
-\end{figure}
-
-If this configuration is selected, there are still other design questions that need to be answered. Overlapping rotors introduce an inefficiency into the system. Johnson in \cite{HeliTheory}, says there is much debate in how the efficiency is calculated. He states two of his preferred methods, the method chosen has a better approximation for small overlaps and is shown in \eqref{EQ_OverlapEfficiency} \cite{HeliTheory}. $\Delta P$ is the interference power (considered here as a fraction of total power) and $m$ is the overlap fraction and is calculated in \eqref{EQ_Overlap} \cite{HeliTheory}.
-
-\begin{equation}
-\label{EQ_OverlapEfficiency}
-\frac{\Delta P}{P} = (\frac{2}{2-m})^{1/2} - 1
-\end{equation}
-
-\begin{equation}
-\label{EQ_Overlap}
-m = \frac{2}{\pi} \Bigg[ \cos^{-1}\frac{l}{2R} - \dfrac{l}{2R}\sqrt{1 - {\dfrac{l}{2R}}^2} \Bigg]
-\end{equation}
-
-These quantities assume a small vertical separation so that the inflow rates of both rotors can be considered the same. To calculate the overlap function, the rotor radius $R$ is needed as well as the separation distance $l$. Figure \ref{IM_SeperationGraph}, illustrates how the separation affects both the  overlap function as well as the total power as a percentage.
-
-
-\begin{figure}[]
-\centering
-\includegraphics[height = 6cm]{Images/Design/SeperationGraph}
-\caption{Graph representing the effects of separation distance in an overlapping quad}
-\label{IM_SeperationGraph}
-\end{figure}
-
-
-The length of the craft needs to also be decided, this aspect only becomes critical once payload requirements are factored in. As stated above, this design was an initial concept for a hoverbike with the intended payload capacity of a human. So a big positive to this design is the power to size ratio. This benefit can be utilised through handling larger payloads, or a larger battery pack increasing total flight time.
-
-\subsubsection{Concept 2 - The Unlike Size Quad}
-The unlike size quad is an original design that uses the standard cross formation, except it has two pairs of different size rotors. This means that the counter rotating pairs will be set up as shown in Figure \ref{IM_UnlikeSizePair}, with each rotation direction having one big and one small rotor. 
-
-To maintain a common DL in the system the thrust requirement will be lower on the smaller blades and larger on the bigger blade. The smaller the side rotors get, the higher the thrust requirements of the larger rotors become, this limits the rotor size ratio. Initial calculations, factoring in thrust overhead, overall size of the craft and minimum thrust allowed to rotors, set the ratio between $65\% - 80\%$.  When approaching the lower bound, the thrust requirement for hover alone leaves very little room for manoeuvring or disturbance rejection. The upper bound reaches a point where the size difference is so negligible the design's narrow intent is lost.
-
-\begin{figure}[H]
-\centering
-\includegraphics[height = 6cm]{Images/Design/UnlikeSizeRotorPair}
-\caption{Unlike Size Quad visual representation of rotor pairs}
-\label{IM_UnlikeSizePair}
-\end{figure}
-
-The second important choice is how far to put the rotors away from the centre. As the craft gains translational speed, the air doesn't come in directly from the top any more as shown in \ref{IM_MomentumTheoryAirFlow}. Instead it now starts to come in at an angle. As the craft then manoeuvres and changes it's orientation, the air starts coming in at more extreme angles. If the electronics housing has a lot of height it can interfere with the wake boundary and create an inefficiency. This inefficiency is also based on how far the rotors are from the housing. A similar concept is described in Section \ref{SSSECT_NearGroundEffect} Therefore, before this decision can be made the limits of how small the centre electronics housing needs to be decided. 
-
-Through discussions and observations of current systems a minimum limit of $75mm \times 75mm$ was set. To avoid overlap, the distance from the centre of the big rotor and the centre of the craft will be at the very least $R$. Including space for the housing increases this.
-
-The left and right placement is where the originality comes in. Since the craft needs to remain narrow, the side rotors can be brought in as well as shrunk. This would require pushing the two larger rotors slightly more out. Bringing the side rotors in closer to the middle housing will reduce efficiency, so a compromise must be chosen between width and efficiency. Since the side rotors don't contribute as much to the system as their bigger counterparts they have the option of a lower separation distance. The lower separation distance can also be justified by the lower need and use of roll moments and side translations.
-
-Lastly the rotor pitch angle needs to be selected. The major contributing factor of any rotor (besides it's size) is it's pitching angle. As the pitch angle changes, so does the lift to drag ratio. Generally a craft would always want a higher lift to drag ratio, in this case however the side rotors might have a lower lift to drag ratio so they can help counter the torque applied by the larger blades more effectively.
-
-\subsection{Concept Comparison}
-After being introduced to the two concepts, they will now be compared based on certain factors. This comparison includes hover efficiency, thrust and electrical power. Lastly size and manoeuvrability are grouped together since they inherently affect each other. The final decision will need to be made with certain assumptions in mind, that must be validated through testing further down the line. These assumptions as well as the method of comparison are described below. 
-
-\subsubsection{Assumptions and Method}
-Since both designs use 4 rotors they can be compared relative to a well known design, the standard quadrotor. For each configuration certain parameters need to be decided before a comparison can be done. Using formulas and plots in Microsoft Excel\texttrademark, both designs could be visualised rudimentary as shown in Figure \ref{IM_Excel}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width = 15cm]{Images/Design/Excel}
-\caption{Rudimentary Visualisation of the two concepts using Microsoft Excel\texttrademark}
-\label{IM_Excel}
-\end{figure}
-
-If hover is a thrust of $100\%$, the overhead was set at $50\%$ \todo{Try and find papers stating other values I want to validate this decision} of that, to a total of $150\%$. Minimum thrust per rotor was set at $20\%$. The mass in question includes provision for a sensor pack of undecided mass. 
-
-The two designs had different decisions that needed to be made. After a bit of trial and error the unlike size quad had it's small rotors set at $75\%$ of the larger ones, this decision is explained further in the text. Just to give a quantifiable reference, R was set at $254mm$. With that assumption the unlike size quad moves it's side rotors in to a distance of $300mm$ and the larger rotors were moved to $508mm = 2R$ away. The overlapping quad set a separation distance of $350mm$ which created an overlap factor of $m = 19.82\%$. 
-
-These values were used to do the following analysis.
-
-
-\subsubsection{Rotor Area and Disk Loading}
-If a rotor size of $R$ is assumed for the rotors\footnote{The big rotors in the case of the unlike size quad} then the total area for a standard quad will be $A_{std} = 4 \pi R^2$. Based on simple geometry, the reduction in radius of the two smaller rotors leads of the unlike size quad leads to a decrease in area. Using $75\%$ this is calculated to $78.13\% of A$. 
-
-As described in \eqref{EQ_Overlap}, the overlapping quad introduces a reduction in total disk area, with an overlap factor of $19.82\%$ leaves a total area of $80.18\%$. Since the thrust requirements are assumed the same, the disk loading ratios will be exactly the same as the area ratios.
-
-\subsubsection{Thrust and Power Considerations}
-The $75\%$ decision was based on observation of thrust ratios and comparing them to the minimum and maximum values stipulated earlier. This decision must also be influenced by available rotor sizes and pairings. The final value graphs are shown in Figure \ref{IM_ExcelGraphs}. The thrust percentage per rotor is shown, the points marked are at minimum, hover and maximum. Equation \eqref{EQ_ThrustMass} states that thrust is proportional to area. Therefore the reduction in rotor area will cause a directly related reduction in thrust. The total thrust available to the unlike size quad is $\approx 78\%$ of the thrust available to the standard design. This reduced value also comes at a weight reduction. The overlapping quad has an equal total rotor area but an inefficiency is introduced by the overlap as according to \eqref{EQ_OverlapEfficiency}. Therefore the overlapping quad has $94.64\%$ of the total thrust, without the weight reduction.
-
-\begin{figure}[H]
-\centering
-\includegraphics[height = 10cm]{Images/Design/ExcelGraphs}
-\caption{Graphical representations of the thrust ratios for the unlike size quad}
-\label{IM_ExcelGraphs}
-\end{figure}
-
-As for the electrical power, the values were calculated according to how much energy would be needed to obtain the same thrust as the standard design. The inefficiency introduced by the overlap relates to a reduction in thrust of $\Delta T_{overlap} = 5.36\%$, therefore $\Delta P_{overlap} = 14.21\%$ is needed to overcome this loss, based on \eqref{EQ_ElectricalPowerThrust}. 
-
-For the unlike size quad, the reduction in rotor size leads to a substantial loss in aerodynamic power, even with a small reduction in inertia. To regain that power, the rotors need to be pushed harder, this leads to an increase in electrical power. A value of $\Delta P_{unlike size} = 18.5\%$ can be calculated under certain assumptions.
-
-\subsubsection{Size and Manoeuvrability}
-The size was calculated as though the drone made a rectangular box and with the rough values above, Table \ref{TAB_SizeComparison} puts those values in a tabular format.
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{l | c | c }
-		Concept & Length ($mm$) & Breadth ($mm$) \\
-		\hline\hline
-		Unlike Size	   	& 1524 & 981 \\
-		Overlapping    & \boldmath$1308$ & \boldmath$858$ \\
-		Standard		& 1524 & 1524\\
-	\end{tabular}
-	\label{TAB_SizeComparison}
-	\caption{Table representing the size comparison of the two concepts}
-\end{table}
-
-As shown Both crafts are similar in size, with the overlapping design being slightly shorter as well as more narrow. 
-
-This narrowness comes at a cost. Moments ($M$) are created by a difference in forces($\Delta$) and is multiplied by the distance between the forces ($l$) $M = \Delta Fl $. In the case of the overlapping rotors, the distance between the two different thrust vectors is not as tangible as the unlike size design. This gives the unlike size quad the advantage as bigger moments can be created\todo{Need to make this quantifiable}, allowing for more advanced manoeuvrability and disturbance rejection. However in the case of the near wall effect, the disturbance is created by effecting only one rotor . In the case of the overlapping rotors, the disturbance might be slightly diminished as both rotors will feel the effect. This can be verified later by comparing gathered data to literature. \todo{Would be cool to come back and do this later and reference it here}
-
-
-\section{Platform Conclusions}
-
-The quantifiable values are culminated below in Table \ref{TAB_ConceptComparison}. The winner of each parameter is written in bold.
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{l | c | c | c | c | c }
-		Concept & Disk Loading & Total Thrust & Electrical Power & Length ($mm$)& Width ($mm$) \\
-		\hline\hline
-		Unlike Size	  & \boldmath$78.13\%$  & $78.13\%$ 	& $118.57\%$	& $1524$ & $981$ \\
-		Overlapping    & $80.18\%$ & \boldmath$94.64\%$  & \boldmath$114.21\%$	& \boldmath$1308$ & \boldmath$858$ \\
-		\hline\hline
-		Standard		& $100\%$ 	& $100\%$  	  & $100\%$			& $1524$ & $1524$\\
-	\end{tabular}
-	\label{TAB_ConceptComparison}
-	\caption{Table representing the end comparison of the two concepts}
-\end{table}
-
-Now to make the final decision all the factors need to be included. What is known now is that the overlapping quadrotor is superior in almost every quantifiable way. The manoeuvrability aspect is not critical to this application as the use case will involve extremely steady flight. The disturbance rejection of both crafts will be good with 4 rotors. 
-
-Malloy Aeronautics sell what is called a \textit{Drone-3 Kit}, it includes various accessories to help developers use the platform. The novelty of the unlike size rotor quad can now be seen as a negative since it requires a custom frame and shroud.
-
-Based on the above analysis and conclusions the overlapping quadrotor design will be used as the design going forward.
-
-\section{Drone 3}
-\subsection{Assembly}
-
-
-
+	\section{Electronic Design}
+	At the core of any reliable system is a thoroughly planned electronics system. There are multiple aspects this subsystem must handle. Due to the rapidly increasing market and interest in multirotors there has been a wave of developers and designers creating devices for these specific purposes. The first and foremost is monitoring and controlling flight dynamics. This requires flight, speed and motor controllers.	
+	
+	The on board computer will handle the data streams and control the non-real time peripherals. The device also needs to have networking capabilities to allow wireless communication during flights. For the drone to successfully navigate an environment it will need to better understand it's surroundings. To achieve successful navigation, a few onboard sensors have been looked at. Another useful and necessary function, will be the ability to illuminate a dark area. This will allow surveillance and condition monitoring of these unlit zones. Another design consideration is the provision for a sensor pack. This section of the study involves looking at potential external sensors and providing accessibility for them.
+	
+	No system can operate without a sufficient power source. In the case of any robotic system it is important that every aspect of the design is optimised. To assist with that an electrical analysis is done to help pinpoint some of the major power consuming components. This analysis will also help to evaluate the required power source. The capacity of the power supply is limited by weight and should be optimised to the lifting capacity of the platform. Once the battery chemistry has been decided upon, work can be done to design a robust power management system. Limiting the leakage of every subsystem as well as choosing efficient modules are both part of an effective power management system. To complete the subsystem will require some form of power monitoring as well as an efficient charging scheme. Since every aspect of the design must consider weight, the charging plan will inevitably involve an external charging device.
+	
+		\subsection{Flight Controller}
+		If the	OBC is the brain of the system, the flight controller is the nervous system\todo{think of a better analogy}. There are multiple options for flight controllers, all tailored to different applications and flying styles.
+		
+			\subsubsection{Custom Design}
+			Given the time and resources most final products will look at custom designing some hardware and electronics. The benefits of custom design include complete control over the operation and functionality of the design as well as reduced cost when scaling up. The development of a custom design however can be very taxing and costly.
+			
+			It is also common for a research lab to dedicate time into developing such modules. By using MITs custom board, Cutler in his masters dissertation demonstrates this \cite{How2012}. \textit{The University of Stellenbosch's Electronics System Lab} produced a custom design in \todo{insert date the boards were designed and reason we're not using them}. This board is under redesign and unfortunately cannot be used for this project.
+		
+			\subsubsection{Pixhawk}
+			The need for a commercial solution becomes evident. Due to the growing hobbyist community, some flight controllers are difficult to modify and are designed for use as a \textit{"plug and play"} module. Fortunately there is also a large designer community which has created the need for more configurable modules.
+			
+			Figure \ref{IM_Pixhawk} shows the \textit{Pixhawk}, which is marketed as an autopilot module for fixed and rotor craft as well as boats and even cars. It is specifically tailored for research and is listed as open-hardware\footnote{https://store.3dr.com/products/3dr-pixhawk}. Due to the open platform it has created an experienced community with many wiki pages and other forms of assistance.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[height = 6cm]{Images/System/Pixhawk.jpg}     
+				\caption{Pixhawk Flight Controller}
+				\label{IM_Pixhawk}
+			\end{figure}
+			
+			It features a 32 bit STM32F427 processor, running at 168MHz with 256Kb of RAM and a 2Mb Flash. It comes equipped with a full inertial measurement unit (IMU), consisting of a gyroscope, accelerometer and magnetometer. There is also an integrated barometer to adjust flight patterns as the air pressure fluctuates. It has an additional 32 bit co-processor that acts as a failsafe. It has multiple interfacing capabilities as well as a built in power protection unit\footnote{https://pixhawk.org/modules/pixhawk}. 
+			
+			The Pixhawk has been designed for robotic applications thus is light weight and power efficient. It operates on a real time operating system called \textit{NuttX} which has Unix characteristics but is much lighter than a different operating system such as Linux. This provides a lot of reconfigurability which is wanted in this project.
+		
+		
+			\subsection{Electronic Speed Controller}
+			The flight controller will take in information from the onboard sensors. It then sends a motor control command based on that information to the electronic speed controller (ESC), which directly controls the speed of each motor. This subsystem needs to be chosen based on the maximum amount of current it can handle. At 100\% throttle the current draw of the motor should not exceed 75\% of the ESC's limit. Another important consideration is the ESC's refresh rate and computing speed. The flight controller will be rapidly sending data to the ESC. The quicker the module can respond, the more accurately the platform will fly. 
+			
+			Each ESC has built in intelligence and will have their own dedicated firmware. Most ESCs will come with built in firmware, the design must be tailored for a quadcopter configuration. If not most common ESCs can be reflashed with downloadable open-source software\footnote{http://www.rcgroups.com/forums/showthread.php?t=1513678}.
+			
+				\subsubsection{Drone 3's ESC}
+		
+			\subsection{On Board Computer}
+			Where the flight controller ensures the craft maintains steady flight, the On Board Computer (OBC) handles all higher level processing. This will include interfacing to the on board sensors, the sensor pack as well as handling most of the networking. In an aerial application weight and power consumption are both important considerations. The OBC will have to process streams of data at fast rates to successfully navigate the drone. Based on current available commercial products a few were selected. The advantages and disadvantages of each will are described below.
+		
+				\subsubsection{Raspberry Pi 3 Model B}
+				
+				The Raspberry Pi has become a well known and respected piece of hardware. It has generated a large community and thus resources are readily available and the device can be bought locally. The new version of the device runs a 1.2GHz 64-bit quad-core ARMv8 CPU and includes built in Bluetooth and WiFi modules, an image from the Raspberyy Pi website is shown in Figure \ref{IM_Pi}\footnote{https://www.raspberrypi.org/products/raspberry-pi-3-model-b/}. 
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[height = 6cm]{Images/System/Pi.jpg}     
+					\caption{Raspberry Pi 3 Model B}
+					\label{IM_Pi}
+				\end{figure}
+				
+				It has a large 40 pin GPIO connector, 4 USB connections and an Ethernet port. The Pi's main advantage would be the access to the online community constantly updating Raspberry Pi wikis and forums. With the community also comes example projects and large variety of compatible hardware and open source software. With a maximum current of 2.5A at 5V, the 12.5W computer is relatively low powered which suits this application. However there are more powerful machines that can run more intense algorithms at the cost of more power.
+		
+				\subsubsection{Odroid XU4}
+				A Korean company, Hardkernel has designed a compact high processing power unit called the Odroid XU4. It has gained respect in some developer communities due to it's incredible processing power. It can run both Android, Ubuntu and other similar Linux based operating systems. Hardkernel has generated an immense of documentation and wiki pages, all available on their website\footnote{http://www.hardkernel.com/}. They also have a team of developers creating new devices to interface with the devices. 
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[height = 6cm]{Images/System/XU4.jpg}     
+					\caption{The Odroid XU4}
+					\label{IM_Odroid}
+				\end{figure}
+				
+				The XU4 hosts a formidable Samsung Exynos5422 Cortex™-A15 processor running at a 2GHz clock speed and an additional Cortex™-A7 Octa core processing unit. This allows for incredible processing capabilities and speed, an image from Hardkernel's Website is shown in Figure \ref{IM_Odroid}. The rated power supply for the unit is a 4A at 5V module. Including a 20W module on board will add a significant drain on the power source. It comes with 2 stable USB 3.0 ports and an additional USB 2.0 connection. 
+				
+				The Odroid is also frequently used at the CSIR, opening up experience and knowledge on the devices.
+		
+%			\subsection{Networking}
+%			A robot that is required to navigate areas where humans cannot access requires a wireless networking solution to send and receive data. This data could be control commands, flight and diagnostic data or sensing information. A reliable connection is an important factor to ensure a successful mission and will be validated against it's speed, packet loss and ultimately reliability.
+%			
+%			Generally applications that require far distance use radio frequencies as their means of communication. There are other options, some of which are explored and compared in a design of an intelligent street light \cite{StreetLight}. Here Leccese looks at Bluetooth, WiFi and compares them to a ZigBee module, although the application is different the review of the wireless networking can be useful. 
+%			
+%			The ZigBee module is a more useful platform when creating a network containing many devices that all need to interconnect. It has incredible low power abilities and could be looked at further down the line for creating a wireless mesh network in an underground mine to better communications. Bluetooth has limited range and doesn't produce adequate performance for this application. WiFi could also be a good communication system and can be looked at for point to point communication to the OBC. WiFi has decent range with high transmission speeds creating a more power hungry system compared to the ZigBee modules and other RF devices.
+%			
+%			The design may also look at including multiple communication peripherals as a fail-safe in case communications is lost to the base station. The base station will be the control point for the craft. The pilot needs full control through it and any relevant data that needs to be transmitted will be sent here as well.
+		
+		
+			\subsection{Location}
+			An important part of any robotic application is localisation. As stated earlier, an underground environment limits the use of traditional GPS. Stellenbosch University as well as the CSIR are both funding research into localisation in a GPS constraint environment \todo{Would be great to cite Natasha or ESL here}. Until such a time that these technologies are readily available, this project will work with traditional GPS devices.
+			
+			As discussed previously, this project will not be designing for a GPS constraint environment. Fortunately there are many commercial  GPS modules available for purchase. Each with their own advantages and disadvantages. For this project the module needs to be lightweight and low power. The GPS needs to create speed and translation data, this information is crucial when generating maps of unknown areas. The PixHawk website recommends the 3DR uBlox GPS kit\footnote{https://store.3dr.com/products/3dr-gps-ublox-with-compass}. Although many alternatives exist, the open source hardware status creates ease of integration and support. With these considerations, this module has been chosen.
+			
+			It weighs a total of 16.8gs and as has a low 8.5mm profile. With an update rate of 5Hz and built in compass. This module will perform adequately and fulfil the design needs of the project.
+		
+			\subsection{Object Avoidance}\label{SECT_ObjectAvoidance}
+			Due to the mature of the project object avoidance is deemed an important attribute to design for. This requires that the drone has an understanding of it's environment. This information can then be used in higher processing nodes to actively avoid objects. A few different sensor variations are observed below. 
+		
+				\subsubsection{Time of Flight}		
+				The first and most common would be using a time of flight (TOF) sensor, such as an ultrasonic transducer. Very similar to bats, a sonar module will emit a pulse and based on the time it takes for the signal to return the distance can accurately be measured. A sonar is dependant on a lot of variables and would require calibration for the environment it is in. Due to the method the modules acquire information the drone will be receive a speed limitation, this fortunately agrees with the desired steady flight dynamics. Since the sonar is dependant on the density of the medium it travels through, disturbance created by the rotors could severely affect the performance of the sensors.
+				
+				Another option in the same category would be to use an infra red (IR) transceiver in the same configuration. The system uses strobed IR pulses to monitor the distance of an object, the system depends on the ratio of reflection for the IR spectrum. If an object as a high refraction ir absorption ratio the signal can get lost. Ambient light can also cause interference, although most modules will have built in filters.
+				
+				Using the same base technology TOF cameras have been developed such as Microsoft's Kinect. Instead of a single point, a TOF camera projects an IR grid into the area it wishes to explore. By measuring deviations in the expected grid structure, distance information can be inferred. In an IR rich environment, TOF cameras can get overwhelmed and produce unreliable results. Due to the projection, the power requirements of such a system can also be high.
+		
+				\subsubsection{Image Processing}
+				The term image processing has been used here to discuss a system that can extract data through a camera feed. It is well known that stereo vision can produce 3D information from multiple 2D images. Although more processing is required, very good results can be obtained form this set up. Generally these systems can be slow and clunky with a high power draw and weight due to the multiple required modules. Using multiple camera streams can also be a relatively slow process, thus limiting the speed of the craft severely.
+				
+				However, reliability from a robust image processing unit will be more reliable and consistent than a different system. Barry in his PhD developed such a design that minimises the discussed negative effects \cite{Barry2016}. Using this design MIT could obtain object avoidance at speeds of 31mph, proving the effectiveness of the object avoidance system.
+				
+				Regardless of the modules chosen, object detection and avoidance will be looked at in more detail further into the project.
+		
+%			\subsection{Lighting}
+%			Since the drone is required to conduct surveys of unknown areas, the possibility exists where the platform is required to illuminate the area it needs to monitor. This requirement hints at the need for an embedded lighting system. Bright lights can be a power hungry system even if designed correctly. The exact specifications will be discussed further in the text but does not form part of project scope.
+%			
+%			LEDs will be used for their performance, longevity and power saving characteristics. They will require an LED driver with dimming capabilities to limit the power usage when full brightness is not needed. The illumination will be able to help the sensor pack gather credible surveying data
+		
+		
+			\subsection{External Sensor Pack}
+			The actual sensor pack in question is remaining generic. So that the platform can cater for an array of sensing devices and applications. To ensure compatibility, the sensor pack needs to be able to powered as well as communicated to. It will have access to interface directly to the OBC.
+			
+			The actual sensing element could vary between 
+			\todo[inline]{Lidar}
+		
+			\subsection{Electronic Design Discussion}
+				\subsubsection{Electrical Requirements Analysis}
+	
+	\section{Discussion}

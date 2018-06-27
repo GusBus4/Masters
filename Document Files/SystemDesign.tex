@@ -52,20 +52,14 @@ The following chapter gives an overview behind the system design of \projectName
 						
 				\paragraph{High Bandwidth, Low Range}
 				The higher bandwidth connection will be used for higher level mission control and data. The high bandwidth link should be able to transmit large streams of data between the craft and the ground control station. 
-	
 			
 			\subsubsection{On Board Sensors}
-			
 			
 			\subsubsection{Sensor Pack}
 			The actual sensor pack in question will remain generic. So that the platform can cater for an array of sensing devices and applications. To ensure compatibility, the sensor pack needs to be able to powered as well as communicated to. It will have access to interface directly to the OBC.
 	
-	
 			\subsubsection{Power Supply}
-				\subsubsection{Electrical Requirements Analysis}
-				\subsubsection{Power Source}
-				\subsubsection{Power Regulation}
-				\subsubsection{Power Monitoring}
+
 				
 	\section{System Software Framework}
 	The electronic components gather and collect all the necessary information, the software combines it all and controls the flow of data to obtain stable flight and more. The software system can also be broken down into different operational groups or subsystems. These are, the firmware running the flight controller, the communication protocols used between the software nodes as well as the ground control station. The ground control station although not deployed on the platform, is still mission critical and must be able to display in flight data and send commands to the craft. The last module is the logging and simulation node, which allows for an in depth understanding of untested flight dynamics.

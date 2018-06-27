@@ -1,18 +1,18 @@
 clc;
 close all;
 
-init_phoenix_values;
+% init_phoenix_values;
 
-plotEnableForces                = 1;
-plotEnableRotationalVelocity    = 1;
-plotEnableLeanAngles            = 1;
-plotEnableGlobalAcceleration    = 1;
+plotEnableForces                = 0;
+plotEnableRotationalVelocity    = 0;
+plotEnableLeanAngles            = 0;
+plotEnableGlobalAcceleration    = 0;
 plotEnableBodyAcceleration      = 1;
-plotEnableLinearVelocity        = 1;
-plotEnableGlobalPosition        = 1;
-plotEnableDragForces            = 1;
-plotMotorThrust                 = 1;
-plotTorqeRequest                = 1;
+plotEnableLinearVelocity        = 0;
+plotEnableGlobalPosition        = 0;
+plotEnableDragForces            = 0;
+plotMotorThrust                 = 0;
+plotTorqeRequest                = 0;
 
 p = bodeoptions;
 p.Phasewrapping = 'on';
