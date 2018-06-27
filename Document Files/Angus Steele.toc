@@ -150,31 +150,31 @@
 \contentsline {subsubsection}{Yaw Rate Controller Discussion}{81}{section*.98}
 \contentsline {subsection}{\numberline {5.5.3}Yaw Angle Controller}{81}{subsection.5.5.3}
 \contentsline {subsubsection}{Yaw Angle Controller Discussion}{83}{section*.99}
-\contentsline {section}{\numberline {5.6}Non-Linear Simulation}{83}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{83}{subsection.5.6.1}
-\contentsline {subsubsection}{Motor Mixer}{83}{section*.101}
-\contentsline {subsubsection}{Saturations}{83}{section*.103}
+\contentsline {section}{\numberline {5.6}Non-Linear Simulation}{84}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Simulation Setup}{84}{subsection.5.6.1}
+\contentsline {subsubsection}{Motor Mixer}{84}{section*.101}
+\contentsline {subsubsection}{Saturations}{84}{section*.103}
 \contentsline {subsubsection}{Disturbances}{84}{section*.105}
-\contentsline {subsection}{\numberline {5.6.2}Simulation Results}{84}{subsection.5.6.2}
-\contentsline {section}{\numberline {5.7}Discussion}{84}{section.5.7}
-\contentsline {section}{\numberline {5.8}Table}{84}{section.5.8}
-\contentsline {chapter}{\numberline {6}Obstacle Avoidance Implementation}{85}{chapter.6}
-\contentsline {section}{\numberline {6.1}Mathematical modelling}{85}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}World Creation}{85}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Sensor Implementation}{85}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Obstacle Distance Detection}{85}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Virtual Spring Damper Model}{85}{section.6.2}
-\contentsline {section}{\numberline {6.3}Obstacle Avoidance Controller}{85}{section.6.3}
-\contentsline {section}{\numberline {6.4}Discussion}{85}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Spring Damper Coefficients}{85}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Effect of Varying Arm Length}{85}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Limitations of proposed method}{85}{subsection.6.4.3}
-\contentsline {chapter}{\numberline {7}Simulated Flight Tests}{86}{chapter.7}
-\contentsline {section}{\numberline {7.1}Aims and Objectives}{86}{section.7.1}
-\contentsline {section}{\numberline {7.2}Hypotheses}{86}{section.7.2}
-\contentsline {section}{\numberline {7.3}Testing Methodology}{86}{section.7.3}
-\contentsline {section}{\numberline {7.4}Results}{86}{section.7.4}
-\contentsline {section}{\numberline {7.5}Discussion}{86}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusions and Recommendations}{87}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary and Conclusions}{87}{section.8.1}
-\contentsline {section}{\numberline {8.2}Recommendations}{87}{section.8.2}
+\contentsline {subsection}{\numberline {5.6.2}Simulation Results}{85}{subsection.5.6.2}
+\contentsline {section}{\numberline {5.7}Discussion}{85}{section.5.7}
+\contentsline {section}{\numberline {5.8}Table}{85}{section.5.8}
+\contentsline {chapter}{\numberline {6}Obstacle Avoidance Implementation}{86}{chapter.6}
+\contentsline {section}{\numberline {6.1}Mathematical modelling}{86}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}World Creation}{86}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Sensor Implementation}{86}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Obstacle Distance Detection}{86}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Virtual Spring Damper Model}{86}{section.6.2}
+\contentsline {section}{\numberline {6.3}Obstacle Avoidance Controller}{86}{section.6.3}
+\contentsline {section}{\numberline {6.4}Discussion}{86}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Spring Damper Coefficients}{86}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Effect of Varying Arm Length}{86}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Limitations of proposed method}{86}{subsection.6.4.3}
+\contentsline {chapter}{\numberline {7}Simulated Flight Tests}{87}{chapter.7}
+\contentsline {section}{\numberline {7.1}Aims and Objectives}{87}{section.7.1}
+\contentsline {section}{\numberline {7.2}Hypotheses}{87}{section.7.2}
+\contentsline {section}{\numberline {7.3}Testing Methodology}{87}{section.7.3}
+\contentsline {section}{\numberline {7.4}Results}{87}{section.7.4}
+\contentsline {section}{\numberline {7.5}Discussion}{87}{section.7.5}
+\contentsline {chapter}{\numberline {8}Conclusions and Recommendations}{88}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary and Conclusions}{88}{section.8.1}
+\contentsline {section}{\numberline {8.2}Recommendations}{88}{section.8.2}
