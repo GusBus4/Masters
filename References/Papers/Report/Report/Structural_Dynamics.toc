@@ -1,0 +1,35 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {chapter}{\numberline {2}Mathematical model}{4}
+\contentsline {section}{\numberline {2.1}Axis and Force orientation}{4}
+\contentsline {section}{\numberline {2.2}Kinematics}{5}
+\contentsline {subsection}{\numberline {2.2.1}State-Space representation}{5}
+\contentsline {section}{\numberline {2.3}Forces and moments}{6}
+\contentsline {subsection}{\numberline {2.3.1}Gravity}{6}
+\contentsline {subsection}{\numberline {2.3.2}Actuator}{6}
+\contentsline {subsection}{\numberline {2.3.3}Aerodynamics}{7}
+\contentsline {section}{\numberline {2.4}Parameter identification}{7}
+\contentsline {subsection}{\numberline {2.4.1}Thrust profiles}{7}
+\contentsline {subsection}{\numberline {2.4.2}Center of Gravity}{8}
+\contentsline {subsection}{\numberline {2.4.3}Mass moment of inertia}{8}
+\contentsline {chapter}{\numberline {3}Ardupilot}{10}
+\contentsline {section}{\numberline {3.1}Main loop}{11}
+\contentsline {section}{\numberline {3.2}Flight mode}{11}
+\contentsline {section}{\numberline {3.3}Position Control}{12}
+\contentsline {section}{\numberline {3.4}Attitude control}{12}
+\contentsline {section}{\numberline {3.5}Motor and Servo Control}{13}
+\contentsline {section}{\numberline {3.6}Other}{13}
+\contentsline {chapter}{\numberline {4}Test Flights}{14}
+\contentsline {chapter}{\numberline {5}Model validation}{15}
+\contentsline {section}{\numberline {5.1}Build up}{15}
+\contentsline {section}{\numberline {5.2}Comparison}{16}
+\contentsline {section}{\numberline {5.3}Near-wall effect}{16}
+\contentsline {subsection}{\numberline {5.3.1}Implementation}{17}
+\contentsline {chapter}{\numberline {6}Controller design}{18}
+\contentsline {section}{\numberline {6.1}Angle control}{18}
+\contentsline {section}{\numberline {6.2}Position Control}{19}
+\contentsline {section}{\numberline {6.3}Compensating Near-wall effect}{19}
+\contentsline {chapter}{\numberline {7}Route-planning}{21}
+\contentsline {chapter}{\numberline {8}Conclusions}{23}
+\contentsline {chapter}{\numberline {9}Recommendations and Discussion}{24}
+\contentsfinish 

@@ -1,0 +1,24 @@
+\chapter{Route-planning} \label{ch:rp}
+As discussed before, flying inside mines produces a lot of complexity. Thereby is the routeplanning one of the most important things, since it can make it easier for the UAV to fly indoors. When there is no neccesacy to fly close to a wall, do not do it. It remains possible to occur instability in combination of wind gusts and near-wall disturbances. Consequently, a route-planning needs to be created to move smoothly and smart from point A to B. Several things have to be taken into account in this routplanning:
+\begin{itemize}
+\item Go around corners slowly. Use yaw control to maintain good distance from both sides of the wall. Figure \ref{fig:routeplanning} shows a possible structure of a minehshaft. The drone will in our minds keep up with distances to wall on horizontal 360 degrees plane (Lidar). Hence the route-planning can make sure that the drone flies in the middle of the mine. The same things accounts for the ground and ceiling (can be done with sensors facing up and down), since there are also undesired effects coming up there.
+
+\item Do not fly close to walls, except if not possible otherwise. Localization in horizontal plane is in this case also done by the Lidar 360 range sensor. When encountering close to a wall, the DOBC will compensate for the disturbance. The route-planning can make it easier for the drone again to move away from the wall by stepping back a little back.
+
+\item Obstacle avoidance is required to prevent crashing into hanging stalactites. In the Ardupilot code is a feature present which can detect obstacles already. This option can be a good option when implemented in the route-planning.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{route-planning.PNG}
+\caption{Route-planning in a possible shaped mineshaft}
+\label{fig:routeplanning}
+\end{figure}
+
+The reason for why there is still thought of a DOBC to counter the near-wall effect is that it is possible to get close to a wall by sensor unreliablity. Other reasons can be oddly shaped mineshaft which interrupts the airflow, or no other possibility of flying close to the wall. The latter can be caused by 
+
+
+A proper route-planning can also use a localization method. A realizable way of doing is, is the 3D mapping with two cammeras on front. The quadcopter can now detect the obstacle avoidances and walls all at once. \textcolor{red}{Maybe extend this a little bit on how to implement this and what techniques are used. Add link of example on youtube or so.}
+
+
+

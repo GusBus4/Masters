@@ -1,0 +1,72 @@
+\documentclass[a4paper]{report}
+\usepackage{graphicx,color}
+\usepackage[english]{babel}
+\usepackage[english]{tuereport2008}		% TU/e frontpage and packages
+\usepackage[toc,page]{Appendix}			% Appendix in table of contents, numbered \usepackage[titletoc]{Appendix}	
+\usepackage[nottoc,numbib]{tocbibind} 	% Bibliography in table of contents, numbered
+\usepackage{gensymb}					% Degree symbol \degree
+\usepackage{amsmath}					% Math text
+%\usepackage[utf8]{inputenc}				% \"o in bibtex?
+\usepackage{url}						% \url{} option
+%\usepackage[backend=bibtex,sorting=none,style=numeric-verb,citestyle=numeric,maxbibnames=99,firstinits=true]{biblatex}\usepackage{hhline}						% Double line table
+\usepackage{textgreek}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{listings}
+\setlength{\parindent}{0pt}
+\newcommand{\forceindent}{\leavevmode{\parindent=1em\indent}}
+\graphicspath{{images/}}
+
+\title{Autonomous flying with a quadcopter in close-quarter environment}
+\subtitle{Internship at CSIR}
+
+\author{\begin{tabular}{ll}
+B.H. Marsman  & 0842277
+\end{tabular}}
+
+\version{}
+\orderissuer{dr. Guerreiro Tome Antunes, D.J.}
+\copyholder{}
+\administrativeunit{Department of Mechanical Engineering}
+\department{Control System Technology}
+\website{www.tue.nl}
+\reference{}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\newpage
+\input{chapters/Chapter1.tex}
+\newpage 
+%\input{chapters/Chaptermines.tex}
+%\newpage
+\input{chapters/Chapter2.tex}  
+\newpage   
+\input{chapters/Chapter3.tex} 
+\newpage
+\input{chapters/Chapter9.tex}
+\newpage 
+\input{chapters/Chapter4.tex} 
+\newpage
+\input{chapters/Chapter5.tex}
+\newpage
+%\input{chapters/Chapter6.tex} 
+%\newpage
+\input{chapters/Chapter7.tex}   
+\newpage
+\input{chapters/Chapter8.tex} 
+\newpage
+\input{chapters/ChapterDiscussion.tex}
+
+%\newpage
+%\input{chapters/Chapter10.tex}
+
+%\begin{appendices}
+%\input{chapters/Appendix_A}
+%\end{appendices}
+
+\end{document}
