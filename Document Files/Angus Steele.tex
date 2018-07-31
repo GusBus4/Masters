@@ -15,6 +15,11 @@
 \newcommand{\projectName}{CEPAD }
 \newcommand{\payLoadMass}{3.352Kgs }
 
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
 %*******************************TITLE PAGE*******************************%
 
 \title{Development of a Close Quarter Collision Protected Aerial Drone}

@@ -1,5 +1,19 @@
-\BOOKMARK [1][-]{section.0.1}{Altitude Controller}{}% 1
-\BOOKMARK [2][-]{subsection.0.1.1}{Heave Dynamics}{section.0.1}% 2
-\BOOKMARK [2][-]{subsection.0.1.2}{Heave Controller}{section.0.1}% 3
-\BOOKMARK [2][-]{subsection.0.1.3}{Climb Rate Controller}{section.0.1}% 4
-\BOOKMARK [2][-]{subsection.0.1.4}{Altitude Hold Controller}{section.0.1}% 5
+\BOOKMARK [0][-]{chapter.1}{Controller Design}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Design Goals}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Flight Control Strategy}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Altitude Controller}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Heave Dynamics}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Heave Controller}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{Climb Rate Controller}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.4}{Altitude Hold Controller}{section.1.3}% 8
+\BOOKMARK [1][-]{section.1.4}{Horizontal Control}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.4.1}{Roll and Pitch Rate Dynamics}{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.2}{Roll Rate Controller}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.3}{Pitch Rate Controller}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.4}{Tilt Angle Controller}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.5}{Linear Velocity Control}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.4.6}{Global Position Tracking Control}{section.1.4}% 15
+\BOOKMARK [1][-]{section.1.5}{Heading Controller}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.5.1}{Yaw Rate Dynamics}{section.1.5}% 17
+\BOOKMARK [2][-]{subsection.1.5.2}{Yaw Rate Controller}{section.1.5}% 18
+\BOOKMARK [2][-]{subsection.1.5.3}{Yaw Angle Controller}{section.1.5}% 19
