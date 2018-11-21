@@ -11,14 +11,14 @@ g = 9.81;
 motor_timing_constant = 0.125;
 
 %% Roll
-roll_rate_tf                       = (1/(motor_timing_constant*Iyy))/(s*(s + (1/motor_timing_constant)));
-roll_rate_controller_tf            = 1.7 * (s + 8) / (s + 16);
+roll_rate_tf                       = (1/(motor_timing_constant*Ixx))/(s*(s + (1/motor_timing_constant)));
+roll_rate_controller_tf            = 0.55857 * (s + 4.872) * (s + 1.123) / (s * (s + 27.86));
 
 roll_angle_tf                      = feedback(roll_rate_tf*roll_rate_controller_tf, 1) * (1/s);
 
-roll_angle_controller_tf           = 0.18474 * (s + 10.11);               % PD
+roll_angle_controller_tf           = 1.1;               % P
 
-east_velocity_tf                   = feedback(roll_angle_controller_tf*roll_angle_tf, 1) * 1/s
+east_velocity_tf                   = (1/g) * feedback(roll_angle_controller_tf*roll_angle_tf, 1) * g * (1/s)
 
 east_velocity_controller_tf        = 0.69106;
 east_velocity_controller1_tf       = 0.53149 * (s + 0.3223) * (s + 4.824) / s;

@@ -102,17 +102,17 @@ sensors(2, 2, 8) = sensor8(2, 2);
 hold on;
 grid on;
 
-plot(sensor1(2,:), sensor1(1,:), 'b')
-plot(sensor2(2,:), sensor2(1,:), 'r')
-plot(sensor3(2,:), sensor3(1,:), 'g')
-plot(sensor4(2,:), sensor4(1,:), 'g')
-plot(sensor5(2,:), sensor5(1,:), 'g')
-plot(sensor6(2,:), sensor6(1,:), 'g')
-plot(sensor7(2,:), sensor7(1,:), 'g')
-plot(sensor8(2,:), sensor8(1,:), 'g')
+plot(sensor1(2,:), sensor1(1,:), 'g', 'LineWidth', 2)
+plot(sensor2(2,:), sensor2(1,:), 'g', 'LineWidth', 2)
+plot(sensor3(2,:), sensor3(1,:), 'g', 'LineWidth', 2)
+plot(sensor4(2,:), sensor4(1,:), 'g', 'LineWidth', 2)
+plot(sensor5(2,:), sensor5(1,:), 'g', 'LineWidth', 2)
+plot(sensor6(2,:), sensor6(1,:), 'g', 'LineWidth', 2)
+plot(sensor7(2,:), sensor7(1,:), 'g', 'LineWidth', 2)
+plot(sensor8(2,:), sensor8(1,:), 'g', 'LineWidth', 2)
 
-xlim([-20 20])
-ylim([-20 20])
+% xlim([-20 20])
+% ylim([-20 20])
 hold off;
       
       

@@ -1,12 +1,85 @@
 %% Create Basic Outlines for Room
+
+% wall_1   =  [
+%                 -0.5 4;                                                      %North                                                   
+%                 4 4                                                        %East                                                        
+%             ];
+%         
+% wall_2   =  [
+%                 4 4;      %17 17                                                %North
+%                 4 -0.5                                                     %East
+%             ];
+%         
+% wall_3   =  [
+%                 4 -0.5;                                                        
+%                 -0.5 -0.5                                                        
+%             ];
+%         
+% wall_4   =  [
+%                 -0.5 -0.5;                                                        
+%                 -0.5 4                                                        
+%             ];
+
+%% Corridor ZigZag
+wall_1   =  [
+                10 10;                                                      %North                                                   
+                -5 5                                                        %East                                                        
+            ];
+        
+wall_2   =  [
+                -1 5;                                                      %North
+                1 1                                                     %East
+            ];
+
+wall_3   =  [
+                5 8;                                                      %North                                                   
+                1 4                                                        %East                                                        
+            ];
+        
+wall_4   =  [
+                5 8;                                                      %North
+                -2 1                                                     %East
+            ];
+
+wall_5   =  [
+                8 10;                                                        
+                1 -1                                                        
+            ];
+
+wall_6   =  [
+                8 10;                                                        
+                4 2                                                        
+            ];
+
+wall_7   =  [
+                10 13;                                                        
+                -1 2                                                        
+            ];
+        
+wall_8  =  [
+                10 11;                                                      %North
+                2 3 
+            ];
+        
+wall_9  =  [
+                13 20;                                                      %North
+                2 2 
+            ];
+
+wall_10  =  [
+                11 20;                                                      %North
+                3 3 
+            ];
+
+%% Fullsuite
 wall_1   =  [
                 -3 17;                                                      %North                                                   
-                4 4                                                        %East                                                        
+                3 3                                                        %East                                                        
             ];
         
 wall_2   =  [
                 17 17;                                                      %North
-                4 -20                                                     %East
+                3 -20                                                     %East
             ];
         
 wall_3   =  [
@@ -16,9 +89,8 @@ wall_3   =  [
         
 wall_4   =  [
                 -3 -3;                                                        
-                -20 4                                                        
+                -20 3                                                        
             ];
-
         
 wall_5   =  [
                 1 5;                                                        
@@ -72,7 +144,7 @@ wall_12  =  [
 %                 0 0                                                        
 %             ];
 
-roof = 10;                                                                  %Up
+roof = 6;                                                                  %Up
         
 %% Rotate into Body Frame
 wall_1_body = dcm_earth_to_body(1:2, 1:2)*wall_1; 
@@ -167,12 +239,16 @@ walls_body(2, 2, 12) = wall_12_body(2, 2);
 hold on;
 grid on;
 
-for k = 1:length(walls_body)
+for k = 5:10
     plot(walls_body(2,:,k), walls_body(1,:,k), 'b');                        %X-plot = East; Y-Plot = North
 end
+% 
+% for k = 1:length(walls_body)
+%     plot(walls_body(2,:,k), walls_body(1,:,k), 'b');                        %X-plot = East; Y-Plot = North
+% end
     
-xlim([-22 5])                                                               %East Limit
-ylim([-5 22])                                                               %North Limit
+% xlim([-22 5])                                                               %East Limit
+% ylim([-5 22])                                                               %North Limit
 
 xlabel('Y Body')
 ylabel('X Body')

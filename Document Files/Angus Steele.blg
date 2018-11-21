@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Angus Steele.aux
 A level-1 auxiliary file: Introduction.aux
 A level-1 auxiliary file: LiteratureReview.aux
-A level-1 auxiliary file: SystemDesign.aux
 A level-1 auxiliary file: PlatformDesign.aux
 A level-1 auxiliary file: SystemIdentification.aux
 A level-1 auxiliary file: ControllerDesign.aux
@@ -13,15 +12,14 @@ Database file #1: Angus_Steele.bib
 Warning--entry type for "Reynold" isn't style-file defined
 --line 72 of file Angus_Steele.bib
 Database file #2: Masters.bib
-Repeated entry---line 437 of file Masters.bib
+Repeated entry---line 221 of file Masters.bib
  : @article{NearWall
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 613 of file Masters.bib
+Repeated entry---line 409 of file Masters.bib
  : @inproceedings{NearWall
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Barry2016"
 Too many commas in name 1 of "Welty, J, Wicks, C, Wilson, R, Rorrer, G" for entry Dayle
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Welty, J, Wicks, C, Wilson, R, Rorrer, G" for entry Dayle
@@ -31,14 +29,14 @@ while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Welty, J, Wicks, C, Wilson, R, Rorrer, G" for entry Dayle
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Welty, J, Wicks, C, Wilson, R, Rorrer, G" for entry Dayle
-while executing---line 1049 of file plain.bst
-Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
-while executing---line 1049 of file plain.bst
-Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
-while executing---line 1049 of file plain.bst
-Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Luis Rodolfo García Carrillo, Alejandro Enrique Dzul López, Rogelio Lozano, Claude Pégard" for entry Modelling
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFlying
 while executing---line 1049 of file plain.bst
 Warning--empty publisher in Blakelock
 Warning--empty journal in Briod2012
@@ -50,12 +48,10 @@ Too many commas in name 1 of "Castillo, P, Lozano, R, Dzul, AE" for entry MiniFl
 while executing---line 1090 of file plain.bst
 Warning--empty publisher in MiniFlying
 Warning--empty year in MiniFlying
-Warning--empty journal in Daler2013
 Warning--there's a number but no volume in Hoffmann
 Warning--empty journal in How2012
 Warning--empty journal in Klaptocz2013
 Warning--empty journal in Klaptocz2010
-Warning--empty journal in Klaptocz2012
 Too many commas in name 1 of "Luis Rodolfo García Carrillo, Alejandro Enrique Dzul López, Rogelio Lozano, Claude Pégard" for entry Modelling
 while executing---line 1090 of file plain.bst
 Warning--empty publisher in Modelling

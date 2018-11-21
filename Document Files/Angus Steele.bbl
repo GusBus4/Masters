@@ -6,6 +6,12 @@ F.A. Association.
 \newblock FAA Handbooks Series. Aviation Supplies \& Academics, Incorporated,
   2001.
 
+\bibitem{Barry2015}
+Andrew~J. Barry, Helen Oleynikova, Dominik Honegger, Marc Pollefeys, and Russ
+  Tedrake.
+\newblock {Fast Onboard Stereo Vision for UAVs}.
+\newblock {\em IROS Workshop}, page~7, 2015.
+
 \bibitem{Blakelock}
 John~H Blakelock.
 \newblock {\em Automatic Control of Aircraft and Missles}.
@@ -45,12 +51,6 @@ Pedro Castillo, Alejandro Dzul, and Rogelio Lozano.
 \newblock {\em IEEE Transactions on Control Systems Technology},
   12(4):510--516, 2004.
 
-\bibitem{Daler2013}
-Ludovic Daler, Adam Klaptocz, Adrien Briod, Metin Sitti, and Dario Floreano.
-\newblock {A Perching Mechanism for Flying Robots Using a Fibre-Based
-  Adhesive}.
-\newblock pages 4433--4438, 2013.
-
 \bibitem{Heli}
 {Federal Aviation Administration}.
 \newblock {Helicopter Components , Sections , and Systems}.
@@ -60,6 +60,14 @@ Ludovic Daler, Adam Klaptocz, Adrien Briod, Metin Sitti, and Dario Floreano.
 \bibitem{US7147182}
 Kenneth~Warren Flanigan.
 \newblock {Gas Powered Tip-Jet-Driven Tilt-Rotor Compound VTOL Aircraft}, 2006.
+
+\bibitem{Green2015}
+Jeremy Green, A.~Marnewick, and J.~H.C. Pretorius.
+\newblock {Prototyping during the requirements elicitation process in the
+  development of an underground unmanned aerial system}.
+\newblock {\em Proceedings of the 2015 Pattern Recognition Association of South
+  Africa and Robotics and Mechatronics International Conference, PRASA-RobMech
+  2015}, pages 60--65, 2015.
 
 \bibitem{quaternion}
 K~Gro{\ss}ekatth{\"{o}}fer and Z~Yoon.
@@ -89,18 +97,6 @@ Wayne Johnson.
 \newblock {\em {Helicopter Theory}}.
 \newblock Courier Corporation, Stanford, 1994.
 
-\bibitem{TripleTiltRotor}
-Alp Kacar and Dr~Kutluk Arikan.
-\newblock {ATTITUDE AND ALTITUDE CONTROL OF A TRIPLE TILT-ROTOR UNMANNED AERIAL
-  VEHICLE}, 2013.
-
-\bibitem{TandemTiltRotor}
-Farid Kendoul, Isabelle Fantoni, and Rogelio Lozano.
-\newblock {Modeling and control of a small autonomous aircraft having two
-  tilting rotors}.
-\newblock {\em Proceedings of the 44th IEEE Conference on Decision and Control,
-  and the European Control Conference, CDC-ECC '05}, 2005(6):8144--8149, 2005.
-
 \bibitem{Klaptocz2013}
 Adam Klaptocz, Adrien Briod, Ludovic Daler, Jean-christophe Zufferey, and Dario
   Floreano.
@@ -112,12 +108,6 @@ Adam Klaptocz, Adrien Briod, Jean-christophe Zufferey, and Dario Floreano.
 \newblock {An Indoor Flying Platform with Collision Robustness and
   Self-Recovery}.
 \newblock pages 3349--3354, 2010.
-
-\bibitem{Klaptocz2012}
-Adam Klaptocz, Ludovic Daler, Adrien Briod, Jean-christophe Zufferey, and Dario
-  Floreano.
-\newblock {An Active Uprighting Mechanism for Flying Robots}.
-\newblock 28(5):1152--1157, 2012.
 
 \bibitem{Lee2012}
 Daewon Lee, Asad Awan, Suseong Kim, and H.~Jin Kim.
@@ -139,6 +129,12 @@ Rogelio Lozano Claude~Pégard Luis Rodolfo García~Carrillo, Alejandro Enrique
 \newblock {\em Modeling the Quad-Rotor Mini-Rotorcraft}.
 \newblock 2013.
 
+\bibitem{Lumelsky1990}
+Vladimir Lumelsky and Tim Skewis.
+\newblock {Incorporating Range Sensing in the Robot Navigation Function}.
+\newblock {\em IEEE Transactions on Systems, Man and Cybernetics},
+  20(5):1058--1069, 1990.
+
 \bibitem{Luukkonen}
 Teppo Luukkonen.
 \newblock {Modelling and Control of Quadcopter}.
@@ -148,6 +144,19 @@ Teppo Luukkonen.
 \bibitem{MAHover}
 {Malloy Aeronautics}.
 \newblock {Drone 3 – MA Hoverbike}.
+
+\bibitem{Meier2015}
+Lorenz Meier, Dominik Honegger, and Marc Pollefeys.
+\newblock {PX4: A node-based multithreaded open source robotics framework for
+  deeply embedded platforms}.
+\newblock {\em Proceedings - IEEE International Conference on Robotics and
+  Automation}, 2015-June(June):6235--6240, 2015.
+
+\bibitem{Mellinger2014}
+Daniel Mellinger, Nathan Michael, and Vijay Kumar.
+\newblock {Trajectory generation and control for precise aggressive maneuvers
+  with quadrotors}.
+\newblock {\em Springer Tracts in Advanced Robotics}, 79:361--373, 2014.
 
 \bibitem{Moller2015}
 Paul M{\"{o}}ller.
@@ -180,6 +189,12 @@ Marc Raibert, Kevin Blankespoor, Gabriel Nelson, and Rob Playter.
 \newblock {BigDog , the Rough-Terrain Quadruped Robot}.
 \newblock {\em The international federation of automatic control}, 17:6--9,
   2008.
+
+\bibitem{Robinson2016}
+David~Conal Robinson.
+\newblock {\em {Modelling and Estimation of Aerodynamic Disturbances Acting on
+  a Hovering Micro Helicopter in Close Proximity to Planar Surfaces}}.
+\newblock PhD thesis, Monash, 2016.
 
 \bibitem{NearWall}
 D.C. Robinson, Hoam Chung, and K.~Ryan.

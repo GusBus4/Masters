@@ -11,13 +11,13 @@ g = 9.81;
 motor_timing_constant = 0.125;
 
 %% Roll
-roll_rate_tf                = (1/(motor_timing_constant*Iyy))/(s*(s + (1/motor_timing_constant)))
-roll_rate_controller_tf     = 2.0155 * (s + 5.713) * (s + 1.054) / (s * (s + 16))
+roll_rate_tf                = (1/(motor_timing_constant*Ixx))/(s*(s + (1/motor_timing_constant)))
+roll_rate_controller_tf     = 0.55857 * (s + 4.872) * (s + 1.123) / (s * (s + 27.86))
 
 roll_angle_tf               = feedback(roll_rate_tf*roll_rate_controller_tf, 1) * (1/s)
 
-% roll_angle_controller_tf    = 0.18474 * (s + 10.11)                       %PD
-roll_angle_controller_tf    = 1.006                                         %P
+% roll_angle_controller_tf    = 0.18474 * (s + 10.11)                      %PD
+roll_angle_controller_tf    = 1.1                                          %P
 
 % roll_angle_controller_name  = 'PD Controller'
 roll_angle_controller_name = 'P Controller'
@@ -26,7 +26,7 @@ transfer_function           = roll_angle_controller_tf*roll_angle_tf;
 % transfer_function1          = roll_angle_controller1_tf*roll_angle_tf;
 % transfer_function2          = 0;
 
-% %% Plot Step Responses
+%% Plot Step Responses
 % figure;
 % hold on;
 % 
@@ -43,6 +43,49 @@ transfer_function           = roll_angle_controller_tf*roll_angle_tf;
 % hold off;
 
 figure;
+hold on;
+
+roll_angle_unitp.Data = roll_angle_p.Data/max(desired_roll_angle.Data);
+desired_rollunit.Data = desired_roll_angle.Data/max(desired_roll_angle.Data);
+
+plot(tout, desired_rollunit.Data, 'LineWidth', 2)
+plot(tout, roll_angle_unitp.Data, 'LineWidth', 2)
+yl = ylim;
+plot(zeros(2001, 1)+10, -1000:1000, 'k--', 'LineWidth', 2);               %Plot Disturbance injection
+% plot(tout, roll_rate_leadpi_nolimits.Data, 'LineWidth', 2)
+% plot(tout, roll_rate_leadpi_limits.Data, 'LineWidth', 2)
+
+ylim(yl);
+xlabel('Time (seconds)', 'FontSize', 20)
+ylabel('Amplitude', 'FontSize', 20)
+legend({'Reference', 'P Controller', 'Disturbance Injection'}, 'FontSize', 16);
+% title('Heave Controller - Step Responses', 'FontSize', 20)
+grid on;
+
+hold off;
+
+figure;
+hold on;
+
+plot(tout, motor_thrust.Data(:, 1), 'LineWidth', 2)
+plot(tout, motor_thrust.Data(:, 2), 'LineWidth', 2)
+% plot(tout, roll_rate_unitleadpi.Data, 'LineWidth', 2)
+yl = ylim
+plot(zeros(2001, 1)+10, -1000:1000, 'k--', 'LineWidth', 2);               %Plot Disturbance injection
+% plot(tout, roll_rate_leadpi_nolimits.Data, 'LineWidth', 2)
+% plot(tout, roll_rate_leadpi_limits.Data, 'LineWidth', 2)
+
+ylim(yl);
+xlabel('Time (seconds)', 'FontSize', 20)
+ylabel('Amplitude (Thrust)', 'FontSize', 20)
+legend({'Motor 1 & 4', 'Motor 2 & 3', 'Disturbance Injection'}, 'FontSize', 16);
+% title('Heave Controller - Step Responses', 'FontSize', 20)
+grid on;
+
+hold off;
+
+
+figure;
 %% Plot Bode Plot, Highlighting the crossover poles
 [mag, phase, wout]    = bode(roll_angle_tf);
 [Gm,Pm,Wgm,Wpm]       = margin(roll_angle_tf);
@@ -50,8 +93,11 @@ figure;
 [mag1, phase1, wout1]  = bode(transfer_function);
 [Gm1,Pm1,Wgm1,Wpm1]     = margin(transfer_function);
 
-Gm = 25.1;
-Gm1 = 25;
+Gm = 20*log10(Gm)
+Gm1 = 20*log10(Gm1)
+
+% Gm = 25.1;
+% Gm1 = 25;
 % [mag2, phase2, wout2]  = bode(transfer_function1);
 % [Gm2,Pm2,Wgm2,Wpm2]    = margin(transfer_function1);
 
@@ -127,38 +173,38 @@ legend({'Unity Feedback', roll_angle_controller_name, 'Phase Crossover Frequenci
 hold off;
 
 %% Plot Root Locus and highlight the closed loop poles
-% figure;
-% % subplot(1,2,1)
-% hold on;
-%                  
-% %Plot position of closed loop poles
-% % test = 1
-% cl_pole = rlocus(transfer_function, 1)           
-% plot(real(cl_pole),imag(cl_pole),'rs','Markersize',15, 'LineWidth', 5)
-% 
-% %Plot position of open loop poles
-% ol_pole = rlocus(transfer_function, 0)      ;    
-% plot(real(ol_pole),imag(ol_pole),'bx','Markersize',15, 'LineWidth', 3)
-% 
-% %Plot position of open loop zeros
-% [pole, zero] = pzmap(feedback(transfer_function, 1))  ; 
-% plot(real(zero),imag(zero),'go','Markersize',10, 'LineWidth', 3)
-% 
-% %Plot Open loop root locus
-% rlocus(transfer_function, 'c') 
-% 
-% xlim([-15 1])
-% ylim([-10 10])
-% 
-% % title(['Root Locus - ' roll_angle_controller_name], 'FontSize', 20)
-% title('')
-% xlabel('Imaginary Axis', 'FontSize', 20);
-% ylabel('Real Axis', 'FontSize', 20);
-% legend({'Closed Loop Poles', 'Open Loop Poles', 'Zeros'}, 'FontSize', 16)
-% 
-% grid on;
-% hold off;
-% 
+figure;
+% subplot(1,2,1)
+hold on;
+                 
+%Plot position of closed loop poles
+% test = 1
+cl_pole = rlocus(transfer_function, 1)           
+plot(real(cl_pole),imag(cl_pole),'rs','Markersize',15, 'LineWidth', 5)
+
+%Plot position of open loop poles
+ol_pole = rlocus(transfer_function, 0)      ;    
+plot(real(ol_pole),imag(ol_pole),'bx','Markersize',15, 'LineWidth', 3)
+
+%Plot position of open loop zeros
+[pole, zero] = pzmap(feedback(transfer_function, 1))  ; 
+plot(real(zero),imag(zero),'go','Markersize',10, 'LineWidth', 3)
+
+%Plot Open loop root locus
+rlocus(transfer_function, 'c') 
+
+xlim([-20 1])
+ylim([-6 6])
+
+% title(['Root Locus - ' roll_angle_controller_name], 'FontSize', 20)
+title('')
+xlabel('Imaginary Axis', 'FontSize', 20);
+ylabel('Real Axis', 'FontSize', 20);
+legend({'Closed Loop Poles', 'Open Loop Poles', 'Zeros'}, 'FontSize', 16)
+
+grid on;
+hold off;
+
 % % %% Plot Root Locus and highlight the closed loop poles
 % subplot(1,2,2)
 % hold on;
@@ -167,7 +213,7 @@ hold off;
 % cl_pole = rlocus(transfer_function1, 1)     ;
 % cl_pole(2) = cl_pole(3)
 % cl_pole(3) = cl_pole(4)
-% plot(real(cl_pole(1:3)),imag(cl_pole(1:3)),'rs','Markersize',15, 'LineWidth', 5)
+% plot(real(cl_pole),imag(cl_pole(1:3)),'rs','Markersize',15, 'LineWidth', 5)
 % 
 % %Plot position of open loop poles
 % ol_pole = rlocus(transfer_function1, 0)      ;    

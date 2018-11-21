@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  28 JUL 2018 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  19 AUG 2018 21:23
 entering extended mode
 **./document.tex
 (document.tex
@@ -760,603 +760,338 @@ LaTeX Info: Redefining \nameref on input line 28.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-Chapter 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
 
-LaTeX Warning: Reference `SECT_ControlReview' on page 1 undefined on input line
- 30.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../References/Diagrams/HighLevel.jpg, id=83, 926.71219pt x 584.1825pt>
-File: ../References/Diagrams/HighLevel.jpg Graphic file (type jpg)
 
-<use ../References/Diagrams/HighLevel.jpg>
-Package pdftex.def Info: ../References/Diagrams/HighLevel.jpg used on input lin
-e 46.
-(pdftex.def)             Requested size: 451.36383pt x 284.52756pt.
- [1
+LaTeX Warning: Reference `EQ_MotorDelay' on page 1 undefined on input line 47.
+
+[1
+
+{C:/Users/GusBus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+LaTeX Warning: Reference `SSECT_Disturbances' on page 2 undefined on input line
+ 59.
 
 
-{C:/Users/GusBus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <../Ref
-erences/Diagrams/HighLevel.jpg>]
+LaTeX Warning: Reference `tab:HeadRoomPercentages' on page 2 undefined on input
+ line 61.
 
-LaTeX Warning: Reference `EQ_MotorDelay' on page 3 undefined on input line 81.
 
-[3]
-<../References/Diagrams/HeaveController.jpg, id=121, 450.9347pt x 115.18031pt>
-File: ../References/Diagrams/HeaveController.jpg Graphic file (type jpg)
-
-<use ../References/Diagrams/HeaveController.jpg>
-Package pdftex.def Info: ../References/Diagrams/HeaveController.jpg used on inp
-ut line 103.
-(pdftex.def)             Requested size: 389.87425pt x 99.58464pt.
-
-<../Design/Matlab/Controllers/heave_root.jpg, id=124, 1927.2pt x 966.61125pt>
-File: ../Design/Matlab/Controllers/heave_root.jpg Graphic file (type jpg)
-
-<use ../Design/Matlab/Controllers/heave_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/heave_root.jpg used on in
-put line 112.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 112--113
- [][] 
- []
-
-<../Design/Matlab/Controllers/heave_bode.jpg, id=126, 1927.2pt x 966.61125pt>
-File: ../Design/Matlab/Controllers/heave_bode.jpg Graphic file (type jpg)
-
-<use ../Design/Matlab/Controllers/heave_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/heave_bode.jpg used on in
-put line 121.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 121--122
- [][] 
- []
-
-[4 <../References/Diagrams/HeaveController.jpg> <../Design/Matlab/Controllers/h
-eave_root.jpg>]
-<../Design/Matlab/Controllers/heave_step.jpg, id=136, 1927.2pt x 966.61125pt>
-File: ../Design/Matlab/Controllers/heave_step.jpg Graphic file (type jpg)
-
-<use ../Design/Matlab/Controllers/heave_step.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/heave_step.jpg used on in
-put line 145.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 145--146
- [][] 
- []
-
-[5 <../Design/Matlab/Controllers/heave_bode.jpg>]
+<../References/Diagrams/RollRateController.jpg, id=49, 560.8453pt x 118.19156pt
+>
+File: ../References/Diagrams/RollRateController.jpg Graphic file (type jpg)
+ <use ../References/Diagrams/RollRateController.jpg>
+Package pdftex.def Info: ../References/Diagrams/RollRateController.jpg used on 
+input line 65.
+(pdftex.def)             Requested size: 445.56181pt x 93.89418pt.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 150.
+ine 70.
 
-<../References/Diagrams/ClimbRateLoop.jpg, id=146, 751.30687pt x 185.94469pt>
-File: ../References/Diagrams/ClimbRateLoop.jpg Graphic file (type jpg)
-
-<use ../References/Diagrams/ClimbRateLoop.jpg>
-Package pdftex.def Info: ../References/Diagrams/ClimbRateLoop.jpg used on input
- line 157.
-(pdftex.def)             Requested size: 431.11536pt x 106.69783pt.
- [6 <../Design/Matlab/Controllers/heave_step.jpg>]
-<../References/Diagrams/ClimbRateController.jpg, id=154, 358.33875pt x 115.9331
-2pt>
-File: ../References/Diagrams/ClimbRateController.jpg Graphic file (type jpg)
- <use ../References/Diagrams/ClimbRateController.jpg>
-Package pdftex.def Info: ../References/Diagrams/ClimbRateController.jpg used on
- input line 166.
-(pdftex.def)             Requested size: 307.81538pt x 99.58464pt.
-
-<../Design/Matlab/Controllers/climb_rate_root.jpg, id=157, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/climb_rate_root.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/climb_rate_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/climb_rate_root.jpg used 
-on input line 175.
+<../Design/Matlab/Controllers/roll_rate_root.jpg, id=51, 1927.2pt x 966.61125pt
+>
+File: ../Design/Matlab/Controllers/roll_rate_root.jpg Graphic file (type jpg)
+ <use ../Design/Matlab/Controllers/roll_rate_root.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_root.jpg used o
+n input line 74.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 175--176
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 74--75
  [][] 
  []
 
-[7 <../References/Diagrams/ClimbRateLoop.jpg> <../References/Diagrams/ClimbRate
-Controller.jpg>]
-<../Design/Matlab/Controllers/climb_rate_bode.jpg, id=167, 1927.2pt x 966.61125
+[2 <../References/Diagrams/RollRateController.jpg>]
+<../Design/Matlab/Controllers/roll_rate_bode.jpg, id=63, 1927.2pt x 966.61125pt
+>
+File: ../Design/Matlab/Controllers/roll_rate_bode.jpg Graphic file (type jpg)
+ <use ../Design/Matlab/Controllers/roll_rate_bode.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_bode.jpg used o
+n input line 83.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 83--84
+ [][] 
+ []
+
+[3 <../Design/Matlab/Controllers/roll_rate_root.jpg>]
+<../Design/Matlab/Controllers/pitch_rate_bode.jpg, id=72, 1927.2pt x 966.61125p
+t>
+File: ../Design/Matlab/Controllers/pitch_rate_bode.jpg Graphic file (type jpg)
+ <use ../Design/Matlab/Controllers/pitch_rate_bode.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_rate_bode.jpg used 
+on input line 92.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 92--93
+ [][] 
+ []
+
+[4 <../Design/Matlab/Controllers/roll_rate_bode.jpg>]
+<../Design/Matlab/Controllers/roll_pitch_rate_step.jpg, id=79, 1927.2pt x 966.6
+1125pt>
+File: ../Design/Matlab/Controllers/roll_pitch_rate_step.jpg Graphic file (type 
+jpg)
+ <use ../Design/Matlab/Controllers/roll_pitch_rate_step.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_pitch_rate_step.jpg 
+used on input line 105.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+[5 <../Design/Matlab/Controllers/pitch_rate_bode.jpg>]
+<../Design/Matlab/Controllers/roll_rate_impulse.jpg, id=88, 1927.2pt x 966.6112
+5pt>
+File: ../Design/Matlab/Controllers/roll_rate_impulse.jpg Graphic file (type jpg
+)
+ <use ../Design/Matlab/Controllers/roll_rate_impulse.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_impulse.jpg use
+d on input line 116.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 116--117
+ [][] 
+ []
+
+
+<../Design/Matlab/Controllers/pitch_rate_impulse.jpg, id=89, 1927.2pt x 966.611
+25pt>
+File: ../Design/Matlab/Controllers/pitch_rate_impulse.jpg Graphic file (type jp
+g)
+ <use ../Design/Matlab/Controllers/pitch_rate_impulse.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_rate_impulse.jpg us
+ed on input line 123.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 123--124
+ [][] 
+ []
+
+[6 <../Design/Matlab/Controllers/roll_pitch_rate_step.jpg> <../Design/Matlab/Co
+ntrollers/roll_rate_impulse.jpg>]
+<../References/Diagrams/TiltAngleController.jpg, id=97, 788.19469pt x 325.96782
 pt>
-File: ../Design/Matlab/Controllers/climb_rate_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/climb_rate_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/climb_rate_bode.jpg used 
-on input line 184.
+File: ../References/Diagrams/TiltAngleController.jpg Graphic file (type jpg)
+ <use ../References/Diagrams/TiltAngleController.jpg>
+Package pdftex.def Info: ../References/Diagrams/TiltAngleController.jpg used on
+ input line 135.
+(pdftex.def)             Requested size: 447.20702pt x 184.9429pt.
+ [7 <../Design/Matlab/Controllers/pitch_rate_impulse.jpg>]
+
+LaTeX Warning: Reference `EQ_RotationMatrix' on page 8 undefined on input line 
+141.
+
+
+<../References/Diagrams/ConversionMethod.jpg, id=107, 370.38374pt x 427.5975pt>
+File: ../References/Diagrams/ConversionMethod.jpg Graphic file (type jpg)
+<use ../References/Diagrams/ConversionMethod.jpg>
+Package pdftex.def Info: ../References/Diagrams/ConversionMethod.jpg used on in
+put line 155.
+(pdftex.def)             Requested size: 246.45468pt x 284.52756pt.
+ [8 <../References/Diagrams/TiltAngleController.jpg>]
+<../References/Diagrams/RollPitchAngleLoop.jpg, id=117, 544.28343pt x 176.91093
+pt>
+File: ../References/Diagrams/RollPitchAngleLoop.jpg Graphic file (type jpg)
+ <use ../References/Diagrams/RollPitchAngleLoop.jpg>
+Package pdftex.def Info: ../References/Diagrams/RollPitchAngleLoop.jpg used on 
+input line 165.
+(pdftex.def)             Requested size: 306.38292pt x 99.58464pt.
+ [9 <../References/Diagrams/ConversionMethod.jpg> <../References/Diagrams/RollP
+itchAngleLoop.jpg>]
+<../Design/Matlab/Controllers/roll_angle_bode.jpg, id=126, 1927.2pt x 966.61125
+pt>
+File: ../Design/Matlab/Controllers/roll_angle_bode.jpg Graphic file (type jpg)
+ <use ../Design/Matlab/Controllers/roll_angle_bode.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_angle_bode.jpg used 
+on input line 174.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 174--175
+ [][] 
+ []
+
+
+<../Design/Matlab/Controllers/roll_pitch_angle_step.jpg, id=128, 1927.2pt x 966
+.61125pt>
+File: ../Design/Matlab/Controllers/roll_pitch_angle_step.jpg Graphic file (type
+ jpg)
+ <use ../Design/Matlab/Controllers/roll_pitch_angle_step.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_pitch_angle_step.jpg
+ used on input line 184.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
 Overfull \hbox (0.83578pt too wide) in paragraph at lines 184--185
  [][] 
  []
 
-[8 <../Design/Matlab/Controllers/climb_rate_root.jpg> <../Design/Matlab/Control
-lers/climb_rate_bode.jpg>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 193.
-
-
-<../Design/Matlab/Controllers/climb_rate_step.jpg, id=176, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/climb_rate_step.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/climb_rate_step.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/climb_rate_step.jpg used 
-on input line 209.
+[10 <../Design/Matlab/Controllers/roll_angle_bode.jpg>]
+<../Design/Matlab/Controllers/roll_angle_impulse.jpg, id=137, 1927.2pt x 966.61
+125pt>
+File: ../Design/Matlab/Controllers/roll_angle_impulse.jpg Graphic file (type jp
+g)
+ <use ../Design/Matlab/Controllers/roll_angle_impulse.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_angle_impulse.jpg us
+ed on input line 193.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 209--210
- [][] 
- []
-
-[9 <../Design/Matlab/Controllers/climb_rate_step.jpg>]
-<../References/Diagrams/AltHoldLoop.jpg, id=187, 542.77782pt x 185.94469pt>
-File: ../References/Diagrams/AltHoldLoop.jpg Graphic file (type jpg)
-
-<use ../References/Diagrams/AltHoldLoop.jpg>
-Package pdftex.def Info: ../References/Diagrams/AltHoldLoop.jpg used on input l
-ine 221.
-(pdftex.def)             Requested size: 332.22864pt x 113.81102pt.
-
-<../References/Diagrams/AltHoldController.jpg, id=192, 475.7775pt x 115.93312pt
->
-File: ../References/Diagrams/AltHoldController.jpg Graphic file (type jpg)
- <use ../References/Diagrams/AltHoldController.jpg>
-Package pdftex.def Info: ../References/Diagrams/AltHoldController.jpg used on i
-nput line 232.
-(pdftex.def)             Requested size: 408.69603pt x 99.58464pt.
-
-<../Design/Matlab/Controllers/altitude_root.jpg, id=195, 1927.2pt x 966.61125pt
->
-File: ../Design/Matlab/Controllers/altitude_root.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/altitude_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_root.jpg used on
- input line 244.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 244--245
- [][] 
- []
-
-[10 <../References/Diagrams/AltHoldLoop.jpg> <../References/Diagrams/AltHoldCon
-troller.jpg>]
-<../Design/Matlab/Controllers/altitude_bode.jpg, id=205, 1927.2pt x 966.61125pt
->
-File: ../Design/Matlab/Controllers/altitude_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/altitude_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_bode.jpg used on
- input line 253.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 253--254
- [][] 
- []
-
-[11 <../Design/Matlab/Controllers/altitude_root.jpg> <../Design/Matlab/Controll
-ers/altitude_bode.jpg>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 260.
-
-
-<../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg, id=213, 1927.2pt x 9
-66.61125pt>
-File: ../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg Graphic file (ty
-pe jpg)
- <use ../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_step_p_no_dist.j
-pg used on input line 277.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 277--278
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 193--194
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/altitude_step_p_dist.jpg, id=216, 1927.2pt x 966.
+<../Design/Matlab/Controllers/pitch_angle_impulse.jpg, id=138, 1927.2pt x 966.6
+1125pt>
+File: ../Design/Matlab/Controllers/pitch_angle_impulse.jpg Graphic file (type j
+pg)
+ <use ../Design/Matlab/Controllers/pitch_angle_impulse.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_angle_impulse.jpg u
+sed on input line 200.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 200--201
+ [][] 
+ []
+
+[11 <../Design/Matlab/Controllers/roll_pitch_angle_step.jpg> <../Design/Matlab/
+Controllers/roll_angle_impulse.jpg>]
+<../References/Diagrams/NorthVelocityLoop.jpg, id=149, 788.19469pt x 146.79843p
+t>
+File: ../References/Diagrams/NorthVelocityLoop.jpg Graphic file (type jpg)
+ <use ../References/Diagrams/NorthVelocityLoop.jpg>
+Package pdftex.def Info: ../References/Diagrams/NorthVelocityLoop.jpg used on i
+nput line 223.
+(pdftex.def)             Requested size: 443.03369pt x 82.51282pt.
+ [12 <../Design/Matlab/Controllers/pitch_angle_impulse.jpg>]
+<../Design/Matlab/Controllers/north_velocity_bode.jpg, id=158, 1927.2pt x 966.6
+1125pt>
+File: ../Design/Matlab/Controllers/north_velocity_bode.jpg Graphic file (type j
+pg)
+ <use ../Design/Matlab/Controllers/north_velocity_bode.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_bode.jpg u
+sed on input line 236.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 236--237
+ [][] 
+ []
+
+
+<../Design/Matlab/Controllers/north_velocity_root.jpg, id=160, 1927.2pt x 966.6
+1125pt>
+File: ../Design/Matlab/Controllers/north_velocity_root.jpg Graphic file (type j
+pg)
+ <use ../Design/Matlab/Controllers/north_velocity_root.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_root.jpg u
+sed on input line 245.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 245--246
+ [][] 
+ []
+
+[13 <../References/Diagrams/NorthVelocityLoop.jpg> <../Design/Matlab/Controller
+s/north_velocity_bode.jpg>]
+<../Design/Matlab/Controllers/north_velocity_step.jpg, id=168, 3011.25pt x 1510
+.64375pt>
+File: ../Design/Matlab/Controllers/north_velocity_step.jpg Graphic file (type j
+pg)
+ <use ../Design/Matlab/Controllers/north_velocity_step.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_step.jpg u
+sed on input line 255.
+(pdftex.def)             Requested size: 453.73567pt x 227.62204pt.
+
+Overfull \hbox (0.76778pt too wide) in paragraph at lines 255--256
+ [][] 
+ []
+
+[14 <../Design/Matlab/Controllers/north_velocity_root.jpg>]
+<../Design/Matlab/Controllers/north_velocity_stepd.jpg, id=177, 1927.2pt x 966.
 61125pt>
-File: ../Design/Matlab/Controllers/altitude_step_p_dist.jpg Graphic file (type 
+File: ../Design/Matlab/Controllers/north_velocity_stepd.jpg Graphic file (type 
 jpg)
- <use ../Design/Matlab/Controllers/altitude_step_p_dist.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_step_p_dist.jpg 
-used on input line 286.
+ <use ../Design/Matlab/Controllers/north_velocity_stepd.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_stepd.jpg 
+used on input line 264.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 264--265
+ [][] 
+ []
+
+[15 <../Design/Matlab/Controllers/north_velocity_step.jpg> <../Design/Matlab/Co
+ntrollers/north_velocity_stepd.jpg>]
+<../Design/Matlab/Controllers/north_position_bode.jpg, id=184, 1927.2pt x 966.6
+1125pt>
+File: ../Design/Matlab/Controllers/north_position_bode.jpg Graphic file (type j
+pg)
+ <use ../Design/Matlab/Controllers/north_position_bode.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/north_position_bode.jpg u
+sed on input line 276.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 276--277
+ [][] 
+ []
+
+
+<../Design/Matlab/Controllers/north_position_step.jpg, id=186, 1927.2pt x 966.6
+1125pt>
+File: ../Design/Matlab/Controllers/north_position_step.jpg Graphic file (type j
+pg)
+ <use ../Design/Matlab/Controllers/north_position_step.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/north_position_step.jpg u
+sed on input line 286.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
 Overfull \hbox (0.83578pt too wide) in paragraph at lines 286--287
  [][] 
  []
 
-[12 <../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg>]
-<../Design/Matlab/Controllers/altitude_step_pi.jpg, id=226, 1927.2pt x 966.6112
-5pt>
-File: ../Design/Matlab/Controllers/altitude_step_pi.jpg Graphic file (type jpg)
-
- <use ../Design/Matlab/Controllers/altitude_step_pi.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_step_pi.jpg used
- on input line 295.
+[16 <../Design/Matlab/Controllers/north_position_bode.jpg>]
+<../Design/Matlab/Controllers/north_pos_limit_step.jpg, id=195, 1927.2pt x 966.
+61125pt>
+File: ../Design/Matlab/Controllers/north_pos_limit_step.jpg Graphic file (type 
+jpg)
+ <use ../Design/Matlab/Controllers/north_pos_limit_step.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/north_pos_limit_step.jpg 
+used on input line 295.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
 Overfull \hbox (0.83578pt too wide) in paragraph at lines 295--296
  [][] 
  []
 
-[13 <../Design/Matlab/Controllers/altitude_step_p_dist.jpg> <../Design/Matlab/C
-ontrollers/altitude_step_pi.jpg>] [14]
-<../References/Diagrams/RollRateController.jpg, id=250, 560.8453pt x 118.19156p
-t>
-File: ../References/Diagrams/RollRateController.jpg Graphic file (type jpg)
- <use ../References/Diagrams/RollRateController.jpg>
-Package pdftex.def Info: ../References/Diagrams/RollRateController.jpg used on 
-input line 334.
-(pdftex.def)             Requested size: 445.56181pt x 93.89418pt.
-
-<../Design/Matlab/Controllers/roll_rate_root.jpg, id=252, 1927.2pt x 966.61125p
-t>
-File: ../Design/Matlab/Controllers/roll_rate_root.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/roll_rate_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_root.jpg used o
-n input line 345.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 345--346
- [][] 
- []
-
-[15 <../References/Diagrams/RollRateController.jpg> <../Design/Matlab/Controlle
-rs/roll_rate_root.jpg>]
-<../Design/Matlab/Controllers/roll_rate_bode.jpg, id=260, 1927.2pt x 966.61125p
-t>
-File: ../Design/Matlab/Controllers/roll_rate_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/roll_rate_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_bode.jpg used o
-n input line 354.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 354--355
- [][] 
- []
-
-
-<../Design/Matlab/Controllers/roll_rate_step.jpg, id=262, 1927.2pt x 966.61125p
-t>
-File: ../Design/Matlab/Controllers/roll_rate_step.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/roll_rate_step.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_step.jpg used o
-n input line 365.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 365--366
- [][] 
- []
-
-[16 <../Design/Matlab/Controllers/roll_rate_bode.jpg>]
-<../Design/Matlab/Controllers/pitch_rate_root.jpg, id=270, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/pitch_rate_root.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/pitch_rate_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_rate_root.jpg used 
-on input line 376.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 376--377
- [][] 
- []
-
-
-<../Design/Matlab/Controllers/pitch_rate_bode.jpg, id=271, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/pitch_rate_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/pitch_rate_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_rate_bode.jpg used 
-on input line 383.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 383--384
- [][] 
- []
-
-[17 <../Design/Matlab/Controllers/roll_rate_step.jpg> <../Design/Matlab/Control
-lers/pitch_rate_root.jpg>]
-<../Design/Matlab/Controllers/pitch_rate_step.jpg, id=277, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/pitch_rate_step.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/pitch_rate_step.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_rate_step.jpg used 
-on input line 392.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 392--393
- [][] 
- []
-
-[18 <../Design/Matlab/Controllers/pitch_rate_bode.jpg> <../Design/Matlab/Contro
-llers/pitch_rate_step.jpg>]
-<../References/Diagrams/TiltAngleController.jpg, id=287, 788.19469pt x 325.9678
-2pt>
-File: ../References/Diagrams/TiltAngleController.jpg Graphic file (type jpg)
- <use ../References/Diagrams/TiltAngleController.jpg>
-Package pdftex.def Info: ../References/Diagrams/TiltAngleController.jpg used on
- input line 410.
-(pdftex.def)             Requested size: 447.20702pt x 184.9429pt.
-
-
-LaTeX Warning: Reference `EQ_RotationMatrix' on page 19 undefined on input line
- 416.
-
-
-<../References/Diagrams/ConversionMethod.jpg, id=291, 370.38374pt x 427.5975pt>
-File: ../References/Diagrams/ConversionMethod.jpg Graphic file (type jpg)
-<use ../References/Diagrams/ConversionMethod.jpg>
-Package pdftex.def Info: ../References/Diagrams/ConversionMethod.jpg used on in
-put line 431.
-(pdftex.def)             Requested size: 246.45468pt x 284.52756pt.
- [19 <../References/Diagrams/TiltAngleController.jpg>]
-<../References/Diagrams/RollAngleLoop.jpg, id=302, 542.77782pt x 176.91093pt>
-File: ../References/Diagrams/RollAngleLoop.jpg Graphic file (type jpg)
-
-<use ../References/Diagrams/RollAngleLoop.jpg>
-Package pdftex.def Info: ../References/Diagrams/RollAngleLoop.jpg used on input
- line 440.
-(pdftex.def)             Requested size: 305.53539pt x 99.58464pt.
-
-<../Design/Matlab/Controllers/roll_angle_root.jpg, id=303, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/roll_angle_root.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/roll_angle_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/roll_angle_root.jpg used 
-on input line 447.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 447--448
- [][] 
- []
-
-[20 <../References/Diagrams/ConversionMethod.jpg> <../References/Diagrams/RollA
-ngleLoop.jpg>]
-<../Design/Matlab/Controllers/roll_angle_bode.jpg, id=310, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/roll_angle_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/roll_angle_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/roll_angle_bode.jpg used 
-on input line 454.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 454--455
- [][] 
- []
-
-
-<../References/Diagrams/PitchAngleLoop.jpg, id=311, 542.77782pt x 176.91093pt>
-File: ../References/Diagrams/PitchAngleLoop.jpg Graphic file (type jpg)
-
-<use ../References/Diagrams/PitchAngleLoop.jpg>
-Package pdftex.def Info: ../References/Diagrams/PitchAngleLoop.jpg used on inpu
-t line 462.
-(pdftex.def)             Requested size: 305.53539pt x 99.58464pt.
-
-<../Design/Matlab/Controllers/pitch_angle_root.jpg, id=312, 1927.2pt x 966.6112
-5pt>
-File: ../Design/Matlab/Controllers/pitch_angle_root.jpg Graphic file (type jpg)
-
- <use ../Design/Matlab/Controllers/pitch_angle_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_angle_root.jpg used
- on input line 469.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 469--470
- [][] 
- []
-
-[21 <../Design/Matlab/Controllers/roll_angle_root.jpg> <../Design/Matlab/Contro
-llers/roll_angle_bode.jpg> <../References/Diagrams/PitchAngleLoop.jpg>]
-<../Design/Matlab/Controllers/pitch_angle_bode.jpg, id=320, 1927.2pt x 966.6112
-5pt>
-File: ../Design/Matlab/Controllers/pitch_angle_bode.jpg Graphic file (type jpg)
-
- <use ../Design/Matlab/Controllers/pitch_angle_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_angle_bode.jpg used
- on input line 476.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 476--477
- [][] 
- []
-
-
-<../Design/Matlab/Controllers/roll_angle_step.jpg, id=321, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/roll_angle_step.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/roll_angle_step.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/roll_angle_step.jpg used 
-on input line 485.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 485--486
- [][] 
- []
-
-[22 <../Design/Matlab/Controllers/pitch_angle_root.jpg> <../Design/Matlab/Contr
-ollers/pitch_angle_bode.jpg>] [23 <../Design/Matlab/Controllers/roll_angle_step
-.jpg>]
-<../References/Diagrams/YawRateController.jpg, id=342, 368.1253pt x 104.64093pt
->
-File: ../References/Diagrams/YawRateController.jpg Graphic file (type jpg)
- <use ../References/Diagrams/YawRateController.jpg>
-Package pdftex.def Info: ../References/Diagrams/YawRateController.jpg used on i
-nput line 528.
-(pdftex.def)             Requested size: 350.33495pt x 99.58464pt.
- [24]
-<../Design/Matlab/Controllers/yaw_rate_root.jpg, id=352, 1927.2pt x 966.61125pt
->
-File: ../Design/Matlab/Controllers/yaw_rate_root.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/yaw_rate_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_rate_root.jpg used on
- input line 537.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 537--538
- [][] 
- []
-
-
-<../Design/Matlab/Controllers/yaw_rate_bode.jpg, id=354, 1927.2pt x 966.61125pt
->
-File: ../Design/Matlab/Controllers/yaw_rate_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/yaw_rate_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_rate_bode.jpg used on
- input line 546.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 546--547
- [][] 
- []
-
-[25 <../References/Diagrams/YawRateController.jpg> <../Design/Matlab/Controller
-s/yaw_rate_root.jpg>]
-<../Design/Matlab/Controllers/yaw_rate_step.jpg, id=363, 1927.2pt x 966.61125pt
->
-File: ../Design/Matlab/Controllers/yaw_rate_step.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/yaw_rate_step.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_rate_step.jpg used on
- input line 556.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 556--557
- [][] 
- []
-
-[26 <../Design/Matlab/Controllers/yaw_rate_bode.jpg> <../Design/Matlab/Controll
-ers/yaw_rate_step.jpg>]
-<../References/Diagrams/YawAngleLoop.jpg, id=371, 542.77782pt x 177.66376pt>
-File: ../References/Diagrams/YawAngleLoop.jpg Graphic file (type jpg)
-
-<use ../References/Diagrams/YawAngleLoop.jpg>
-Package pdftex.def Info: ../References/Diagrams/YawAngleLoop.jpg used on input 
-line 566.
-(pdftex.def)             Requested size: 304.24338pt x 99.58464pt.
-
-<../References/Diagrams/YawAngleControllerPI.jpg, id=373, 475.7775pt x 115.9331
-2pt>
-File: ../References/Diagrams/YawAngleControllerPI.jpg Graphic file (type jpg)
- <use ../References/Diagrams/YawAngleControllerPI.jpg>
-Package pdftex.def Info: ../References/Diagrams/YawAngleControllerPI.jpg used o
-n input line 575.
-(pdftex.def)             Requested size: 408.69603pt x 99.58464pt.
-
-<../References/Diagrams/YawAngleControllerPID.jpg, id=375, 475.7775pt x 179.922
-18pt>
-File: ../References/Diagrams/YawAngleControllerPID.jpg Graphic file (type jpg)
- <use ../References/Diagrams/YawAngleControllerPID.jpg>
-Package pdftex.def Info: ../References/Diagrams/YawAngleControllerPID.jpg used 
-on input line 584.
-(pdftex.def)             Requested size: 413.85046pt x 156.49014pt.
- [27 <../References/Diagrams/YawAngleLoop.jpg> <../References/Diagrams/YawAngle
-ControllerPI.jpg>]
-<../Design/Matlab/Controllers/yaw_angle_root.jpg, id=385, 1927.2pt x 966.61125p
-t>
-File: ../Design/Matlab/Controllers/yaw_angle_root.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/yaw_angle_root.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_root.jpg used o
-n input line 595.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 595--596
- [][] 
- []
-
-[28 <../References/Diagrams/YawAngleControllerPID.jpg> <../Design/Matlab/Contro
-llers/yaw_angle_root.jpg>]
-<../Design/Matlab/Controllers/yaw_angle_bode.jpg, id=393, 1927.2pt x 966.61125p
-t>
-File: ../Design/Matlab/Controllers/yaw_angle_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/yaw_angle_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_bode.jpg used o
-n input line 606.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 606--607
- [][] 
- []
-
-
-<../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg, id=395, 1927.2pt 
-x 966.61125pt>
-File: ../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg Graphic file 
-(type jpg)
-
-<use ../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_step_both_limit
-s.jpg used on input line 618.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 618--619
- [][] 
- []
-
-[29 <../Design/Matlab/Controllers/yaw_angle_bode.jpg>]
-<../Design/Matlab/Controllers/yaw_angle_step_both_dist.jpg, id=403, 1927.2pt x 
-966.61125pt>
-File: ../Design/Matlab/Controllers/yaw_angle_step_both_dist.jpg Graphic file (t
-ype jpg)
- <use ../Design/Matlab/Controllers/yaw_angle_step_both_dist.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_step_both_dist.
-jpg used on input line 627.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 627--628
- [][] 
- []
-
-
-<../Design/Matlab/Controllers/yaw_angle_impulse.jpg, id=405, 1927.2pt x 966.611
-25pt>
-File: ../Design/Matlab/Controllers/yaw_angle_impulse.jpg Graphic file (type jpg
-)
- <use ../Design/Matlab/Controllers/yaw_angle_impulse.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_impulse.jpg use
-d on input line 636.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 636--637
- [][] 
- []
-
-[30 <../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg> <../Design/Ma
-tlab/Controllers/yaw_angle_step_both_dist.jpg>] [31 <../Design/Matlab/Controlle
-rs/yaw_angle_impulse.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
+[17 <../Design/Matlab/Controllers/north_position_step.jpg> <../Design/Matlab/Co
+ntrollers/north_pos_limit_step.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: F8ED08904FF4146F105B9AB56BEF45C9;1366.
+(rerunfilecheck)             Checksum: D1D25369C272EE2EC89D6ABEF97B5B26;461.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 644.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 17762 strings out of 493335
- 334204 string characters out of 3139257
- 393134 words of memory out of 3000000
- 20815 multiletter control sequences out of 15000+200000
- 10746 words of font info for 40 fonts, out of 3000000 for 9000
+ 17506 strings out of 493335
+ 327341 string characters out of 3139257
+ 390626 words of memory out of 3000000
+ 20654 multiletter control sequences out of 15000+200000
+ 10140 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,80p,1237b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,80p,1154b,606s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\GusBus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
@@ -1365,11 +1100,10 @@ Here is how much of TeX's memory you used:
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb>
-Output written on document.pdf (31 pages, 4658477 bytes).
+amsfonts/cm/cmsy10.pfb>
+Output written on document.pdf (17 pages, 2452625 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

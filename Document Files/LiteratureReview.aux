@@ -118,6 +118,7 @@
 \newlabel{IM_TiltRotor}{{2.13}{24}{Hager's design for a telescopic tilt rotor system \cite {Heli}}{figure.2.13}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.6}Discussion}{24}{subsection.2.2.6}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Quadrotor Flight Dynamics}{24}{section.2.3}}
+\newlabel{SECT_QuadFlightDynamics}{{2.3}{24}{Quadrotor Flight Dynamics}{section.2.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Coordinate Systems, Rotations and Nomenclature}{24}{subsection.2.3.1}}
 \@writefile{toc}{\contentsline {subsubsection}{Inertial and Body Frame}{24}{section*.21}}
 \citation{quaternion}
@@ -166,6 +167,7 @@
 \citation{Moller2015}
 \newlabel{EQ_InertiaTensor}{{2.27}{29}{Inertia Tensor}{equation.2.3.27}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Rotor Generated Forces and Moments}{29}{subsection.2.3.4}}
+\newlabel{SSECT_RotorForcesMoments}{{2.3.4}{29}{Rotor Generated Forces and Moments}{subsection.2.3.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Forces and moments acting in the body frame on an X-Configuration quadrotor}}{29}{figure.2.17}}
 \newlabel{IM_Forces}{{2.17}{29}{Forces and moments acting in the body frame on an X-Configuration quadrotor}{figure.2.17}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Actuators}{29}{section*.28}}
@@ -184,6 +186,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Disturbances}{31}{subsection.2.3.5}}
 \newlabel{SSECT_Disturbances}{{2.3.5}{31}{Disturbances}{subsection.2.3.5}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Drag}{31}{section*.31}}
+\newlabel{SSSECT_Drag}{{2.3.5}{31}{Drag}{section*.31}{}}
 \newlabel{EQ_dragForcesX}{{2.38}{31}{Drag}{equation.2.3.38}{}}
 \newlabel{EQ_dragForcesY}{{2.39}{31}{Drag}{equation.2.3.38}{}}
 \newlabel{EQ_dragForcesZ}{{2.40}{31}{Drag}{equation.2.3.38}{}}
@@ -228,33 +231,45 @@
 \citation{Moller2015}
 \citation{Klaptocz2013}
 \citation{Collision}
-\citation{Klaptocz2012}
 \citation{Briod2012}
-\citation{Daler2013}
 \citation{Klaptocz2010}
-\citation{Moller2015}
-\citation{Heli}
 \@writefile{toc}{\contentsline {subsubsection}{Measurement Noise}{35}{section*.35}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Collision Protection Techniques}{35}{section.2.4}}
-\@writefile{tdo}{\contentsline {todo}{Need to decide if I should keep this in,l and in what format}{35}{section*.36}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Impact Resistance}{35}{subsection.2.4.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Rolling Cage}{35}{subsection.2.4.2}}
-\@writefile{tdo}{\contentsline {todo}{Although a lot can be learnt from this design in terms of collision resistance, for the proposed end use case the design will not be pursued. The rolling cage design}{35}{section*.37}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.5}Review of Existing Flight Control Strategies}{35}{section.2.5}}
 \newlabel{SECT_ControlReview}{{2.5}{35}{Review of Existing Flight Control Strategies}{section.2.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces Hager's design for a telescopic tilt rotor system \cite  {Heli}}}{36}{figure.2.22}}
-\newlabel{IM_ControlOverviewSimplified}{{2.22}{36}{Hager's design for a telescopic tilt rotor system \cite {Heli}}{figure.2.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Altitude Control System}{36}{subsection.2.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Heading Control System}{36}{subsection.2.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Horizontal Control System}{36}{subsection.2.5.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Disturbance Based Observer Controller}{36}{subsection.2.5.4}}
-\newlabel{SectionDisturbanceObserver}{{2.5.4}{36}{Disturbance Based Observer Controller}{subsection.2.5.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.6}Collision Avoidance Techniques}{36}{section.2.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Sensing Techniques and Requirements}{36}{subsection.2.6.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Modelling}{36}{section*.38}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Potential Field Method}{36}{subsection.2.6.2}}
+\citation{Moller2015}
+\citation{Mellinger2014}
+\citation{NearWall}
+\citation{Robinson2016}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Controller Architecture}{36}{subsection.2.5.1}}
+\citation{Lee2012}
+\citation{Meier2015}
+\citation{Green2015}
+\@writefile{toc}{\contentsline {subsubsection}{Disturbance Based Observer Controller}{37}{section*.36}}
+\newlabel{SectionDisturbanceObserver}{{2.5.1}{37}{Disturbance Based Observer Controller}{section*.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces Disturbance Observer Based Controller Structure}}{37}{figure.2.22}}
+\newlabel{IM_DOBC}{{2.22}{37}{Disturbance Observer Based Controller Structure}{figure.2.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Controller Implementation}{37}{subsection.2.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Collision Avoidance Techniques}{37}{section.2.6}}
+\citation{Barry2015}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Sensing Techniques and Requirements}{38}{subsection.2.6.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Proximity Measurement}{38}{section*.37}}
+\@writefile{toc}{\contentsline {subsubsection}{Image Processing}{38}{section*.38}}
+\citation{Lumelsky1990}
+\citation{Lumelsky1990}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.2}Collision Avoidance Algorithms}{39}{subsection.2.6.2}}
+\newlabel{ObAvoidLit}{{2.6.2}{39}{Collision Avoidance Algorithms}{subsection.2.6.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Bug Algorithm}{39}{section*.39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.23}{\ignorespaces Demonstration of the Bug2 algorithm (Image taken from \cite  {Lumelsky1990})}}{40}{figure.2.23}}
+\newlabel{IM_Bug2}{{2.23}{40}{Demonstration of the Bug2 algorithm (Image taken from \cite {Lumelsky1990})}{figure.2.23}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Potential Field Method}{40}{section*.40}}
+\newlabel{SSECT_PotentialField}{{2.6.2}{40}{Potential Field Method}{section*.40}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.24}{\ignorespaces Local minima seen with potential field method}}{41}{figure.2.24}}
+\newlabel{IM_LocalMinima}{{2.24}{41}{Local minima seen with potential field method}{figure.2.24}{}}
 \@setckpt{LiteratureReview}{
-\setcounter{page}{37}
+\setcounter{page}{42}
 \setcounter{equation}{43}
 \setcounter{enumi}{5}
 \setcounter{enumii}{0}
@@ -269,13 +284,13 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{22}
+\setcounter{figure}{24}
 \setcounter{table}{2}
 \setcounter{parentequation}{0}
 \setcounter{float@type}{4}
 \setcounter{Item}{13}
 \setcounter{Hfootnote}{5}
-\setcounter{bookmark@seq@number}{42}
-\setcounter{@todonotes@numberoftodonotes}{14}
-\setcounter{section@level}{2}
+\setcounter{bookmark@seq@number}{40}
+\setcounter{@todonotes@numberoftodonotes}{12}
+\setcounter{section@level}{3}
 }

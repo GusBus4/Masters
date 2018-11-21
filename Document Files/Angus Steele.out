@@ -33,82 +33,67 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Impact Resistance}{section.2.4}% 33
 \BOOKMARK [2][-]{subsection.2.4.2}{Rolling Cage}{section.2.4}% 34
 \BOOKMARK [1][-]{section.2.5}{Review of Existing Flight Control Strategies}{chapter.2}% 35
-\BOOKMARK [2][-]{subsection.2.5.1}{Altitude Control System}{section.2.5}% 36
-\BOOKMARK [2][-]{subsection.2.5.2}{Heading Control System}{section.2.5}% 37
-\BOOKMARK [2][-]{subsection.2.5.3}{Horizontal Control System}{section.2.5}% 38
-\BOOKMARK [2][-]{subsection.2.5.4}{Disturbance Based Observer Controller}{section.2.5}% 39
-\BOOKMARK [1][-]{section.2.6}{Collision Avoidance Techniques}{chapter.2}% 40
-\BOOKMARK [2][-]{subsection.2.6.1}{Sensing Techniques and Requirements}{section.2.6}% 41
-\BOOKMARK [2][-]{subsection.2.6.2}{Potential Field Method}{section.2.6}% 42
-\BOOKMARK [0][-]{chapter.3}{Platform Design}{}% 43
-\BOOKMARK [1][-]{section.3.1}{System Hardware Architecture}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.1.1}{Platform Construction}{section.3.1}% 45
-\BOOKMARK [2][-]{subsection.3.1.2}{Electronics Interface}{section.3.1}% 46
-\BOOKMARK [1][-]{section.3.2}{Platform Construction}{chapter.3}% 47
-\BOOKMARK [2][-]{subsection.3.2.1}{Factors Affecting Design Decisions}{section.3.2}% 48
-\BOOKMARK [2][-]{subsection.3.2.2}{Chosen Concepts}{section.3.2}% 49
-\BOOKMARK [2][-]{subsection.3.2.3}{Concept Comparison}{section.3.2}% 50
-\BOOKMARK [1][-]{section.3.3}{Electronic Design}{chapter.3}% 51
-\BOOKMARK [2][-]{subsection.3.3.1}{Flight Controller}{section.3.3}% 52
-\BOOKMARK [2][-]{subsection.3.3.2}{Electronic Speed Controller}{section.3.3}% 53
-\BOOKMARK [2][-]{subsection.3.3.3}{On Board Computer}{section.3.3}% 54
-\BOOKMARK [2][-]{subsection.3.3.4}{Location}{section.3.3}% 55
-\BOOKMARK [2][-]{subsection.3.3.5}{Object Avoidance}{section.3.3}% 56
-\BOOKMARK [2][-]{subsection.3.3.6}{External Sensor Pack}{section.3.3}% 57
-\BOOKMARK [2][-]{subsection.3.3.7}{Electronic Design Discussion}{section.3.3}% 58
-\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 59
-\BOOKMARK [0][-]{chapter.4}{Mathematical Modelling and System Identification}{}% 60
-\BOOKMARK [1][-]{section.4.1}{Dynamic Flight Model}{chapter.4}% 61
-\BOOKMARK [1][-]{section.4.2}{System Identification}{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.2.1}{Mass and Inertia}{section.4.2}% 63
-\BOOKMARK [2][-]{subsection.4.2.2}{Thrust and Moment Profiles}{section.4.2}% 64
-\BOOKMARK [2][-]{subsection.4.2.3}{Drag Coefficients}{section.4.2}% 65
-\BOOKMARK [2][-]{subsection.4.2.4}{Sensor Constants}{section.4.2}% 66
-\BOOKMARK [1][-]{section.4.3}{Instrumentation}{chapter.4}% 67
-\BOOKMARK [1][-]{section.4.4}{Disturbances}{chapter.4}% 68
-\BOOKMARK [2][-]{subsection.4.4.1}{Wind Model}{section.4.4}% 69
-\BOOKMARK [2][-]{subsection.4.4.2}{Drag Model}{section.4.4}% 70
-\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 71
-\BOOKMARK [0][-]{chapter.5}{Controller Design}{}% 72
-\BOOKMARK [1][-]{section.5.1}{Design Goals}{chapter.5}% 73
-\BOOKMARK [1][-]{section.5.2}{Flight Control Strategy}{chapter.5}% 74
-\BOOKMARK [1][-]{section.5.3}{Altitude Controller}{chapter.5}% 75
-\BOOKMARK [2][-]{subsection.5.3.1}{Heave Dynamics}{section.5.3}% 76
-\BOOKMARK [2][-]{subsection.5.3.2}{Heave Controller}{section.5.3}% 77
-\BOOKMARK [2][-]{subsection.5.3.3}{Climb Rate Controller}{section.5.3}% 78
-\BOOKMARK [2][-]{subsection.5.3.4}{Altitude Hold Controller}{section.5.3}% 79
-\BOOKMARK [1][-]{section.5.4}{Horizontal Control}{chapter.5}% 80
-\BOOKMARK [2][-]{subsection.5.4.1}{Roll and Pitch Rate Dynamics}{section.5.4}% 81
-\BOOKMARK [2][-]{subsection.5.4.2}{Roll and Pitch Rate Controllers}{section.5.4}% 82
-\BOOKMARK [2][-]{subsection.5.4.3}{Tilt Angle Controller}{section.5.4}% 83
-\BOOKMARK [2][-]{subsection.5.4.4}{Linear Velocity Control}{section.5.4}% 84
-\BOOKMARK [2][-]{subsection.5.4.5}{Global Position Tracking Control}{section.5.4}% 85
-\BOOKMARK [1][-]{section.5.5}{Heading Controller}{chapter.5}% 86
-\BOOKMARK [2][-]{subsection.5.5.1}{Yaw Rate Dynamics}{section.5.5}% 87
-\BOOKMARK [2][-]{subsection.5.5.2}{Yaw Rate Controller}{section.5.5}% 88
-\BOOKMARK [2][-]{subsection.5.5.3}{Yaw Angle Controller}{section.5.5}% 89
-\BOOKMARK [1][-]{section.5.6}{Non-Linear Simulation}{chapter.5}% 90
-\BOOKMARK [2][-]{subsection.5.6.1}{Simulation Setup}{section.5.6}% 91
-\BOOKMARK [2][-]{subsection.5.6.2}{Simulation Results}{section.5.6}% 92
-\BOOKMARK [1][-]{section.5.7}{Discussion}{chapter.5}% 93
-\BOOKMARK [1][-]{section.5.8}{Table}{chapter.5}% 94
-\BOOKMARK [0][-]{chapter.6}{Obstacle Avoidance Implementation}{}% 95
-\BOOKMARK [1][-]{section.6.1}{Mathematical modelling}{chapter.6}% 96
-\BOOKMARK [2][-]{subsection.6.1.1}{World Creation}{section.6.1}% 97
-\BOOKMARK [2][-]{subsection.6.1.2}{Sensor Implementation}{section.6.1}% 98
-\BOOKMARK [2][-]{subsection.6.1.3}{Obstacle Distance Detection}{section.6.1}% 99
-\BOOKMARK [1][-]{section.6.2}{Virtual Spring Damper Model}{chapter.6}% 100
-\BOOKMARK [1][-]{section.6.3}{Obstacle Avoidance Controller}{chapter.6}% 101
-\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 102
-\BOOKMARK [2][-]{subsection.6.4.1}{Spring Damper Coefficients}{section.6.4}% 103
-\BOOKMARK [2][-]{subsection.6.4.2}{Effect of Varying Arm Length}{section.6.4}% 104
-\BOOKMARK [2][-]{subsection.6.4.3}{Limitations of proposed method}{section.6.4}% 105
-\BOOKMARK [0][-]{chapter.7}{Simulated Flight Tests}{}% 106
-\BOOKMARK [1][-]{section.7.1}{Aims and Objectives}{chapter.7}% 107
-\BOOKMARK [1][-]{section.7.2}{Hypotheses}{chapter.7}% 108
-\BOOKMARK [1][-]{section.7.3}{Testing Methodology}{chapter.7}% 109
-\BOOKMARK [1][-]{section.7.4}{Results}{chapter.7}% 110
-\BOOKMARK [1][-]{section.7.5}{Discussion}{chapter.7}% 111
-\BOOKMARK [0][-]{chapter.8}{Conclusions and Recommendations}{}% 112
-\BOOKMARK [1][-]{section.8.1}{Summary and Conclusions}{chapter.8}% 113
-\BOOKMARK [1][-]{section.8.2}{Recommendations}{chapter.8}% 114
+\BOOKMARK [2][-]{subsection.2.5.1}{Controller Architecture}{section.2.5}% 36
+\BOOKMARK [2][-]{subsection.2.5.2}{Controller Implementation}{section.2.5}% 37
+\BOOKMARK [1][-]{section.2.6}{Collision Avoidance Techniques}{chapter.2}% 38
+\BOOKMARK [2][-]{subsection.2.6.1}{Sensing Techniques and Requirements}{section.2.6}% 39
+\BOOKMARK [2][-]{subsection.2.6.2}{Collision Avoidance Algorithms}{section.2.6}% 40
+\BOOKMARK [0][-]{chapter.3}{Platform Design}{}% 41
+\BOOKMARK [1][-]{section.3.1}{System Hardware Architecture}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.1.1}{Platform Construction}{section.3.1}% 43
+\BOOKMARK [2][-]{subsection.3.1.2}{Electronics Interface}{section.3.1}% 44
+\BOOKMARK [1][-]{section.3.2}{Platform Construction}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.2.1}{Design Considerations}{section.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.2.2}{Chosen Concepts}{section.3.2}% 47
+\BOOKMARK [2][-]{subsection.3.2.3}{Concept Comparison}{section.3.2}% 48
+\BOOKMARK [1][-]{section.3.3}{Electronic Design}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.3.1}{Flight Controller}{section.3.3}% 50
+\BOOKMARK [2][-]{subsection.3.3.2}{On Board Computer}{section.3.3}% 51
+\BOOKMARK [2][-]{subsection.3.3.3}{Location}{section.3.3}% 52
+\BOOKMARK [2][-]{subsection.3.3.4}{Object Avoidance}{section.3.3}% 53
+\BOOKMARK [0][-]{chapter.4}{Mathematical Modelling and System Identification}{}% 54
+\BOOKMARK [1][-]{section.4.1}{Dynamic Flight Model}{chapter.4}% 55
+\BOOKMARK [1][-]{section.4.2}{System Identification}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.2.1}{Mass and Inertia}{section.4.2}% 57
+\BOOKMARK [2][-]{subsection.4.2.2}{Thrust and Moment Profiles}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.3}{Drag Coefficients}{section.4.2}% 59
+\BOOKMARK [2][-]{subsection.4.2.4}{Sensor Constants}{section.4.2}% 60
+\BOOKMARK [2][-]{subsection.4.2.5}{Wind Model}{section.4.2}% 61
+\BOOKMARK [1][-]{section.4.3}{Simulation Configuration}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.3.1}{Motor Mixer}{section.4.3}% 63
+\BOOKMARK [0][-]{chapter.5}{Controller Design}{}% 64
+\BOOKMARK [1][-]{section.5.1}{Design Goals}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.2}{Flight Control Strategy}{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.3}{Altitude Controller}{chapter.5}% 67
+\BOOKMARK [2][-]{subsection.5.3.1}{Heave Dynamics}{section.5.3}% 68
+\BOOKMARK [2][-]{subsection.5.3.2}{Heave Controller}{section.5.3}% 69
+\BOOKMARK [2][-]{subsection.5.3.3}{Climb Rate Controller}{section.5.3}% 70
+\BOOKMARK [2][-]{subsection.5.3.4}{Altitude Hold Controller}{section.5.3}% 71
+\BOOKMARK [1][-]{section.5.4}{Horizontal Control}{chapter.5}% 72
+\BOOKMARK [2][-]{subsection.5.4.1}{Roll and Pitch Rate Dynamics}{section.5.4}% 73
+\BOOKMARK [2][-]{subsection.5.4.2}{Roll and Pitch Rate Controllers}{section.5.4}% 74
+\BOOKMARK [2][-]{subsection.5.4.3}{Tilt Angle Controller}{section.5.4}% 75
+\BOOKMARK [2][-]{subsection.5.4.4}{Linear Velocity Control}{section.5.4}% 76
+\BOOKMARK [2][-]{subsection.5.4.5}{Global Position Tracking Control}{section.5.4}% 77
+\BOOKMARK [1][-]{section.5.5}{Heading Controller}{chapter.5}% 78
+\BOOKMARK [2][-]{subsection.5.5.1}{Yaw Rate Dynamics}{section.5.5}% 79
+\BOOKMARK [2][-]{subsection.5.5.2}{Yaw Rate Controller}{section.5.5}% 80
+\BOOKMARK [2][-]{subsection.5.5.3}{Yaw Angle Controller}{section.5.5}% 81
+\BOOKMARK [0][-]{chapter.6}{Flight Strategy and Obstacle Avoidance}{}% 82
+\BOOKMARK [1][-]{section.6.1}{Flight Strategy}{chapter.6}% 83
+\BOOKMARK [2][-]{subsection.6.1.1}{Waypoint Generation}{section.6.1}% 84
+\BOOKMARK [2][-]{subsection.6.1.2}{Yaw Alignment}{section.6.1}% 85
+\BOOKMARK [2][-]{subsection.6.1.3}{Yaw Alignment Discussion}{section.6.1}% 86
+\BOOKMARK [1][-]{section.6.2}{Obstacle Avoidance}{chapter.6}% 87
+\BOOKMARK [2][-]{subsection.6.2.1}{Mathematical modelling}{section.6.2}% 88
+\BOOKMARK [2][-]{subsection.6.2.2}{Obstacle Avoidance Methodology}{section.6.2}% 89
+\BOOKMARK [2][-]{subsection.6.2.3}{Obstacle Avoidance Discussion}{section.6.2}% 90
+\BOOKMARK [0][-]{chapter.7}{Simulated Flight Tests}{}% 91
+\BOOKMARK [1][-]{section.7.1}{Aims and Objectives}{chapter.7}% 92
+\BOOKMARK [1][-]{section.7.2}{Hypotheses}{chapter.7}% 93
+\BOOKMARK [1][-]{section.7.3}{Testing Methodology}{chapter.7}% 94
+\BOOKMARK [1][-]{section.7.4}{Results}{chapter.7}% 95
+\BOOKMARK [1][-]{section.7.5}{Discussion}{chapter.7}% 96
+\BOOKMARK [0][-]{chapter.8}{Conclusions and Recommendations}{}% 97
+\BOOKMARK [1][-]{section.8.1}{Summary and Conclusions}{chapter.8}% 98
+\BOOKMARK [1][-]{section.8.2}{Recommendations}{chapter.8}% 99

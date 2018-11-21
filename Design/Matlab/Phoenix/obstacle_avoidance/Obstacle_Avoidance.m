@@ -1,9 +1,9 @@
 %% Create Variables to run script
 % close all;
 
-current_pos_n = 14.8;                                                          
-current_pos_e = -5.5;                                                          
-current_yaw = deg2rad(45);
+current_pos_n = 10;                                                          
+current_pos_e = -3;                                                          
+current_yaw = deg2rad(0);
 
 dcm_earth_to_body = angle2dcm(0,0,current_yaw, 'XYZ');
 
@@ -116,16 +116,19 @@ proximity = [
 hold on;
 plot(proximity(2, :), proximity(1, :), 'c','LineWidth', 3.0) 
 
-plot( [current_pos_body_y current_pos_body_y],[current_pos_body_x current_pos_body_x+min_intersection_distances(1)], 'Ro', 'LineWidth', 2)
-plot( [current_pos_body_y current_pos_body_y],[current_pos_body_x current_pos_body_x-min_intersection_distances(2)], 'Ro', 'LineWidth', 2)
-plot( [current_pos_body_y+min_intersection_distances(3) current_pos_body_y],[current_pos_body_x current_pos_body_x], 'Ro', 'LineWidth', 2)
-plot( [current_pos_body_y-min_intersection_distances(4) current_pos_body_y],[current_pos_body_x current_pos_body_x], 'Ro', 'LineWidth', 2)
+plot( [current_pos_body_y current_pos_body_y],[current_pos_body_x current_pos_body_x+min_intersection_distances(1)], 'Ro', 'MarkerSize', 10, 'LineWidth', 2)
+plot( [current_pos_body_y current_pos_body_y],[current_pos_body_x current_pos_body_x-min_intersection_distances(2)], 'Ro', 'MarkerSize', 10,'LineWidth', 2)
+plot( [current_pos_body_y+min_intersection_distances(3) current_pos_body_y],[current_pos_body_x current_pos_body_x], 'Ro', 'MarkerSize', 10,'LineWidth', 2)
+plot( [current_pos_body_y-min_intersection_distances(4) current_pos_body_y],[current_pos_body_x current_pos_body_x], 'Ro', 'MarkerSize', 10,'LineWidth', 2)
 
-plot( [current_pos_body_y+(0.7071*min_intersection_distances(5)) current_pos_body_y],[current_pos_body_x+(0.7071*min_intersection_distances(5)) current_pos_body_x], 'Ro', 'LineWidth', 2)
-plot( [current_pos_body_y-(0.7071*min_intersection_distances(6)) current_pos_body_y],[current_pos_body_x-(0.7071*min_intersection_distances(6)) current_pos_body_x], 'Ro', 'LineWidth', 2)
-plot( [current_pos_body_y-(0.7071*min_intersection_distances(7)) current_pos_body_y],[current_pos_body_x+(0.7071*min_intersection_distances(7)) current_pos_body_x], 'Ro', 'LineWidth', 2)
-plot( [current_pos_body_y+(0.7071*min_intersection_distances(8)) current_pos_body_y],[current_pos_body_x-(0.7071*min_intersection_distances(8)) current_pos_body_x], 'Ro', 'LineWidth', 2)
+plot( [current_pos_body_y+(0.7071*min_intersection_distances(5)) current_pos_body_y],[current_pos_body_x+(0.7071*min_intersection_distances(5)) current_pos_body_x], 'Ro', 'MarkerSize', 10,'LineWidth', 2)
+plot( [current_pos_body_y-(0.7071*min_intersection_distances(6)) current_pos_body_y],[current_pos_body_x-(0.7071*min_intersection_distances(6)) current_pos_body_x], 'Ro', 'MarkerSize', 10,'LineWidth', 2)
+plot( [current_pos_body_y-(0.7071*min_intersection_distances(7)) current_pos_body_y],[current_pos_body_x+(0.7071*min_intersection_distances(7)) current_pos_body_x], 'Ro', 'MarkerSize', 10,'LineWidth', 2)
+plot( [current_pos_body_y+(0.7071*min_intersection_distances(8)) current_pos_body_y],[current_pos_body_x-(0.7071*min_intersection_distances(8)) current_pos_body_x], 'Ro', 'MarkerSize', 10,'LineWidth', 2)
 
+ylabel('North Position', 'FontSize', 20)
+xlabel('East Position', 'FontSize', 20)
+axis equal;
 hold off;
 
 
