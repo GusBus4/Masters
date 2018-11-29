@@ -12,11 +12,11 @@ Database file #1: Angus_Steele.bib
 Warning--entry type for "Reynold" isn't style-file defined
 --line 72 of file Angus_Steele.bib
 Database file #2: Masters.bib
-Repeated entry---line 221 of file Masters.bib
+Repeated entry---line 232 of file Masters.bib
  : @article{NearWall
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 409 of file Masters.bib
+Repeated entry---line 398 of file Masters.bib
  : @inproceedings{NearWall
  :                        ,
 I'm skipping whatever remains of this entry

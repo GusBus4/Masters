@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  21 NOV 2018 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.31)  28 NOV 2018 21:47
 entering extended mode
 **"./Angus Steele.tex"
 ("Angus Steele.tex"
@@ -774,14 +774,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/GusBus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 37.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+{C:/Users/GusBus/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]pdfTeX warn
+ing (ext4): destination with the same identifier (name{page.1}) has been alread
+y used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 \tableofcontents
+l.49 \tableofcontents
                       [1
 
 ] ("Angus Steele.toc" [2
@@ -798,233 +796,237 @@ l.42 \tableofcontents
 
 ] [6
 
-] [7]
+]
 \openout2 = `Introduction.aux'.
 
  (Introduction.tex
 Chapter 1.
-[8
+[7
 
 
-] [9]) [10]
+] [8]) [9]
 \openout2 = `LiteratureReview.aux'.
 
  (LiteratureReview.tex
 Chapter 2.
-<Images/Literature/Flight.jpg, id=603, 419.31656pt x 347.04657pt>
+<Images/Literature/Flight.jpg, id=582, 419.31656pt x 347.04657pt>
 File: Images/Literature/Flight.jpg Graphic file (type jpg)
 
 <use Images/Literature/Flight.jpg>
 Package pdftex.def Info: Images/Literature/Flight.jpg used on input line 11.
 (pdftex.def)             Requested size: 206.27309pt x 170.71652pt.
- [11
+ [10
 
 
 
  <./Images/Literature/Flight.jpg>]
-[12] <Images/Literature/AntiTorque.jpg, id=637, 631.35875pt x 508.90125pt>
+[11] <Images/Literature/AntiTorque.jpg, id=617, 631.35875pt x 508.90125pt>
 File: Images/Literature/AntiTorque.jpg Graphic file (type jpg)
 
 <use Images/Literature/AntiTorque.jpg>
-Package pdftex.def Info: Images/Literature/AntiTorque.jpg used on input line 71
+Package pdftex.def Info: Images/Literature/AntiTorque.jpg used on input line 70
 .
 (pdftex.def)             Requested size: 211.79791pt x 170.71652pt.
- [13]
-<Images/Literature/TipSpeed.jpg, id=655, 443.7378pt x 219.7008pt>
+ [12 <./Images/Literature/AntiTorque.jpg>] <Images/Literature/TipSpeed.jpg, id=
+635, 443.7378pt x 219.7008pt>
 File: Images/Literature/TipSpeed.jpg Graphic file (type jpg)
 
 <use Images/Literature/TipSpeed.jpg>
-Package pdftex.def Info: Images/Literature/TipSpeed.jpg used on input line 82.
+Package pdftex.def Info: Images/Literature/TipSpeed.jpg used on input line 81.
 (pdftex.def)             Requested size: 344.82085pt x 170.71652pt.
- [14 <./Images/Literature/AntiTorque.jpg> <./Images/Literature/TipSpeed.jpg>]
-Overfull \hbox (5.78993pt too wide) in paragraph at lines 98--99
+
+Overfull \hbox (5.78993pt too wide) in paragraph at lines 97--98
 []\OT1/cmr/m/n/12 To sim-plify, ini-tially con-sider a he-li-copter in a hov-er
 -ing state (Weight(W) = Thrust(T)).
  []
 
-
-<Images/Literature/MomentumTheoryAirFlow.jpg, id=671, 307.50885pt x 260.172pt>
+[13 <./Images/Literature/TipSpeed.jpg>]
+<Images/Literature/MomentumTheoryAirFlow.jpg, id=651, 307.50885pt x 260.172pt>
 File: Images/Literature/MomentumTheoryAirFlow.jpg Graphic file (type jpg)
 
 <use Images/Literature/MomentumTheoryAirFlow.jpg>
 Package pdftex.def Info: Images/Literature/MomentumTheoryAirFlow.jpg used on in
-put line 102.
+put line 101.
 (pdftex.def)             Requested size: 269.0508pt x 227.62204pt.
- [15 <./Images/Literature/MomentumTheoryAirFlow.jpg>]
-<Images/Literature/MomentumTheoryHover.jpg, id=684, 269.5671pt x 270.2898pt>
+
+<Images/Literature/MomentumTheoryHover.jpg, id=657, 269.5671pt x 270.2898pt>
 File: Images/Literature/MomentumTheoryHover.jpg Graphic file (type jpg)
 
 <use Images/Literature/MomentumTheoryHover.jpg>
 Package pdftex.def Info: Images/Literature/MomentumTheoryHover.jpg used on inpu
-t line 113.
+t line 112.
 (pdftex.def)             Requested size: 227.01889pt x 227.62204pt.
- [16 <./Images/Literature/MomentumTheoryHover.jpg>] <Images/Literature/DL.jpg, 
-id=704, 429.605pt x 287.0725pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./Images/Literature/MomentumTheoryAirFlow.jpg>]
+<Images/Literature/DL.jpg, id=678, 429.605pt x 287.0725pt>
 File: Images/Literature/DL.jpg Graphic file (type jpg)
 
 <use Images/Literature/DL.jpg>
-Package pdftex.def Info: Images/Literature/DL.jpg used on input line 142.
+Package pdftex.def Info: Images/Literature/DL.jpg used on input line 141.
 (pdftex.def)             Requested size: 255.48376pt x 170.71652pt.
- [17 <./Images/Literature/DL.jpg>] [18]
-<Images/Literature/MainHeliComponents.jpg, id=748, 1313.90875pt x 848.16875pt>
+ [15 <./Images/Literature/MomentumTheoryHover.jpg>] [16 <./Images/Literature/DL
+.jpg>] [17]
+<Images/Literature/MainHeliComponents.jpg, id=723, 1313.90875pt x 848.16875pt>
 File: Images/Literature/MainHeliComponents.jpg Graphic file (type jpg)
 
 <use Images/Literature/MainHeliComponents.jpg>
 Package pdftex.def Info: Images/Literature/MainHeliComponents.jpg used on input
- line 210.
+ line 209.
 (pdftex.def)             Requested size: 264.46118pt x 170.71652pt.
- [19 <./Images/Literature/MainHeliComponents.jpg>]
-<Images/Literature/NOTAR.jpg, id=760, 1075.01625pt x 868.24374pt>
+ [18 <./Images/Literature/MainHeliComponents.jpg>]
+<Images/Literature/NOTAR.jpg, id=736, 1075.01625pt x 868.24374pt>
 File: Images/Literature/NOTAR.jpg Graphic file (type jpg)
 
 <use Images/Literature/NOTAR.jpg>
-Package pdftex.def Info: Images/Literature/NOTAR.jpg used on input line 221.
+Package pdftex.def Info: Images/Literature/NOTAR.jpg used on input line 220.
 (pdftex.def)             Requested size: 211.37428pt x 170.71652pt.
 
-<Images/Literature/Coaxial.jpg, id=764, 451.6875pt x 295.85532pt>
+<Images/Literature/Coaxial.jpg, id=740, 451.6875pt x 295.85532pt>
 File: Images/Literature/Coaxial.jpg Graphic file (type jpg)
 
 <use Images/Literature/Coaxial.jpg>
-Package pdftex.def Info: Images/Literature/Coaxial.jpg used on input line 234.
+Package pdftex.def Info: Images/Literature/Coaxial.jpg used on input line 233.
 (pdftex.def)             Requested size: 260.64185pt x 170.71652pt.
- [20 <./Images/Literature/NOTAR.jpg>]
-<Images/Literature/Coaxial_Configs.jpg, id=777, 999.735pt x 248.93pt>
+ [19 <./Images/Literature/NOTAR.jpg> <./Images/Literature/Coaxial.jpg>]
+<Images/Literature/Coaxial_Configs.jpg, id=752, 999.735pt x 248.93pt>
 File: Images/Literature/Coaxial_Configs.jpg Graphic file (type jpg)
 
 <use Images/Literature/Coaxial_Configs.jpg>
 Package pdftex.def Info: Images/Literature/Coaxial_Configs.jpg used on input li
-ne 243.
+ne 242.
 (pdftex.def)             Requested size: 342.81905pt x 85.35826pt.
- [21 <./Images/Literature/Coaxial.jpg> <./Images/Literature/Coaxial_Configs.jpg
->]
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
 [][][]\OT1/cmr/m/n/10 Image taken from https://www.snafu-solomon.com/2011/11/ch
 -46-flight-ops-aboard-uss-new-
  []
 
-<Images/Literature/Tandem.jpg, id=797, 1606.0pt x 875.27pt>
+[20 <./Images/Literature/Coaxial_Configs.jpg>]
+<Images/Literature/Tandem.jpg, id=775, 1606.0pt x 875.27pt>
 File: Images/Literature/Tandem.jpg Graphic file (type jpg)
 
 <use Images/Literature/Tandem.jpg>
-Package pdftex.def Info: Images/Literature/Tandem.jpg used on input line 270.
+Package pdftex.def Info: Images/Literature/Tandem.jpg used on input line 269.
 (pdftex.def)             Requested size: 313.23001pt x 170.71652pt.
- [22 <./Images/Literature/Tandem.jpg>]
-<Images/Literature/quadrotor.jpg, id=808, 1537.24312pt x 1503.36656pt>
+
+<Images/Literature/quadrotor.jpg, id=778, 1537.24312pt x 1503.36656pt>
 File: Images/Literature/quadrotor.jpg Graphic file (type jpg)
 
 <use Images/Literature/quadrotor.jpg>
-Package pdftex.def Info: Images/Literature/quadrotor.jpg used on input line 285
+Package pdftex.def Info: Images/Literature/quadrotor.jpg used on input line 284
 .
 (pdftex.def)             Requested size: 174.5626pt x 170.71652pt.
-
-<Images/Literature/TiltRotor.jpg, id=816, 421.575pt x 447.17062pt>
+ [21 <./Images/Literature/Tandem.jpg>]
+<Images/Literature/TiltRotor.jpg, id=792, 421.575pt x 447.17062pt>
 File: Images/Literature/TiltRotor.jpg Graphic file (type jpg)
 
 <use Images/Literature/TiltRotor.jpg>
-Package pdftex.def Info: Images/Literature/TiltRotor.jpg used on input line 297
+Package pdftex.def Info: Images/Literature/TiltRotor.jpg used on input line 296
 .
 (pdftex.def)             Requested size: 160.94635pt x 170.71652pt.
- [23 <./Images/Literature/quadrotor.jpg>]
-[24 <./Images/Literature/TiltRotor.jpg>]
-<Images/Literature/AxesOverlay.jpg, id=844, 799.48688pt x 398.23781pt>
+ [22 <./Images/Literature/quadrotor.jpg> <./Images/Literature/TiltRotor.jpg>]
+<Images/Literature/AxesOverlay.jpg, id=808, 799.48688pt x 398.23781pt>
 File: Images/Literature/AxesOverlay.jpg Graphic file (type jpg)
 
 <use Images/Literature/AxesOverlay.jpg>
 Package pdftex.def Info: Images/Literature/AxesOverlay.jpg used on input line 3
-23.
+22.
 (pdftex.def)             Requested size: 342.72353pt x 170.71652pt.
-
-<Images/Literature/rotations.jpg, id=846, 949.29657pt x 265.74281pt>
+ [23]
+<Images/Literature/rotations.jpg, id=821, 949.29657pt x 265.74281pt>
 File: Images/Literature/rotations.jpg Graphic file (type jpg)
 
 <use Images/Literature/rotations.jpg>
-Package pdftex.def Info: Images/Literature/rotations.jpg used on input line 335
+Package pdftex.def Info: Images/Literature/rotations.jpg used on input line 334
 .
 (pdftex.def)             Requested size: 406.56725pt x 113.81102pt.
- [25 <./Images/Literature/AxesOverlay.jpg> <./Images/Literature/rotations.jpg>]
- [26]
-<Images/Literature/ForcesMoments.jpg, id=879, 416.30531pt x 569.87906pt>
+ [24 <./Images/Literature/AxesOverlay.jpg> <./Images/Literature/rotations.jpg>]
+
+<Images/Literature/ForcesMoments.jpg, id=844, 416.30531pt x 569.87906pt>
 File: Images/Literature/ForcesMoments.jpg Graphic file (type jpg)
 
 <use Images/Literature/ForcesMoments.jpg>
 Package pdftex.def Info: Images/Literature/ForcesMoments.jpg used on input line
- 382.
+ 381.
 (pdftex.def)             Requested size: 207.84723pt x 284.52756pt.
-
+ [25]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 387.
+               Default added (so using `!tbp') on input line 386.
 
-[27 <./Images/Literature/ForcesMoments.jpg>] [28]
-<Images/Literature/quadforces.jpg, id=907, 386.94562pt x 484.81125pt>
+[26 <./Images/Literature/ForcesMoments.jpg>] [27]
+<Images/Literature/quadforces.jpg, id=883, 386.94562pt x 484.81125pt>
 File: Images/Literature/quadforces.jpg Graphic file (type jpg)
 
 <use Images/Literature/quadforces.jpg>
 Package pdftex.def Info: Images/Literature/quadforces.jpg used on input line 46
-8.
+7.
 (pdftex.def)             Requested size: 227.10326pt x 284.52756pt.
- [29 <./Images/Literature/quadforces.jpg>] [30] <Images/Literature/drag.jpg, id
-=949, 530.73282pt x 459.21562pt>
+ [28 <./Images/Literature/quadforces.jpg>] [29] <Images/Literature/drag.jpg, id
+=924, 530.73282pt x 459.21562pt>
 File: Images/Literature/drag.jpg Graphic file (type jpg)
 
 <use Images/Literature/drag.jpg>
-Package pdftex.def Info: Images/Literature/drag.jpg used on input line 546.
+Package pdftex.def Info: Images/Literature/drag.jpg used on input line 545.
 (pdftex.def)             Requested size: 263.07393pt x 227.62204pt.
- [31]
-<Images/Literature/near_wall.jpg, id=971, 560.0925pt x 443.40656pt>
+ [30]
+<Images/Literature/near_wall.jpg, id=946, 560.0925pt x 443.40656pt>
 File: Images/Literature/near_wall.jpg Graphic file (type jpg)
 
 <use Images/Literature/near_wall.jpg>
-Package pdftex.def Info: Images/Literature/near_wall.jpg used on input line 565
+Package pdftex.def Info: Images/Literature/near_wall.jpg used on input line 564
 .
 (pdftex.def)             Requested size: 251.58633pt x 199.16928pt.
- [32 <./Images/Literature/drag.jpg>]
-<Images/Literature/NearWall.jpg, id=985, 1102.1175pt x 376.40625pt>
+ [31 <./Images/Literature/drag.jpg>]
+<Images/Literature/NearWall.jpg, id=959, 1102.1175pt x 376.40625pt>
 File: Images/Literature/NearWall.jpg Graphic file (type jpg)
 
 <use Images/Literature/NearWall.jpg>
-Package pdftex.def Info: Images/Literature/NearWall.jpg used on input line 574.
+Package pdftex.def Info: Images/Literature/NearWall.jpg used on input line 573.
 
 (pdftex.def)             Requested size: 416.55553pt x 142.26378pt.
 
-<Images/Literature/NearWallGraph.jpg, id=990, 520.94624pt x 361.35pt>
+<Images/Literature/NearWallGraph.jpg, id=964, 520.94624pt x 361.35pt>
 File: Images/Literature/NearWallGraph.jpg Graphic file (type jpg)
 
 <use Images/Literature/NearWallGraph.jpg>
 Package pdftex.def Info: Images/Literature/NearWallGraph.jpg used on input line
- 583.
+ 582.
 (pdftex.def)             Requested size: 205.09982pt x 142.26378pt.
- [33 <./Images/Literature/near_wall.jpg> <./Images/Literature/NearWall.jpg>] [3
-4 <./Images/Literature/NearWallGraph.jpg>] [35] [36]
-<../References/Diagrams/DOBC.jpg, id=1035, 552.56438pt x 161.85469pt>
+ [32 <./Images/Literature/near_wall.jpg> <./Images/Literature/NearWall.jpg>] [3
+3 <./Images/Literature/NearWallGraph.jpg>] [34] <../References/Diagrams/DOBC.jp
+g, id=997, 552.56438pt x 161.85469pt>
 File: ../References/Diagrams/DOBC.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/DOBC.jpg>
-Package pdftex.def Info: ../References/Diagrams/DOBC.jpg used on input line 632
+Package pdftex.def Info: ../References/Diagrams/DOBC.jpg used on input line 620
 .
 (pdftex.def)             Requested size: 437.13657pt x 128.0374pt.
- [37 <../References/Diagrams/DOBC.jpg>]
-[38] <Images/Bug2.jpg, id=1058, 451.6875pt x 564.60938pt>
+ [35 <../References/Diagrams/DOBC.jpg>]
+[36] [37] <Images/Bug2.jpg, id=1029, 451.6875pt x 564.60938pt>
 File: Images/Bug2.jpg Graphic file (type jpg)
 
 <use Images/Bug2.jpg>
-Package pdftex.def Info: Images/Bug2.jpg used on input line 682.
+Package pdftex.def Info: Images/Bug2.jpg used on input line 673.
 (pdftex.def)             Requested size: 204.86337pt x 256.0748pt.
- [39]
-<../References/Diagrams/LocalMinima.jpg, id=1068, 470.50781pt x 228.855pt>
+ [38 <./Images/Bug2.jpg>]
+<../References/Diagrams/LocalMinima.jpg, id=1040, 470.50781pt x 228.855pt>
 File: ../References/Diagrams/LocalMinima.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/LocalMinima.jpg>
 Package pdftex.def Info: ../References/Diagrams/LocalMinima.jpg used on input l
-ine 696.
+ine 687.
 (pdftex.def)             Requested size: 350.9918pt x 170.71652pt.
- [40 <./Images/Bug2.jpg>]) [41 <../References/Diagrams/LocalMinima.jpg>]
+) [39 <../References/Diagrams/LocalMinima.jpg>]
 \openout2 = `PlatformDesign.aux'.
 
  (PlatformDesign.tex
 Chapter 3.
 
-<../Design/System/SystemArchitecture/SystemArchitecture.jpg, id=1082, 926.71219
+<../Design/System/SystemArchitecture/SystemArchitecture.jpg, id=1051, 926.71219
 pt x 848.4197pt>
 File: ../Design/System/SystemArchitecture/SystemArchitecture.jpg Graphic file (
 type jpg)
@@ -1038,26 +1040,26 @@ Overfull \hbox (13.20102pt too wide) in paragraph at lines 13--14
  [][] 
  []
 
-[42
+[40
 
 
 
-] [43 <../Design/System/SystemArchitecture/SystemArchitecture.jpg>] [44]
-[45] [46] <Images/Design/UnlikeSizes.jpg, id=1119, 943.525pt x 943.525pt>
+] [41 <../Design/System/SystemArchitecture/SystemArchitecture.jpg>] [42]
+[43] [44] <Images/Design/UnlikeSizes.jpg, id=1088, 943.525pt x 943.525pt>
 File: Images/Design/UnlikeSizes.jpg Graphic file (type jpg)
 
 <use Images/Design/UnlikeSizes.jpg>
 Package pdftex.def Info: Images/Design/UnlikeSizes.jpg used on input line 87.
 (pdftex.def)             Requested size: 170.70538pt x 170.71652pt.
 
-<Images/Design/Overlapping.jpg, id=1120, 702.625pt x 509.905pt>
+<Images/Design/Overlapping.jpg, id=1089, 702.625pt x 509.905pt>
 File: Images/Design/Overlapping.jpg Graphic file (type jpg)
 
 <use Images/Design/Overlapping.jpg>
 Package pdftex.def Info: Images/Design/Overlapping.jpg used on input line 88.
 (pdftex.def)             Requested size: 235.24413pt x 170.71652pt.
- [47]
-<Images/Design/OverlappingVD.jpg, id=1134, 307.90031pt x 185.94469pt>
+ [45]
+<Images/Design/OverlappingVD.jpg, id=1103, 307.90031pt x 185.94469pt>
 File: Images/Design/OverlappingVD.jpg Graphic file (type jpg)
 
 <use Images/Design/OverlappingVD.jpg>
@@ -1065,49 +1067,49 @@ Package pdftex.def Info: Images/Design/OverlappingVD.jpg used on input line 98.
 
 (pdftex.def)             Requested size: 282.69383pt x 170.71652pt.
 
-<Images/RotorOverlap.jpg, id=1138, 1927.2pt x 966.61125pt>
+<Images/RotorOverlap.jpg, id=1107, 1927.2pt x 966.61125pt>
 File: Images/RotorOverlap.jpg Graphic file (type jpg)
 
 <use Images/RotorOverlap.jpg>
 Package pdftex.def Info: Images/RotorOverlap.jpg used on input line 107.
 (pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
- [48 <./Images/Design/UnlikeSizes.jpg> <./Images/Design/Overlapping.jpg> <./Ima
+ [46 <./Images/Design/UnlikeSizes.jpg> <./Images/Design/Overlapping.jpg> <./Ima
 ges/Design/OverlappingVD.jpg>]
-<Images/Design/UnlikeSizeRotorPair.jpg, id=1149, 361.35pt x 259.7203pt>
+<Images/Design/UnlikeSizeRotorPair.jpg, id=1117, 361.35pt x 259.7203pt>
 File: Images/Design/UnlikeSizeRotorPair.jpg Graphic file (type jpg)
 
 <use Images/Design/UnlikeSizeRotorPair.jpg>
 Package pdftex.def Info: Images/Design/UnlikeSizeRotorPair.jpg used on input li
 ne 121.
 (pdftex.def)             Requested size: 237.51581pt x 170.71652pt.
- [49 <./Images/RotorOverlap.jpg>]
-[50 <./Images/Design/UnlikeSizeRotorPair.jpg>]
-<Images/Design/ExcelGraphs.png, id=1165, 825.0825pt x 537.50812pt>
+ [47 <./Images/RotorOverlap.jpg>]
+[48 <./Images/Design/UnlikeSizeRotorPair.jpg>]
+<Images/Design/ExcelGraphs.png, id=1134, 825.0825pt x 537.50812pt>
 File: Images/Design/ExcelGraphs.png Graphic file (type png)
 
 <use Images/Design/ExcelGraphs.png>
 Package pdftex.def Info: Images/Design/ExcelGraphs.png used on input line 150.
 (pdftex.def)             Requested size: 436.75029pt x 284.52756pt.
- [51 <./Images/Design/ExcelGraphs.png>]
+ [49 <./Images/Design/ExcelGraphs.png>]
 Overfull \hbox (36.09169pt too wide) in paragraph at lines 182--191
  [][] 
  []
 
-[52] <Images/System/Pixhawk.jpg, id=1187, 325.215pt x 325.215pt>
+[50] <Images/System/Pixhawk.jpg, id=1156, 325.215pt x 325.215pt>
 File: Images/System/Pixhawk.jpg Graphic file (type jpg)
 
 <use Images/System/Pixhawk.jpg>
 Package pdftex.def Info: Images/System/Pixhawk.jpg used on input line 218.
 (pdftex.def)             Requested size: 170.72058pt x 170.71652pt.
- [53 <./Images/System/Pixhawk.jpg>]
-<Images/System/Pi.jpg, id=1201, 376.40625pt x 251.43938pt>
+ [51]
+<Images/System/Pi.jpg, id=1169, 376.40625pt x 251.43938pt>
 File: Images/System/Pi.jpg Graphic file (type jpg)
 
 <use Images/System/Pi.jpg>
 Package pdftex.def Info: Images/System/Pi.jpg used on input line 237.
 (pdftex.def)             Requested size: 255.5623pt x 170.71652pt.
- [54 <./Images/System/Pi.jpg>]
-<Images/System/XU4.jpg, id=1212, 983.675pt x 423.5825pt>
+ [52 <./Images/System/Pixhawk.jpg>]
+<Images/System/XU4.jpg, id=1179, 983.675pt x 423.5825pt>
 File: Images/System/XU4.jpg Graphic file (type jpg)
 
 <use Images/System/XU4.jpg>
@@ -1119,24 +1121,23 @@ Missing character: There is no ¢ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no „ in font cmr12!
 Missing character: There is no ¢ in font cmr12!
- [55 <./Images/System/XU4.jpg>]) [56]
+ [53 <./Images/System/Pi.jpg> <./Images/System/XU4.jpg>]) [54] [55]
 \openout2 = `SystemIdentification.aux'.
 
-
-(SystemIdentification.tex
+ (SystemIdentification.tex
 Chapter 4.
-[57
+[56
 
 
 
-] <Images/BifilarPendulum.jpeg, id=1242, 1606.0pt x 1204.5pt>
+] <Images/BifilarPendulum.jpeg, id=1214, 1606.0pt x 1204.5pt>
 File: Images/BifilarPendulum.jpeg Graphic file (type jpg)
 
 <use Images/BifilarPendulum.jpeg>
 Package pdftex.def Info: Images/BifilarPendulum.jpeg used on input line 31.
 (pdftex.def)             Requested size: 284.50949pt x 213.39566pt.
- [58 <./Images/BifilarPendulum.jpeg>]
-<../Design/Mechanical/ThrustProfiles/thrustprofiles.jpg, id=1251, 562.1pt x 421
+ [57 <./Images/BifilarPendulum.jpeg>]
+<../Design/Mechanical/ThrustProfiles/thrustprofiles.jpg, id=1223, 562.1pt x 421
 .575pt>
 File: ../Design/Mechanical/ThrustProfiles/thrustprofiles.jpg Graphic file (type
  jpg)
@@ -1144,14 +1145,14 @@ File: ../Design/Mechanical/ThrustProfiles/thrustprofiles.jpg Graphic file (type
 Package pdftex.def Info: ../Design/Mechanical/ThrustProfiles/thrustprofiles.jpg
  used on input line 56.
 (pdftex.def)             Requested size: 379.3754pt x 284.52756pt.
- [59 <../Design/Mechanical/ThrustProfiles/thrustprofiles.jpg>]
+ [58 <../Design/Mechanical/ThrustProfiles/thrustprofiles.jpg>]
 Overfull \hbox (8.57176pt too wide) in paragraph at lines 130--131
 []\OT1/cmr/m/n/12 From the in-for-ma-tion gath-ered the sen-sors can now be mod
 -elled ac-cord-ingly in Simulink.
  []
 
-[60]
-<../References/Diagrams/WindModel.jpg, id=1268, 532.23843pt x 152.82094pt>
+[59]
+<../References/Diagrams/WindModel.jpg, id=1239, 532.23843pt x 152.82094pt>
 File: ../References/Diagrams/WindModel.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/WindModel.jpg>
@@ -1159,274 +1160,261 @@ Package pdftex.def Info: ../References/Diagrams/WindModel.jpg used on input lin
 e 137.
 (pdftex.def)             Requested size: 396.37599pt x 113.81102pt.
 
-<../References/Diagrams/MotorMixer.jpg, id=1271, 1955.05406pt x 797.98125pt>
+<../References/Diagrams/MotorMixer.jpg, id=1242, 1955.05406pt x 797.98125pt>
 File: ../References/Diagrams/MotorMixer.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/MotorMixer.jpg>
 Package pdftex.def Info: ../References/Diagrams/MotorMixer.jpg used on input li
 ne 154.
 (pdftex.def)             Requested size: 348.52356pt x 142.26378pt.
- [61 <../References/Diagrams/WindModel.jpg>]) [62 <../References/Diagrams/Motor
+ [60 <../References/Diagrams/WindModel.jpg>]) [61 <../References/Diagrams/Motor
 Mixer.jpg>]
 \openout2 = `ControllerDesign.aux'.
 
  (ControllerDesign.tex
 Chapter 5.
-<../References/Diagrams/HighLevel.jpg, id=1286, 926.71219pt x 584.1825pt>
+[62
+
+
+
+] <../References/Diagrams/HighLevel.jpg, id=1270, 926.71219pt x 584.1825pt>
 File: ../References/Diagrams/HighLevel.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/HighLevel.jpg>
 Package pdftex.def Info: ../References/Diagrams/HighLevel.jpg used on input lin
-e 18.
+e 31.
 (pdftex.def)             Requested size: 451.36383pt x 284.52756pt.
- [63
-
-
-
-] [64 <../References/Diagrams/HighLevel.jpg>] [65]
-<../References/Diagrams/HeaveController.jpg, id=1315, 450.9347pt x 115.18031pt>
+ [63 <../References/Diagrams/HighLevel.jpg>] [64]
+<../References/Diagrams/HeaveController.jpg, id=1293, 450.9347pt x 115.18031pt>
 File: ../References/Diagrams/HeaveController.jpg Graphic file (type jpg)
 <use ../References/Diagrams/HeaveController.jpg>
 Package pdftex.def Info: ../References/Diagrams/HeaveController.jpg used on inp
-ut line 75.
+ut line 88.
 (pdftex.def)             Requested size: 389.87425pt x 99.58464pt.
 
-<../Design/Matlab/Controllers/heave_root.jpg, id=1318, 1927.2pt x 966.61125pt>
+<../Design/Matlab/Controllers/heave_root.jpg, id=1296, 1927.2pt x 966.61125pt>
 File: ../Design/Matlab/Controllers/heave_root.jpg Graphic file (type jpg)
 
 <use ../Design/Matlab/Controllers/heave_root.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/heave_root.jpg used on in
-put line 84.
+put line 97.
 (pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
-
-<../Design/Matlab/Controllers/heave_bode.jpg, id=1320, 1927.2pt x 966.61125pt>
+ [65 <../References/Diagrams/HeaveController.jpg>]
+<../Design/Matlab/Controllers/heave_bode.jpg, id=1306, 1927.2pt x 966.61125pt>
 File: ../Design/Matlab/Controllers/heave_bode.jpg Graphic file (type jpg)
 
 <use ../Design/Matlab/Controllers/heave_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/heave_bode.jpg used on in
-put line 93.
+put line 106.
 (pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
- [66 <../References/Diagrams/HeaveController.jpg> <../Design/Matlab/Controllers
-/heave_root.jpg>]
+ [66 <../Design/Matlab/Controllers/heave_root.jpg> <../Design/Matlab/Controller
+s/heave_bode.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 100.
+               Default added (so using `!tbp') on input line 113.
 
 
-<../Design/Matlab/Controllers/heave_step.jpg, id=1331, 1927.2pt x 966.61125pt>
+<../Design/Matlab/Controllers/heave_step.jpg, id=1315, 1927.2pt x 966.61125pt>
 File: ../Design/Matlab/Controllers/heave_step.jpg Graphic file (type jpg)
 
 <use ../Design/Matlab/Controllers/heave_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/heave_step.jpg used on in
-put line 117.
+put line 130.
 (pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
- [67 <../Design/Matlab/Controllers/heave_bode.jpg>]
-<../References/Diagrams/ClimbRateLoop.jpg, id=1340, 751.30687pt x 185.94469pt>
+ [67 <../Design/Matlab/Controllers/heave_step.jpg>]
+<../References/Diagrams/ClimbRateLoop.jpg, id=1324, 751.30687pt x 185.94469pt>
 File: ../References/Diagrams/ClimbRateLoop.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ClimbRateLoop.jpg>
 Package pdftex.def Info: ../References/Diagrams/ClimbRateLoop.jpg used on input
- line 129.
+ line 143.
 (pdftex.def)             Requested size: 431.11536pt x 106.69783pt.
- [68 <../Design/Matlab/Controllers/heave_step.jpg>]
-<../References/Diagrams/ClimbRateController.jpg, id=1348, 358.33875pt x 115.933
+
+<../References/Diagrams/ClimbRateController.jpg, id=1326, 358.33875pt x 115.933
 12pt>
 File: ../References/Diagrams/ClimbRateController.jpg Graphic file (type jpg)
  <use ../References/Diagrams/ClimbRateController.jpg>
 Package pdftex.def Info: ../References/Diagrams/ClimbRateController.jpg used on
- input line 138.
+ input line 152.
 (pdftex.def)             Requested size: 307.81538pt x 99.58464pt.
 
-<../Design/Matlab/Controllers/climb_rate_root.jpg, id=1351, 1927.2pt x 966.6112
+<../Design/Matlab/Controllers/climb_rate_root.jpg, id=1329, 1927.2pt x 966.6112
 5pt>
 File: ../Design/Matlab/Controllers/climb_rate_root.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/climb_rate_root.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/climb_rate_root.jpg used 
-on input line 147.
+on input line 161.
 (pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
- [69 <../References/Diagrams/ClimbRateLoop.jpg> <../References/Diagrams/ClimbRa
+ [68 <../References/Diagrams/ClimbRateLoop.jpg> <../References/Diagrams/ClimbRa
 teController.jpg>]
-<../Design/Matlab/Controllers/climb_rate_bode.jpg, id=1360, 1927.2pt x 966.6112
+<../Design/Matlab/Controllers/climb_rate_bode.jpg, id=1339, 1927.2pt x 966.6112
 5pt>
 File: ../Design/Matlab/Controllers/climb_rate_bode.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/climb_rate_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/climb_rate_bode.jpg used 
-on input line 156.
+on input line 170.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 156--157
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 170--171
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 165.
+               Default added (so using `!tbp') on input line 179.
 
-[70 <../Design/Matlab/Controllers/climb_rate_root.jpg> <../Design/Matlab/Contro
+[69 <../Design/Matlab/Controllers/climb_rate_root.jpg> <../Design/Matlab/Contro
 llers/climb_rate_bode.jpg>]
-<../Design/Matlab/Controllers/climb_rate_step.jpg, id=1369, 1927.2pt x 966.6112
+<../Design/Matlab/Controllers/climb_rate_step.jpg, id=1348, 1927.2pt x 966.6112
 5pt>
 File: ../Design/Matlab/Controllers/climb_rate_step.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/climb_rate_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/climb_rate_step.jpg used 
-on input line 181.
+on input line 195.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 181--182
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 195--196
  [][] 
  []
 
-[71 <../Design/Matlab/Controllers/climb_rate_step.jpg>]
-<../References/Diagrams/AltHoldLoop.jpg, id=1379, 542.77782pt x 185.94469pt>
+[70 <../Design/Matlab/Controllers/climb_rate_step.jpg>]
+<../References/Diagrams/AltHoldLoop.jpg, id=1357, 542.77782pt x 185.94469pt>
 File: ../References/Diagrams/AltHoldLoop.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/AltHoldLoop.jpg>
 Package pdftex.def Info: ../References/Diagrams/AltHoldLoop.jpg used on input l
-ine 193.
+ine 207.
 (pdftex.def)             Requested size: 332.22864pt x 113.81102pt.
 
-<../References/Diagrams/AltHoldController.jpg, id=1384, 475.7775pt x 115.93312p
+<../References/Diagrams/AltHoldController.jpg, id=1362, 475.7775pt x 115.93312p
 t>
 File: ../References/Diagrams/AltHoldController.jpg Graphic file (type jpg)
  <use ../References/Diagrams/AltHoldController.jpg>
 Package pdftex.def Info: ../References/Diagrams/AltHoldController.jpg used on i
-nput line 204.
+nput line 218.
 (pdftex.def)             Requested size: 408.69603pt x 99.58464pt.
 
-<../Design/Matlab/Controllers/altitude_root.jpg, id=1387, 1927.2pt x 966.61125p
+<../Design/Matlab/Controllers/altitude_root.jpg, id=1365, 1927.2pt x 966.61125p
 t>
 File: ../Design/Matlab/Controllers/altitude_root.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/altitude_root.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_root.jpg used on
- input line 216.
+ input line 229.
 (pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
- [72 <../References/Diagrams/AltHoldLoop.jpg> <../References/Diagrams/AltHoldCo
+ [71 <../References/Diagrams/AltHoldLoop.jpg> <../References/Diagrams/AltHoldCo
 ntroller.jpg>]
-<../Design/Matlab/Controllers/altitude_bode.jpg, id=1398, 1927.2pt x 966.61125p
+<../Design/Matlab/Controllers/altitude_bode.jpg, id=1373, 1927.2pt x 966.61125p
 t>
 File: ../Design/Matlab/Controllers/altitude_bode.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/altitude_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_bode.jpg used on
- input line 225.
+ input line 238.
 (pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
- [73 <../Design/Matlab/Controllers/altitude_root.jpg> <../Design/Matlab/Control
-lers/altitude_bode.jpg>]
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 232.
+               Default added (so using `!tbp') on input line 245.
 
-
-<../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg, id=1406, 1927.2pt x 
+[72 <../Design/Matlab/Controllers/altitude_root.jpg> <../Design/Matlab/Controll
+ers/altitude_bode.jpg>]
+<../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg, id=1381, 1927.2pt x 
 966.61125pt>
 File: ../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg Graphic file (ty
 pe jpg)
  <use ../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_step_p_no_dist.j
-pg used on input line 249.
+pg used on input line 262.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 249--250
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 262--263
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/altitude_step_p_dist.jpg, id=1409, 1927.2pt x 966
+<../Design/Matlab/Controllers/altitude_step_p_dist.jpg, id=1384, 1927.2pt x 966
 .61125pt>
 File: ../Design/Matlab/Controllers/altitude_step_p_dist.jpg Graphic file (type 
 jpg)
  <use ../Design/Matlab/Controllers/altitude_step_p_dist.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_step_p_dist.jpg 
-used on input line 258.
+used on input line 271.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 258--259
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 271--272
  [][] 
  []
 
-[74 <../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg>]
-<../Design/Matlab/Controllers/altitude_step_pi.jpg, id=1418, 1927.2pt x 966.611
+[73 <../Design/Matlab/Controllers/altitude_step_p_no_dist.jpg>]
+<../Design/Matlab/Controllers/altitude_step_pi.jpg, id=1393, 1927.2pt x 966.611
 25pt>
 File: ../Design/Matlab/Controllers/altitude_step_pi.jpg Graphic file (type jpg)
 
  <use ../Design/Matlab/Controllers/altitude_step_pi.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/altitude_step_pi.jpg used
- on input line 267.
+ on input line 280.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 267--268
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 280--281
  [][] 
  []
 
-[75 <../Design/Matlab/Controllers/altitude_step_p_dist.jpg> <../Design/Matlab/C
-ontrollers/altitude_step_pi.jpg>] [76]
-<../References/Diagrams/RollRateController.jpg, id=1442, 560.8453pt x 118.19156
+[74 <../Design/Matlab/Controllers/altitude_step_p_dist.jpg> <../Design/Matlab/C
+ontrollers/altitude_step_pi.jpg>] [75]
+<../References/Diagrams/RollRateController.jpg, id=1416, 560.8453pt x 118.19156
 pt>
 File: ../References/Diagrams/RollRateController.jpg Graphic file (type jpg)
  <use ../References/Diagrams/RollRateController.jpg>
 Package pdftex.def Info: ../References/Diagrams/RollRateController.jpg used on 
-input line 310.
+input line 321.
 (pdftex.def)             Requested size: 445.56181pt x 93.89418pt.
 
-<../Design/Matlab/Controllers/roll_rate_root.jpg, id=1444, 1927.2pt x 966.61125
+<../Design/Matlab/Controllers/roll_rate_root.jpg, id=1418, 1927.2pt x 966.61125
 pt>
 File: ../Design/Matlab/Controllers/roll_rate_root.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/roll_rate_root.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_root.jpg used o
-n input line 319.
+n input line 330.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 319--320
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 330--331
  [][] 
  []
 
-[77 <../References/Diagrams/RollRateController.jpg>]
-<../Design/Matlab/Controllers/roll_rate_bode.jpg, id=1453, 1927.2pt x 966.61125
+[76 <../References/Diagrams/RollRateController.jpg>]
+<../Design/Matlab/Controllers/roll_rate_bode.jpg, id=1427, 1927.2pt x 966.61125
 pt>
 File: ../Design/Matlab/Controllers/roll_rate_bode.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/roll_rate_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_bode.jpg used o
-n input line 328.
+n input line 339.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 328--329
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 339--340
  [][] 
  []
 
-[78 <../Design/Matlab/Controllers/roll_rate_root.jpg>]
-<../Design/Matlab/Controllers/pitch_rate_bode.jpg, id=1462, 1927.2pt x 966.6112
+[77 <../Design/Matlab/Controllers/roll_rate_root.jpg> <../Design/Matlab/Control
+lers/roll_rate_bode.jpg>]
+<../Design/Matlab/Controllers/pitch_rate_bode.jpg, id=1434, 1927.2pt x 966.6112
 5pt>
 File: ../Design/Matlab/Controllers/pitch_rate_bode.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/pitch_rate_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_rate_bode.jpg used 
-on input line 337.
+on input line 348.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 337--338
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 348--349
  [][] 
  []
 
-[79 <../Design/Matlab/Controllers/roll_rate_bode.jpg>]
-<../Design/Matlab/Controllers/roll_pitch_rate_step.jpg, id=1469, 1927.2pt x 966
+[78 <../Design/Matlab/Controllers/pitch_rate_bode.jpg>]
+<../Design/Matlab/Controllers/roll_pitch_rate_step.jpg, id=1444, 1927.2pt x 966
 .61125pt>
 File: ../Design/Matlab/Controllers/roll_pitch_rate_step.jpg Graphic file (type 
 jpg)
  <use ../Design/Matlab/Controllers/roll_pitch_rate_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/roll_pitch_rate_step.jpg 
-used on input line 350.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 350--351
- [][] 
- []
-
-[80 <../Design/Matlab/Controllers/pitch_rate_bode.jpg>]
-<../Design/Matlab/Controllers/roll_rate_impulse.jpg, id=1478, 1927.2pt x 966.61
-125pt>
-File: ../Design/Matlab/Controllers/roll_rate_impulse.jpg Graphic file (type jpg
-)
- <use ../Design/Matlab/Controllers/roll_rate_impulse.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_impulse.jpg use
-d on input line 361.
+used on input line 361.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
 Overfull \hbox (0.83578pt too wide) in paragraph at lines 361--362
@@ -1434,304 +1422,304 @@ Overfull \hbox (0.83578pt too wide) in paragraph at lines 361--362
  []
 
 
-<../Design/Matlab/Controllers/pitch_rate_impulse.jpg, id=1479, 1927.2pt x 966.6
+<../Design/Matlab/Controllers/roll_rate_impulse.jpg, id=1447, 1927.2pt x 966.61
+125pt>
+File: ../Design/Matlab/Controllers/roll_rate_impulse.jpg Graphic file (type jpg
+)
+ <use ../Design/Matlab/Controllers/roll_rate_impulse.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/roll_rate_impulse.jpg use
+d on input line 372.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 372--373
+ [][] 
+ []
+
+[79 <../Design/Matlab/Controllers/roll_pitch_rate_step.jpg>]
+<../Design/Matlab/Controllers/pitch_rate_impulse.jpg, id=1454, 1927.2pt x 966.6
 1125pt>
 File: ../Design/Matlab/Controllers/pitch_rate_impulse.jpg Graphic file (type jp
 g)
  <use ../Design/Matlab/Controllers/pitch_rate_impulse.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_rate_impulse.jpg us
-ed on input line 368.
+ed on input line 379.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 368--369
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 379--380
  [][] 
  []
 
-[81 <../Design/Matlab/Controllers/roll_pitch_rate_step.jpg> <../Design/Matlab/C
-ontrollers/roll_rate_impulse.jpg>]
-<../References/Diagrams/TiltAngleController.jpg, id=1487, 788.19469pt x 325.967
+[80 <../Design/Matlab/Controllers/roll_rate_impulse.jpg> <../Design/Matlab/Cont
+rollers/pitch_rate_impulse.jpg>]
+<../References/Diagrams/TiltAngleController.jpg, id=1460, 788.19469pt x 325.967
 82pt>
 File: ../References/Diagrams/TiltAngleController.jpg Graphic file (type jpg)
  <use ../References/Diagrams/TiltAngleController.jpg>
 Package pdftex.def Info: ../References/Diagrams/TiltAngleController.jpg used on
- input line 380.
+ input line 391.
 (pdftex.def)             Requested size: 447.20702pt x 184.9429pt.
- [82 <../Design/Matlab/Controllers/pitch_rate_impulse.jpg>]
-<../References/Diagrams/ConversionMethod.jpg, id=1497, 370.38374pt x 427.5975pt
+
+<../References/Diagrams/ConversionMethod.jpg, id=1465, 370.38374pt x 427.5975pt
 >
 File: ../References/Diagrams/ConversionMethod.jpg Graphic file (type jpg)
  <use ../References/Diagrams/ConversionMethod.jpg>
 Package pdftex.def Info: ../References/Diagrams/ConversionMethod.jpg used on in
-put line 400.
+put line 411.
 (pdftex.def)             Requested size: 246.45468pt x 284.52756pt.
- [83 <../References/Diagrams/TiltAngleController.jpg>]
-<../References/Diagrams/RollPitchAngleLoop.jpg, id=1507, 544.28343pt x 176.9109
+ [81 <../References/Diagrams/TiltAngleController.jpg>]
+<../References/Diagrams/RollPitchAngleLoop.jpg, id=1476, 544.28343pt x 176.9109
 3pt>
 File: ../References/Diagrams/RollPitchAngleLoop.jpg Graphic file (type jpg)
  <use ../References/Diagrams/RollPitchAngleLoop.jpg>
 Package pdftex.def Info: ../References/Diagrams/RollPitchAngleLoop.jpg used on 
-input line 410.
+input line 421.
 (pdftex.def)             Requested size: 306.38292pt x 99.58464pt.
- [84 <../References/Diagrams/ConversionMethod.jpg> <../References/Diagrams/Roll
+ [82 <../References/Diagrams/ConversionMethod.jpg> <../References/Diagrams/Roll
 PitchAngleLoop.jpg>]
-<../Design/Matlab/Controllers/roll_angle_bode.jpg, id=1517, 1927.2pt x 966.6112
+<../Design/Matlab/Controllers/roll_angle_bode.jpg, id=1485, 1927.2pt x 966.6112
 5pt>
 File: ../Design/Matlab/Controllers/roll_angle_bode.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/roll_angle_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/roll_angle_bode.jpg used 
-on input line 419.
+on input line 430.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 419--420
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 430--431
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/roll_pitch_angle_step.jpg, id=1519, 1927.2pt x 96
+<../Design/Matlab/Controllers/roll_pitch_angle_step.jpg, id=1487, 1927.2pt x 96
 6.61125pt>
 File: ../Design/Matlab/Controllers/roll_pitch_angle_step.jpg Graphic file (type
  jpg)
  <use ../Design/Matlab/Controllers/roll_pitch_angle_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/roll_pitch_angle_step.jpg
- used on input line 429.
+ used on input line 440.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 429--430
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 440--441
  [][] 
  []
 
-[85 <../Design/Matlab/Controllers/roll_angle_bode.jpg>]
-<../Design/Matlab/Controllers/roll_angle_impulse.jpg, id=1528, 1927.2pt x 966.6
+[83 <../Design/Matlab/Controllers/roll_angle_bode.jpg>]
+<../Design/Matlab/Controllers/roll_angle_impulse.jpg, id=1496, 1927.2pt x 966.6
 1125pt>
 File: ../Design/Matlab/Controllers/roll_angle_impulse.jpg Graphic file (type jp
 g)
  <use ../Design/Matlab/Controllers/roll_angle_impulse.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/roll_angle_impulse.jpg us
-ed on input line 438.
+ed on input line 449.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 438--439
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 449--450
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/pitch_angle_impulse.jpg, id=1529, 1927.2pt x 966.
+<../Design/Matlab/Controllers/pitch_angle_impulse.jpg, id=1497, 1927.2pt x 966.
 61125pt>
 File: ../Design/Matlab/Controllers/pitch_angle_impulse.jpg Graphic file (type j
 pg)
  <use ../Design/Matlab/Controllers/pitch_angle_impulse.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/pitch_angle_impulse.jpg u
-sed on input line 445.
+sed on input line 456.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 445--446
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 456--457
  [][] 
  []
 
-[86 <../Design/Matlab/Controllers/roll_pitch_angle_step.jpg> <../Design/Matlab/
+[84 <../Design/Matlab/Controllers/roll_pitch_angle_step.jpg> <../Design/Matlab/
 Controllers/roll_angle_impulse.jpg>]
-<../References/Diagrams/NorthVelocityLoop.jpg, id=1540, 788.19469pt x 146.79843
+<../References/Diagrams/NorthVelocityLoop.jpg, id=1509, 788.19469pt x 146.79843
 pt>
 File: ../References/Diagrams/NorthVelocityLoop.jpg Graphic file (type jpg)
  <use ../References/Diagrams/NorthVelocityLoop.jpg>
 Package pdftex.def Info: ../References/Diagrams/NorthVelocityLoop.jpg used on i
-nput line 468.
+nput line 479.
 (pdftex.def)             Requested size: 443.03369pt x 82.51282pt.
- [87 <../Design/Matlab/Controllers/pitch_angle_impulse.jpg>]
-<../Design/Matlab/Controllers/north_velocity_bode.jpg, id=1549, 1927.2pt x 966.
+ [85 <../Design/Matlab/Controllers/pitch_angle_impulse.jpg>]
+<../Design/Matlab/Controllers/north_velocity_bode.jpg, id=1518, 1927.2pt x 966.
 61125pt>
 File: ../Design/Matlab/Controllers/north_velocity_bode.jpg Graphic file (type j
 pg)
  <use ../Design/Matlab/Controllers/north_velocity_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_bode.jpg u
-sed on input line 481.
+sed on input line 492.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 481--482
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 492--493
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/north_velocity_root.jpg, id=1551, 1927.2pt x 966.
+<../Design/Matlab/Controllers/north_velocity_root.jpg, id=1520, 1927.2pt x 966.
 61125pt>
 File: ../Design/Matlab/Controllers/north_velocity_root.jpg Graphic file (type j
 pg)
  <use ../Design/Matlab/Controllers/north_velocity_root.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_root.jpg u
-sed on input line 490.
+sed on input line 501.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 490--491
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 501--502
  [][] 
  []
 
-[88 <../References/Diagrams/NorthVelocityLoop.jpg> <../Design/Matlab/Controller
+[86 <../References/Diagrams/NorthVelocityLoop.jpg> <../Design/Matlab/Controller
 s/north_velocity_bode.jpg>]
-<../Design/Matlab/Controllers/north_velocity_step.jpg, id=1558, 3011.25pt x 151
+<../Design/Matlab/Controllers/north_velocity_step.jpg, id=1527, 3011.25pt x 151
 0.64375pt>
 File: ../Design/Matlab/Controllers/north_velocity_step.jpg Graphic file (type j
 pg)
  <use ../Design/Matlab/Controllers/north_velocity_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_step.jpg u
-sed on input line 500.
+sed on input line 511.
 (pdftex.def)             Requested size: 453.73567pt x 227.62204pt.
 
-Overfull \hbox (0.76778pt too wide) in paragraph at lines 500--501
+Overfull \hbox (0.76778pt too wide) in paragraph at lines 511--512
  [][] 
  []
 
-[89 <../Design/Matlab/Controllers/north_velocity_root.jpg>]
-<../Design/Matlab/Controllers/north_velocity_stepd.jpg, id=1567, 1927.2pt x 966
+[87 <../Design/Matlab/Controllers/north_velocity_root.jpg>]
+<../Design/Matlab/Controllers/north_velocity_stepd.jpg, id=1536, 1927.2pt x 966
 .61125pt>
 File: ../Design/Matlab/Controllers/north_velocity_stepd.jpg Graphic file (type 
 jpg)
  <use ../Design/Matlab/Controllers/north_velocity_stepd.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/north_velocity_stepd.jpg 
-used on input line 509.
+used on input line 520.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 509--510
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 520--521
  [][] 
  []
 
-[90 <../Design/Matlab/Controllers/north_velocity_step.jpg> <../Design/Matlab/Co
+[88 <../Design/Matlab/Controllers/north_velocity_step.jpg> <../Design/Matlab/Co
 ntrollers/north_velocity_stepd.jpg>]
-<../Design/Matlab/Controllers/north_position_bode.jpg, id=1575, 1927.2pt x 966.
+<../Design/Matlab/Controllers/north_position_bode.jpg, id=1543, 1927.2pt x 966.
 61125pt>
 File: ../Design/Matlab/Controllers/north_position_bode.jpg Graphic file (type j
 pg)
  <use ../Design/Matlab/Controllers/north_position_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/north_position_bode.jpg u
-sed on input line 521.
+sed on input line 532.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 521--522
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 532--533
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/north_position_step.jpg, id=1577, 1927.2pt x 966.
+<../Design/Matlab/Controllers/north_position_step.jpg, id=1545, 1927.2pt x 966.
 61125pt>
 File: ../Design/Matlab/Controllers/north_position_step.jpg Graphic file (type j
 pg)
  <use ../Design/Matlab/Controllers/north_position_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/north_position_step.jpg u
-sed on input line 531.
+sed on input line 542.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 531--532
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 542--543
  [][] 
  []
 
-[91 <../Design/Matlab/Controllers/north_position_bode.jpg>]
-<../Design/Matlab/Controllers/north_pos_limit_step.jpg, id=1586, 1927.2pt x 966
+[89 <../Design/Matlab/Controllers/north_position_bode.jpg>]
+<../Design/Matlab/Controllers/north_pos_limit_step.jpg, id=1554, 1927.2pt x 966
 .61125pt>
 File: ../Design/Matlab/Controllers/north_pos_limit_step.jpg Graphic file (type 
 jpg)
  <use ../Design/Matlab/Controllers/north_pos_limit_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/north_pos_limit_step.jpg 
-used on input line 540.
+used on input line 551.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 540--541
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 551--552
  [][] 
  []
 
-[92 <../Design/Matlab/Controllers/north_position_step.jpg> <../Design/Matlab/Co
-ntrollers/north_pos_limit_step.jpg>] [93]
-<../References/Diagrams/YawRateController.jpg, id=1604, 368.1253pt x 104.64093p
+[90 <../Design/Matlab/Controllers/north_position_step.jpg> <../Design/Matlab/Co
+ntrollers/north_pos_limit_step.jpg>] [91]
+<../References/Diagrams/YawRateController.jpg, id=1573, 368.1253pt x 104.64093p
 t>
 File: ../References/Diagrams/YawRateController.jpg Graphic file (type jpg)
  <use ../References/Diagrams/YawRateController.jpg>
 Package pdftex.def Info: ../References/Diagrams/YawRateController.jpg used on i
-nput line 573.
+nput line 584.
 (pdftex.def)             Requested size: 350.33495pt x 99.58464pt.
 
-<../Design/Matlab/Controllers/yaw_rate_root.jpg, id=1606, 1927.2pt x 966.61125p
+<../Design/Matlab/Controllers/yaw_rate_root.jpg, id=1575, 1927.2pt x 966.61125p
 t>
 File: ../Design/Matlab/Controllers/yaw_rate_root.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/yaw_rate_root.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_rate_root.jpg used on
- input line 582.
+ input line 593.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 582--583
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 593--594
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/yaw_rate_bode.jpg, id=1608, 1927.2pt x 966.61125p
+<../Design/Matlab/Controllers/yaw_rate_bode.jpg, id=1577, 1927.2pt x 966.61125p
 t>
 File: ../Design/Matlab/Controllers/yaw_rate_bode.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/yaw_rate_bode.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_rate_bode.jpg used on
- input line 591.
+ input line 602.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 591--592
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 602--603
  [][] 
  []
 
-[94 <../References/Diagrams/YawRateController.jpg> <../Design/Matlab/Controller
+[92 <../References/Diagrams/YawRateController.jpg> <../Design/Matlab/Controller
 s/yaw_rate_root.jpg>]
-<../Design/Matlab/Controllers/yaw_rate_step.jpg, id=1617, 1927.2pt x 966.61125p
+<../Design/Matlab/Controllers/yaw_rate_step.jpg, id=1586, 1927.2pt x 966.61125p
 t>
 File: ../Design/Matlab/Controllers/yaw_rate_step.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/yaw_rate_step.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_rate_step.jpg used on
- input line 601.
+ input line 612.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 601--602
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 612--613
  [][] 
  []
 
-[95 <../Design/Matlab/Controllers/yaw_rate_bode.jpg> <../Design/Matlab/Controll
+[93 <../Design/Matlab/Controllers/yaw_rate_bode.jpg> <../Design/Matlab/Controll
 ers/yaw_rate_step.jpg>]
-<../References/Diagrams/YawAngleLoop.jpg, id=1625, 542.77782pt x 177.66376pt>
+<../References/Diagrams/YawAngleLoop.jpg, id=1594, 542.77782pt x 177.66376pt>
 File: ../References/Diagrams/YawAngleLoop.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/YawAngleLoop.jpg>
 Package pdftex.def Info: ../References/Diagrams/YawAngleLoop.jpg used on input 
-line 611.
+line 622.
 (pdftex.def)             Requested size: 304.24338pt x 99.58464pt.
 
-<../References/Diagrams/YawAngleControllerPI.jpg, id=1627, 475.7775pt x 115.933
+<../References/Diagrams/YawAngleControllerPI.jpg, id=1596, 475.7775pt x 115.933
 12pt>
 File: ../References/Diagrams/YawAngleControllerPI.jpg Graphic file (type jpg)
  <use ../References/Diagrams/YawAngleControllerPI.jpg>
 Package pdftex.def Info: ../References/Diagrams/YawAngleControllerPI.jpg used o
-n input line 620.
+n input line 631.
 (pdftex.def)             Requested size: 408.69603pt x 99.58464pt.
 
-<../References/Diagrams/YawAngleControllerPID.jpg, id=1629, 475.7775pt x 179.92
+<../References/Diagrams/YawAngleControllerPID.jpg, id=1598, 475.7775pt x 179.92
 218pt>
 File: ../References/Diagrams/YawAngleControllerPID.jpg Graphic file (type jpg)
  <use ../References/Diagrams/YawAngleControllerPID.jpg>
 Package pdftex.def Info: ../References/Diagrams/YawAngleControllerPID.jpg used 
-on input line 629.
+on input line 640.
 (pdftex.def)             Requested size: 413.85046pt x 156.49014pt.
- [96 <../References/Diagrams/YawAngleLoop.jpg> <../References/Diagrams/YawAngle
+ [94 <../References/Diagrams/YawAngleLoop.jpg> <../References/Diagrams/YawAngle
 ControllerPI.jpg>]
-<../Design/Matlab/Controllers/yaw_angle_root.jpg, id=1639, 1927.2pt x 966.61125
+<../Design/Matlab/Controllers/yaw_angle_root.jpg, id=1607, 1927.2pt x 966.61125
 pt>
 File: ../Design/Matlab/Controllers/yaw_angle_root.jpg Graphic file (type jpg)
  <use ../Design/Matlab/Controllers/yaw_angle_root.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_root.jpg used o
-n input line 640.
-(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
-
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 640--641
- [][] 
- []
-
-[97 <../References/Diagrams/YawAngleControllerPID.jpg> <../Design/Matlab/Contro
-llers/yaw_angle_root.jpg>]
-<../Design/Matlab/Controllers/yaw_angle_bode.jpg, id=1647, 1927.2pt x 966.61125
-pt>
-File: ../Design/Matlab/Controllers/yaw_angle_bode.jpg Graphic file (type jpg)
- <use ../Design/Matlab/Controllers/yaw_angle_bode.jpg>
-Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_bode.jpg used o
 n input line 651.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
@@ -1739,62 +1727,76 @@ Overfull \hbox (0.83578pt too wide) in paragraph at lines 651--652
  [][] 
  []
 
+[95 <../References/Diagrams/YawAngleControllerPID.jpg> <../Design/Matlab/Contro
+llers/yaw_angle_root.jpg>]
+<../Design/Matlab/Controllers/yaw_angle_bode.jpg, id=1615, 1927.2pt x 966.61125
+pt>
+File: ../Design/Matlab/Controllers/yaw_angle_bode.jpg Graphic file (type jpg)
+ <use ../Design/Matlab/Controllers/yaw_angle_bode.jpg>
+Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_bode.jpg used o
+n input line 662.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-<../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg, id=1649, 1927.2pt
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 662--663
+ [][] 
+ []
+
+
+<../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg, id=1617, 1927.2pt
  x 966.61125pt>
 File: ../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg Graphic file 
 (type jpg)
 
 <use ../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_step_both_limit
-s.jpg used on input line 663.
+s.jpg used on input line 674.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 663--664
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 674--675
  [][] 
  []
 
-[98 <../Design/Matlab/Controllers/yaw_angle_bode.jpg>]
-<../Design/Matlab/Controllers/yaw_angle_step_both_dist.jpg, id=1657, 1927.2pt x
+[96 <../Design/Matlab/Controllers/yaw_angle_bode.jpg>]
+<../Design/Matlab/Controllers/yaw_angle_step_both_dist.jpg, id=1626, 1927.2pt x
  966.61125pt>
 File: ../Design/Matlab/Controllers/yaw_angle_step_both_dist.jpg Graphic file (t
 ype jpg)
  <use ../Design/Matlab/Controllers/yaw_angle_step_both_dist.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_step_both_dist.
-jpg used on input line 672.
+jpg used on input line 683.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 672--673
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 683--684
  [][] 
  []
 
 
-<../Design/Matlab/Controllers/yaw_angle_impulse.jpg, id=1659, 1927.2pt x 966.61
+<../Design/Matlab/Controllers/yaw_angle_impulse.jpg, id=1628, 1927.2pt x 966.61
 125pt>
 File: ../Design/Matlab/Controllers/yaw_angle_impulse.jpg Graphic file (type jpg
 )
  <use ../Design/Matlab/Controllers/yaw_angle_impulse.jpg>
 Package pdftex.def Info: ../Design/Matlab/Controllers/yaw_angle_impulse.jpg use
-d on input line 681.
+d on input line 692.
 (pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
 
-Overfull \hbox (0.83578pt too wide) in paragraph at lines 681--682
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 692--693
  [][] 
  []
 
-[99 <../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg> <../Design/Ma
-tlab/Controllers/yaw_angle_step_both_dist.jpg>]) [100 <../Design/Matlab/Control
-lers/yaw_angle_impulse.jpg>]
+[97 <../Design/Matlab/Controllers/yaw_angle_step_both_limits.jpg> <../Design/Ma
+tlab/Controllers/yaw_angle_step_both_dist.jpg>]) [98 <../Design/Matlab/Controll
+ers/yaw_angle_impulse.jpg>]
 \openout2 = `ObstacleAvoidance.aux'.
 
  (ObstacleAvoidance.tex
 Chapter 6.
-[101
+[99
 
 
 
 ]
-<../References/Diagrams/SimpleWaypointFlight.jpg, id=1675, 1927.2pt x 966.61125
+<../References/Diagrams/SimpleWaypointFlight.jpg, id=1644, 1927.2pt x 966.61125
 pt>
 File: ../References/Diagrams/SimpleWaypointFlight.jpg Graphic file (type jpg)
  <use ../References/Diagrams/SimpleWaypointFlight.jpg>
@@ -1807,7 +1809,7 @@ Overfull \hbox (29.21321pt too wide) in paragraph at lines 17--18
  []
 
 
-<../References/Diagrams/YawAlignmentController.jpg, id=1677, 821.31844pt x 325.
+<../References/Diagrams/YawAlignmentController.jpg, id=1646, 821.31844pt x 325.
 96782pt>
 File: ../References/Diagrams/YawAlignmentController.jpg Graphic file (type jpg)
 
@@ -1815,16 +1817,16 @@ File: ../References/Diagrams/YawAlignmentController.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../References/Diagrams/YawAlignmentController.jpg used
  on input line 29.
 (pdftex.def)             Requested size: 430.15845pt x 170.71652pt.
- [102 <../References/Diagrams/SimpleWaypointFlight.jpg>]
-<../References/Diagrams/YawAlignmentCirc.jpg, id=1685, 1028.84375pt x 935.495pt
+ [100 <../References/Diagrams/SimpleWaypointFlight.jpg>]
+<../References/Diagrams/YawAlignmentCirc.jpg, id=1653, 1028.84375pt x 935.495pt
 >
 File: ../References/Diagrams/YawAlignmentCirc.jpg Graphic file (type jpg)
  <use ../References/Diagrams/YawAlignmentCirc.jpg>
 Package pdftex.def Info: ../References/Diagrams/YawAlignmentCirc.jpg used on in
 put line 39.
 (pdftex.def)             Requested size: 375.5013pt x 341.43306pt.
- [103 <../References/Diagrams/YawAlignmentController.jpg>]
-<../References/Diagrams/YawAngleError.jpg, id=1693, 1927.2pt x 966.61125pt>
+ [101 <../References/Diagrams/YawAlignmentController.jpg>]
+<../References/Diagrams/YawAngleError.jpg, id=1661, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/YawAngleError.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/YawAngleError.jpg>
@@ -1836,17 +1838,17 @@ Overfull \hbox (0.83578pt too wide) in paragraph at lines 48--49
  [][] 
  []
 
-[104 <../References/Diagrams/YawAlignmentCirc.jpg> <../References/Diagrams/YawA
+[102 <../References/Diagrams/YawAlignmentCirc.jpg> <../References/Diagrams/YawA
 ngleError.jpg>]
-<../References/Diagrams/SensorPlacement.jpg, id=1700, 1461.20906pt x 1461.20906
+<../References/Diagrams/SensorPlacement.jpg, id=1669, 1461.20906pt x 1461.20906
 pt>
 File: ../References/Diagrams/SensorPlacement.jpg Graphic file (type jpg)
  <use ../References/Diagrams/SensorPlacement.jpg>
 Package pdftex.def Info: ../References/Diagrams/SensorPlacement.jpg used on inp
 ut line 65.
 (pdftex.def)             Requested size: 284.52214pt x 284.52756pt.
- [105 <../References/Diagrams/SensorPlacement.jpg>] [106]
-<../References/Diagrams/ObAvoidDemo.jpg, id=1720, 1927.2pt x 966.61125pt>
+ [103 <../References/Diagrams/SensorPlacement.jpg>] [104]
+<../References/Diagrams/ObAvoidDemo.jpg, id=1689, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/ObAvoidDemo.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ObAvoidDemo.jpg>
@@ -1858,15 +1860,15 @@ Overfull \hbox (29.21321pt too wide) in paragraph at lines 98--99
  [][] 
  []
 
-[107 <../References/Diagrams/ObAvoidDemo.jpg>]
-<../References/Diagrams/SpringDamper.jpg, id=1728, 1690.81688pt x 1690.06406pt>
+[105 <../References/Diagrams/ObAvoidDemo.jpg>]
+<../References/Diagrams/SpringDamper.jpg, id=1697, 1690.81688pt x 1690.06406pt>
 File: ../References/Diagrams/SpringDamper.jpg Graphic file (type jpg)
 <use ../References/Diagrams/SpringDamper.jpg>
 Package pdftex.def Info: ../References/Diagrams/SpringDamper.jpg used on input 
 line 117.
 (pdftex.def)             Requested size: 284.6487pt x 284.52756pt.
- [108 <../References/Diagrams/SpringDamper.jpg>]
-<../References/Diagrams/ObstacleAvoidanceController.jpg, id=1739, 729.47531pt x
+ [106 <../References/Diagrams/SpringDamper.jpg>]
+<../References/Diagrams/ObstacleAvoidanceController.jpg, id=1707, 729.47531pt x
  376.40625pt>
 File: ../References/Diagrams/ObstacleAvoidanceController.jpg Graphic file (type
  jpg)
@@ -1875,23 +1877,23 @@ Package pdftex.def Info: ../References/Diagrams/ObstacleAvoidanceController.jpg
  used on input line 132.
 (pdftex.def)             Requested size: 330.85435pt x 170.71652pt.
 
-<../References/Diagrams/SensorController.jpg, id=1742, 572.1375pt x 223.58531pt
+<../References/Diagrams/SensorController.jpg, id=1710, 572.1375pt x 223.58531pt
 >
 File: ../References/Diagrams/SensorController.jpg Graphic file (type jpg)
  <use ../References/Diagrams/SensorController.jpg>
 Package pdftex.def Info: ../References/Diagrams/SensorController.jpg used on in
 put line 145.
 (pdftex.def)             Requested size: 436.86313pt x 170.71652pt.
- [109 <../References/Diagrams/ObstacleAvoidanceController.jpg>]
-<../References/Diagrams/SensorCombination.jpg, id=1751, 492.33937pt x 571.38469
+ [107 <../References/Diagrams/ObstacleAvoidanceController.jpg>]
+<../References/Diagrams/SensorCombination.jpg, id=1719, 492.33937pt x 571.38469
 pt>
 File: ../References/Diagrams/SensorCombination.jpg Graphic file (type jpg)
  <use ../References/Diagrams/SensorCombination.jpg>
 Package pdftex.def Info: ../References/Diagrams/SensorCombination.jpg used on i
 nput line 159.
 (pdftex.def)             Requested size: 392.26434pt x 455.24408pt.
- [110 <../References/Diagrams/SensorController.jpg>]
-<../References/Diagrams/ObAvoidNorth.jpg, id=1758, 1927.2pt x 966.61125pt>
+ [108 <../References/Diagrams/SensorController.jpg>]
+<../References/Diagrams/ObAvoidNorth.jpg, id=1727, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/ObAvoidNorth.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ObAvoidNorth.jpg>
@@ -1899,7 +1901,7 @@ Package pdftex.def Info: ../References/Diagrams/ObAvoidNorth.jpg used on input
 line 174.
 (pdftex.def)             Requested size: 216.81pt x 108.73169pt.
 
-<../References/Diagrams/ObAvoidVelNorth.jpg, id=1759, 1927.2pt x 966.61125pt>
+<../References/Diagrams/ObAvoidVelNorth.jpg, id=1728, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/ObAvoidVelNorth.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ObAvoidVelNorth.jpg>
@@ -1907,7 +1909,7 @@ Package pdftex.def Info: ../References/Diagrams/ObAvoidVelNorth.jpg used on inp
 ut line 175.
 (pdftex.def)             Requested size: 216.81pt x 108.73169pt.
 
-<../References/Diagrams/ObAvoidEast.jpg, id=1760, 1927.2pt x 966.61125pt>
+<../References/Diagrams/ObAvoidEast.jpg, id=1729, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/ObAvoidEast.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ObAvoidEast.jpg>
@@ -1915,7 +1917,7 @@ Package pdftex.def Info: ../References/Diagrams/ObAvoidEast.jpg used on input l
 ine 176.
 (pdftex.def)             Requested size: 216.81pt x 108.73169pt.
 
-<../References/Diagrams/ObAvoidVelEast.jpg, id=1761, 1927.2pt x 966.61125pt>
+<../References/Diagrams/ObAvoidVelEast.jpg, id=1730, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/ObAvoidVelEast.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ObAvoidVelEast.jpg>
@@ -1923,7 +1925,7 @@ Package pdftex.def Info: ../References/Diagrams/ObAvoidVelEast.jpg used on inpu
 t line 177.
 (pdftex.def)             Requested size: 216.81pt x 108.73169pt.
 
-<../References/Diagrams/ObAvoidDown.jpg, id=1762, 1927.2pt x 966.61125pt>
+<../References/Diagrams/ObAvoidDown.jpg, id=1731, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/ObAvoidDown.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ObAvoidDown.jpg>
@@ -1931,7 +1933,7 @@ Package pdftex.def Info: ../References/Diagrams/ObAvoidDown.jpg used on input l
 ine 178.
 (pdftex.def)             Requested size: 216.81pt x 108.73169pt.
 
-<../References/Diagrams/ObAvoidVelDown.jpg, id=1763, 1927.2pt x 966.61125pt>
+<../References/Diagrams/ObAvoidVelDown.jpg, id=1732, 1927.2pt x 966.61125pt>
 File: ../References/Diagrams/ObAvoidVelDown.jpg Graphic file (type jpg)
 
 <use ../References/Diagrams/ObAvoidVelDown.jpg>
@@ -1943,8 +1945,8 @@ Overfull \hbox (4.6521pt too wide) in paragraph at lines 172--181
 [][] 
  []
 
-[111 <../References/Diagrams/SensorCombination.jpg>]
-<../References/Testing/ObAvoidStraightWallNorth.jpg, id=1770, 1927.2pt x 966.61
+[109 <../References/Diagrams/SensorCombination.jpg>]
+<../References/Testing/ObAvoidStraightWallNorth.jpg, id=1739, 1927.2pt x 966.61
 125pt>
 File: ../References/Testing/ObAvoidStraightWallNorth.jpg Graphic file (type jpg
 )
@@ -1957,33 +1959,268 @@ Overfull \hbox (0.83578pt too wide) in paragraph at lines 189--190
  [][] 
  []
 
-[112 <../References/Diagrams/ObAvoidNorth.jpg> <../References/Diagrams/ObAvoidV
+[110 <../References/Diagrams/ObAvoidNorth.jpg> <../References/Diagrams/ObAvoidV
 elNorth.jpg> <../References/Diagrams/ObAvoidEast.jpg> <../References/Diagrams/O
 bAvoidVelEast.jpg> <../References/Diagrams/ObAvoidDown.jpg> <../References/Diag
-rams/ObAvoidVelDown.jpg>]) [113 <../References/Testing/ObAvoidStraightWallNorth
+rams/ObAvoidVelDown.jpg>]) [111 <../References/Testing/ObAvoidStraightWallNorth
 .jpg>]
 \openout2 = `FlightTests.aux'.
 
  (FlightTests.tex
 Chapter 7.
-) [114
+<../References/Diagrams/Simulation.jpg, id=1749, 1396.4672pt x 571.38469pt>
+File: ../References/Diagrams/Simulation.jpg Graphic file (type jpg)
+
+<use ../References/Diagrams/Simulation.jpg>
+Package pdftex.def Info: ../References/Diagrams/Simulation.jpg used on input li
+ne 9.
+(pdftex.def)             Requested size: 417.21742pt x 170.71652pt.
+ [112
 
 
 
-]
+ <../References/Diagrams/Simulation.jpg>]
+<../References/Testing/SimpleWaypoint_Both_North.jpg, id=1757, 1927.2pt x 966.6
+1125pt>
+File: ../References/Testing/SimpleWaypoint_Both_North.jpg Graphic file (type jp
+g)
+ <use ../References/Testing/SimpleWaypoint_Both_North.jpg>
+Package pdftex.def Info: ../References/Testing/SimpleWaypoint_Both_North.jpg us
+ed on input line 25.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 25--26
+ [][] 
+ []
+
+
+<../References/Testing/SimpleWaypoint_Both_East.jpg, id=1758, 1927.2pt x 966.61
+125pt>
+File: ../References/Testing/SimpleWaypoint_Both_East.jpg Graphic file (type jpg
+)
+ <use ../References/Testing/SimpleWaypoint_Both_East.jpg>
+Package pdftex.def Info: ../References/Testing/SimpleWaypoint_Both_East.jpg use
+d on input line 32.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 32--33
+ [][] 
+ []
+
+[113 <../References/Testing/SimpleWaypoint_Both_North.jpg>]
+<../References/Testing/SimpleWaypoint_5Wind_North.jpg, id=1767, 1927.2pt x 966.
+61125pt>
+File: ../References/Testing/SimpleWaypoint_5Wind_North.jpg Graphic file (type j
+pg)
+ <use ../References/Testing/SimpleWaypoint_5Wind_North.jpg>
+Package pdftex.def Info: ../References/Testing/SimpleWaypoint_5Wind_North.jpg u
+sed on input line 43.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 43--44
+ [][] 
+ []
+
+[114 <../References/Testing/SimpleWaypoint_Both_East.jpg> <../References/Testin
+g/SimpleWaypoint_5Wind_North.jpg>]
+<../References/Testing/SimpleWaypoint_5Wind_East.jpg, id=1775, 1927.2pt x 966.6
+1125pt>
+File: ../References/Testing/SimpleWaypoint_5Wind_East.jpg Graphic file (type jp
+g)
+ <use ../References/Testing/SimpleWaypoint_5Wind_East.jpg>
+Package pdftex.def Info: ../References/Testing/SimpleWaypoint_5Wind_East.jpg us
+ed on input line 52.
+(pdftex.def)             Requested size: 453.80368pt x 227.62204pt.
+
+Overfull \hbox (0.83578pt too wide) in paragraph at lines 52--53
+ [][] 
+ []
+
+
+<../References/Testing/CorridorFlight_2Wind.jpg, id=1778, 471.26062pt x 657.958
+13pt>
+File: ../References/Testing/CorridorFlight_2Wind.jpg Graphic file (type jpg)
+ <use ../References/Testing/CorridorFlight_2Wind.jpg>
+Package pdftex.def Info: ../References/Testing/CorridorFlight_2Wind.jpg used on
+ input line 68.
+(pdftex.def)             Requested size: 203.79584pt x 284.52756pt.
+ [115 <../References/Testing/SimpleWaypoint_5Wind_East.jpg>]
+<../References/Testing/CorridorFlight_2Wind_North.jpg, id=1787, 1927.2pt x 966.
+61125pt>
+File: ../References/Testing/CorridorFlight_2Wind_North.jpg Graphic file (type j
+pg)
+ <use ../References/Testing/CorridorFlight_2Wind_North.jpg>
+Package pdftex.def Info: ../References/Testing/CorridorFlight_2Wind_North.jpg u
+sed on input line 79.
+(pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
+ [116 <../References/Testing/CorridorFlight_2Wind.jpg>]
+<../References/Testing/CorridorFlight_2Wind_East.jpg, id=1795, 1927.2pt x 966.6
+1125pt>
+File: ../References/Testing/CorridorFlight_2Wind_East.jpg Graphic file (type jp
+g)
+ <use ../References/Testing/CorridorFlight_2Wind_East.jpg>
+Package pdftex.def Info: ../References/Testing/CorridorFlight_2Wind_East.jpg us
+ed on input line 88.
+(pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
+
+<../References/Testing/CorridorFlight_2Wind_Down.jpg, id=1796, 1927.2pt x 966.6
+1125pt>
+File: ../References/Testing/CorridorFlight_2Wind_Down.jpg Graphic file (type jp
+g)
+ <use ../References/Testing/CorridorFlight_2Wind_Down.jpg>
+Package pdftex.def Info: ../References/Testing/CorridorFlight_2Wind_Down.jpg us
+ed on input line 97.
+(pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
+ [117 <../References/Testing/CorridorFlight_2Wind_North.jpg> <../References/Tes
+ting/CorridorFlight_2Wind_East.jpg>]
+<../References/Testing/WideCorridor3DProx.jpg, id=1802, 408.77719pt x 724.20563
+pt>
+File: ../References/Testing/WideCorridor3DProx.jpg Graphic file (type jpg)
+ <use ../References/Testing/WideCorridor3DProx.jpg>
+Package pdftex.def Info: ../References/Testing/WideCorridor3DProx.jpg used on i
+nput line 114.
+(pdftex.def)             Requested size: 224.84685pt x 398.33858pt.
+ [118 <../References/Testing/CorridorFlight_2Wind_Down.jpg>]
+<../References/Testing/NarrowCorridor3DProx.jpg, id=1810, 313.17pt x 724.20563p
+t>
+File: ../References/Testing/NarrowCorridor3DProx.jpg Graphic file (type jpg)
+ <use ../References/Testing/NarrowCorridor3DProx.jpg>
+Package pdftex.def Info: ../References/Testing/NarrowCorridor3DProx.jpg used on
+ input line 126.
+(pdftex.def)             Requested size: 184.55843pt x 426.79134pt.
+ [119 <../References/Testing/WideCorridor3DProx.jpg>]
+<../References/Testing/WideCorridorYawAlign3D.jpg, id=1820, 427.5975pt x 724.95
+844pt>
+File: ../References/Testing/WideCorridorYawAlign3D.jpg Graphic file (type jpg)
+ <use ../References/Testing/WideCorridorYawAlign3D.jpg>
+Package pdftex.def Info: ../References/Testing/WideCorridorYawAlign3D.jpg used 
+on input line 138.
+(pdftex.def)             Requested size: 167.81934pt x 284.52756pt.
+ [120 <../References/Testing/NarrowCorridor3DProx.jpg>]
+<../References/Testing/WideCorridorYawAlign3DAlign.jpg, id=1830, 440.39531pt x 
+724.20563pt>
+File: ../References/Testing/WideCorridorYawAlign3DAlign.jpg Graphic file (type 
+jpg)
+ <use ../References/Testing/WideCorridorYawAlign3DAlign.jpg>
+Package pdftex.def Info: ../References/Testing/WideCorridorYawAlign3DAlign.jpg 
+used on input line 147.
+(pdftex.def)             Requested size: 173.02353pt x 284.52756pt.
+
+[121 <../References/Testing/WideCorridorYawAlign3D.jpg>]
+<../References/Testing/WideCorridorYawAlignYawError.jpg, id=1837, 1927.2pt x 96
+6.61125pt>
+File: ../References/Testing/WideCorridorYawAlignYawError.jpg Graphic file (type
+ jpg)
+ <use ../References/Testing/WideCorridorYawAlignYawError.jpg>
+Package pdftex.def Info: ../References/Testing/WideCorridorYawAlignYawError.jpg
+ used on input line 156.
+(pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
+
+[122 <../References/Testing/WideCorridorYawAlign3DAlign.jpg> <../References/Tes
+ting/WideCorridorYawAlignYawError.jpg>]
+<../References/Testing/FullRun.jpg, id=1843, 676.77844pt x 724.95844pt>
+File: ../References/Testing/FullRun.jpg Graphic file (type jpg)
+
+<use ../References/Testing/FullRun.jpg>
+Package pdftex.def Info: ../References/Testing/FullRun.jpg used on input line 1
+71.
+(pdftex.def)             Requested size: 216.81pt x 232.24586pt.
+
+<../References/Testing/FullRunAlign.jpg, id=1844, 682.04813pt x 724.95844pt>
+File: ../References/Testing/FullRunAlign.jpg Graphic file (type jpg)
+
+<use ../References/Testing/FullRunAlign.jpg>
+Package pdftex.def Info: ../References/Testing/FullRunAlign.jpg used on input l
+ine 172.
+(pdftex.def)             Requested size: 216.81pt x 230.45383pt.
+
+<../References/Testing/FullRunProx.jpg, id=1845, 672.26157pt x 724.95844pt>
+File: ../References/Testing/FullRunProx.jpg Graphic file (type jpg)
+
+<use ../References/Testing/FullRunProx.jpg>
+Package pdftex.def Info: ../References/Testing/FullRunProx.jpg used on input li
+ne 173.
+(pdftex.def)             Requested size: 216.81pt x 233.8056pt.
+
+<../References/Testing/FullRunAlignProx.jpg, id=1846, 684.30656pt x 724.20563pt
+>
+File: ../References/Testing/FullRunAlignProx.jpg Graphic file (type jpg)
+ <use ../References/Testing/FullRunAlignProx.jpg>
+Package pdftex.def Info: ../References/Testing/FullRunAlignProx.jpg used on inp
+ut line 174.
+(pdftex.def)             Requested size: 216.81pt x 229.45203pt.
+
+Overfull \hbox (4.6521pt too wide) in paragraph at lines 169--176
+[][] 
+ []
+
+[123]
+<../References/Testing/FullRunBothNorth.jpg, id=1854, 1927.2pt x 966.61125pt>
+File: ../References/Testing/FullRunBothNorth.jpg Graphic file (type jpg)
+
+<use ../References/Testing/FullRunBothNorth.jpg>
+Package pdftex.def Info: ../References/Testing/FullRunBothNorth.jpg used on inp
+ut line 214.
+(pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
+ [124 <../References/Testing/FullRun.jpg> <../References/Testing/FullRunAlign.j
+pg> <../References/Testing/FullRunProx.jpg> <../References/Testing/FullRunAlign
+Prox.jpg>]
+<../References/Testing/FullRunBothEast.jpg, id=1861, 1927.2pt x 966.61125pt>
+File: ../References/Testing/FullRunBothEast.jpg Graphic file (type jpg)
+
+<use ../References/Testing/FullRunBothEast.jpg>
+Package pdftex.def Info: ../References/Testing/FullRunBothEast.jpg used on inpu
+t line 221.
+(pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
+
+<../References/Testing/FullRunAlignYaw.jpg, id=1865, 680.5425pt x 724.95844pt>
+File: ../References/Testing/FullRunAlignYaw.jpg Graphic file (type jpg)
+
+<use ../References/Testing/FullRunAlignYaw.jpg>
+Package pdftex.def Info: ../References/Testing/FullRunAlignYaw.jpg used on inpu
+t line 230.
+(pdftex.def)             Requested size: 267.09274pt x 284.52756pt.
+ [125 <../References/Testing/FullRunBothNorth.jpg> <../References/Testing/FullR
+unBothEast.jpg>]
+<../References/Testing/FullRunAlignYawGraph.jpg, id=1873, 1927.2pt x 966.61125p
+t>
+File: ../References/Testing/FullRunAlignYawGraph.jpg Graphic file (type jpg)
+ <use ../References/Testing/FullRunAlignYawGraph.jpg>
+Package pdftex.def Info: ../References/Testing/FullRunAlignYawGraph.jpg used on
+ input line 240.
+(pdftex.def)             Requested size: 448.1576pt x 224.7766pt.
+ [126 <../References/Testing/FullRunAlignYaw.jpg> <../References/Testing/FullRu
+nAlignYawGraph.jpg>]
+<../References/Testing/Fail2.jpg, id=1880, 679.03688pt x 724.95844pt>
+File: ../References/Testing/Fail2.jpg Graphic file (type jpg)
+
+<use ../References/Testing/Fail2.jpg>
+Package pdftex.def Info: ../References/Testing/Fail2.jpg used on input line 250
+.
+(pdftex.def)             Requested size: 293.16135pt x 312.9803pt.
+
+<../References/Testing/Fail1.jpg, id=1882, 1004.25188pt x 724.20563pt>
+File: ../References/Testing/Fail1.jpg Graphic file (type jpg)
+
+<use ../References/Testing/Fail1.jpg>
+Package pdftex.def Info: ../References/Testing/Fail1.jpg used on input line 259
+.
+(pdftex.def)             Requested size: 355.09448pt x 256.0748pt.
+ [127 <../References/Testing/Fail2.jpg>])
+[128 <../References/Testing/Fail1.jpg>]
 \openout2 = `Conclusions.aux'.
 
  (Conclusions.tex
 Chapter 8.
-) [115
+[129
 
 
 
-] ("Angus Steele.bbl"
+]) [130] ("Angus Steele.bbl"
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no — in font cmr12!
- [116
+ [131
 
 
 ]
@@ -1996,27 +2233,27 @@ Missing character: There is no ³ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [117]) [118]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+ [132]) [133]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
  ("Angus Steele.aux"
 (Introduction.aux) (LiteratureReview.aux) (PlatformDesign.aux)
 (SystemIdentification.aux) (ControllerDesign.aux) (ObstacleAvoidance.aux)
 (FlightTests.aux) (Conclusions.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `"Angus Steele".out' has not changed.
-(rerunfilecheck)             Checksum: 0BC5B9721AF1460B0CC76052E75CEE27;7206.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
+(rerunfilecheck)             Checksum: 5912FF5B5A66484AB6DBFCB1CD60F1A9;7147.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 18896 strings out of 493335
- 357337 string characters out of 3139257
- 416852 words of memory out of 3000000
- 21410 multiletter control sequences out of 15000+200000
+ 18923 strings out of 493335
+ 359838 string characters out of 3139257
+ 409704 words of memory out of 3000000
+ 21389 multiletter control sequences out of 15000+200000
  16800 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,82p,1243b,714s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,56p,1338b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\GusBus\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/
@@ -2033,9 +2270,9 @@ iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb>
-Output written on "Angus Steele.pdf" (119 pages, 12421727 bytes).
+Output written on "Angus Steele.pdf" (134 pages, 16390581 bytes).
 PDF statistics:
- 1969 PDF objects out of 2073 (max. 8388607)
- 525 named destinations out of 1000 (max. 500000)
- 1335 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2088 PDF objects out of 2487 (max. 8388607)
+ 549 named destinations out of 1000 (max. 500000)
+ 1439 words of extra memory for PDF output out of 10000 (max. 10000000)
 

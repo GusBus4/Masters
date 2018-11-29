@@ -22,7 +22,7 @@
 		\subsection{Yaw Alignment}
 		The strategy for yaw alignment is to align the X-Axis of the drone's body frame with the current velocity vector. This achieves a constantly forward facing drone assisting in tight spaces as well as a more predictable sensor feedback for missions requiring additional sensors.
 		
-		The yaw angle controller designed in \ref{SSECT_YawAngleController} works on the basis of a yaw angle error. The heading alignment controller would be required to calculate a yaw error to be controlled by the yaw angle controller. Similarly to the tilt angle controller, this can be calculated using the dot and cross product between two vectors. The first vector is the current velocity in the body frame, while the second vector is the desired alignment vector. For alignment of the X-Axis the vector would be a unit vector containing only an X component. The X and Y components of the body velocity are extracted to calculate the magnitude of rotation where the axis of rotation should always be around the Z-Axis. The cross product is utilised to calculate the direction of the rotation. 
+		The yaw angle controller designed in Section \ref{SSECT_YawAngleController} works on the basis of a yaw angle error. The heading alignment controller would be required to calculate a yaw error to be controlled by the yaw angle controller. Similarly to the tilt angle controller, this can be calculated using the dot and cross product between two vectors. The first vector is the current velocity in the body frame, while the second vector is the desired alignment vector. For alignment of the X-Axis the vector would be a unit vector containing only an X component. The X and Y components of the body velocity are extracted to calculate the magnitude of rotation where the axis of rotation should always be around the Z-Axis. The cross product is utilised to calculate the direction of the rotation. 
 		
 		\begin{figure}[H]
 			\centering
@@ -166,7 +166,7 @@
 		\subsection{Obstacle Avoidance Discussion}
 		The discussion is required to assess the feasibility and stability of the proposed obstacle avoidance routine. A simple method to assess this is by disabling the position controller and allowing the obstacle avoidance routine complete control of the aircraft's velocity reference commands. To create this scenario wall segments are placed at $-0.5m$ and $4m$ North and East, with a floor at $0m$ and roof at $-6m$ Down. The horizontal sensor range is set at $3.5m$ with the vertical sensor range set to $2m$. The craft is started at position (0, 0, 0), in the bottom left corner of the four walled room.
 		
-		The figures shown in \ref{IM_ObAvoidPos} show the North, East and Down position respectively of the craft as it is controlled by the obstacle avoidance controller. The images on the right show the velocity set points sent by the controller to the inner velocity loop. As shown the craft is stable and moves steadily to the centre of the room with the velocity commands tending towards zero. 
+		The images shown in Figure \ref{IM_ObAvoidPos} show the North, East and Down position respectively of the craft as it is controlled by the obstacle avoidance controller. The images on the right show the velocity set points sent by the controller to the inner velocity loop. As shown the craft is stable and moves steadily to the centre of the room with the velocity commands tending towards zero. 
 		
 		\begin{figure}[H]
 			\begin{tabular}{c c}

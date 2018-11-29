@@ -1,163 +1,164 @@
-\contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}
-\contentsline {section}{\numberline {1.1}Project Background}{8}{section.1.1}
-\contentsline {section}{\numberline {1.2}Problem Statement}{9}{section.1.2}
-\contentsline {section}{\numberline {1.3}Application Requirements}{9}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Controlled Indoor Flight}{9}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Method of Expansion for Industrial Applications}{10}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Assumption and Limitations}{10}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Location Sensing}{10}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Route Planning Strategy}{10}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Modelling Errors}{10}{subsection.1.4.3}
-\contentsline {chapter}{\numberline {2}Literature Review}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Flight Theory}{11}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Fundamental Principles of Flow}{12}{subsection.2.1.1}
-\contentsline {subsubsection}{Continuity Equation and Bernoulli's Principle}{12}{section*.16}
-\contentsline {subsubsection}{Reynold's Number}{13}{section*.17}
-\contentsline {subsection}{\numberline {2.1.2}Basic Rotor Theory}{13}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Momentum Theory and Thrust Basics}{15}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Disk and Power Loading}{16}{subsection.2.1.4}
-\contentsline {subsubsection}{Disk Loading}{16}{section*.18}
-\contentsline {subsubsection}{Power Loading}{17}{section*.20}
-\contentsline {subsection}{\numberline {2.1.5}Electrical Power to Thrust}{18}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Analysis of Conventional Rotor Wing Configurations}{18}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Helicopter}{19}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Coaxial Rotors}{20}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Tandem Rotors}{22}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Multirotor Designs}{23}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Tilt Rotors}{23}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Discussion}{24}{subsection.2.2.6}
-\contentsline {section}{\numberline {2.3}Quadrotor Flight Dynamics}{24}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Coordinate Systems, Rotations and Nomenclature}{24}{subsection.2.3.1}
-\contentsline {subsubsection}{Inertial and Body Frame}{24}{section*.21}
-\contentsline {subsubsection}{Euler Angles}{25}{section*.22}
-\contentsline {subsubsection}{Direct Cosine Matrix}{26}{section*.23}
-\contentsline {subsubsection}{Quaternions}{26}{section*.24}
-\contentsline {subsubsection}{Nomenclature}{26}{section*.25}
-\contentsline {subsection}{\numberline {2.3.2}Kinetics and Kinematics}{28}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Mass Model and the Inertia Tensor}{28}{subsection.2.3.3}
-\contentsline {subsubsection}{Mass Model}{28}{section*.26}
-\contentsline {subsubsection}{Inertia Tensor}{28}{section*.27}
-\contentsline {subsection}{\numberline {2.3.4}Rotor Generated Forces and Moments}{29}{subsection.2.3.4}
-\contentsline {subsubsection}{Actuators}{29}{section*.28}
-\contentsline {subsubsection}{Controlled Body Forces}{30}{section*.29}
-\contentsline {subsubsection}{Controlled Body Moments}{30}{section*.30}
-\contentsline {subsection}{\numberline {2.3.5}Disturbances}{31}{subsection.2.3.5}
-\contentsline {subsubsection}{Drag}{31}{section*.31}
-\contentsline {subsubsection}{Airflow Characteristics}{32}{section*.32}
-\contentsline {subsection}{\numberline {2.3.6}Instrumentation}{34}{subsection.2.3.6}
-\contentsline {subsubsection}{Inertial Measurement Unit}{34}{section*.33}
-\contentsline {subsubsection}{Global Positioning System}{34}{section*.34}
-\contentsline {subsubsection}{Measurement Noise}{35}{section*.35}
-\contentsline {section}{\numberline {2.4}Collision Protection Techniques}{35}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Impact Resistance}{35}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Rolling Cage}{35}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Review of Existing Flight Control Strategies}{35}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Controller Architecture}{36}{subsection.2.5.1}
-\contentsline {subsubsection}{Disturbance Based Observer Controller}{37}{section*.36}
-\contentsline {subsection}{\numberline {2.5.2}Controller Implementation}{37}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Collision Avoidance Techniques}{37}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Sensing Techniques and Requirements}{38}{subsection.2.6.1}
-\contentsline {subsubsection}{Proximity Measurement}{38}{section*.37}
-\contentsline {subsubsection}{Image Processing}{38}{section*.38}
-\contentsline {subsection}{\numberline {2.6.2}Collision Avoidance Algorithms}{39}{subsection.2.6.2}
-\contentsline {subsubsection}{Bug Algorithm}{39}{section*.39}
-\contentsline {subsubsection}{Potential Field Method}{40}{section*.40}
-\contentsline {chapter}{\numberline {3}Platform Design}{42}{chapter.3}
-\contentsline {section}{\numberline {3.1}System Hardware Architecture}{42}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Platform Construction}{43}{subsection.3.1.1}
-\contentsline {subsubsection}{Mechanical Construction}{43}{section*.41}
-\contentsline {subsubsection}{Propulsion and Flight Characteristics}{44}{section*.42}
-\contentsline {subsection}{\numberline {3.1.2}Electronics Interface}{44}{subsection.3.1.2}
-\contentsline {subsubsection}{Flight Controller}{44}{section*.43}
-\contentsline {subsubsection}{Electronic Speed Controller}{45}{section*.44}
-\contentsline {subsubsection}{On Board Computer}{45}{section*.45}
-\contentsline {subsubsection}{On Board Sensors}{45}{section*.46}
-\contentsline {subsubsection}{Sensor Pack}{46}{section*.47}
-\contentsline {section}{\numberline {3.2}Platform Construction}{46}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Design Considerations}{46}{subsection.3.2.1}
-\contentsline {subsubsection}{Physical Restrictions and Requirements}{46}{section*.48}
-\contentsline {subsubsection}{Manoeuvring Decisions}{46}{section*.49}
-\contentsline {subsubsection}{Disturbances}{46}{section*.50}
-\contentsline {subsubsection}{Thrust Overhead}{47}{section*.51}
-\contentsline {subsubsection}{Flight Time}{47}{section*.52}
-\contentsline {subsection}{\numberline {3.2.2}Chosen Concepts}{47}{subsection.3.2.2}
-\contentsline {subsubsection}{Concept 1 - The Overlapping Quad}{48}{section*.53}
-\contentsline {subsubsection}{Concept 2 - The Unlike Size Quad}{49}{section*.54}
-\contentsline {subsection}{\numberline {3.2.3}Concept Comparison}{50}{subsection.3.2.3}
-\contentsline {subsubsection}{Assumptions and Method}{50}{section*.55}
-\contentsline {subsubsection}{Rotor Area}{51}{section*.56}
-\contentsline {subsubsection}{Thrust and Power Considerations}{51}{section*.57}
-\contentsline {subsubsection}{Size and Manoeuvrability}{52}{section*.58}
-\contentsline {subsubsection}{Discussion}{52}{section*.59}
-\contentsline {section}{\numberline {3.3}Electronic Design}{52}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Flight Controller}{53}{subsection.3.3.1}
-\contentsline {subsubsection}{Custom Design}{53}{section*.60}
-\contentsline {subsubsection}{Pixhawk}{53}{section*.62}
-\contentsline {subsection}{\numberline {3.3.2}On Board Computer}{54}{subsection.3.3.2}
-\contentsline {subsubsection}{Raspberry Pi 3 Model B}{54}{section*.63}
-\contentsline {subsubsection}{Odroid XU4}{55}{section*.64}
-\contentsline {subsection}{\numberline {3.3.3}Location}{55}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Object Avoidance}{56}{subsection.3.3.4}
-\contentsline {subsubsection}{Laser Range Finders}{56}{section*.65}
-\contentsline {subsubsection}{Ultrasonic Proximity Sensors}{56}{section*.66}
-\contentsline {chapter}{\numberline {4}Mathematical Modelling and System Identification}{57}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dynamic Flight Model}{57}{section.4.1}
-\contentsline {section}{\numberline {4.2}System Identification}{58}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Mass and Inertia}{58}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Thrust and Moment Profiles}{58}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Drag Coefficients}{59}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Sensor Constants}{60}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Wind Model}{60}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Simulation Configuration}{61}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Motor Mixer}{61}{subsection.4.3.1}
-\contentsline {chapter}{\numberline {5}Controller Design}{63}{chapter.5}
-\contentsline {section}{\numberline {5.1}Design Goals}{63}{section.5.1}
+\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Project Background}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}Problem Statement}{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}Application Requirements}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Controlled Indoor Flight}{8}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Method of Expansion for Industrial Applications}{9}{subsection.1.3.2}
+\contentsline {chapter}{\numberline {2}Literature Review}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Flight Theory}{10}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Fundamental Principles of Flow}{11}{subsection.2.1.1}
+\contentsline {subsubsection}{Continuity Equation and Bernoulli's Principle}{11}{section*.5}
+\contentsline {subsubsection}{Reynold's Number}{12}{section*.6}
+\contentsline {subsection}{\numberline {2.1.2}Basic Rotor Theory}{12}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Momentum Theory and Thrust Basics}{13}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Disk and Power Loading}{15}{subsection.2.1.4}
+\contentsline {subsubsection}{Disk Loading}{15}{section*.7}
+\contentsline {subsubsection}{Power Loading}{16}{section*.8}
+\contentsline {subsection}{\numberline {2.1.5}Electrical Power to Thrust}{16}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Analysis of Conventional Rotor Wing Configurations}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Helicopter}{18}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Coaxial Rotors}{19}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Tandem Rotors}{20}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Multirotor Designs}{21}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Tilt Rotors}{22}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Discussion}{23}{subsection.2.2.6}
+\contentsline {section}{\numberline {2.3}Quadrotor Flight Dynamics}{23}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Coordinate Systems, Rotations and Nomenclature}{23}{subsection.2.3.1}
+\contentsline {subsubsection}{Inertial and Body Frame}{23}{section*.9}
+\contentsline {subsubsection}{Euler Angles}{24}{section*.10}
+\contentsline {subsubsection}{Direct Cosine Matrix}{25}{section*.11}
+\contentsline {subsubsection}{Quaternions}{25}{section*.12}
+\contentsline {subsubsection}{Nomenclature}{25}{section*.13}
+\contentsline {subsection}{\numberline {2.3.2}Kinetics and Kinematics}{26}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Mass Model and the Inertia Tensor}{27}{subsection.2.3.3}
+\contentsline {subsubsection}{Mass Model}{27}{section*.14}
+\contentsline {subsubsection}{Inertia Tensor}{27}{section*.15}
+\contentsline {subsection}{\numberline {2.3.4}Rotor Generated Forces and Moments}{28}{subsection.2.3.4}
+\contentsline {subsubsection}{Actuators}{28}{section*.16}
+\contentsline {subsubsection}{Controlled Body Forces}{29}{section*.17}
+\contentsline {subsubsection}{Controlled Body Moments}{29}{section*.18}
+\contentsline {subsection}{\numberline {2.3.5}Disturbances}{30}{subsection.2.3.5}
+\contentsline {subsubsection}{Drag}{30}{section*.19}
+\contentsline {subsubsection}{Airflow Characteristics}{31}{section*.20}
+\contentsline {subsection}{\numberline {2.3.6}Instrumentation}{33}{subsection.2.3.6}
+\contentsline {subsubsection}{Inertial Measurement Unit}{33}{section*.21}
+\contentsline {subsubsection}{Global Positioning System}{33}{section*.22}
+\contentsline {subsubsection}{Measurement Noise}{34}{section*.23}
+\contentsline {section}{\numberline {2.4}Review of Existing Flight Control Strategies}{34}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Controller Architecture}{34}{subsection.2.4.1}
+\contentsline {subsubsection}{Disturbance Based Observer Controller}{35}{section*.24}
+\contentsline {section}{\numberline {2.5}Collision Protection Techniques}{35}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Impact Resistance}{36}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Rolling Cage}{36}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Collision Avoidance Techniques}{36}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Sensing Techniques and Requirements}{36}{subsection.2.6.1}
+\contentsline {subsubsection}{Proximity Measurement}{36}{section*.25}
+\contentsline {subsubsection}{Image Processing}{37}{section*.26}
+\contentsline {subsection}{\numberline {2.6.2}Collision Avoidance Algorithms}{37}{subsection.2.6.2}
+\contentsline {subsubsection}{Bug Algorithm}{38}{section*.27}
+\contentsline {subsubsection}{Potential Field Method}{39}{section*.28}
+\contentsline {chapter}{\numberline {3}Platform Design}{40}{chapter.3}
+\contentsline {section}{\numberline {3.1}System Hardware Architecture}{40}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Platform Construction}{41}{subsection.3.1.1}
+\contentsline {subsubsection}{Mechanical Construction}{41}{section*.29}
+\contentsline {subsubsection}{Propulsion and Flight Characteristics}{42}{section*.30}
+\contentsline {subsection}{\numberline {3.1.2}Electronics Interface}{42}{subsection.3.1.2}
+\contentsline {subsubsection}{Flight Controller}{42}{section*.31}
+\contentsline {subsubsection}{Electronic Speed Controller}{43}{section*.32}
+\contentsline {subsubsection}{On Board Computer}{43}{section*.33}
+\contentsline {subsubsection}{On Board Sensors}{43}{section*.34}
+\contentsline {subsubsection}{Sensor Pack}{44}{section*.35}
+\contentsline {section}{\numberline {3.2}Platform Construction}{44}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Design Considerations}{44}{subsection.3.2.1}
+\contentsline {subsubsection}{Physical Restrictions and Requirements}{44}{section*.36}
+\contentsline {subsubsection}{Manoeuvring Decisions}{44}{section*.37}
+\contentsline {subsubsection}{Disturbances}{44}{section*.38}
+\contentsline {subsubsection}{Thrust Overhead}{45}{section*.39}
+\contentsline {subsubsection}{Flight Time}{45}{section*.40}
+\contentsline {subsection}{\numberline {3.2.2}Chosen Concepts}{45}{subsection.3.2.2}
+\contentsline {subsubsection}{Concept 1 - The Overlapping Quad}{46}{section*.41}
+\contentsline {subsubsection}{Concept 2 - The Unlike Size Quad}{47}{section*.42}
+\contentsline {subsection}{\numberline {3.2.3}Concept Comparison}{48}{subsection.3.2.3}
+\contentsline {subsubsection}{Assumptions and Method}{48}{section*.43}
+\contentsline {subsubsection}{Rotor Area}{49}{section*.44}
+\contentsline {subsubsection}{Thrust and Power Considerations}{49}{section*.45}
+\contentsline {subsubsection}{Size and Manoeuvrability}{50}{section*.46}
+\contentsline {subsubsection}{Discussion}{50}{section*.47}
+\contentsline {section}{\numberline {3.3}Electronic Design}{50}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Flight Controller}{51}{subsection.3.3.1}
+\contentsline {subsubsection}{Custom Design}{51}{section*.48}
+\contentsline {subsubsection}{Pixhawk}{51}{section*.49}
+\contentsline {subsection}{\numberline {3.3.2}On Board Computer}{52}{subsection.3.3.2}
+\contentsline {subsubsection}{Raspberry Pi 3 Model B}{52}{section*.50}
+\contentsline {subsubsection}{Odroid XU4}{53}{section*.51}
+\contentsline {subsection}{\numberline {3.3.3}Location}{54}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Object Avoidance}{54}{subsection.3.3.4}
+\contentsline {subsubsection}{Laser Range Finders}{54}{section*.52}
+\contentsline {subsubsection}{Ultrasonic Proximity Sensors}{54}{section*.53}
+\contentsline {chapter}{\numberline {4}Mathematical Modelling and System Identification}{56}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dynamic Flight Model}{56}{section.4.1}
+\contentsline {section}{\numberline {4.2}System Identification}{57}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Mass and Inertia}{57}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Thrust and Moment Profiles}{57}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Drag Coefficients}{58}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Sensor Constants}{59}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Wind Model}{59}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Simulation Configuration}{60}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Motor Mixer}{60}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Controller Design}{62}{chapter.5}
+\contentsline {section}{\numberline {5.1}Design Goals}{62}{section.5.1}
 \contentsline {section}{\numberline {5.2}Flight Control Strategy}{63}{section.5.2}
 \contentsline {section}{\numberline {5.3}Altitude Controller}{64}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Heave Dynamics}{65}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Heave Dynamics}{64}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Heave Controller}{65}{subsection.5.3.2}
-\contentsline {subsubsection}{Heave Controller Discussion}{67}{section*.67}
+\contentsline {subsubsection}{Heave Controller Discussion}{67}{section*.54}
 \contentsline {subsection}{\numberline {5.3.3}Climb Rate Controller}{68}{subsection.5.3.3}
-\contentsline {subsubsection}{Climb Rate Controller Discussion}{71}{section*.69}
-\contentsline {subsection}{\numberline {5.3.4}Altitude Hold Controller}{71}{subsection.5.3.4}
-\contentsline {subsubsection}{Altitude Hold Controller Discussion}{74}{section*.74}
-\contentsline {section}{\numberline {5.4}Horizontal Control}{76}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Roll and Pitch Rate Dynamics}{76}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Roll and Pitch Rate Controllers}{77}{subsection.5.4.2}
-\contentsline {subsubsection}{Roll and Pitch Rate Controller Discussion}{80}{section*.77}
-\contentsline {subsection}{\numberline {5.4.3}Tilt Angle Controller}{82}{subsection.5.4.3}
-\contentsline {subsubsection}{Method of Conversion}{83}{section*.78}
-\contentsline {subsubsection}{Roll and Pitch Angle Controllers}{84}{section*.79}
-\contentsline {subsubsection}{Tilt Angle Controller Discussion}{85}{section*.80}
-\contentsline {subsection}{\numberline {5.4.4}Linear Velocity Control}{87}{subsection.5.4.4}
-\contentsline {subsubsection}{Linear Velocity Controller Discussion}{89}{section*.81}
-\contentsline {subsection}{\numberline {5.4.5}Global Position Tracking Control}{90}{subsection.5.4.5}
-\contentsline {subsubsection}{Position Controller Discussion}{91}{section*.82}
-\contentsline {section}{\numberline {5.5}Heading Controller}{92}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Yaw Rate Dynamics}{93}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Yaw Rate Controller}{93}{subsection.5.5.2}
-\contentsline {subsubsection}{Yaw Rate Controller Discussion}{95}{section*.83}
-\contentsline {subsection}{\numberline {5.5.3}Yaw Angle Controller}{96}{subsection.5.5.3}
-\contentsline {subsubsection}{Yaw Angle Controller Discussion}{98}{section*.84}
-\contentsline {chapter}{\numberline {6}Flight Strategy and Obstacle Avoidance}{101}{chapter.6}
-\contentsline {section}{\numberline {6.1}Flight Strategy}{101}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Waypoint Generation}{101}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Yaw Alignment}{102}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Yaw Alignment Discussion}{103}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Obstacle Avoidance}{105}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Mathematical modelling}{105}{subsection.6.2.1}
-\contentsline {subsubsection}{Obstacle Distance Detection}{106}{section*.85}
-\contentsline {subsection}{\numberline {6.2.2}Obstacle Avoidance Methodology}{107}{subsection.6.2.2}
-\contentsline {subsubsection}{Methodology Investigation}{107}{section*.86}
-\contentsline {subsubsection}{Methodology Implementation}{108}{section*.87}
-\contentsline {subsubsection}{Obstacle Avoidance Controller}{109}{section*.88}
-\contentsline {subsection}{\numberline {6.2.3}Obstacle Avoidance Discussion}{111}{subsection.6.2.3}
-\contentsline {chapter}{\numberline {7}Simulated Flight Tests}{114}{chapter.7}
-\contentsline {section}{\numberline {7.1}Aims and Objectives}{114}{section.7.1}
-\contentsline {section}{\numberline {7.2}Hypotheses}{114}{section.7.2}
-\contentsline {section}{\numberline {7.3}Testing Methodology}{114}{section.7.3}
-\contentsline {section}{\numberline {7.4}Results}{114}{section.7.4}
-\contentsline {section}{\numberline {7.5}Discussion}{114}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusions and Recommendations}{115}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary and Conclusions}{115}{section.8.1}
-\contentsline {section}{\numberline {8.2}Recommendations}{115}{section.8.2}
+\contentsline {subsubsection}{Climb Rate Controller Discussion}{70}{section*.55}
+\contentsline {subsection}{\numberline {5.3.4}Altitude Hold Controller}{70}{subsection.5.3.4}
+\contentsline {subsubsection}{Altitude Hold Controller Discussion}{73}{section*.56}
+\contentsline {section}{\numberline {5.4}Horizontal Control}{75}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Roll and Pitch Rate Dynamics}{75}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Roll and Pitch Rate Controllers}{76}{subsection.5.4.2}
+\contentsline {subsubsection}{Roll and Pitch Rate Controller Discussion}{78}{section*.57}
+\contentsline {subsection}{\numberline {5.4.3}Tilt Angle Controller}{81}{subsection.5.4.3}
+\contentsline {subsubsection}{Method of Conversion}{81}{section*.58}
+\contentsline {subsubsection}{Roll and Pitch Angle Controllers}{82}{section*.59}
+\contentsline {subsubsection}{Tilt Angle Controller Discussion}{83}{section*.60}
+\contentsline {subsection}{\numberline {5.4.4}Linear Velocity Control}{85}{subsection.5.4.4}
+\contentsline {subsubsection}{Linear Velocity Controller Discussion}{87}{section*.61}
+\contentsline {subsection}{\numberline {5.4.5}Global Position Tracking Control}{88}{subsection.5.4.5}
+\contentsline {subsubsection}{Position Controller Discussion}{89}{section*.62}
+\contentsline {section}{\numberline {5.5}Heading Controller}{90}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Yaw Rate Dynamics}{91}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Yaw Rate Controller}{91}{subsection.5.5.2}
+\contentsline {subsubsection}{Yaw Rate Controller Discussion}{93}{section*.63}
+\contentsline {subsection}{\numberline {5.5.3}Yaw Angle Controller}{94}{subsection.5.5.3}
+\contentsline {subsubsection}{Yaw Angle Controller Discussion}{96}{section*.64}
+\contentsline {chapter}{\numberline {6}Flight Strategy and Obstacle Avoidance}{99}{chapter.6}
+\contentsline {section}{\numberline {6.1}Flight Strategy}{99}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Waypoint Generation}{99}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Yaw Alignment}{100}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Yaw Alignment Discussion}{101}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Obstacle Avoidance}{103}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Mathematical modelling}{103}{subsection.6.2.1}
+\contentsline {subsubsection}{Obstacle Distance Detection}{104}{section*.65}
+\contentsline {subsection}{\numberline {6.2.2}Obstacle Avoidance Methodology}{105}{subsection.6.2.2}
+\contentsline {subsubsection}{Methodology Investigation}{105}{section*.66}
+\contentsline {subsubsection}{Methodology Implementation}{106}{section*.67}
+\contentsline {subsubsection}{Obstacle Avoidance Controller}{107}{section*.68}
+\contentsline {subsection}{\numberline {6.2.3}Obstacle Avoidance Discussion}{109}{subsection.6.2.3}
+\contentsline {chapter}{\numberline {7}Simulated Flight Tests}{112}{chapter.7}
+\contentsline {section}{\numberline {7.1}title}{112}{section.7.1}
+\contentsline {section}{\numberline {7.2}Aims and Objectives}{112}{section.7.2}
+\contentsline {section}{\numberline {7.3}Testing Methodology and Results}{113}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Fully Integrated and Controlled System}{113}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Basic Obstacle Avoidance Routine}{115}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Obstacle Avoidance Navigation}{118}{subsection.7.3.3}
+\contentsline {subsubsection}{Wide Corridor}{118}{section*.69}
+\contentsline {subsubsection}{Narrow Corridor}{119}{section*.70}
+\contentsline {subsubsection}{Yaw Alignment in a Confined Space}{120}{section*.71}
+\contentsline {subsection}{\numberline {7.3.4}Generic Mission Flight}{123}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Limitations of the Design}{127}{subsection.7.3.5}
+\contentsline {chapter}{\numberline {8}Conclusions and Recommendations}{129}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary and Conclusions}{129}{section.8.1}
+\contentsline {section}{\numberline {8.2}Recommendations}{130}{section.8.2}

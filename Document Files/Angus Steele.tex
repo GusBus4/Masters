@@ -34,13 +34,20 @@
 %*******************************BEGIN THE ABSTRACT*******************************%
 
 \chapter*{Abstract}
-\todo[inline]{Incomplete}
-The need for robots is evident. High costs of maintenance. High costs of shut-downs for personnel Inspections
+In this work a solution to flight inside a confined environment is proposed and implementation through simulation. The goal of the design is enable a vehicle to navigate in an unknown confined space avoiding collision with walls and unexpected obstacles. The selection of an appropriate aircraft design is done, followed by a controller design and implementation of a flight strategy including an obstacle avoidance routine. The goal of the project was proven through in depth mathematical modelling of the system and the environment. Simulation and testing was performed using a model generated in Matlab and Simulink.
+
+The best suited configuration of a quadrotor was chosen based on a rigorous analysis of existing rotorcraft, highlighting the shortcomings and benefits of each design. The craft designed needed to be streamlined to ensure maximum capabilities in a narrow space. The vehicle was mathematically modelled based on the chosen configuration and sensors that would be used.
+
+The flight control was designed to be robust against disturbances and have tight position tracking to ensure stable flight inside an confined environment and avoid collisions. The controllers were designed and shown to be able to withstand disturbances the vehicle will be challenged of facing.
+
+The flight strategy was developed to optimise the use of such a platform in a narrow space similar to that seen inside a mining environment. A heading alignment strategy was added to the existing controllers ensuring the drone maintains a set heading based on it's current velocity. The final consideration was a thorough design and implementation of an obstacle avoidance routine. The system had to ensure no collisions would occur and ensure suitability for the implementation of a higher route planning strategy in future work.
+
+The simulated craft was shown to be capable of navigating inside an unknown environment and successfully avoid collisions with the use of a waypoint generator.
 
 %*******************************DOCUMENT LISTS*******************************%
 
 \tableofcontents
-%\listoffigures giving issues
+%\listoffigures
 \listoftables
 
 %*******************************SELF GENERATED GLOSSARY*******************************%
@@ -59,7 +66,6 @@ The need for robots is evident. High costs of maintenance. High costs of shut-do
 %\item South African National Standards (SANS)
 %\item International Organisation of Standards (ISO)
 \item Degree of Freedom (DOF)
-
 \item On Board Computer (OBC)
 \item Ground Control Station (GCS)
 \end{enumerate}
@@ -67,20 +73,19 @@ The need for robots is evident. High costs of maintenance. High costs of shut-do
 %*******************************CONSISTENCY RULES*******************************%
 \newpage
 
-\todo[inline]{RULES FOR CONSISTENCY:}
-\todo[inline]{}
-\todo[inline]{Figure always with a capital F}
-\todo[inline]{Equation, use eqref (or put in brackets) and don't say equation unless it's the beginning of a sentence}
-\todo[inline]{Image citation done inline as well as "Taken from (X) in caption"}
-\todo[inline]{Equation citation done inline only}
-\todo[inline]{Section always with a capital S}
-
-\todo[inline]{}
+%\todo[inline]{RULES FOR CONSISTENCY:}
+%\todo[inline]{}
+%\todo[inline]{Figure always with a capital F}
+%\todo[inline]{Equation, use eqref (or put in brackets) and don't say equation unless it's the beginning of a sentence}
+%\todo[inline]{Image citation done inline as well as "Taken from (X) in caption"}
+%\todo[inline]{Equation citation done inline only}
+%\todo[inline]{Section always with a capital S}
+%
+%\todo[inline]{}
 %*******************************INCLUDE DIFFERENT CHAPTERS*******************************%
 
 \include{Introduction}
-\include{LiteratureReview}
-%\include{SystemDesign}					
+\include{LiteratureReview}			
 \include{PlatformDesign}
 \include{SystemIdentification}
 \include{ControllerDesign}

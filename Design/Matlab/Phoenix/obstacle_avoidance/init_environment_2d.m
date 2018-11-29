@@ -1,89 +1,191 @@
-%% Create Basic Outlines for Room
-
-% wall_1   =  [
-%                 -0.5 4;                                                      %North                                                   
-%                 4 4                                                        %East                                                        
-%             ];
-%         
-% wall_2   =  [
-%                 4 4;      %17 17                                                %North
-%                 4 -0.5                                                     %East
-%             ];
-%         
-% wall_3   =  [
-%                 4 -0.5;                                                        
-%                 -0.5 -0.5                                                        
-%             ];
-%         
-% wall_4   =  [
-%                 -0.5 -0.5;                                                        
-%                 -0.5 4                                                        
-%             ];
-
-%% Corridor ZigZag
+%% Simple Corridor
 wall_1   =  [
-                10 10;                                                      %North                                                   
-                -5 5                                                        %East                                                        
+                -3 20;                                                      %North                                                   
+                -3 -3                                                        %East                                                        
             ];
         
 wall_2   =  [
-                -1 5;                                                      %North
+                -3 20;      %17 17                                                %North
                 1 1                                                     %East
             ];
 
+%% Create Failed Test 1
+% wall_1   =  [
+%                 -3 -3;                                                      %North                                                   
+%                 -10 -5                                                        %East                                                        
+%             ];
+%         
+% wall_2   =  [
+%                 -3 -3;      %17 17                                                %North
+%                 10 5                                                     %East
+%             ];
+%         
+% wall_3   =  [
+%                 -3 1;                                                        
+%                 -5 -1                                                        
+%             ];
+%         
+% wall_4   =  [
+%                 -3 1;                                                        
+%                 5 1                                                        
+%             ];
+% wall_5   =  [
+%                 10 1;                                                        
+%                 -1 -1                                                        
+%             ];
+%         
+% wall_6   =  [
+%                 10 1;                                                        
+%                 1 1                                                        
+%             ];
+
+%% Failed Test 2
+% wall_1   =  [
+%                 5 5;                                                      %North                                                   
+%                 -5 5                                                        %East                                                        
+%             ];
+%         
+% wall_2   =  [
+%                 10 -5;      %17 17                                                %North
+%                 -5 -5                                                     %East
+%             ];
+%         
+% wall_3   =  [
+%                 -5 -5;                                                        
+%                 -5 10                                                        
+%             ];
+%         
+% wall_4   =  [
+%                 -5 10;                                                        
+%                 10 10                                                        
+%             ];
+% wall_5   =  [
+%                 10 10;                                                        
+%                 10 -5                                                        
+%             ];
+        
+% wall_6   =  [
+%                 10 1;                                                        
+%                 1 1                                                        
+%             ];
+
+
+%% Corridor Wide ZigZag
+% wall_1   =  [
+%                 -1 5;                                                      %North                                                   
+%                 -5 -5                                                        %East                                                        
+%             ];
+%         
+% wall_2   =  [
+%                 -1 5;                                                      %North
+%                 4 4                                                     %East
+%             ];
+
 wall_3   =  [
-                5 8;                                                      %North                                                   
-                1 4                                                        %East                                                        
+                5 12;                                                      %North                                                   
+                4 11                                                        %East                                                        
             ];
         
 wall_4   =  [
-                5 8;                                                      %North
-                -2 1                                                     %East
+                5 12;                                                      %North
+                -5 2                                                     %East
             ];
 
 wall_5   =  [
-                8 10;                                                        
-                1 -1                                                        
+                12 24;                                                        
+                11 -1                                                        
             ];
 
 wall_6   =  [
-                8 10;                                                        
-                4 2                                                        
+                12 24;                                                        
+                2 -10                                                        
             ];
 
 wall_7   =  [
-                10 13;                                                        
-                -1 2                                                        
+                24 30;                                                        
+                -10 -4                                                        
             ];
         
 wall_8  =  [
-                10 11;                                                      %North
-                2 3 
+                24 28;                                                      %North
+                -1 3 
             ];
         
 wall_9  =  [
-                13 20;                                                      %North
-                2 2 
+                30 35;                                                      %North
+                -4 -4 
             ];
 
 wall_10  =  [
-                11 20;                                                      %North
+                28 35;                                                      %North
                 3 3 
             ];
 
-%% Fullsuite
+%% Corridor Narrow ZigZag
+% wall_1   =  [
+%                 -1 5;                                                      %North                                                   
+%                 -2 -2                                                        %East                                                        
+%             ];
+%         
+% wall_2   =  [
+%                 -1 5;                                                      %North
+%                 1 1                                                     %East
+%             ];
+% 
+% wall_3   =  [
+%                 5 8;                                                      %North                                                   
+%                 1 4                                                        %East                                                        
+%             ];
+%         
+% wall_4   =  [
+%                 5 8;                                                      %North
+%                 -2 1                                                     %East
+%             ];
+% 
+% wall_5   =  [
+%                 8 10;                                                        
+%                 1 -1                                                        
+%             ];
+% 
+% wall_6   =  [
+%                 8 10;                                                        
+%                 4 2                                                        
+%             ];
+% 
+% wall_7   =  [
+%                 10 12;                                                        
+%                 -1 1                                                        
+%             ];
+%         
+% wall_8  =  [
+%                 10 11;                                                      %North
+%                 2 3 
+%             ];
+%         
+% wall_9  =  [
+%                 12 20;                                                      %North
+%                 1 1 
+%             ];
+% 
+% wall_10  =  [
+%                 11 20;                                                      %North
+%                 3 3 
+%             ];
+
+% 
+% %% Fullsuite
 wall_1   =  [
-                -3 17;                                                      %North                                                   
+                -3 16;                                                      %North                                                   
                 3 3                                                        %East                                                        
             ];
         
 wall_2   =  [
-                17 17;                                                      %North
+                16 20;                                                      %North
                 3 -20                                                     %East
             ];
         
 wall_3   =  [
-                17 -3;                                                        
+                20 -3;                                                        
                 -20 -20                                                        
             ];
         
@@ -115,7 +217,7 @@ wall_8  =  [
         
 wall_9   =  [
                 14 15;                                                      %North
-                -6 -6                                                   %East
+                -4 -6                                                   %East
             ];
         
 wall_10  =  [
@@ -239,7 +341,7 @@ walls_body(2, 2, 12) = wall_12_body(2, 2);
 hold on;
 grid on;
 
-for k = 5:10
+for k = 1:10
     plot(walls_body(2,:,k), walls_body(1,:,k), 'b');                        %X-plot = East; Y-Plot = North
 end
 % 

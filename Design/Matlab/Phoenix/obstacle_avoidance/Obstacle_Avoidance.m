@@ -1,8 +1,8 @@
 %% Create Variables to run script
 % close all;
 
-current_pos_n = 10;                                                          
-current_pos_e = -3;                                                          
+current_pos_n = 15.27;                                                          
+current_pos_e = 0.89;                                                          
 current_yaw = deg2rad(0);
 
 dcm_earth_to_body = angle2dcm(0,0,current_yaw, 'XYZ');

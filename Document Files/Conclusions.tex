@@ -1,5 +1,37 @@
 \chapter{Conclusions and Recommendations}
+The final chapter concludes on the work done in this project. It begins by summarising the conclusions and discussions had during the course of this work and finalises by recommending future areas that should be focused on to achieve the goal flight inside a confined environment.
 
 	\section{Summary and Conclusions}
+	The thesis successfully designed and simulated a flight strategy capable of obstacle avoidance and basic navigation inside a confined environment. The strategy proposed was tested through simulation to maintain a distance of $0.5$\,m away from walls and obstacles while maintaining stable flight. The problem was solved by choosing a craft design to help fly in a narrow corridor and designing a set of controllers to maintain stable flight with an over arching flight strategy.
+	
+	The craft design of the vehicle was accomplished through analysis of conventional rotor wing configurations and flight theory. The vehicle required high payload capabilities for additional sensor packs and larger power sources to increase flight time. This was accomplished by choosing a design that optimised thrust capabilities in a narrow space. The design varies from a traditional quadcopter by having a $20\%$ overlap of the front and rear rotor sets.
+	
+	A three tiered controller system was designed to control the proposed platform in six degrees of freedom. The three tiers were broken into an altitude, horizontal and heading controller. All three systems were shown to be capable of rejecting disturbances and providing stable control. The altitude control system controls the height of the craft by commanding a climb rate which in turn controls the acceleration of the craft in line with the body Z-Axis. The horizontal controller is responsible for controlling the North and East position and velocity of the craft. This was accomplished by relating the North and East accelerations to relative pitch and roll angles for the craft which in turn command the pitch and roll angular rates. The heading controller is responsible for controlling the yaw angle of the craft by commanding a yaw rate. Each controller fed their setpoints into a motor mixer which created the correct thrust outputs for each motor.
+	
+	An investigation into existing collision avoidance techniques led to the successful generation of a proximity based obstacle avoidance routine. The method chosen requires a proximity measurement relative to the craft in the X, Y and Z-Body Axis and utilises the potential field method of obstacle avoidance. This allowed the craft to avoid obstacles by maintaining a set distance from obstructions in all three axes. 
+	
+	To enable autonomous flight a waypoint generator was created which enables the aircraft to automatically step between position set points. The environment and the design of craft required an additional flight strategy which aligns the heading of the craft with it's current direction. This ensured that the craft's longer axis is always in the direction of flight minimising drag and 
+	proximity to narrow corridors.
+	
+	To validate the controller scheme and flight strategy, accurate mathematical modelling of the craft and disturbances was required. This was accomplished through a system identification process including real world measurements and collection of data from proposed sensors. The disturbances and the system were modelled using Matlab and Simulink.
+		
+	The simulation showed that the proposed flight strategy and controllers could be used for navigation in a confined environment. The platform was designed to ensure sufficient thrust capabilities for a larger power source and additional sensor payload making it suitable for expansion into industrial applications.
 	
 	\section{Recommendations}
+	The following recommendations are proposed to improve the viability of the system as an autonomous platform and expand the work to create a real world implementation.
+	
+	\begin{itemize}
+		\item The proposed obstacle avoidance routine has proven to be capable of providing navigation in some environments. The limitations of the design can be assisted by a higher level route planning algorithm which utilises sensor information to create more autonomy for missions.
+
+		\item This work used simulation to prove the effectiveness of the system. To finalise the validation of the proposed system real world flight tests should be conducted using the proposed platform construction. It is recommended that prior to any implementation of the flight strategy or obstacle avoidance the mechanical construction is verified to be robust to ensure a good flight set up limiting risk during flight testing.
+		
+		\item Additional flight modes should be created to allow the pilot control of the more inner loops. This work creates a waypoint generator that feeds velocity commands. Situations exist, specifically during initial testing, that require the pilot is granted control of the craft's flight routine.
+		
+		\item Research has been done and reviewed to show the effects and subsequent disturbances of flight near walls. A more detailed measurement of these disturbances for the proposed craft should be done to ensure the system is capable of rejecting them substantially. 
+		
+		\item A robust state estimator would reduce noise and error on the measurements and allow for the implementation of a disturbance observer based control algorithm. Such an algorithm could assist with successful rejection of larger disturbances while limiting the effect on the tracking control.
+
+	\end{itemize}
+
+	
+	

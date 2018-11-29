@@ -2,7 +2,20 @@
 This chapter follows the stages of designing a controller for a quadrotor and begins by discussing the overall strategy. An analysis of existing rotorcraft control systems has been done in Section \ref{SECT_ControlReview}. The system must be able to follow waypoint commands, containing a position reference in the North, East and Down frame. As well as align with a desired heading, this reference will be in the form of a Euler angle. The detailed design goals are discussed before the controller design is begun.
 
 \section{Design Goals}
+The design goals for the controller system are presented here. The controllers must ensure that the system is capable of meeting all of the prescribed requirements.
 
+\begin{enumerate}
+	\item The controller must be able to track a position reference in the North, East and Down frame. The limited space in which the vehicle must fly requires a final system with sufficient damping and minimal overshoot.
+	\item The transient response of the velocity control system must be rapid to ensure fast responses to changing setpoints caused by unexpected obstacles.
+	\item The controller's must be robust to unmodelled system errors. To accomplish this sufficient phase margin is required to handle unmodelled timing delays and sufficient gain margin is required to handle unmodelled errors in actuation and plant gains.
+	\item The output of the controllers must never exceed the thrust capabilities of the system. 
+	\item The controllers should be designed as to not demand large angles for the craft.
+	\item The velocity of the craft must be limited for flight inside a confined environment.
+	\item The controllers must be capable of rapidly rejecting disturbances.
+	\item The designed controller bandwidth must not exceed the bandwidth capable of the rotor motor system.
+\end{enumerate}
+
+The stipulated design goals are appropriate for a vehicle expected to fly in a confined space and differ from traditional flight which requires high speed and fast position tracking.
 
 \section{Flight Control Strategy}
 Figure \ref{IM_ControlStrategy} represents the high level control strategy for this project. This discussion will break the system into three main components: an altitude controller, a horizontal flight controller and a heading controller.	
@@ -63,10 +76,10 @@ The overall altitude controller is structured as a set of cascaded control loops
 	 G(s)_{heave} = \frac{\frac{-1}{m \times \tau}}{s + \frac{1}{\tau}}\label{EQ_HeaveTF}
 	 \end{equation}
 	 
-	 The rotor motor lag produces the pole at $\dfrac{-1}{\tau} = -8$ and indicates the maximum response capabilities and timing constant of the rotor system.
+	 The rotor motor lag of $0.125$\,s stipulated in the system identification chapter produces the pole at $\dfrac{-1}{\tau} = -8$ and indicates the maximum response capabilities and timing constant of the rotor system.
 	 
 	 \subsection{Heave Controller}
-	 The heave controller is responsible for commanding the $\delta_Z$ virtual actuator to achieve a desired Z-Axis acceleration in the body frame. The heave controller is the fastest controller in the altitude system and should utilise as much bandwidth as the rotor-motor system allows. The altitude controller wishes to reject disturbances quickly and thus a PI architecture was initially chosen as shown in Figure \ref{IM_HeaveController}. The system should be stable and exhibit a phase margin of at least $70$\textdegree.
+	 The heave controller is responsible for commanding the $\delta_Z$ virtual actuator to achieve a desired Z-Axis acceleration in the body frame. The heave controller is the fastest controller in the altitude system and should utilise as much bandwidth as the rotor-motor system allows. The altitude controller wishes to reject disturbances quickly and thus a PI architecture was initially chosen as shown in Figure \ref{IM_HeaveController}. The system should be stable and exhibit a reasonable phase margin and therefore be able to compensate for margin loss when the outer loops are closed. The phase margin in the open loop system should at least $70$\textdegree.
 	 
 	 The integrator is used to reject disturbances, while the most left limiter shown in Figure \ref{IM_HeaveController} was added to stop integrator wind up and is not considered during the linear controller design. The proportional gain is used to move the closed loop poles and achieve the desired bandwidth. The dynamic response of the system can be investigated using the root locus and bode plots shown in Figure \ref{IM_HeaveControlRoot} and \ref{IM_HeaveControlBode}. 
 	 
@@ -119,7 +132,8 @@ The overall altitude controller is structured as a set of cascaded control loops
 		 	\label{IM_HeaveStepDist}
 		 \end{figure}
 		 
-		 The heave controller, as the most inner loop, limits the response for the rest of the altitude control system. The proposed design brings the heave loop response close to the limits of the plant, thus producing a similar (but slower) timing constant to that of the motor-rotor system. The system reaches and settles within 5\% of the reference by $0.31s$, is critically damped and presents negligible overshoot. The system also shows to be capable of tracking an acceleration setpoint with zero steady state error. As shown in Figure \ref{IM_HeaveStepDist} the system can also respond quickly to a large, sudden and constant disturbance. The maximum rotor thrust commanded during this run is $3.35$\,N. \todo[inline]{How do I talk about gravity in this section? Can I just say gravity adds an offset of m*g and this plus the output must be less than the limit?}
+		 The heave controller, as the most inner loop, limits the response for the rest of the altitude control system. The proposed design brings the heave loop response close to the limits of the plant, thus producing a similar (but slower) timing constant to that of the motor-rotor system. The system reaches and settles within 5\% of the reference by $0.31s$, is critically damped and presents negligible overshoot. The system also shows to be capable of tracking an acceleration setpoint with zero steady state error. As shown in Figure \ref{IM_HeaveStepDist} the system can also respond quickly to a large, sudden and constant disturbance. The maximum rotor thrust commanded during this run is $3.35$\,N. 
+		 Gravity will add on offset of $mg$ to the acceleration setpoint, this needs to be rotated into the body frame as this controller provides force in the Z-Body Axis. 
 	 
 	 \subsection{Climb Rate Controller}
 	 The climb rate controller is responsible for controlling the vertical velocity of the aircraft, in the earth frame. This introduces the need for rotating either the reference or the command into the body frame. The decision can be made by considering the frame in which the sensing information is provided. Most aircraft make use of some form of global positioning system and using differentiation can calculate speed. However, due to the application environment, this aircraft will most likely use a velocity measurement sensor relative to the body frame. The architecture for the climb rate controller is outlined in Figure \ref{IM_ClimbRateControlLoop}. 
@@ -167,14 +181,14 @@ The overall altitude controller is structured as a set of cascaded control loops
 	 	\begin{tabular}{l | c | c |}
 	 		Limit Name 						& Min & Max\\
 	 		\hline\hline
-	 		Acceleration Command 		    & -4 & 4 \\
+	 		Acceleration Command 		    & $-4m/s^{2}$ & $4m/s^{2}$ \\
 	 	\end{tabular}
 	 	\caption{Climb Rate Controller Limits}
 	 	\label{tab:ClimbrateLimits}
 	 \end{table}
 	 
 		 \subsubsection{Climb Rate Controller Discussion}
-		 The dynamic response shows sufficient phase margin to handle unmodelled timing delays. While the ratio between the inner controller ensures this controller will not be influenced by the inner loop. The step response of the closed loop system is shown in Figure \ref{IM_ClimbRateStep}. The system has a $5$\% settling time of $0.747s$ and shows negligible overshoot. At $5s$ a disturbance of $10N$ is placed on the rotors and the system demonstrates the ability to continue tracking the desired setpoint with zero steady state error. \todo[inline]{Not sure if I need the disturbance rejection here, maybe I could show that it can't handle a measurement error in the inner loop?}
+		 The dynamic response shows sufficient phase margin to handle unmodelled timing delays. While the ratio between the inner controller ensures this controller will not be influenced by the inner loop. The step response of the closed loop system is shown in Figure \ref{IM_ClimbRateStep}. The system has a $5$\% settling time of $0.747s$ and shows negligible overshoot. At $5s$ a disturbance of $10N$ is placed on the rotors and the system demonstrates the ability to continue tracking the desired setpoint with zero steady state error.
 		 
 		 \begin{figure}[H]
 		 	\centering
@@ -186,7 +200,7 @@ The overall altitude controller is structured as a set of cascaded control loops
 	 \subsection{Altitude Hold Controller}
 	 The final stage of the vertical control system is the altitude hold controller. This controller receives a desired altitude in the earth frame and outputs a reference velocity, also in the earth frame. The closed control loop block diagram is shown in Figure \ref{IM_AltHoldControlLoop}. 
 	 
-	 The altitude hold controller must be able to reject measurement errors in the inner loops, this can be achieved by adding an integrator into the controller. The system must also be able to track a set point with zero steady state error and must show a damped response with little overshoot. The system must be able to react quickly to commands, but is limited by the bandwidth of the climb rate system. The final bandwidth of this loop must be such that this controller is not influenced by the inner climb rate loop. As the most outer loop this system will have unmodelled errors, the controller must be robust and exhibit sufficient gain margin and a phase margin of at least $60$\textdegree.
+	 The altitude hold controller must be able to reject measurement errors in the inner loops, this can be achieved by adding an integrator into the controller. The system must also be able to track a set point with zero steady state error and must show a damped response with little overshoot. The system must be able to react quickly to commands, but is limited by the bandwidth of the climb rate system. The final bandwidth of this loop must be such that this controller is not influenced by the inner climb rate loop. To ensure this, the altitude controller should be a magnitude of at least 2 smaller than the climb rate controller. As the most outer loop this system will have unmodelled errors, the controller must be robust and exhibit sufficient gain margin and a phase margin of at least $60$\textdegree.
 	 
 	 \begin{figure}[H]
 	 	\centering
@@ -195,7 +209,7 @@ The overall altitude controller is structured as a set of cascaded control loops
 	 	\label{IM_AltHoldControlLoop}
 	 \end{figure}
 	 
-	 The chosen controller architecture is shown in Figure \ref{IM_AltHoldController}. The proportional gain is used to vary the bandwidth to be within the limits of the system. An limited integrator is added to reject measurement errors in the inner loops, this component is represented by the faded integrator shown in Figure \ref{IM_AltHoldController} is not considered during linear analysis. The integrator shall be limited in such a way as to limit the interference of the proportional gain. This approach reduces the maximum disturbance rejection this controller can handle. To increase the bandwidth of the disturbance rejection capabilities, a PID controller architecture was also considered and the analysis was done for both control laws. \todo[inline]{Not sure if I should remove all the PID stuff here, I did consider it but the PID never stood a chance against the P and also do I need more disturbance rejection?}
+	 The chosen controller architecture is shown in Figure \ref{IM_AltHoldController}. The proportional gain is used to vary the bandwidth to be within the limits of the system. An limited integrator is added to reject measurement errors in the inner loops, this component is represented by the faded integrator shown in Figure \ref{IM_AltHoldController} is not considered during linear analysis. The integrator shall be limited in such a way as to limit the interference of the proportional gain. This approach reduces the maximum disturbance rejection this controller can handle. To increase the bandwidth of the disturbance rejection capabilities, a PID controller architecture was also considered and the analysis was done for both control laws.
 	 
 	 The system's dynamic response is analysed using the root locus shown in Figure \ref{IM_AltHoldRoot} and the bode plot shown in Figure \ref{IM_AltHoldBode}.
 	 
@@ -209,7 +223,6 @@ The overall altitude controller is structured as a set of cascaded control loops
 	 Figures \ref{IM_AltHoldRoot} and \ref{IM_AltHoldBode} evaluate a P controller against a PID controller. The dominant closed loop poles of the P controlled system are placed at $-2.03 \pm 0.58i$ and are slightly under damped with a damping ratio of $0.96$. 
 
 	 The PID controller adds an additional pole and two additional zeros into the system. The closed loop poles of the PID controlled system are located at $-6.64$, $-3.59 \pm 5.03i$ and $-0.64 \pm 0.47i$. The two new zeros are placed at $-0.57$ and $-2.06$.
-	 \todo[inline]{Must decide if I must keep the PID stuff in and evaluate properly here}
 	 
 	 \begin{figure}[H]
 	 	\centering
@@ -218,7 +231,7 @@ The overall altitude controller is structured as a set of cascaded control loops
 	 	\label{IM_AltHoldRoot}
 	 \end{figure}
 	 
-	 The bode plot shows the PID controller producing a final cross over frequency of $1.90Rad/s$, this response is too fast for the inner climb rate system and will need to be redesigned or discarded. \todo[inline]{Must decide if I must keep the PID stuff in and evaluate properly here}. The P controller exhibits a cross over frequency of $0.91Rad/s$, this produces a ratio of $3.03$ between the inner and outer loops and a phase margin of $71.5$\textdegree. The phase of the system using a P controller crosses the $180$\textdegree  $\ $mark at $4.81Rad/s$ and has a gain margin of $18.7dB$.
+	 The bode plot shows the PID controller producing a final cross over frequency of $1.90Rad/s$, this response is too fast for the inner climb rate system and will need to be redesigned or discarded. The P controller exhibits a cross over frequency of $0.91Rad/s$, this produces a ratio of $3.03$ between the inner and outer loops and a phase margin of $71.5$\textdegree. The phase of the system using a P controller crosses the $180$\textdegree  $\ $mark at $4.81Rad/s$ and has a gain margin of $18.7dB$.
 	 
 	 \begin{figure}[H]
 	 	\centering
@@ -268,11 +281,9 @@ The overall altitude controller is structured as a set of cascaded control loops
 		 	\caption{Altitude Hold P with Limited I Controller -  Step Responses}
 		 	\label{IM_AltHoldPIDistStep}
 		 \end{figure}
-		 
-		 \todo[inline]{Do I need to show impulse responses for altitude and climb rate? I mention the maximum thrust at the heave controller level, is that good enough?}
 	 
 \section{Horizontal Control}
-This section describes the horizontal controller. This system is responsible for controlling the craft's North and East position in the earth frame, to do this the controller's most inner loop commands the pitch and roll rates of the craft. The narrow, confined spaces in which the craft must fly means it is very important for the horizontal controller to respond quickly to commands and disturbances. The limited space also limits the amount of allowed overshoot, requiring a well damped final system. While the system should be fast, it must stay within it's thrust limits as to not affect the other controllers. The controller will need to be able reject disturbances caused by wind, sensor offsets and unbalanced rotors. To handles these disturbances and other, the system will require an integrator in the controller. The integrator should be fast enough as to ensure the system stays within it's narrow, permissible flight region, even during disturbances.
+This section describes the horizontal controller. This system is responsible for controlling the craft's North and East position in the earth frame, to do this the controller's most inner loop commands the pitch and roll rates of the craft. The narrow, confined spaces in which the craft must fly means it is very important for the horizontal controller to respond quickly to commands and disturbances. The limited space also limits the amount of allowed overshoot, requiring a well damped final system. The system must ensure it stay within the thrust limits as to not affect the other controllers. The controller will need to be able reject disturbances caused by wind, sensor offsets and unbalanced rotors. To handles these disturbances and other, the system will require an integrator in the controller. The integrator should be fast enough as to ensure the system stays within it's narrow, permissible flight region, even during disturbances.
 
 The horizontal controller is designed as two sets of four cascaded control loops, one set for roll and one set for pitch. The most inner loop controls either the roll or pitch rate of the craft by commanding the virtual actuators $\delta_\phi$ and $\delta_\theta$ respectively. The desired angular rates are in turn commanded by the tilt angle controller. The tilt angle controller is responsible for converting desired translational accelerations into desired roll and pitch angles. These acceleration setpoints are commanded by the linear velocity controller which receives it's setpoint from the most outer global position controller. The global position controller will receive it's setpoint from the waypoint generation method described in a proceeding section. This section begins by deriving the plant dynamics for roll and pitch.
 	
@@ -312,7 +323,7 @@ The horizontal controller is designed as two sets of four cascaded control loops
 		\label{IM_RollPitchRateController}
 	\end{figure}	
 		
-	First, the dynamic response of the controlled roll system is evaluated using the root locus shown in Figure \ref{IM_RollRateControlRoot}. To maintain good damping, the two dominant poles are kept close to the imaginary axis and have a final damping ratio of $0.9$. Where the placement of the slower zero dictates how much influence the integrator can have on the system. \todo[inline]{Making reference to how the zero's location is the ratio of Ki/Kp, but when I say it like this I get worried it might not be completely accurate?}
+	First, the dynamic response of the controlled roll system is evaluated using the root locus shown in Figure \ref{IM_RollRateControlRoot}. To maintain good damping, the two dominant poles are kept close to the imaginary axis and have a final damping ratio of $0.9$. Where the placement of the slower zero dictates how much influence the integrator can have on the system.
 	
 	\begin{figure}[H]
 		\centering
