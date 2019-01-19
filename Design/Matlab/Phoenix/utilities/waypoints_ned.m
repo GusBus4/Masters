@@ -1,4 +1,4 @@
-waypoint_ned_data = zeros(9, 3)
+waypoint_ned_data = zeros(6, 3)
 flight_radius = 5;
 
 % for i = 1:360
@@ -8,15 +8,25 @@ flight_radius = 5;
 % end
 
 
+%% Simple Waypoint
 waypoint_ned_data(1, :)     = [0          0         -6];
 waypoint_ned_data(2, :)     = [0       0         -6];
 waypoint_ned_data(3, :)     = [10       0         -6];
-waypoint_ned_data(4, :)     = [15.25       1.5         -6];
-waypoint_ned_data(5, :)     = [15       -2         -6];
-waypoint_ned_data(6, :)     = [15        -18         -6];
-waypoint_ned_data(7, :)     = [10       -18         -6];
-waypoint_ned_data(8, :)     = [0        0         -6];
-waypoint_ned_data(9, :)     = [10          -6         -6];
+waypoint_ned_data(4, :)     = [10       10         -6];
+waypoint_ned_data(5, :)     = [0       10         -6];
+waypoint_ned_data(6, :)     = [0        0         -6];
+
+%% Full Suite
+% waypoint_ned_data(1, :)     = [0          0         -6];
+% waypoint_ned_data(2, :)     = [0       0         -6];
+% waypoint_ned_data(3, :)     = [10       0         -6];
+% waypoint_ned_data(4, :)     = [15.25       1.5         -6];
+% waypoint_ned_data(5, :)     = [15       -2         -6];
+% waypoint_ned_data(6, :)     = [15        -18         -6];
+% waypoint_ned_data(7, :)     = [10       -18         -6];
+% waypoint_ned_data(8, :)     = [0        0         -6];
+% waypoint_ned_data(9, :)     = [10          -6         -6];
+
 % waypoint_ned_data(10, :)     = [15       0         -6];
 % waypoint_ned_data(11, :)     = [15       -15         -6];
 % waypoint_ned_data(12, :)     = [0        -15         -6];

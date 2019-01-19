@@ -2,14 +2,19 @@
 x = zeros(length(tout), 1) + 1;
 figure;
 hold on;
-plot(tout, earth_linear_position_no_noise(:,1), 'g', 'LineWidth', 2);
-plot(fullrunalign_tout, fullrunalign_pos(:,1), 'b',  'LineWidth', 2);
+plot(tout, earth_linear_position_no_noise(:,1), 'b', 'LineWidth', 2);
+% plot(fullrunalign_tout, fullrunalign_pos(:,1), 'b',  'LineWidth', 2);
+plot(tout, waypoints(:, 1), 'r', 'LineWidth', 2);
 % plot(simflightnowindtout, simflightnowind(:,1), 'g',  'LineWidth', 2);
 % plot(fullrunnoalign_tout, fullrunnoalign_pos(:,1), 'g',  'LineWidth', 2);
 % plot(tout, x, 'k--', 'LineWidth', 2);
 plot(tout, waypoints(:, 1), 'r', 'LineWidth', 2);
-ylabel('North Position', 'FontSize', 20)
-xlabel('Time', 'FontSize', 20)
+ylabel('North Position (m)', 'FontSize', 20)
+xlabel('Time (s)', 'FontSize', 20)
+
+ax = gca;
+ax.FontSize = 16;
+
 grid on;
 grid minor;
 hold off;
@@ -17,14 +22,18 @@ hold off;
 %% Plot East
 figure;
 hold on;
-plot(tout, earth_linear_position_no_noise(:,2), 'g', 'LineWidth', 2);
-plot(fullrunalign_tout, fullrunalign_pos(:,2), 'b',  'LineWidth', 2);
+plot(tout, earth_linear_position_no_noise(:,2), 'b', 'LineWidth', 2);
+% plot(fullrunalign_tout, fullrunalign_pos(:,2), 'b',  'LineWidth', 2);
 % plot(simflightnowindtout, simflightnowind(:,2), 'g',  'LineWidth', 2);
 % plot(fullrunnoalign_tout, fullrunnoalign_pos(:,2), 'g',  'LineWidth', 2);
 plot(tout, waypoints(:, 2), 'r', 'LineWidth', 2);
 % plot(tout, x, 'k--', 'LineWidth', 2);
-ylabel('East Position', 'FontSize', 20)
-xlabel('Time','FontSize', 20)
+ylabel('East Position (m)', 'FontSize', 20)
+xlabel('Time (s)','FontSize', 20)
+
+ax = gca;
+ax.FontSize = 16;
+
 grid on;
 grid minor;
 hold off;
@@ -37,13 +46,17 @@ for i = 1:length(earth_linear_position_no_noise(:,3))
     end
 end
 hold on;
-plot(tout, earth_linear_position_no_noise(:,3), 'g','LineWidth', 2);
-plot(fullrunalign_tout, fullrunalign_pos(:,3), 'b',  'LineWidth', 2);
+plot(tout, earth_linear_position_no_noise(:,3), 'b','LineWidth', 2);
+% plot(fullrunalign_tout, fullrunalign_pos(:,3), 'b',  'LineWidth', 2);
 % plot(simflightnowindtout, simflightnowind(:,3), 'g',  'LineWidth', 2);
 % plot(fullrunnoalign_tout, fullrunnoalign_pos(:,3), 'g',  'LineWidth', 2);
 plot(tout, waypoints(:, 3), 'r', 'LineWidth', 2);
-ylabel('Down Position', 'FontSize', 20)
-xlabel('Time', 'FontSize', 20)
+ylabel('Down Position (m)', 'FontSize', 20)
+xlabel('Time (s)', 'FontSize', 20)
+
+ax = gca;
+ax.FontSize = 16;
+
 grid on;
 grid minor;
 hold off;
